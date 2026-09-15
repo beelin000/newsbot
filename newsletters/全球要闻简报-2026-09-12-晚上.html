@@ -21,6 +21,8 @@
   --shadow: 0 1px 2px rgba(0,0,0,.06);
   --why: #8a4b12;
   --why-bg: #fff6eb;
+  --measure: 42rem;
+  --page-pad: 16px;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -39,6 +41,19 @@
     --why-bg: #2a2116;
   }
 }
+@media (min-width: 768px) {
+  :root {
+    --measure: 52rem;
+    --page-pad: 24px;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 32px;
+  }
+  body { font-size: 18px; }
+}
 * { box-sizing: border-box; }
 html {
   scroll-behavior: smooth;
@@ -55,13 +70,13 @@ body {
 }
 a { color: var(--accent); }
 .wrap {
-  width: min(100%, 40rem);
+  width: min(100%, var(--measure));
   margin: 0 auto;
   padding:
     12px
-    calc(16px + env(safe-area-inset-right))
+    calc(var(--page-pad) + env(safe-area-inset-right))
     calc(88px + env(safe-area-inset-bottom))
-    calc(16px + env(safe-area-inset-left));
+    calc(var(--page-pad) + env(safe-area-inset-left));
 }
 .sticky {
   position: sticky;
@@ -74,9 +89,9 @@ a { color: var(--accent); }
   padding-top: env(safe-area-inset-top);
 }
 .head {
-  width: min(100%, 40rem);
+  width: min(100%, var(--measure));
   margin: 0 auto;
-  padding: 12px 16px 8px;
+  padding: 12px var(--page-pad) 8px;
 }
 .head h1 {
   margin: 0;
@@ -96,9 +111,9 @@ a { color: var(--accent); }
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  width: min(100%, 40rem);
+  width: min(100%, var(--measure));
   margin: 0 auto;
-  padding: 0 16px 10px;
+  padding: 0 var(--page-pad) 10px;
 }
 .chips::-webkit-scrollbar { display: none; }
 .chips a {

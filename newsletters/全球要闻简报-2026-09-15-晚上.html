@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="全球要闻简报｜2026年9月15日晚报">
+<title>晚报 · 2026年9月15日｜全球要闻简报</title>
+<style>
+:root {
+  --bg: #f6f4ef;
+  --bg-card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #5c5c5c;
+  --border: #e2ddd3;
+  --accent: #0b4f6c;
+  --accent-soft: #e8f2f6;
+  --why: #8b4513;
+  --chip: #ffffff;
+  --header-bg: rgba(246, 244, 239, 0.92);
+  --shadow: 0 1px 3px rgba(0,0,0,0.06);
+  --top-btn: #0b4f6c;
+  --top-btn-fg: #ffffff;
+  --measure: 42rem;
+  --page-pad: 1rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --measure: 52rem;
+    --page-pad: 1.5rem;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121416;
+    --bg-card: #1c1f24;
+    --text: #f0f0f0;
+    --muted: #a8a8a8;
+    --border: #2e333a;
+    --accent: #7eb8d4;
+    --accent-soft: #243039;
+    --why: #e0a070;
+    --chip: #1c1f24;
+    --header-bg: rgba(18, 20, 22, 0.94);
+    --shadow: 0 1px 3px rgba(0,0,0,0.35);
+    --top-btn: #7eb8d4;
+    --top-btn-fg: #121416;
+  }
+}
+* { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text);
+  background: var(--bg);
+  padding:
+    0
+    env(safe-area-inset-right, 0px)
+    calc(5rem + env(safe-area-inset-bottom, 0px))
+    env(safe-area-inset-left, 0px);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.site-header .inner {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: 0.75rem var(--page-pad) 0.5rem;
+}
+.kicker {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 0.15rem;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 700;
+}
+.meta {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.chip-nav {
+  position: sticky;
+  top: calc(env(safe-area-inset-top, 0px) + 4.7rem);
+  z-index: 30;
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.chip-scroll {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0.55rem var(--page-pad);
+  flex-wrap: nowrap;
+}
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--chip);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.chip-scroll a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+section {
+  scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 8.4rem);
+  margin: 1.25rem 0 1.75rem;
+}
+.section-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 750;
+  color: var(--accent);
+}
+.bullets {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+.bullets li { margin: 0.4rem 0; }
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1rem 0.85rem;
+  margin: 0 0 0.85rem;
+  box-shadow: var(--shadow);
+}
+.card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.08rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.why {
+  margin: 0 0 0.55rem;
+  font-size: 0.92rem;
+  color: var(--why);
+  font-weight: 600;
+}
+.summary { margin: 0; }
+.summary p { margin: 0 0 0.55rem; }
+.summary p:last-child { margin-bottom: 0; }
+details.sources {
+  margin-top: 0.65rem;
+  border-top: 1px dashed var(--border);
+  padding-top: 0.35rem;
+}
+details.sources summary {
+  cursor: pointer;
+  list-style: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+details.sources summary::-webkit-details-marker { display: none; }
+details.sources summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+details.sources[open] summary::before { content: "▾"; }
+.sources ol {
+  margin: 0.25rem 0 0.5rem;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+}
+.sources li { margin: 0.35rem 0; }
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+.footer {
+  margin: 2rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+#top-btn {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--top-btn);
+  color: var(--top-btn-fg);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 50;
+  box-shadow: var(--shadow);
+  -webkit-tap-highlight-color: transparent;
+}
+#top-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+@media (min-width: 768px) {
+  .card { padding: 1.15rem 1.25rem 1rem; }
+  .card h3 { font-size: 1.15rem; }
+  .site-header h1 { font-size: 1.4rem; }
+}
+@media (min-width: 1100px) {
+  .card { padding: 1.25rem 1.4rem 1.05rem; margin-bottom: 1rem; }
+  .section-title { font-size: 1.25rem; }
+}
+</style>
+</head>
+<body>
+<div id="top"></div>
+
+<header class="site-header">
+  <div class="inner">
+    <p class="kicker">全球要闻简报</p>
+    <h1>晚报 · 2026年9月15日</h1>
+    <p class="meta">生成 19:15（亚洲/上海）· 覆盖约过去12小时 · 12条主稿</p>
+  </div>
+</header>
+
+<nav class="chip-nav" aria-label="栏目导航">
+  <div class="chip-scroll">
+    <a href="#highlights">要点</a>
+    <a href="#finance">财经</a>
+    <a href="#tech">科技</a>
+    <a href="#politics">政治</a>
+    <a href="#military">军事</a>
+    <a href="#watch">关注</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section id="highlights">
+    <h2 class="section-title">今日要点</h2>
+    <ul class="bullets">
+      <li><span class="tag">更新</span>布伦特升破107美元；霍尔木兹商品船骤降至4艘；高盛情景指向120–130美元。</li>
+      <li>美债10年期收益率触及约5.02%，2007年以来最高；美联储周三加息概率逾九成。</li>
+      <li><span class="tag">更新</span>胡塞再袭沙特卡米斯穆谢特空军基地，联军称13名平民受伤；美方仍拒直接军事介入。</li>
+      <li>北约在立陶宛击落无人机；丹麦称俄护卫舰对直升机发射照明弹。</li>
+      <li>美军首次确认在轨“太空控制武器”；中方警告外空军备竞赛。</li>
+      <li><span class="tag">更新</span>泽连斯基要求可靠长期安排才停打能源；特朗普此前宣称双方已同意。</li>
+      <li>投资者担忧AI资本开支叙事松动；苹果Siri AI以英文测试版上线。</li>
+      <li>中国新技术出境限制生效；日本议员团赴京，防务开支目标讨论升温。</li>
+    </ul>
+  </section>
+
+  <section id="finance">
+    <h2 class="section-title">财经</h2>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>布伦特升破107美元，沙特管道停运与霍尔木兹双压供应</h3>
+      <p class="why">为何重要：东西向管道是霍尔木兹受阻后的关键绕道出口；通航与修复预期恶化将推高通胀与加息押注。</p>
+      <div class="summary">
+        <p>路透社9月15日报道，布伦特一度涨至约107.35美元/桶，WTI约103.53美元。焦点仍是沙特东西向管道停运、胡塞再袭与海湾对伊会谈推迟。Kpler显示霍尔木兹周一商品船仅4艘（前一日10艘）。高盛称修复评估从“很快”到约8周，冲突升级情景下布伦特或破120美元；Capital Economics指管道关闭数周且海峡不恢复时，价格或向130美元靠近。阿曼方面称油轮“El Gaia”遭袭后正被拖往港口。管道复运与袭击责任仍属发展中事项。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/business/energy/oil-prices-rise-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-2026-09-15/">Reuters（2026-09-15 00:36 UTC）</a></li>
+          <li><a href="https://www.reuters.com/world/middle-east/houthis-strike-saudi-targets-anew-talks-over-strait-hormuz-stall-2026-09-15/">Reuters 胡塞再袭（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>美债10年期收益率触及约5.02%，全球债市承压待美联储决议</h3>
+      <p class="why">为何重要：10年期美债是全球融资成本锚；突破心理关口叠加能源通胀，抬高按揭、企业债与股市估值压力。</p>
+      <div class="summary">
+        <p>彭博等报道，美债10年期收益率周二最多升至5.02%，为2007年以来最高；周一已一度破5%。推手包括油价、财政发债与加息预期。利率互换显示周三加息概率逾90%，若落地将是2023年来首次升息，目标区间料至3.75%–4.00%。亚洲股市谨慎，同时等待日银会议。沃什会后沟通仍是关键不确定点。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-09-15/us-10-year-treasury-yields-rise-to-highest-level-since-2007">Bloomberg（2026-09-15）</a></li>
+          <li><a href="https://www.straitstimes.com/business/us-10-year-treasury-yield-breaches-5-as-inflation-supply-worries-mount">The Straits Times / Bloomberg（2026-09-15）</a></li>
+          <li><a href="https://www.reuters.com/world/asia-pacific/global-markets-global-markets-2026-09-15/">Reuters 亚洲市场（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>俄顶尖柴油炼厂约半数因无人机袭击大幅减产</h3>
+      <p class="why">为何重要：俄罗斯是重要柴油出口来源；炼厂受损与能源停火谈判并行，放大欧洲燃料与油价风险。</p>
+      <div class="summary">
+        <p>路透测算称，俄六座顶级柴油炼厂中约半数在9月因无人机袭击被迫显著减产或停产。这与乌远程打击叙事相互印证，也使“互不打击能源”安排更显紧迫。具体厂名与出口影响仍在核实。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/business/energy/oil-prices-rise-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-2026-09-15/">Reuters（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="tech">
+    <h2 class="section-title">科技</h2>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>市场消化“放缓前沿”冲击，紧盯近8000亿美元AI资本开支</h3>
+      <p class="why">为何重要：AI基建是近年美股主引擎；若被解读为订单放缓，半导体与云厂商估值将同步承压。</p>
+      <div class="summary">
+        <p>路透报道，阿莫迪呼吁放缓能力跃进并获奥特曼、马斯克等呼应后，投资者对AI资本开支转为谨慎。美银估算超大规模科技公司2026年资本开支约7950亿美元。费城半导体指数周一重挫；部分策略师认为可信安全框架长期或利于开支可持续。特朗普称AI安全威胁是“骗局”；凯瑟琳·伍德则称业界承诺有助于行业发展。尚无公开证据显示数据中心订单已被大规模取消。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/legal/transactional/investors-nervous-about-ai-spending-slowdown-after-industry-warnings-2026-09-15/">Reuters（2026-09-15 05:03 UTC）</a></li>
+          <li><a href="https://www.reuters.com/business/autos-transportation/arks-wood-says-global-ai-leaders-pledge-is-positive-technology-development-2026-09-15/">Reuters / Ark's Wood（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>苹果Siri AI随iOS 27等系统以英文测试版上线</h3>
+      <p class="why">为何重要：全球最大消费电子生态落地新一代助手，将重塑移动端AI分发，并凸显中欧监管差异。</p>
+      <div class="summary">
+        <p>苹果9月14日宣布Siri AI以英文测试版推出，覆盖iOS/iPadOS/macOS/watchOS/visionOS 27；法语、日语、韩语、葡萄牙语与西班牙语计划10月跟进。媒体称暂不覆盖欧盟手机/平板/手表端与中国。硬件门槛绑定支持Apple Intelligence的机型。区域开放时间表仍属发展中事项。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/">Apple Newsroom（2026-09-14）</a></li>
+          <li><a href="https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/">Apple 系统更新（2026-09-14）</a></li>
+          <li><a href="https://9to5mac.com/2026/09/14/here-are-the-requirements-to-get-siri-ai-in-ios-27/">9to5Mac（2026-09-14）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>中国新技术与国家安全出境限制正式生效</h3>
+      <p class="why">为何重要：人员跨境流动与技术安全挂钩，可能影响跨国研发协作、人才流动与合规成本。</p>
+      <div class="summary">
+        <p>路透报道，中国9月15日起实施新规定，可限制被认为威胁国家技术安全的公民出境；对境外危害国安行为后回国者可处六个月至三年出境禁令，外国人亦可被拒入境一至五年。规则7月公布，聚焦出口管制与技术进出口违规。具体执法案例仍有待观察。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/world/china/chinas-new-tech-national-security-exit-rules-take-effect-2026-09-15/">Reuters（2026-09-15 02:43 UTC）</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="politics">
+    <h2 class="section-title">政治</h2>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>胡塞再袭沙特南部军事目标，霍尔木兹外交窗口继续推迟</h3>
+      <p class="why">为何重要：红海西岸争夺与海湾能源设施联动，压缩地区降温空间，并牵动美国是否扩大介入。</p>
+      <div class="summary">
+        <p>胡塞周一称袭击卡米斯穆谢特空军基地；联军称13名平民受伤。消息人士称华盛顿迄今拒绝沙特直接军事介入请求。雷扎伊称满足伊方条件前不会谈判。油轮“El Gaia”受损原因各方说法不一。会谈重启时间与美方介入边界仍不确定。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/world/middle-east/houthis-strike-saudi-targets-anew-talks-over-strait-hormuz-stall-2026-09-15/">Reuters（2026-09-15）</a></li>
+          <li><a href="https://finance.sina.com.cn/jjxw/2026-09-15/doc-inirvzhn4090981.shtml">新浪财经综合（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>泽连斯基：需可靠长期安排才停打能源，质疑俄方意愿</h3>
+      <p class="why">为何重要：能源互不打击若落地将影响冬季作战与全球油品供应；若仅口头则加剧盟国协调混乱。</p>
+      <div class="summary">
+        <p>泽连斯基表示，若伙伴能确保俄方停止打击乌能源与关键基础设施，乌方愿停打；他强调不确定俄方履约意愿，并要求具体方案，以回应特朗普“双方已同意”的声明。外交人士称协议仍在起草。文本、监督机制与生效时间均未确认。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/world/europe/ukraine-wants-specifics-partners-halting-strikes-zelenskiy-says-2026-09-14/">Reuters（2026-09-14 17:46 UTC）</a></li>
+          <li><a href="https://www.theguardian.com/world/2026/sep/15/ukraine-war-briefing-no-energy-ceasefire-until-russia-stops-zelenskyy-confirms-after-trump-claim">The Guardian（2026-09-15）</a></li>
+          <li><a href="https://www.france24.com/en/live-news/20260915-drone-shot-down-by-nato-over-lithuania">AFP / France 24（2026-09-14/15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>中日议员团赴京接触；日本讨论防务开支目标提至GDP约3.5%</h3>
+      <p class="why">为何重要：台海相关表述后中日官方往来近乎停摆；防务开支跃升或冲击日本财政与地区军力平衡。</p>
+      <div class="summary">
+        <p>日中友好议员联盟八人代表团抵京寻求恢复往来；古村昌宏称接触是“重大一步”。彭博报道日本考虑将中期防务开支目标提至GDP约3.5%。政府级正式会谈与预算案细节尚未敲定。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.japantimes.co.jp/news/2026/09/15/japan/politics/china-japan-relations-focus/">The Japan Times（2026-09-15）</a></li>
+          <li><a href="https://mainichi.jp/english/articles/20260915/p2g/00m/0na/004000c">Mainichi / Kyodo（2026-09-15）</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-09-15/japan-eyes-defense-spending-worth-3-5-of-gdp-amid-us-pressure">Bloomberg（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>以黎大使华盛顿续谈，南黎空袭后外交与战场并行</h3>
+      <p class="why">为何重要：6月框架协议执行停滞叠加平民伤亡上升，会晤成败影响黎以是否滑向更大规模交火。</p>
+      <div class="summary">
+        <p>黎以驻美大使定于周二在华盛顿会晤，讨论6月框架协议落实；罗马正式谈判推迟至10月。黎卫生部称周一南黎空袭至少13死（含儿童）。会谈成果仍待核实。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.aa.com.tr/en/americas/lebanese-israeli-ambassadors-to-meet-in-washington-on-tuesday-to-break-deadlock-in-talks/4057213">Anadolu Agency（2026-09-14）</a></li>
+          <li><a href="https://www.arabnews.jp/en/middle-east/israeli-strikes-on-southern-lebanese-town-kill-13-as-fears-of-escalation-mount-3000125">Arab News / Reuters</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="military">
+    <h2 class="section-title">军事</h2>
+
+    <article class="card">
+      <h3>北约在立陶宛击落无人机；俄舰对丹麦直升机发射照明弹</h3>
+      <p class="why">为何重要：连串东翼事件显示乌战外溢风险上升，迫使北约同步加强防空警戒与政治响应。</p>
+      <div class="summary">
+        <p>立陶宛总统称进入领空的无人机被北约战机摧毁，或自白俄罗斯方向进入。波兰启动预防性空中行动。丹麦称俄护卫舰对“Fennec”直升机发射两枚照明弹，已召见俄大使。无人机国籍鉴定与俄方回应尚未公布。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.france24.com/en/live-news/20260915-drone-shot-down-by-nato-over-lithuania">France 24 / AFP（2026-09-15）</a></li>
+          <li><a href="https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-poland-putin-drones-strikes-b3050217.html">The Independent（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>美军首次确认已部署在轨“太空控制武器”，中方警告军备竞赛</h3>
+      <p class="why">为何重要：公开承认在轨攻防能力，可能加速大国外空军事化与卫星资产风险评估。</p>
+      <div class="summary">
+        <p>空军部长梅因克周一表示美已拥有在轨太空控制武器，未披露类型与数量。太空军称可涵盖动能与非动能手段。BBC报道中方周二敦促美方停止扩大外空军力。专家猜测更可能是电子战平台。具体参数仍属机密。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://www.bbc.com/news/articles/ck790xg41ygro">BBC（2026-09-15）</a></li>
+          <li><a href="https://defensescoop.com/2026/09/14/meink-space-force-has-deployed-space-control-weapons-to-orbit/">DefenseScoop（2026-09-14）</a></li>
+          <li><a href="https://www.washingtonpost.com/national-security/2026/09/14/us-has-deployed-first-space-based-weapon-air-force-secretary-says/">Washington Post（2026-09-14）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>乌克兰加速研廉价拦截手段，应对俄喷气动力无人机激增</h3>
+      <p class="why">为何重要：喷气动力自杀无人机速度与产量优势，正消耗乌昂贵防空导弹库存。</p>
+      <div class="summary">
+        <p>路透报道俄方夏季喷气动力无人机使用量约增六倍，月产量估约3000架。7月试射中多款拦截原型在时速超400公里时难控。泽连斯基称逾60家乌企参与研发。大规模列装时间表仍不确定。</p>
+      </div>
+      <details class="sources">
+        <summary>来源</summary>
+        <ol>
+          <li><a href="https://sg.headtopics.com/news/ukraine-struggles-to-counter-russia-s-fast-jet-drones-amid-87748234">Reuters via HeadTopics（2026-09-15）</a></li>
+          <li><a href="https://www.defensenews.com/global/europe/2026/09/09/ukrainian-industry-scrambles-to-field-interceptors-against-russian-jet-drones/">Defense News（背景，2026-09-09）</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="watch">
+    <h2 class="section-title">后续关注</h2>
+    <ul class="bullets">
+      <li>美联储9月16日决议与沃什会后沟通：是否加息25个基点、如何影响美债5%关口。</li>
+      <li>沙特东西向管道修复进度与延布出口：评估从数日至约8周不等。</li>
+      <li>乌俄能源互不打击安排：监督机制、起止时间与覆盖范围。</li>
+      <li>华盛顿以黎大使会晤结果：能否在罗马10月谈判前稳住南黎战火。</li>
+      <li>外空武器公开化后续：中俄是否披露对等能力，商业卫星运营是否跟进调整。</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>来源：Reuters；Bloomberg；AFP / France 24；BBC；The Guardian；Apple Newsroom；DefenseScoop；Washington Post；Anadolu Agency；The Japan Times；Mainichi/Kyodo；Defense News；The Straits Times；Arab News；新浪财经（中文综合核对）</p>
+    <p>全球要闻简报 · 2026年9月15日晚报 · 仅供信息摘要，请以原报道为准</p>
+  </footer>
+</main>
+
+<a href="#top" id="top-btn" aria-label="回到顶部">顶部</a>
+</body>
+</html>
