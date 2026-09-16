@@ -23,6 +23,17 @@ python3 scripts/build_site.py
 
 Enable **Settings → Pages → Source: GitHub Actions**. Push to `main` runs `.github/workflows/pages.yml` and publishes the site (typically `https://<user>.github.io/newsbot/`).
 
+### Auto-merge briefing PRs
+
+`.github/workflows/auto-merge-newsbot.yml` watches PRs whose head branch starts with `cursor/chinese-news-brief` or `cursor/chinese-global-news-brief`:
+
+1. Marks draft PRs as ready  
+2. Lands only `newsletters/**` files onto `main`  
+3. Regenerates `index.html` / `archive.html` / `editions.json` (avoids morning/evening conflicts on generated Pages files)  
+4. Merges or closes the PR and deploys Pages  
+
+No manual merge is required for normal newsbot runs.
+
 Responsive reading widths (phone / tablet / desktop):
 
 - phone: ~42rem
