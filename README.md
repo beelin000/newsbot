@@ -25,14 +25,23 @@ Enable **Settings → Pages → Source: GitHub Actions**. Push to `main` runs `.
 
 ### Auto-merge briefing PRs
 
-`.github/workflows/auto-merge-newsbot.yml` watches PRs whose head branch starts with `cursor/chinese-news-brief` or `cursor/chinese-global-news-brief`:
+`.github/workflows/auto-merge-newsbot.yml` watches PRs whose head branch starts with `cursor/chinese-news-brief` or `cursor/chinese-global-news-brief`.
+
+**Only trusted PRs are auto-merged.** All of the following must hold:
+
+1. Head branch is in **this same repository** (forks are blocked)
+2. PR author is allowlisted: `beelin000` (you) or `cursor[bot]` (Cursor agent / automation)
+3. Workflow trigger actor is allowlisted: `beelin000`, `cursor[bot]`, or `github-actions[bot]`
+4. Target branch is `main`
+
+Then the workflow:
 
 1. Marks draft PRs as ready  
 2. Lands only `newsletters/**` files onto `main`  
 3. Regenerates `index.html` / `archive.html` / `editions.json` (avoids morning/evening conflicts on generated Pages files)  
 4. Merges or closes the PR and deploys Pages  
 
-No manual merge is required for normal newsbot runs.
+External or fork PRs matching the branch name pattern are **not** auto-merged.
 
 Responsive reading widths (phone / tablet / desktop):
 

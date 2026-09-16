@@ -1,8 +1,8 @@
 name: Auto-merge newsbot PRs
 
-# Lands Cursor newsbot briefing PRs onto main automatically.
-# Draft PRs are marked ready first. Generated site files (index/archive/editions)
-# are always rebuilt on main to avoid conflicts between morning/evening runs.
+# Lands trusted newsbot briefing PRs onto main automatically.
+# SECURITY: only same-repo PRs opened by allowlisted actors (repo owner /
+# beelin000, or Cursor's GitHub App). External/fork PRs are never auto-merged.
 
 on:
   pull_request:
@@ -20,15 +20,60 @@ permissions:
 
 jobs:
   merge:
+    # Fail closed: same repo, into main, newsbot branch prefix, trusted author.
     if: >
       github.event.pull_request.base.ref == 'main' &&
       github.event.pull_request.state != 'closed' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
       (
         startsWith(github.head_ref, 'cursor/chinese-news-brief') ||
         startsWith(github.head_ref, 'cursor/chinese-global-news-brief')
+      ) &&
+      (
+        github.event.pull_request.user.login == 'beelin000' ||
+        github.event.pull_request.user.login == 'cursor[bot]'
       )
     runs-on: ubuntu-latest
     steps:
+      - name: Verify trusted actor (fail closed)
+        env:
+          PR_USER: ${{ github.event.pull_request.user.login }}
+          PR_USER_TYPE: ${{ github.event.pull_request.user.type }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          BASE_REPO: ${{ github.repository }}
+          ACTOR: ${{ github.actor }}
+          ASSOCIATION: ${{ github.event.pull_request.author_association }}
+        run: |
+          set -euo pipefail
+          echo "PR author=${PR_USER} type=${PR_USER_TYPE} association=${ASSOCIATION}"
+          echo "actor=${ACTOR} head=${HEAD_REPO} base=${BASE_REPO}"
+
+          if [[ "${HEAD_REPO}" != "${BASE_REPO}" ]]; then
+            echo "::error::Refusing auto-merge: PR head is not the same repository (forks blocked)."
+            exit 1
+          fi
+
+          case "${PR_USER}" in
+            beelin000|cursor\[bot\])
+              echo "Author allowlisted."
+              ;;
+            *)
+              echo "::error::Refusing auto-merge: author '${PR_USER}' is not allowlisted (beelin000|cursor[bot])."
+              exit 1
+              ;;
+          esac
+
+          # Triggering actor must also be trusted (blocks unexpected re-runs by others).
+          case "${ACTOR}" in
+            beelin000|cursor\[bot\]|github-actions\[bot\])
+              echo "Trigger actor allowlisted."
+              ;;
+            *)
+              echo "::error::Refusing auto-merge: github.actor '${ACTOR}' is not allowlisted."
+              exit 1
+              ;;
+          esac
+
       - name: Checkout main
         uses: actions/checkout@v4
         with:
