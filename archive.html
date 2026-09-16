@@ -3,46 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light dark">
-<meta name="description" content="全球要闻简报 · 往期列表">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报 · 简报库">
 <title>往期简报｜全球要闻简报</title>
 <style>
+
 :root {
-  --bg: #f6f4ef;
-  --bg-card: #ffffff;
-  --text: #1a1a1a;
-  --muted: #5c5c5c;
-  --border: #e2ddd3;
-  --accent: #0b4f6c;
-  --header-bg: rgba(246, 244, 239, 0.92);
-  --measure: 42rem;
+  --bg: #0e1211;
+  --bg-elevated: #141a18;
+  --bg-input: #101614;
+  --bg-card: #151c1a;
+  --bg-card-hover: #1a2220;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --faint: #5c675f;
+  --border: #24302c;
+  --border-strong: #2f4039;
+  --accent: #7eb68d;
+  --accent-dim: #3d5c4a;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --measure: 72rem;
   --page-pad: 1rem;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #121416;
-    --bg-card: #1c1f24;
-    --text: #f0f0f0;
-    --muted: #a8a8a8;
-    --border: #2e333a;
-    --accent: #7eb8d4;
-    --header-bg: rgba(18, 20, 22, 0.94);
-  }
+  --radius: 6px;
+  --header-h: 3.25rem;
 }
 @media (min-width: 768px) {
-  :root { --measure: 52rem; --page-pad: 1.5rem; }
+  :root { --page-pad: 1.5rem; }
 }
 @media (min-width: 1100px) {
-  :root { --measure: 60rem; --page-pad: 2rem; }
-  body { font-size: 18px; }
+  :root { --page-pad: 2rem; }
+  body { font-size: 16px; }
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
-  font-size: 17px;
-  line-height: 1.75;
+  font-size: 15px;
+  line-height: 1.6;
   color: var(--text);
   background: var(--bg);
   padding:
@@ -52,71 +52,485 @@ body {
     env(safe-area-inset-left, 0px);
   text-wrap: pretty;
 }
-.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 1rem var(--page-pad); }
-h1 { margin: 0 0 0.35rem; font-size: 1.4rem; }
-.meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 1.25rem; }
-.nav { display: flex; gap: 1rem; margin-bottom: 1.25rem; }
-.nav a {
-  color: var(--accent);
-  font-weight: 650;
-  text-decoration: none;
-  min-height: 44px;
+a { color: var(--accent); text-decoration: none; }
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.topbar {
+  border-bottom: 1px solid var(--border);
+  background: rgba(14, 18, 17, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+.topbar .inner {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: 0.75rem var(--page-pad);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: var(--header-h);
+}
+.brand {
   display: inline-flex;
   align-items: center;
+  gap: 0.55rem;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-size: 0.95rem;
 }
-ul {
+.brand-mark {
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 4px;
+  background: linear-gradient(145deg, var(--accent), var(--accent-dim));
+  box-shadow: 0 0 0 1px rgba(126,182,141,0.25);
+}
+.top-links {
+  display: flex;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+.top-links a { color: var(--muted); }
+.top-links a:hover { color: var(--text); }
+.wrap {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: 1.1rem var(--page-pad) 2rem;
+}
+.tabs {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  margin: 0 0 1.25rem;
+}
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 0.95rem;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.tab[aria-current="page"] {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+  background: var(--accent-soft);
+}
+.tab:hover { color: var(--text); }
+.filters {
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 1.15rem;
+}
+.search {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.7rem 0.95rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-input);
+  color: var(--text);
+  font: inherit;
+}
+.search::placeholder { color: var(--faint); }
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.chip {
+  appearance: none;
+  cursor: pointer;
+  min-height: 36px;
+  padding: 0 0.8rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+}
+.chip[aria-pressed="true"] {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+  background: var(--accent-soft);
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0.35rem 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.list {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
-}
-li {
-  border-bottom: 1px solid var(--border);
-  padding: 0;
-}
-li:last-child { border-bottom: none; }
-li a {
   display: flex;
-  align-items: center;
-  min-height: 52px;
-  padding: 0.75rem 1rem;
-  color: var(--text);
-  text-decoration: none;
+  flex-direction: column;
+  gap: 0.65rem;
 }
-li a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
-.badge {
-  margin-left: 0.6rem;
+.card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem 1rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-strong);
+}
+@media (min-width: 900px) {
+  .card {
+    grid-template-columns: 5.5rem 1fr auto;
+    align-items: start;
+    padding: 1.15rem 1.25rem;
+  }
+}
+.card-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 4.5rem;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 1.55rem;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--accent-dim);
+  border-radius: 4px;
+  color: var(--accent);
+  background: var(--accent-soft);
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  border-radius: 4px;
-  padding: 0.05rem 0.4rem;
+  letter-spacing: 0.02em;
 }
+.side-date {
+  color: var(--faint);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.35;
+}
+.card-main { min-width: 0; }
+.card-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.02rem;
+  line-height: 1.45;
+  font-weight: 700;
+  color: var(--text);
+}
+.card-title a { color: inherit; }
+.card-title a:hover { color: var(--accent); }
+.card-summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  color: var(--faint);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+@media (min-width: 900px) {
+  .card-meta {
+    align-items: flex-end;
+    text-align: right;
+    min-width: 9.5rem;
+    padding-top: 0.15rem;
+  }
+}
+.badge-new {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.05rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--accent-dim);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.read-link {
+  color: var(--accent);
+  font-weight: 650;
+  font-size: 0.88rem;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+}
+.read-link::after { content: " ›"; }
+.empty {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+.footer {
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--faint);
+  font-size: 0.8rem;
+}
+
 </style>
 </head>
 <body>
+<header class="topbar">
+  <div class="inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>全球要闻简报</a>
+    <nav class="top-links" aria-label="站点">
+      <a href="newsletters/全球要闻简报-2026-09-16-晚上.html">最新一期</a>
+      <a href="archive.html">往期</a>
+    </nav>
+  </div>
+</header>
+
 <main class="wrap">
-  <nav class="nav" aria-label="站点导航">
-    <a href="index.html">最新一期</a>
-    <a href="archive.html" aria-current="page">往期简报</a>
+  <nav class="tabs" aria-label="栏目">
+    <a class="tab" href="index.html">简报库</a>
+    <a class="tab" href="newsletters/全球要闻简报-2026-09-16-晚上.html">最新阅读</a>
+    <a class="tab" href="archive.html" aria-current="page">全部期次</a>
   </nav>
-  <h1>往期简报</h1>
-  <p class="meta">共 9 期 · 生成于 2026-09-16 11:25（UTC）</p>
-  <ul>
-      <li><a href="newsletters/全球要闻简报-2026-09-16-晚上.html">全球要闻简报｜2026-09-16｜晚报</a> <span class="badge">最新</span></li>
-      <li><a href="newsletters/全球要闻简报-2026-09-16-上午.html">全球要闻简报｜2026-09-16｜早报</a></li>
-      <li><a href="newsletters/全球要闻简报-2026-09-15-晚上.html">全球要闻简报｜2026-09-15｜晚报</a></li>
-      <li><a href="newsletters/全球要闻简报-2026-09-15-上午.html">全球要闻简报｜2026-09-15｜早报</a></li>
-      <li><a href="newsletters/全球要闻简报-2026-09-14-晚上.html">全球要闻简报｜2026-09-14｜晚报</a></li>
-      <li><a href="newsletters/全球要闻简报-2026-09-14-上午.html">全球要闻简报｜2026-09-14｜早报</a></li>
-      <li><a href="newsletters/全球要闻简报-2026-09-13-晚上.html">全球要闻简报｜2026-09-13｜晚报</a></li>
-      <li><a href="newsletters/全球要闻简报-2026-09-13-上午.html">全球要闻简报｜2026-09-13｜早报</a></li>
-      <li><a href="newsletters/全球要闻简报-2026-09-12-晚上.html">全球要闻简报｜2026-09-12｜晚报</a></li>
+
+  <section class="filters" aria-label="筛选">
+    <label class="sr-only" for="q" style="position:absolute;left:-9999px">搜索</label>
+    <input class="search" id="q" type="search" placeholder="搜索标题或要点…" autocomplete="off">
+    <div class="chip-row" role="group" aria-label="版次筛选">
+      <button type="button" class="chip" data-filter="all" aria-pressed="true">全部</button>
+      <button type="button" class="chip" data-filter="晚上" aria-pressed="false">晚报</button>
+      <button type="button" class="chip" data-filter="上午" aria-pressed="false">早报</button>
+    </div>
+  </section>
+
+  <div class="toolbar">
+    <div>共 <strong id="count">9</strong> 篇简报</div>
+    <div>生成于 2026-09-16 11:38（UTC）</div>
+  </div>
+
+  <ul class="list" id="list">
+
+    <li class="card" data-slot="晚上" data-title="全球要闻简报｜2026-09-16｜晚报" data-summary="布伦特回落至约107–108美元仍近四个月高位；延布装运暂停、欧洲实物货一度超130美元；美原油库存意外增加。；亚股谨慎反弹，美债10年期收益率回落至约4.99%；美联储决议与点阵图待北京时间凌晨揭晓，期货约93%定价加息25个基点。">
+      <div class="card-side">
+        <span class="tag">晚报</span>
+        <span class="side-date">2026-09-16</span>
+      </div>
+      <div class="card-main">
+        <h2 class="card-title"><a href="newsletters/全球要闻简报-2026-09-16-晚上.html">全球要闻简报｜2026-09-16｜晚报</a></h2>
+        <p class="card-summary">布伦特回落至约107–108美元仍近四个月高位；延布装运暂停、欧洲实物货一度超130美元；美原油库存意外增加。；亚股谨慎反弹，美债10年期收益率回落至约4.99%；美联储决议与点阵图待北京时间凌晨揭晓，期货约93%定价加息25个基点。</p>
+      </div>
+      <div class="card-meta">
+        <div>发布 2026年9月16日</div>
+        <div>版次 晚报</div>
+        <span class="badge-new">最新</span>
+        <a class="read-link" href="newsletters/全球要闻简报-2026-09-16-晚上.html">阅读</a>
+      </div>
+    </li>
+
+    <li class="card" data-slot="上午" data-title="全球要闻简报｜2026-09-16｜早报" data-summary="布伦特收于约108.75美元、WTI约105.83美元；美债10年期盘中触及约5.041%；美联储决议前加息概率约94%–95%。；美国能源部长称沙特东西向管道“数日内”可恢复，与此前“数周修复”口径并存，油市仍高度敏感。">
+      <div class="card-side">
+        <span class="tag">早报</span>
+        <span class="side-date">2026-09-16</span>
+      </div>
+      <div class="card-main">
+        <h2 class="card-title"><a href="newsletters/全球要闻简报-2026-09-16-上午.html">全球要闻简报｜2026-09-16｜早报</a></h2>
+        <p class="card-summary">布伦特收于约108.75美元、WTI约105.83美元；美债10年期盘中触及约5.041%；美联储决议前加息概率约94%–95%。；美国能源部长称沙特东西向管道“数日内”可恢复，与此前“数周修复”口径并存，油市仍高度敏感。</p>
+      </div>
+      <div class="card-meta">
+        <div>发布 2026年9月16日</div>
+        <div>版次 早报</div>
+        
+        <a class="read-link" href="newsletters/全球要闻简报-2026-09-16-上午.html">阅读</a>
+      </div>
+    </li>
+
+    <li class="card" data-slot="晚上" data-title="全球要闻简报｜2026-09-15｜晚报" data-summary="布伦特升破107美元；霍尔木兹商品船流量骤降至4艘；高盛情景指向120–130美元区间。；美债10年期收益率触及约5.02%，为2007年以来最高；美联储周三决议前夕加息概率逾九成。">
+      <div class="card-side">
+        <span class="tag">晚报</span>
+        <span class="side-date">2026-09-15</span>
+      </div>
+      <div class="card-main">
+        <h2 class="card-title"><a href="newsletters/全球要闻简报-2026-09-15-晚上.html">全球要闻简报｜2026-09-15｜晚报</a></h2>
+        <p class="card-summary">布伦特升破107美元；霍尔木兹商品船流量骤降至4艘；高盛情景指向120–130美元区间。；美债10年期收益率触及约5.02%，为2007年以来最高；美联储周三决议前夕加息概率逾九成。</p>
+      </div>
+      <div class="card-meta">
+        <div>发布 2026年9月15日</div>
+        <div>版次 晚报</div>
+        
+        <a class="read-link" href="newsletters/全球要闻简报-2026-09-15-晚上.html">阅读</a>
+      </div>
+    </li>
+
+    <li class="card" data-slot="上午" data-title="全球要闻简报｜2026-09-15｜早报" data-summary="特朗普宣称乌俄同意互不打击能源目标；泽连斯基称尚不确定俄方意愿，油价盘中回吐部分涨幅。；周一油价冲高回落：布伦特收涨约1%至105.68美元，盘中一度大涨近5%；延布库存窗口仍紧。">
+      <div class="card-side">
+        <span class="tag">早报</span>
+        <span class="side-date">2026-09-15</span>
+      </div>
+      <div class="card-main">
+        <h2 class="card-title"><a href="newsletters/全球要闻简报-2026-09-15-上午.html">全球要闻简报｜2026-09-15｜早报</a></h2>
+        <p class="card-summary">特朗普宣称乌俄同意互不打击能源目标；泽连斯基称尚不确定俄方意愿，油价盘中回吐部分涨幅。；周一油价冲高回落：布伦特收涨约1%至105.68美元，盘中一度大涨近5%；延布库存窗口仍紧。</p>
+      </div>
+      <div class="card-meta">
+        <div>发布 2026年9月15日</div>
+        <div>版次 早报</div>
+        
+        <a class="read-link" href="newsletters/全球要闻简报-2026-09-15-上午.html">阅读</a>
+      </div>
+    </li>
+
+    <li class="card" data-slot="晚上" data-title="全球要闻简报｜2026-09-14｜晚报" data-summary="周一亚欧股市承压、布伦特续涨逾2%–3%；卫星图显示沙特东西向管道泵站严重烧损，美柴油零售均价创新高。；萨拉拉霍尔木兹外长会正式推迟；伊朗公布77艘“违规船只”名单并威胁罚款、扣押或没收。">
+      <div class="card-side">
+        <span class="tag">晚报</span>
+        <span class="side-date">2026-09-14</span>
+      </div>
+      <div class="card-main">
+        <h2 class="card-title"><a href="newsletters/全球要闻简报-2026-09-14-晚上.html">全球要闻简报｜2026-09-14｜晚报</a></h2>
+        <p class="card-summary">周一亚欧股市承压、布伦特续涨逾2%–3%；卫星图显示沙特东西向管道泵站严重烧损，美柴油零售均价创新高。；萨拉拉霍尔木兹外长会正式推迟；伊朗公布77艘“违规船只”名单并威胁罚款、扣押或没收。</p>
+      </div>
+      <div class="card-meta">
+        <div>发布 2026年9月14日</div>
+        <div>版次 晚报</div>
+        
+        <a class="read-link" href="newsletters/全球要闻简报-2026-09-14-晚上.html">阅读</a>
+      </div>
+    </li>
+
+    <li class="card" data-slot="上午" data-title="全球要闻简报｜2026-09-14｜早报" data-summary="周一亚盘开盘布伦特跳涨逾3美元至约108美元；阿曼萨拉拉霍尔木兹外长会宣布推迟。；沙特东西向管道若数日内无法复运，延布港库存仅够维持出口约5–7天，买方警示或损及全球供应约4%。">
+      <div class="card-side">
+        <span class="tag">早报</span>
+        <span class="side-date">2026-09-14</span>
+      </div>
+      <div class="card-main">
+        <h2 class="card-title"><a href="newsletters/全球要闻简报-2026-09-14-上午.html">全球要闻简报｜2026-09-14｜早报</a></h2>
+        <p class="card-summary">周一亚盘开盘布伦特跳涨逾3美元至约108美元；阿曼萨拉拉霍尔木兹外长会宣布推迟。；沙特东西向管道若数日内无法复运，延布港库存仅够维持出口约5–7天，买方警示或损及全球供应约4%。</p>
+      </div>
+      <div class="card-meta">
+        <div>发布 2026年9月14日</div>
+        <div>版次 早报</div>
+        
+        <a class="read-link" href="newsletters/全球要闻简报-2026-09-14-上午.html">阅读</a>
+      </div>
+    </li>
+
+    <li class="card" data-slot="晚上" data-title="全球要闻简报｜2026-09-13｜晚报" data-summary="霍尔木兹再传商船遇袭：伊朗媒体称1死多伤；UKMTO通报射弹击中船只并起火。；沙特股市周日开盘下跌，市场消化东西向输油管道遇无人机袭击冲击。">
+      <div class="card-side">
+        <span class="tag">晚报</span>
+        <span class="side-date">2026-09-13</span>
+      </div>
+      <div class="card-main">
+        <h2 class="card-title"><a href="newsletters/全球要闻简报-2026-09-13-晚上.html">全球要闻简报｜2026-09-13｜晚报</a></h2>
+        <p class="card-summary">霍尔木兹再传商船遇袭：伊朗媒体称1死多伤；UKMTO通报射弹击中船只并起火。；沙特股市周日开盘下跌，市场消化东西向输油管道遇无人机袭击冲击。</p>
+      </div>
+      <div class="card-meta">
+        <div>发布 2026年9月13日</div>
+        <div>版次 晚报</div>
+        
+        <a class="read-link" href="newsletters/全球要闻简报-2026-09-13-晚上.html">阅读</a>
+      </div>
+    </li>
+
+    <li class="card" data-slot="上午" data-title="全球要闻简报｜2026-09-13｜早报" data-summary="金砖领导人新德里峰会通过《新德里宣言》，呼吁中东局势“最大克制”；习近平与莫迪举行双边会晤。；共同社：中方据报要求美方在川习会前勿批准新的对台军售，否则考虑取消习访美。">
+      <div class="card-side">
+        <span class="tag">早报</span>
+        <span class="side-date">2026-09-13</span>
+      </div>
+      <div class="card-main">
+        <h2 class="card-title"><a href="newsletters/全球要闻简报-2026-09-13-上午.html">全球要闻简报｜2026-09-13｜早报</a></h2>
+        <p class="card-summary">金砖领导人新德里峰会通过《新德里宣言》，呼吁中东局势“最大克制”；习近平与莫迪举行双边会晤。；共同社：中方据报要求美方在川习会前勿批准新的对台军售，否则考虑取消习访美。</p>
+      </div>
+      <div class="card-meta">
+        <div>发布 2026年9月13日</div>
+        <div>版次 早报</div>
+        
+        <a class="read-link" href="newsletters/全球要闻简报-2026-09-13-上午.html">阅读</a>
+      </div>
+    </li>
+
+    <li class="card" data-slot="晚上" data-title="全球要闻简报｜2026-09-12｜晚报" data-summary="美国8月CPI偏热后，市场对下周美联储加息25个基点的定价升至约八成半至九成；高盛、摩根大通等机构转向押注加息。；布伦特周五收跌，亚太暗盘一度跌破每桶100美元，但周线仍大幅上涨；美国柴油价格触及纪录高位，能源通胀压力未消。">
+      <div class="card-side">
+        <span class="tag">晚报</span>
+        <span class="side-date">2026-09-12</span>
+      </div>
+      <div class="card-main">
+        <h2 class="card-title"><a href="newsletters/全球要闻简报-2026-09-12-晚上.html">全球要闻简报｜2026-09-12｜晚报</a></h2>
+        <p class="card-summary">美国8月CPI偏热后，市场对下周美联储加息25个基点的定价升至约八成半至九成；高盛、摩根大通等机构转向押注加息。；布伦特周五收跌，亚太暗盘一度跌破每桶100美元，但周线仍大幅上涨；美国柴油价格触及纪录高位，能源通胀压力未消。</p>
+      </div>
+      <div class="card-meta">
+        <div>发布 2026年9月12日</div>
+        <div>版次 晚报</div>
+        
+        <a class="read-link" href="newsletters/全球要闻简报-2026-09-12-晚上.html">阅读</a>
+      </div>
+    </li>
   </ul>
+
+  <p class="footer">全球要闻简报 · 财经 / 科技 / 政治 / 军事 · 仅供信息摘要</p>
 </main>
+
+<script>
+(function () {
+  var q = document.getElementById('q');
+  var list = document.getElementById('list');
+  var count = document.getElementById('count');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip[data-filter]'));
+  var slot = 'all';
+
+  function apply() {
+    var query = (q.value || '').trim().toLowerCase();
+    var visible = 0;
+    Array.prototype.forEach.call(list.querySelectorAll('.card'), function (card) {
+      var slotOk = slot === 'all' || card.getAttribute('data-slot') === slot;
+      var hay = ((card.getAttribute('data-title') || '') + ' ' + (card.getAttribute('data-summary') || '')).toLowerCase();
+      var queryOk = !query || hay.indexOf(query) !== -1;
+      var show = slotOk && queryOk;
+      card.style.display = show ? '' : 'none';
+      if (show) visible += 1;
+    });
+    count.textContent = String(visible);
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      slot = chip.getAttribute('data-filter') || 'all';
+      chips.forEach(function (c) {
+        c.setAttribute('aria-pressed', c === chip ? 'true' : 'false');
+      });
+      apply();
+    });
+  });
+  q.addEventListener('input', apply);
+})();
+</script>
 </body>
 </html>
