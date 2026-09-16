@@ -1,0 +1,125 @@
+name: Auto-merge newsbot PRs
+
+# Lands Cursor newsbot briefing PRs onto main automatically.
+# Draft PRs are marked ready first. Generated site files (index/archive/editions)
+# are always rebuilt on main to avoid conflicts between morning/evening runs.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+concurrency:
+  group: newsbot-automerge-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  pages: write
+  id-token: write
+
+jobs:
+  merge:
+    if: >
+      github.event.pull_request.base.ref == 'main' &&
+      github.event.pull_request.state != 'closed' &&
+      (
+        startsWith(github.head_ref, 'cursor/chinese-news-brief') ||
+        startsWith(github.head_ref, 'cursor/chinese-global-news-brief')
+      )
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Fetch PR head
+        run: git fetch origin "pull/${{ github.event.pull_request.number }}/head:pr-head"
+
+      - name: Land briefing files and rebuild site
+        env:
+          PR: ${{ github.event.pull_request.number }}
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Bring over only newsletter paths changed in the PR (additive briefings).
+          mapfile -t CHANGED < <(git diff --name-only origin/main...pr-head)
+          landed=0
+          for f in "${CHANGED[@]}"; do
+            case "$f" in
+              newsletters/*)
+                if git cat-file -e "pr-head:$f" 2>/dev/null; then
+                  mkdir -p "$(dirname "$f")"
+                  git checkout pr-head -- "$f"
+                  echo "landed $f"
+                  landed=1
+                fi
+                ;;
+              *)
+                echo "skip generated/other path from PR: $f"
+                ;;
+            esac
+          done
+
+          python3 scripts/build_site.py
+
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No file changes after land/rebuild."
+          else
+            git add -A
+            git commit -m "Auto-land PR #${PR} (${HEAD_REF}) and refresh Pages index."
+            git push origin main
+          fi
+
+      - name: Mark ready and close as merged when possible
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+          # Draft → ready (ignore if already ready)
+          gh pr ready "$PR" --repo "$GITHUB_REPOSITORY" 2>/dev/null || true
+
+          # Prefer a real GitHub merge so the PR shows as MERGED.
+          if gh pr merge "$PR" --repo "$GITHUB_REPOSITORY" --merge --delete-branch; then
+            echo "Merged via gh pr merge"
+            exit 0
+          fi
+
+          # If branch is already reflected on main (land push) but merge conflicts
+          # on generated files, close with a note and delete the head branch.
+          echo "gh pr merge failed; closing after land-to-main."
+          gh pr close "$PR" --repo "$GITHUB_REPOSITORY" \
+            --comment "Auto-landed onto main (newsletter files + regenerated site index). Closed because a direct merge would conflict on generated Pages files." \
+            || true
+          HEAD_REF="${{ github.head_ref }}"
+          git push origin --delete "$HEAD_REF" 2>/dev/null || true
+
+  pages:
+    needs: merge
+    if: needs.merge.result == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Build static site
+        run: |
+          python3 scripts/build_site.py
+          mkdir -p _site
+          cp index.html archive.html editions.json .nojekyll _site/
+          cp -r newsletters _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
