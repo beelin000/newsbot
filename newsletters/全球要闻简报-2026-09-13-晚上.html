@@ -3,26 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
 <meta name="description" content="全球要闻简报｜2026年9月13日晚报">
 <title>晚报 · 2026年9月13日｜全球要闻简报</title>
 <style>
+/* newsbot-theme: investor-dark-v1 */
 :root {
-  --bg: #f6f4ef;
-  --bg-card: #ffffff;
-  --text: #1a1a1a;
-  --muted: #5c5c5c;
-  --border: #e2ddd3;
-  --accent: #0b4f6c;
-  --accent-soft: #e8f2f6;
-  --why: #8b4513;
-  --chip: #ffffff;
-  --header-bg: rgba(246, 244, 239, 0.92);
-  --shadow: 0 1px 3px rgba(0,0,0,0.06);
-  --top-btn: #0b4f6c;
-  --top-btn-fg: #ffffff;
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
   --measure: 42rem;
   --page-pad: 1rem;
+  --radius: 6px;
 }
 @media (min-width: 768px) {
   :root {
@@ -37,22 +42,37 @@
   }
   body { font-size: 18px; }
 }
-@media (prefers-color-scheme: dark) {
+}
+@media (min-width: 1100px) {
   :root {
-    --bg: #121416;
-    --bg-card: #1c1f24;
-    --text: #f0f0f0;
-    --muted: #a8a8a8;
-    --border: #2e333a;
-    --accent: #7eb8d4;
-    --accent-soft: #243039;
-    --why: #e0a070;
-    --chip: #1c1f24;
-    --header-bg: rgba(18, 20, 22, 0.94);
-    --shadow: 0 1px 3px rgba(0,0,0,0.35);
-    --top-btn: #7eb8d4;
-    --top-btn-fg: #121416;
+    --measure: 60rem;
+    --page-pad: 2rem;
   }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
 }
 * { box-sizing: border-box; }
 html {
@@ -135,7 +155,7 @@ a { color: var(--accent); word-break: break-word; }
   justify-content: center;
   min-height: 44px;
   padding: 0 0.95rem;
-  border-radius: 999px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--chip);
   color: var(--text);
@@ -143,6 +163,11 @@ a { color: var(--accent); word-break: break-word; }
   font-size: 0.92rem;
   font-weight: 600;
   white-space: nowrap;
+}
+.chip-scroll a:hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+  background: var(--accent-soft);
 }
 .chip-scroll a:focus-visible {
   outline: 2px solid var(--accent);
@@ -166,7 +191,7 @@ section {
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--radius);
   padding: 1rem 1rem 0.85rem;
   margin: 0 0 0.85rem;
   box-shadow: var(--shadow);
@@ -238,7 +263,7 @@ details.sources[open] summary::before { content: "▾"; }
   bottom: calc(16px + env(safe-area-inset-bottom, 0px));
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: var(--radius);
   border: none;
   background: var(--top-btn);
   color: var(--top-btn-fg);
@@ -266,6 +291,29 @@ details.sources[open] summary::before { content: "▾"; }
   .card { padding: 1.25rem 1.4rem 1.05rem; margin-bottom: 1rem; }
   .section-title { font-size: 1.25rem; }
 }
+
+.lib-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  margin: 0 0 0.35rem;
+  padding: 0 0.7rem;
+  border: 1px solid var(--accent-dim);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+.lib-link:hover { border-color: var(--accent); }
+
+
+
+
+
+
+
 </style>
 </head>
 <body>
@@ -273,6 +321,7 @@ details.sources[open] summary::before { content: "▾"; }
 
 <header class="site-header">
   <div class="inner">
+    <a class="lib-link" href="../index.html">简报库</a>
     <p class="kicker">全球要闻简报</p>
     <h1>晚报 · 2026年9月13日</h1>
     <p class="meta">生成 19:25（亚洲/上海）· 覆盖约过去12小时 · 12条主稿</p>

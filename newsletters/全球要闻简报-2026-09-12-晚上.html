@@ -3,54 +3,74 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
 <meta name="description" content="全球要闻简报 2026年9月12日晚报">
 <title>全球要闻简报｜2026年9月12日晚报</title>
 <style>
+/* newsbot-theme: investor-dark-v1 */
 :root {
-  --bg: #f6f4ef;
-  --card: #ffffff;
-  --text: #1a1a1a;
-  --muted: #5c5c5c;
-  --border: #e2ddd3;
-  --accent: #0b5fff;
-  --accent-soft: #e8f0ff;
-  --chip: #ffffff;
-  --chip-border: #d5d0c6;
-  --header: rgba(246, 244, 239, 0.94);
-  --shadow: 0 1px 2px rgba(0,0,0,.06);
-  --why: #8a4b12;
-  --why-bg: #fff6eb;
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
   --measure: 42rem;
-  --page-pad: 16px;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #121417;
-    --card: #1c1f24;
-    --text: #f2f2f2;
-    --muted: #a8aeb8;
-    --border: #2c3138;
-    --accent: #6ea1ff;
-    --accent-soft: #1a2740;
-    --chip: #23282f;
-    --chip-border: #3a414b;
-    --header: rgba(18, 20, 23, 0.94);
-    --shadow: 0 1px 2px rgba(0,0,0,.35);
-    --why: #ffc27a;
-    --why-bg: #2a2116;
-  }
+  --page-pad: 1rem;
+  --radius: 6px;
 }
 @media (min-width: 768px) {
   :root {
     --measure: 52rem;
-    --page-pad: 24px;
+    --page-pad: 1.5rem;
   }
 }
 @media (min-width: 1100px) {
   :root {
     --measure: 60rem;
-    --page-pad: 32px;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
   }
   body { font-size: 18px; }
 }
@@ -123,7 +143,7 @@ a { color: var(--accent); }
   justify-content: center;
   min-height: 44px;
   padding: 0 14px;
-  border-radius: 999px;
+  border-radius: var(--radius);
   border: 1px solid var(--chip-border);
   background: var(--chip);
   color: var(--text);
@@ -149,7 +169,7 @@ a { color: var(--accent); }
 .card {
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: var(--radius);
   padding: 14px 14px 12px;
   margin: 0 0 12px;
   box-shadow: var(--shadow);
@@ -218,7 +238,7 @@ a { color: var(--accent); }
   bottom: calc(16px + env(safe-area-inset-bottom));
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: var(--radius);
   border: 1px solid var(--chip-border);
   background: var(--chip);
   color: var(--text);
@@ -231,12 +251,36 @@ a { color: var(--accent); }
   box-shadow: var(--shadow);
   z-index: 50;
 }
+
+.lib-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  margin: 0 0 0.35rem;
+  padding: 0 0.7rem;
+  border: 1px solid var(--accent-dim);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+.lib-link:hover { border-color: var(--accent); }
+
+
+
+
+
+
+
 </style>
 </head>
 <body>
 <div id="top"></div>
 <header class="sticky">
   <div class="head">
+    <a class="lib-link" href="../index.html">简报库</a>
     <h1>晚报 · 2026年9月12日</h1>
     <p>生成 19:25（Asia/Shanghai）· 约过去12小时 · 13则</p>
   </div>

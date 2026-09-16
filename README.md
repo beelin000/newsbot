@@ -21,7 +21,19 @@ Rebuild after adding a newsletter:
 python3 scripts/build_site.py
 ```
 
-The homepage uses a dark Investor Research–inspired theme (charcoal/green). Individual briefing HTML pages remain self-contained for offline reading.
+The homepage and individual briefing pages share a dark Investor Research–inspired theme (charcoal/green). Nav chips and action buttons use rounded rectangles (`border-radius: 6px`), not pills.
+
+After adding a newsletter, rebuild (also re-applies briefing theme):
+
+```bash
+python3 scripts/build_site.py
+```
+
+Or theme briefings only:
+
+```bash
+python3 scripts/theme_briefings.py
+```
 
 Enable **Settings → Pages → Source: GitHub Actions**. Push to `main` runs `.github/workflows/pages.yml` and publishes the site (typically `https://<user>.github.io/newsbot/`).
 

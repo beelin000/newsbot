@@ -14,6 +14,10 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from theme_briefings import restyle_all
 
 ROOT = Path(__file__).resolve().parents[1]
 NEWS = ROOT / "newsletters"
@@ -508,6 +512,9 @@ def build_library_html(
 
 
 def main() -> None:
+    # Keep individual briefing pages on the shared dark library theme.
+    restyle_all()
+
     editions = find_editions()
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
 
