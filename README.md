@@ -109,9 +109,12 @@ If secrets are missing, the workflow skips send with a notice (does not fail the
 
 ### 2. Test
 
-Actions → **Email new briefings** → **Run workflow**, set e.g.:
+Actions → **Email new briefings** → **Run workflow**.
 
-`newsletters/global-brief-2026-09-17-morning.md`
+- Leave **briefing_path** empty → sends the **latest** edition
+- Or set e.g. `newsletters/global-brief-2026-09-17-morning.md`
+
+Check the run log for a line like `sent: 全球要闻简报｜… -> you@…`. If you only see “nothing to send”, the path was empty on an older workflow revision.
 
 Local dry-run (no send):
 
