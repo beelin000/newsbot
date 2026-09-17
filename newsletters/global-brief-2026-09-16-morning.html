@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月16日早报">
+<title>早报 · 2026年9月16日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root {
+    --measure: 52rem;
+    --page-pad: 1.5rem;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text);
+  background: var(--bg);
+  padding:
+    0
+    env(safe-area-inset-right, 0px)
+    calc(5rem + env(safe-area-inset-bottom, 0px))
+    env(safe-area-inset-left, 0px);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.site-header .inner {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: 0.75rem var(--page-pad) 0.5rem;
+}
+.kicker {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 0.15rem;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 700;
+}
+.meta {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.chip-nav {
+  position: sticky;
+  top: calc(env(safe-area-inset-top, 0px) + 4.7rem);
+  z-index: 30;
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.chip-scroll {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0.55rem var(--page-pad);
+  flex-wrap: nowrap;
+}
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 0.95rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--chip);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.chip-scroll a:hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+  background: var(--accent-soft);
+}
+.chip-scroll a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+section {
+  scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 8.4rem);
+  margin: 1.25rem 0 1.75rem;
+}
+.section-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 750;
+  color: var(--accent);
+}
+.bullets {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+.bullets li { margin: 0.4rem 0; }
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1rem 0.85rem;
+  margin: 0 0 0.85rem;
+  box-shadow: var(--shadow);
+}
+.card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.08rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.why {
+  margin: 0 0 0.55rem;
+  font-size: 0.92rem;
+  color: var(--why);
+  font-weight: 600;
+}
+.summary { margin: 0; }
+.summary p { margin: 0 0 0.55rem; }
+.summary p:last-child { margin-bottom: 0; }
+details.sources {
+  margin-top: 0.65rem;
+  border-top: 1px dashed var(--border);
+  padding-top: 0.35rem;
+}
+details.sources summary {
+  cursor: pointer;
+  list-style: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+details.sources summary::-webkit-details-marker { display: none; }
+details.sources summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+details.sources[open] summary::before { content: "▾"; }
+.sources ol {
+  margin: 0.25rem 0 0.5rem;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+}
+.sources li { margin: 0.35rem 0; }
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+.footer {
+  margin: 2rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+#top-btn {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius);
+  border: none;
+  background: var(--top-btn);
+  color: var(--top-btn-fg);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 50;
+  box-shadow: var(--shadow);
+  -webkit-tap-highlight-color: transparent;
+}
+#top-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+@media (min-width: 768px) {
+  .card { padding: 1.15rem 1.25rem 1rem; }
+  .card h3 { font-size: 1.15rem; }
+  .site-header h1 { font-size: 1.4rem; }
+}
+@media (min-width: 1100px) {
+  .card { padding: 1.25rem 1.4rem 1.05rem; margin-bottom: 1rem; }
+  .section-title { font-size: 1.25rem; }
+}
+
+.lib-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  margin: 0 0 0.35rem;
+  padding: 0 0.7rem;
+  border: 1px solid var(--accent-dim);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+.lib-link:hover { border-color: var(--accent); }
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div id="top"></div>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="lib-link" href="../index.html">简报库</a>
+    <p class="kicker">全球要闻简报</p>
+    <h1>早报 · 2026年9月16日</h1>
+    <p class="meta">生成 07:20（亚洲/上海）· 覆盖约过去12小时 · 12条主稿</p>
+  </div>
+</header>
+
+<nav class="chip-nav" aria-label="栏目导航">
+  <div class="chip-scroll">
+    <a href="#highlights">要点</a>
+    <a href="#finance">财经</a>
+    <a href="#tech">科技</a>
+    <a href="#politics">政治</a>
+    <a href="#military">军事</a>
+    <a href="#watch">关注</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section id="highlights">
+    <h2 class="section-title">今日要点</h2>
+    <ul class="bullets">
+      <li><span class="tag">更新</span>布伦特收于约108.75美元、WTI约105.83美元；美债10年期盘中触及约5.041%；联储加息概率约94%–95%。</li>
+      <li>美能源部长称沙特东西向管道“数日内”可恢复，与此前“数周修复”口径并存。</li>
+      <li>美军确认摧毁两艘试图夺取水面无人机的伊朗小型船只；双方叙事冲突。</li>
+      <li>乌军称在顿涅茨克北部启动“维瓦尔第”进攻；路透社尚未独立核实。</li>
+      <li>伊朗外长阿拉格齐赴京会晤王毅，为习特预期会晤铺垫。</li>
+      <li>参议院程序性投票未过《清晰法案》；联发科发布首款2纳米天玑9600 Pro。</li>
+      <li><span class="tag">更新</span>太空军高层称“是时候”公开在轨武器；也门冲突致超10万人流离失所。</li>
+    </ul>
+  </section>
+
+  <section id="finance">
+    <h2 class="section-title">财经</h2>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>布伦特收近109美元，美债破5%关口，美股承压静待联储</h3>
+      <p class="why">为何重要：油价—通胀—利率三角主导全球资产定价；若确认加息，焦点将转向是否进入连续加息周期。</p>
+      <div class="summary">
+        <p>美东时间周二，布伦特11月合约上涨约2.9%收于108.75美元/桶，WTI上涨约4.4%至105.83美元/桶，均为5月中旬以来最高收盘位附近。推动因素仍是沙特出口通道受损、胡塞持续袭击与霍尔木兹通航不确定性。美国10年期国债收益率盘中升至约5.041%，为2007年7月以来最高，收盘附近仍在5%上方；30年期收益率盘中亦触及约5.4%。</p>
+        <p>标普500约跌0.4%–0.5%，道指跌约0.6%，纳指跌约0.8%。CME FedWatch显示周三加息25个基点概率约94%–95%，目标区间料至3.75%–4.00%。美元走强，比特币一度跌破约7.6万美元。<strong>决议声明与点阵图对后续路径的指引仍属发展中事项。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.newser.com/article/123ddc2d8ba06c324cbbd899f7eeebd2/us-stocks-slip-after-oil-prices-and-the-bond-market-crank-up-the-pressure.html">Associated Press / Newser（2026-09-16）</a></li>
+          <li><a href="https://en.sedaily.com/international/2026/09/16/wall-street-falls-as-oil-surges-10-year-yield-hits-19-year">Seoul Economic Daily（2026-09-16）</a></li>
+          <li><a href="https://www.reuters.com/world/africa/dollar-near-two-week-high-oil-surge-lifts-yields-fed-hike-bets-2026-09-15/">Reuters 美元报道（2026-09-15）</a></li>
+          <li><a href="https://finance.sina.com.cn/world/2026-09-16/doc-iniryefe8114192.shtml">新浪财经综合（2026-09-16 04:35）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>美能源部长称沙特东西向管道“数日可恢复”，与“数周修复”口径并存</h3>
+      <p class="why">为何重要：该管道是绕开霍尔木兹的关键出口；复运时间差几天还是几周，直接决定油价上限叙事。</p>
+      <div class="summary">
+        <p>路透社9月15日报道，美国能源部长克里斯·赖特（Chris Wright）在休斯敦G20能源会议间隙对CNBC表示，沙特东西向管道原油“应在数日内”重新流动，称评估“仍以天为单位”。他同时表示沙特正采取措施、在美军协助下增加经霍尔木兹的石油外运。</p>
+        <p>但路透援引消息人士称，修复估计从较快到五至六周不等；美联社此前亦引述地区官员称泵站受损或需三至五周，期间可能部分运行。沙特阿美与官方尚未给出统一时间表。<strong>以谁的口径为准、实际复运量级仍待确认。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/business/energy/us-energy-chief-says-saudi-arabia-oil-pipeline-should-be-back-within-days-2026-09-15/">Reuters（2026-09-15 16:04 UTC）</a></li>
+          <li><a href="https://www.straitstimes.com/world/europe/us-energy-chief-says-saudi-arabia-oil-pipeline-should-be-back-online-within-days">The Straits Times（2026-09-15）</a></li>
+          <li><a href="https://www.thehindu.com/news/international/saudi-oil-pipeline-hit-in-strikes-will-be-mostly-out-of-service-for-several-weeks-for-repair/article71466140.ece">AP / The Hindu（背景，2026-09-14）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>参议院程序性投票未过《清晰法案》，美国加密监管立法受挫</h3>
+      <p class="why">为何重要：市场结构法案关乎SEC与CFTC权责划分；失败将使行业继续依赖行政规则。</p>
+      <div class="summary">
+        <p>美国参议院周二就推进《数字资产市场清晰法案》（Clarity Act）的程序性动议以49票赞成、50票反对未获通过，远低于所需60票。全体民主党人及部分共和党人投下反对票。争议焦点包括道德条款是否足以限制公职人员及总统家族从加密业务中获利。</p>
+        <p>路透社称国会本月将休会备战11月中期选举，法案实质被搁置；SEC主席保罗·阿特金斯此前表示，无论国会结果如何，监管机构仍将推进规则现代化。比特币在投票后一度下跌。<strong>法案是否会在选举后重启谈判尚不确定。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/legal/government/us-senate-vote-advancing-landmark-crypto-bill-2026-09-15/">Reuters（2026-09-15）</a></li>
+          <li><a href="https://www.cbsnews.com/news/senate-fails-to-advance-clarity-act-amid-democratic-concerns-about-crypto-bill/">CBS News（2026-09-15）</a></li>
+          <li><a href="https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-flames-out-in-failed-u-s-senate-vote">CoinDesk（2026-09-15）</a></li>
+          <li><a href="https://www.cls.cn/detail/2484227">财联社（2026-09-16）</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="tech">
+    <h2 class="section-title">科技</h2>
+
+    <article class="card">
+      <h3>联发科发布首款台积电2纳米手机芯片天玑9600 Pro</h3>
+      <p class="why">为何重要：2纳米制程首次进入量产手机平台竞争，将重塑高端安卓旗舰与端侧AI算力格局。</p>
+      <div class="summary">
+        <p>路透社与公司新闻稿称，联发科周二公布天玑9600 Pro，为其首款采用台积电最先进2纳米工艺的智能手机处理器，并同步推出面向更广旗舰段的3纳米天玑9600M。公司称Pro面向更强的端侧生成式/代理式AI能力。</p>
+        <p>媒体报道其CPU为全大核架构，峰值频率约4.55GHz，宣称相对上一代单核性能提升约17%、多核约15%，多核功耗下降约61%。首批搭载手机预计本季度上市，OPPO Find X10 Pro Max等机型已获点名。<strong>量产良率、供货节奏与对标高通下一代旗舰的实测差距仍待验证。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/business/media-telecom/mediatek-launches-new-mobile-chip-using-tsmcs-most-advanced-technology-2026-09-15/">Reuters（2026-09-15 07:31 UTC）</a></li>
+          <li><a href="https://www.prnewswire.com/news-releases/mediatek-dimensity-9600-pro-sets-new-standard-for-flagship-smartphone-chips-302878749.html">PR Newswire / MediaTek（2026-09-15）</a></li>
+          <li><a href="https://9to5google.com/2026/09/15/mediatek-dimensity-9600-pro-chip/">9to5Google（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>印度消费者监管机构升级调查苹果软件保修条款</h3>
+      <p class="why">为何重要：印度是苹果增长最快市场之一；若认定系统更新损害硬件并转嫁高额维修费，可能重塑软件保修责任边界。</p>
+      <div class="summary">
+        <p>路透社独家报道，印度中央消费者保护局（CCPA）正在审查苹果软件保修条款，调查聚焦iOS 18更新被指导致屏幕、麦克风等故障，迫使用户支付“过高”维修费用。文件显示监管已“升级”调查。</p>
+        <p>苹果在8月私函中抗辩称软件不提供保修符合全球行业惯例，并否认iOS 18存在系统性问题。<strong>最终是否立案处罚、是否要求改变保修文本仍属发展中事项。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/business/retail-consumer/indian-consumer-regulator-escalates-probe-into-apples-software-warranty-terms-2026-09-15/">Reuters（2026-09-15 09:10 UTC）</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="politics">
+    <h2 class="section-title">政治</h2>
+
+    <article class="card">
+      <h3>伊朗外长赴京会晤王毅，为习特预期会晤预热</h3>
+      <p class="why">为何重要：北京试图在美伊长期冲突中保持斡旋空间；外长互动将影响下周华盛顿元首会晤的议题排序。</p>
+      <div class="summary">
+        <p>中国外交部周二表示，伊朗外长阿巴斯·阿拉格齐（Abbas Araghchi）将于9月16日访华，并与外长王毅举行会谈。双方上周在金砖峰会场边亦有接触。多家媒体指出，此访恰逢习近平预期于9月24日赴华盛顿会见特朗普之前一周。</p>
+        <p>议程料涵盖地区战事、核问题与可能的调解角色。特朗普此前曾警告北京勿对伊军售。Al Jazeera等分析称，中方公开推动降温，但未必宣布立即调停倡议。<strong>会谈成果与习特会最终日程仍待官方确认。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.channelnewsasia.com/east-asia/iran-abbas-araghchi-visit-china-wang-yi-6385746">CNA（2026-09-15）</a></li>
+          <li><a href="https://www.aljazeera.com/news/2026/9/15/can-china-play-peacemaker-as-irans-foreign-minister-heads-to-beijing">Al Jazeera（2026-09-15）</a></li>
+          <li><a href="https://www.newindianexpress.com/world/2026/Sep/15/iran-fm-araghchi-heads-to-china-for-talks-with-wang-yi-ahead-of-xis-expected-us-visit">New Indian Express（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>也门冲突致超10万人流离失所，胡塞巩固红海沿岸控制</h3>
+      <p class="why">为何重要：人口流离与巴布·曼德海峡控制权叠加，使人道危机与全球航运风险同步上升。</p>
+      <div class="summary">
+        <p>路透社9月15日报道，联合国难民署称已有超过10万人因也门战火再起而国内流离失所，另有数千人经海路逃往邻国。胡塞武装沿红海沿岸对沙特支持的政府军发动快速攻势后，正巩固对巴布·曼德海峡相关通道的控制。</p>
+        <p>沙特主导空袭持续，胡塞方面称也门境内24小时内遭数十次空袭。<strong>具体城镇易手与海峡通行限制的法律状态仍在核实中。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/world/middle-east/alarmed-yemenis-flee-south-as-houthis-keep-up-attacks-2026-09-15/">Reuters（2026-09-15 14:30 UTC）</a></li>
+          <li><a href="https://flash.jin10.com/detail/20260916053234232800">金十数据中东跟踪（2026-09-16）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>以黎驻美大使华盛顿开谈，罗马正式谈判仍推迟至10月</h3>
+      <p class="why">为何重要：6月框架协议执行停滞叠加南黎交火，华盛顿工作层会晤是避免更大冲突的短期缓冲阀。</p>
+      <div class="summary">
+        <p>阿纳多卢通讯社等报道，黎巴嫩驻美大使娜达·穆阿瓦德与以色列驻美大使耶希勒·莱特尔周二在华盛顿开始会谈，议题包括黎巴嫩局势与6月框架协议落实机制；原定本周罗马正式谈判已推迟至10月。</p>
+        <p>黎方消息称双方将向各自政府提交报告，下一轮谈判日期取决于建议内容。<strong>会谈是否形成可执行时间表仍待官方通报。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.aa.com.tr/en/middle-east/lebanese-israeli-ambassadors-begin-talks-in-washington-to-break-diplomatic-deadlock/4058391">Anadolu Agency（2026-09-16）</a></li>
+          <li><a href="https://thisisbeirut.com.lb/news/politics/lebanese-israeli-ambassadors-to-meet-at-state-department-today">This Is Beirut（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>朝鲜指责美方扩大“核潜艇同盟”，为自身扩军辩护</h3>
+      <p class="why">为何重要：AUKUS五周年节点上，朝方将美日韩核动力潜艇合作叙事化，可能进一步正当化半岛核导建设。</p>
+      <div class="summary">
+        <p>路透社首尔报道，朝鲜官方媒体借AUKUS防务协议五周年，指责美国扩大“核潜艇同盟”、破坏全球核安全，并称鼓励日韩发展核动力潜艇。朝方将此与韩国“张保皋-N”核潜艇计划及美日韩三边合作框架挂钩，宣称需强化自身核威慑。</p>
+        <p>朝方代表团亦赴北京参加香山论坛相关活动。<strong>朝方声明属单方面立场，相关潜艇计划时间表与美方回应仍需交叉核实。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/world/asia-pacific/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-2026-09-15/">Reuters（2026-09-15 22:12 UTC）</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="military">
+    <h2 class="section-title">军事</h2>
+
+    <article class="card">
+      <h3>美军确认摧毁两艘试图夺取水面无人机的伊朗小型船只</h3>
+      <p class="why">为何重要：霍尔木兹水面无人系统已成为美伊近距离对抗前线；事件可能推高误判风险并影响油轮通航安排。</p>
+      <div class="summary">
+        <p>美国中央司令部发言人蒂姆·霍金斯上尉周二确认，伊朗小型船只近期试图夺取美军无人水面艇（Saildrone），但在中央司令部“强力回应”后未能得手，该水面无人机仍处美方控制。Axios等引述美官员称，美军无人机发射两枚导弹摧毁两艘伊朗船只并造成船上人员伤亡。</p>
+        <p>伊朗媒体则称遭袭者为渔船，霍尔木兹甘省卡甘港与拉拉克岛附近有渔民失踪。事件发生在持续逾半年的美伊冲突背景下。<strong>责任归属、伤亡数字与精确地点仍有争议，属发展中报道。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.axios.com/2026/09/15/us-iran-boats-navy-drone-strait-hormuz">Axios（2026-09-15）</a></li>
+          <li><a href="https://www.stripes.com/theaters/middle_east/2026-09-15/iran-boats-destroyed-middle-east-drone-22861851.html">Stars and Stripes（2026-09-15）</a></li>
+          <li><a href="https://www.independent.co.uk/news/washington-strait-of-hormuz-donald-trump-republican-party-b3050693.html">The Independent / AP（2026-09-15）</a></li>
+          <li><a href="https://aa.com.tr/en/us-israel-iran-war/us-military-destroys-2-iranian-boats-report/4058058">Anadolu Agency（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>乌军称在顿涅茨克北部发动“维瓦尔第”进攻</h3>
+      <p class="why">为何重要：顿涅茨克“堡垒带”关系到俄方全面控制该州的谈判要价；若乌方能稳定夺回村落，将影响秋季战场杠杆。</p>
+      <div class="summary">
+        <p>路透社报道，乌克兰第三军旅旅长安德烈·比列茨基准将称，部队已在顿涅茨克北部斯拉维扬斯克—克拉马托尔斯克“堡垒带”以北方向启动代号“维瓦尔第”（Vivaldi）的进攻行动，称清剿约75平方公里俄渗透力量并再夺回约10平方公里，包括完全控制塞雷德涅等村落。</p>
+        <p>路透社强调无法独立核实其说法；前线因无人机战形成宽阔“杀伤区”，实际控制线难以及时确认。<strong>战果规模与可持续性仍待前线多源验证。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/world/europe/ukraine-launches-offensive-push-north-donetsk-region-senior-commander-says-2026-09-15/">Reuters（2026-09-15 09:35 UTC）</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>太空军高层称“是时候”公开在轨武器；俄方同日呼吁外空非武器化</h3>
+      <p class="why">为何重要：继空军部长首度承认后，作战层公开阐释威慑逻辑，外空军备竞赛进入政策公开对话阶段。</p>
+      <div class="summary">
+        <p>Defense One报道，太空军新任作战部长道格拉斯·希斯上将周二表示，中俄反卫星能力进展促使美方承认拥有在轨武器，“是时候”讨论保卫联合部队与太空资产的能力；并重申监护人已操作可防御太空赋能攻击的在轨武器。</p>
+        <p>CBS/AFP等报道，克里姆林宫发言人佩斯科夫周二称外空应“没有任何武器”，呼吁广泛国际协作推动非军事化。中国外交部此前敦促美方停止外空扩军。<strong>武器类型、数量与交战规则仍未披露。</strong></p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.defenseone.com/threats/2026/09/orbit-weapons-space-force-leader/415999/">Defense One（2026-09-15 13:58 ET）</a></li>
+          <li><a href="https://www.cbsnews.com/news/us-confirms-weapons-in-space-china-russia-respond/">CBS / AFP（2026-09-15）</a></li>
+          <li><a href="https://www.aljazeera.com/features/2026/9/15/what-are-space-weapons-which-us-says-it-has-deployed-into-orbit">Al Jazeera（2026-09-15）</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="watch">
+    <h2 class="section-title">后续关注</h2>
+    <ol class="bullets">
+      <li><strong>美联储利率决议与沃什会后沟通</strong>：是否加息25个基点、点阵/声明如何锚定后续路径。</li>
+      <li><strong>沙特东西向管道复运时间表</strong>：美方“数日”与地区“数周”口径何者兑现。</li>
+      <li><strong>王毅—阿拉格齐会谈与习特会筹备</strong>：中方是否提出可操作停火/制裁交换框架。</li>
+      <li><strong>乌俄能源互不打击安排</strong>：监督机制与覆盖范围是否落地。</li>
+      <li><strong>以黎大使会晤书面建议</strong>：能否在10月罗马谈判前稳住南黎战火。</li>
+    </ol>
+  </section>
+
+  <footer class="footer">
+    <p>来源综览：Reuters；AP；Axios；Defense One；CBS/AFP；Al Jazeera；Stars and Stripes；Anadolu；CNA；CoinDesk；MediaTek；财联社；新浪财经等。本页为自包含移动优先静态页，无外部脚本/字体。</p>
+  </footer>
+</main>
+
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>

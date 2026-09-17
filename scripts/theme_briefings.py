@@ -232,7 +232,7 @@ def restyle_file(path: Path) -> bool:
 
 def restyle_all() -> int:
     changed = 0
-    for path in sorted(NEWS.rglob("全球要闻简报-*.html")):
+    for path in sorted(NEWS.rglob("global-brief-*.html")):
         if restyle_file(path):
             changed += 1
             print(f"restyled {path.relative_to(ROOT)}")

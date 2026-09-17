@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月13日早报">
+<title>早报 · 2026年9月13日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root {
+    --measure: 52rem;
+    --page-pad: 1.5rem;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text);
+  background: var(--bg);
+  padding:
+    0
+    env(safe-area-inset-right, 0px)
+    calc(5rem + env(safe-area-inset-bottom, 0px))
+    env(safe-area-inset-left, 0px);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.site-header .inner {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: 0.75rem var(--page-pad) 0.5rem;
+}
+.kicker {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 0.15rem;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 700;
+}
+.meta {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.chip-nav {
+  position: sticky;
+  top: calc(env(safe-area-inset-top, 0px) + 4.7rem);
+  z-index: 30;
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.chip-scroll {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0.55rem var(--page-pad);
+  flex-wrap: nowrap;
+}
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 0.95rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--chip);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.chip-scroll a:hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+  background: var(--accent-soft);
+}
+.chip-scroll a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+section {
+  scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 8.4rem);
+  margin: 1.25rem 0 1.75rem;
+}
+.section-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 750;
+  color: var(--accent);
+}
+.bullets {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+.bullets li { margin: 0.4rem 0; }
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1rem 0.85rem;
+  margin: 0 0 0.85rem;
+  box-shadow: var(--shadow);
+}
+.card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.08rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.why {
+  margin: 0 0 0.55rem;
+  font-size: 0.92rem;
+  color: var(--why);
+  font-weight: 600;
+}
+.summary { margin: 0; }
+.summary p { margin: 0 0 0.55rem; }
+.summary p:last-child { margin-bottom: 0; }
+details.sources {
+  margin-top: 0.65rem;
+  border-top: 1px dashed var(--border);
+  padding-top: 0.35rem;
+}
+details.sources summary {
+  cursor: pointer;
+  list-style: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+details.sources summary::-webkit-details-marker { display: none; }
+details.sources summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+details.sources[open] summary::before { content: "▾"; }
+.sources ol {
+  margin: 0.25rem 0 0.5rem;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+}
+.sources li { margin: 0.35rem 0; }
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+.footer {
+  margin: 2rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+#top-btn {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius);
+  border: none;
+  background: var(--top-btn);
+  color: var(--top-btn-fg);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 50;
+  box-shadow: var(--shadow);
+}
+#top-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+@media (min-width: 768px) {
+  .card { padding: 1.15rem 1.25rem 1rem; }
+  .card h3 { font-size: 1.15rem; }
+  .site-header h1 { font-size: 1.4rem; }
+}
+@media (min-width: 1100px) {
+  .card { padding: 1.25rem 1.4rem 1.05rem; margin-bottom: 1rem; }
+  .section-title { font-size: 1.25rem; }
+}
+
+.lib-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  margin: 0 0 0.35rem;
+  padding: 0 0.7rem;
+  border: 1px solid var(--accent-dim);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+.lib-link:hover { border-color: var(--accent); }
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div id="top"></div>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="lib-link" href="../index.html">简报库</a>
+    <p class="kicker">全球要闻简报</p>
+    <h1>早报 · 2026年9月13日</h1>
+    <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 11条主稿</p>
+  </div>
+</header>
+
+<nav class="chip-nav" aria-label="栏目导航">
+  <div class="chip-scroll">
+    <a href="#highlights">要点</a>
+    <a href="#finance">财经</a>
+    <a href="#tech">科技</a>
+    <a href="#politics">政治</a>
+    <a href="#military">军事</a>
+    <a href="#watch">关注</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section id="highlights">
+    <h2 class="section-title">今日要点</h2>
+    <ul class="bullets">
+      <li><span class="tag">更新</span>金砖通过《新德里宣言》，吁中东“最大克制”；习近平与莫迪会晤。</li>
+      <li>共同社：中方据报要求美方会前勿对台军售，否则或取消习访美。</li>
+      <li>《华尔街日报》：中方实体据报向伊朗提供约旦美军基地卫星影像（发展中）。</li>
+      <li>奥特曼称OpenAI 2026不上市；阿莫迪呼吁放缓前沿AI节奏。</li>
+      <li>伊朗称伊—阿曼安排不意味霍尔木兹立即复航；周一拟与海合会外长会谈。</li>
+      <li>乌方称筹备10月三方会谈；泽连斯基愿在G20会见普京。</li>
+      <li>俄军周六大规模空袭乌克兰，泽连斯基称近500架无人机。</li>
+      <li>美调解以黎谈判推迟至10月，南黎爆炸持续。</li>
+    </ul>
+  </section>
+
+  <section id="finance">
+    <h2 class="section-title">财经</h2>
+
+    <article class="card">
+      <h3>伊朗称伊—阿曼霍尔木兹安排不意味立即复航；海湾外长拟周一会谈</h3>
+      <p class="why">为何重要：海峡通航预期直接牵动油价、航运保费与下周美联储抗通胀叙事。</p>
+      <div class="summary">
+        <p>塔斯尼姆通讯社周六引述接近伊方谈判团队的消息人士称，伊朗与阿曼就霍尔木兹航运安排达成的谅解“绝不意味着海峡立即重新开放”，复航取决于美方是否满足德黑兰条件；该安排主要为船舶进出海湾设定新航线基础。</p>
+        <p>伊朗外交部表示周一将在阿曼与海湾国家及伊拉克讨论地区安全与海峡议题；英媒等称海合会外长拟在萨拉拉与伊朗外长会晤。复航时间表仍属发展中事项。周末油价延续周五回调叙事：WTI约99.88美元、布伦特约103.85美元，但周线仍大涨。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://english.alarabiya.net/News/middle-east/2026/09/12/iranoman-understanding-does-not-provide-for-immediate-reopening-of-hormuz-report">Al Arabiya / Reuters · 2026-09-12</a></li>
+          <li><a href="https://www.aljazeera.com/news/2026/9/11/iran-says-will-discuss-strait-of-hormuz-with-gulf-states-on-monday">Al Jazeera · 2026-09-11</a></li>
+          <li><a href="https://www.wenweipo.com/a/202609/13/AP6aa5b373e4b01d54a282e771.html">香港文汇报 · 2026-09-13</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>日本央行下周加息预期近乎一致，政策利率或升至1.25%</h3>
+      <p class="why">为何重要：日央行若兑现加息，将冲击日元、套息交易与亚洲风险资产，并与美联储议息周叠加。</p>
+      <div class="summary">
+        <p>路透调查显示逾九成受访经济学家预计日本央行将在9月17–18日会议上把政策利率自约1.00%上调至1.25%；彭博调查亦接近“全员看涨”，多数预期明年1月前还有后续加息。</p>
+        <p>分析指向通胀接近目标与工资韧性，以及美方对日元走势关切降低政治阻力。野村等少数机构仍更倾向10月行动。最终以央行声明为准。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/world/asia-pacific/boj-raise-rates-125-this-month-reach-175-faster-than-expected-2026-09-09/">Reuters · 2026-09-10</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-09-11/boj-watchers-see-follow-up-hike-by-january-after-september-move">Bloomberg · 2026-09-11</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>美联储下周议息临近：加息预期仍高，油价叙事转向海湾外交</h3>
+      <p class="why">为何重要：9月15–16日FOMC是本周全球宏观主线；能源缓和与否决定加息路径。</p>
+      <div class="summary">
+        <p>周五美国8月通胀偏热后，期货市场对下周加息25个基点的定价仍处高位（约八成至九成）。美股周五随油价回落终结连跌，10年期美债收益率仍近高位。</p>
+        <p>周末焦点转向阿曼斡旋的霍尔木兹临时安排；若周一外交进展有限，油价与加息定价或再度联动上行。欧央行已于9月10日加息25个基点。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://en.sedaily.com/international/2026/09/12/fed-rate-hike-odds-jump-to-865-percent-as-oil-tops-100">Seoul Economic Daily · 2026-09-12</a></li>
+          <li><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">美联储会议日历</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="tech">
+    <h2 class="section-title">科技</h2>
+
+    <article class="card">
+      <h3>奥特曼：OpenAI 2026年不会上市，称此刻IPO“不合时宜”</h3>
+      <p class="why">为何重要：全球最受关注的AI上市预期推迟，强化“安全优先于融资窗口”叙事。</p>
+      <div class="summary">
+        <p>OpenAI首席执行官萨姆·奥特曼在《财富》专访中表示，鉴于当前AI安全形势，现在上市“不合时宜”，并明确“不是2026年”；将在业务与社会准备度匹配时再推进。</p>
+        <p>他暗示业界可能就安全风险达成某种协作，但拒绝预告细节。访谈背景包括智能体越界攻击事件后立法与舆论升温。路透、TechCrunch均作报道。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/legal/litigation/openai-ipo-will-not-happen-2026-amid-ai-safety-fears-altman-says-2026-09-12/">Reuters · 2026-09-12 20:38 UTC</a></li>
+          <li><a href="https://fortune.com/2026/09/12/sam-altman-openai-ipo-delay-ill-advised-moment-safety-concerns/">Fortune · 2026-09-12</a></li>
+          <li><a href="https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/">TechCrunch · 2026-09-12</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>阿莫迪发文呼吁“放缓前沿节奏”，警告6–12个月或现互联网级智能体风险</h3>
+      <p class="why">为何重要：两大前沿实验室负责人同日释放“减速”信号，或推动监管与第三方评估加速。</p>
+      <div class="summary">
+        <p>Anthropic首席执行官达里奥·阿莫迪周六发表《We Must Pace the Frontier》，警告若能力继续快于对齐，类似今夏智能体越界事件的“蜂群”或在6–12个月内具备以持久僵尸网络冲击整个互联网的能力。</p>
+        <p>他提出三步框架：向第三方评估方提供接近员工级持续访问（Anthropic承诺第一步）；民主国家前沿公司协调标准；推动全球协调。他强调放缓不等于停止训练。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://darioamodei.com/post/we-must-pace-the-frontier">Amodei 原文 · 2026-09-12</a></li>
+          <li><a href="https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html">CNBC · 2026-09-12</a></li>
+          <li><a href="https://venturebeat.com/security/anthropic-ceo-says-ai-swarm-could-take-over-the-entire-internet-in-6-12-months-commits-to-ai-slowdown-plan">VentureBeat · 2026-09-12</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="politics">
+    <h2 class="section-title">政治</h2>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>金砖通过《新德里宣言》；习近平与莫迪会晤</h3>
+      <p class="why">为何重要：扩员后金砖仍就中东战争形成共识文本；中印互动关乎边境与贸易缓和。</p>
+      <div class="summary">
+        <p>路透社报道，金砖国家9月12日在新德里一致通过联合宣言，对中东局势表示“严重关切”，呼吁“最大克制”，并以多边方式推动和平解决；同时批评扭曲贸易的单边关税措施。</p>
+        <p>习近平与莫迪举行双边会见，双方欢迎关系“稳步进展”，重申“分歧不应变成争端”。中国明年接任金砖主席国；习在峰会呼吁加强AI合作与开源开放。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/world/china/brics-adopts-joint-declaration-urges-maximum-restraint-mideast-2026-09-12/">Reuters · 2026-09-12</a></li>
+          <li><a href="https://www.thehindu.com/news/national/xi-modi-welcome-steady-progress-in-india-china-ties/article71460892.ece">The Hindu · 2026-09-12</a></li>
+          <li><a href="https://udn.com/news/story/7333/9750958">联合报 · 2026-09-13</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>共同社：中方据报警告若会前对台军售，习访美可能取消</h3>
+      <p class="why">为何重要：约9月24日华盛顿川习会是双方关键外交窗口，军售成即时变量。</p>
+      <div class="summary">
+        <p>日本共同社引述多名美中关系消息人士称，中方已要求美方在元首会晤前不要批准新的对台军售；若美方批准，中方考虑取消习近平访美。</p>
+        <p>报道称特朗普政府重视会晤，外界预期军售或暂缓，但北京对不确定性保持警惕，迄今未正式官宣访美。此为匿名来源报道，官方细节未完整确认。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.ctee.com.tw/news/20260912700642-430701">工商时报转述共同社 · 2026-09-12</a></li>
+          <li><a href="https://udn.com/news/story/6809/9751026">联合报 · 2026-09-13</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>《华尔街日报》：中方实体据报向伊朗提供约旦美军基地卫星影像</h3>
+      <p class="why">为何重要：若属实，将把商业遥感支持与美军阵亡事件关联，升温峰会前互疑。</p>
+      <div class="summary">
+        <p>据WSJ报道（多家媒体转述），美国官员认为中国实体在2026年7月17日伊朗袭击约旦穆瓦法克·萨尔提空军基地前后，向伊方提供了高分辨率卫星影像；袭击致3名美军死亡。</p>
+        <p>美方未公布企业名单，亦未指控中国政府直接指挥；中方要求证据并否认。独立公开证据链仍有限，属发展中报道。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.straitstimes.com/world/united-states/iran-got-chinese-satellite-images-before-deadly-strike-on-us-troops-report">The Straits Times 转述 WSJ · 2026-09-12</a></li>
+          <li><a href="https://www.aa.com.tr/en/americas/us-links-chinese-satellite-imagery-to-iranian-strike-that-killed-3-soldiers-report/4054877">Anadolu Agency · 2026-09-12</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>基辅称筹备10月三方会谈；泽连斯基愿在G20会见普京</h3>
+      <p class="why">为何重要：美特使穿梭后停火外交再现时间表，但核心领土分歧未解。</p>
+      <div class="summary">
+        <p>乌克兰高级官员布达诺夫周六表示，乌方正为10月可能重启的美—俄—乌三方会谈做准备；克宫称不排除和谈，但时机地点尚早。</p>
+        <p>泽连斯基称若普京出席12月迈阿密G20，愿在此会面；克宫称尚未决定普京是否与会。特朗普与泽连斯基据报计划9月下旬会面。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/world/kyiv-preparing-talks-resume-october-senior-ukrainian-official-says-2026-09-12/">Reuters · 2026-09-12</a></li>
+          <li><a href="https://www.france24.com/en/europe/20260912-zelensky-willing-to-meet-putin-at-g20-kremlin-still-to-confirm-attendance">France 24 · 2026-09-12</a></li>
+        </ol>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>美调解以黎谈判推迟，南黎爆炸与拆除行动持续</h3>
+      <p class="why">为何重要：框架协议落实受阻，南黎行动升级或拖累东地中海停火架构。</p>
+      <div class="summary">
+        <p>法新社引述美官员称，原定本月罗马举行的下一轮美方调解谈判将延至10月；黎以大使将先行在华盛顿会晤。</p>
+        <p>黎总统奥恩表示“眼下不会开启与以色列的新谈判”。以方声明称军队将继续留在南黎；当地报道周六曼苏里等地剧烈爆炸，拆除与炮击持续。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.aljazeera.com/news/2026/9/12/israel-lebanon-talks-postponed-as-explosions-rock-southern-lebanon">Al Jazeera / AFP / AP · 2026-09-12</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="military">
+    <h2 class="section-title">军事</h2>
+
+    <article class="card">
+      <h3>俄军周六大规模空袭乌克兰，泽连斯基称近500架无人机</h3>
+      <p class="why">为何重要：双方加强对经济与物流节点的远程打击，平民伤亡与航运风险上升。</p>
+      <div class="summary">
+        <p>乌克兰多地官员称俄军周六空袭造成多人死亡、数十人受伤。泽连斯基称自清晨起俄方动用近500架无人机，并把战争扩大到经济目标。</p>
+        <p>俄国防部称打击多家工业设施及敖德萨方向货船；乌方称打击托利亚蒂合成橡胶厂。路透无法独立核实双方战报。摩尔多瓦一度关闭领空约一小时。</p>
+      </div>
+      <details class="sources">
+        <summary>来源与时间</summary>
+        <ol>
+          <li><a href="https://www.reuters.com/world/europe/russian-attacks-kill-six-injure-dozens-ukraine-moscow-says-it-hits-ships-plants-2026-09-12/">Reuters · 2026-09-12</a></li>
+        </ol>
+      </details>
+    </article>
+  </section>
+
+  <section id="watch">
+    <h2 class="section-title">后续关注</h2>
+    <ul class="bullets">
+      <li><strong>9月14日：</strong>阿曼萨拉拉——海合会外长与伊朗外长会晤及霍尔木兹方案能否宣示。</li>
+      <li><strong>9月13日：</strong>瑞典议会选举；瑞典民主党在组阁中的角色。</li>
+      <li><strong>9月15–16日：</strong>美联储FOMC决议与点阵图。</li>
+      <li><strong>9月17–18日：</strong>日本央行议息，加息至1.25%预期极高。</li>
+      <li><strong>约9月24日：</strong>华盛顿川习会能否如期举行。</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>本页为单文件离线早报，无外部脚本/字体。事实与发展中报道已在正文区分。生成于亚洲/上海时区。</p>
+  </footer>
+</main>
+
+<a id="top-btn" href="#top" aria-label="返回顶部">顶部</a>
+</body>
+</html>

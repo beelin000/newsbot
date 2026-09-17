@@ -51,9 +51,11 @@ Enable **Settings → Pages → Source: GitHub Actions**. Push to `main` runs `.
 Then the workflow:
 
 1. Marks draft PRs as ready  
-2. Lands only `newsletters/**` files onto `main`  
+2. Lands `newsletters/**` (add/update/**delete**), plus `scripts/**`, `README.md`, and `.github/workflows/**` when those change  
 3. Regenerates `index.html` / `archive.html` / `editions.json` (avoids morning/evening conflicts on generated Pages files)  
 4. Merges or closes the PR and deploys Pages  
+
+Path listing uses `git diff -z` so filenames stay unquoted. Newsletter filenames must be ASCII (`global-brief-…`).
 
 External or fork PRs matching the branch name pattern are **not** auto-merged.
 
@@ -67,10 +69,13 @@ Responsive reading widths (phone / tablet / desktop):
 
 Each run **only adds** new files. It never overwrites or deletes previous briefings.
 
-During the current calendar month, files land in `newsletters/`:
+During the current calendar month, files land in `newsletters/` with **ASCII-only** filenames (avoids CI path-quoting bugs with non-ASCII names):
 
-- `newsletters/全球要闻简报-YYYY-MM-DD-上午.md` / `.html`
-- `newsletters/全球要闻简报-YYYY-MM-DD-晚上.md` / `.html`
+- `newsletters/global-brief-YYYY-MM-DD-morning.md` / `.html`（早报）
+- `newsletters/global-brief-YYYY-MM-DD-evening.md` / `.html`（晚报）
+- Optional disambiguation suffix: `-HHmm` before the extension, e.g. `global-brief-2026-09-12-evening-1910.md`
+
+Page **titles and body copy stay Chinese**; only on-disk names are English.
 
 When a calendar month has ended, the next run archives that month into a folder named after it:
 

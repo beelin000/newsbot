@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报 2026年9月12日晚报">
+<title>全球要闻简报｜2026年9月12日晚报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root {
+    --measure: 52rem;
+    --page-pad: 1.5rem;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text);
+  background: var(--bg);
+  text-wrap: pretty;
+}
+a { color: var(--accent); }
+.wrap {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding:
+    12px
+    calc(var(--page-pad) + env(safe-area-inset-right))
+    calc(88px + env(safe-area-inset-bottom))
+    calc(var(--page-pad) + env(safe-area-inset-left));
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--header);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding-top: env(safe-area-inset-top);
+}
+.head {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: 12px var(--page-pad) 8px;
+}
+.head h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  font-weight: 720;
+}
+.head p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+.chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: 0 var(--page-pad) 10px;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chips a {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--chip-border);
+  background: var(--chip);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.sec {
+  scroll-margin-top: 128px;
+  margin-top: 1.4rem;
+}
+.sec h2 {
+  margin: 0 0 0.7rem;
+  font-size: 1.25rem;
+}
+.meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0.6rem 0 1rem;
+}
+.bullets { margin: 0; padding-left: 1.15rem; }
+.bullets li { margin: 0.35rem 0; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 14px 12px;
+  margin: 0 0 12px;
+  box-shadow: var(--shadow);
+}
+.card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+.why {
+  display: block;
+  margin: 0 0 0.55rem;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--why-bg);
+  color: var(--why);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.card p { margin: 0 0 0.55rem; }
+.card details {
+  margin-top: 0.35rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.35rem;
+}
+.card summary {
+  list-style: none;
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 650;
+  user-select: none;
+}
+.card summary::-webkit-details-marker { display: none; }
+.sources {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.sources li { margin: 0.35rem 0; }
+.sources a { overflow-wrap: anywhere; word-break: break-word; }
+.tag {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 7px;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  vertical-align: 2px;
+}
+.watch ol { margin: 0; padding-left: 1.2rem; }
+.watch li { margin: 0.4rem 0; }
+.note {
+  margin-top: 1.2rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+#top-btn {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius);
+  border: 1px solid var(--chip-border);
+  background: var(--chip);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  z-index: 50;
+}
+
+.lib-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  margin: 0 0 0.35rem;
+  padding: 0 0.7rem;
+  border: 1px solid var(--accent-dim);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+.lib-link:hover { border-color: var(--accent); }
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="sticky">
+  <div class="head">
+    <a class="lib-link" href="../index.html">简报库</a>
+    <h1>晚报 · 2026年9月12日</h1>
+    <p>生成 19:25（Asia/Shanghai）· 约过去12小时 · 13则</p>
+  </div>
+  <nav class="chips" aria-label="章节导航">
+    <a href="#yaodian">要点</a>
+    <a href="#caijing">财经</a>
+    <a href="#keji">科技</a>
+    <a href="#zhengzhi">政治</a>
+    <a href="#junshi">军事</a>
+    <a href="#guanzhu">关注</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <p class="meta">覆盖窗口大致为当日 07:00–19:25（上海）。标注“据报／消息人士／进展中”者仍待进一步核实。</p>
+
+  <section class="sec" id="yaodian">
+    <h2>今日要点</h2>
+    <ul class="bullets">
+      <li>美国8月CPI偏热后，市场对下周美联储加息25个基点的定价升至约八成半至九成；高盛、摩根大通等机构转向押注加息。</li>
+      <li>布伦特周五收跌，亚太暗盘一度跌破每桶100美元，但周线仍大幅上涨；美国柴油价格触及纪录高位。</li>
+      <li>胡塞武装据报控制曼德海峡也门侧海岸及相关岛屿；沙特东西向输油管道遭袭后临时关停，伊拉克撤换相关军官。</li>
+      <li>金砖新德里峰会开幕：习近平抵达印度，峰会宣言措辞据报达成共识；莫迪—习近平双边会晤安排中。</li>
+      <li>路透独家：英伟达据报洽谈参投Anthropic超大规模IPO；Anthropic披露Claude被滥用于武器软件与网络行动。</li>
+      <li>欧盟批准约61亿欧元对乌防务资金并豁免采购PAC-3；俄军对乌发起大规模空袭，敖德萨方向为重点。</li>
+    </ul>
+  </section>
+
+  <section class="sec" id="caijing">
+    <h2>财经</h2>
+
+    <article class="card">
+      <h3>市场大幅上调下周美联储加息概率，美股周五反弹</h3>
+      <p class="why"><strong>为何重要：</strong>议息会议临近，能源冲击下的通胀黏性正迫使市场重定价全球利率路径。</p>
+      <p>美国劳工部公布的8月CPI同比上涨3.4%、环比上涨0.4%，核心CPI环比上涨0.3%，整体符合或略高于市场预期。芝商所FedWatch显示，美联储在9月15–16日会议上加息25个基点的概率由前一日约72%升至约87%–90%。高盛、摩根大通等机构将预测调整为下周加息；市场亦开始讨论年内不止一次加息的情景。周五美股三大指数上涨约0.9%–1.0%，2年期美债收益率升至约4.6%上方。特朗普政府持续呼吁降息，与市场紧缩定价形成张力。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://www.newser.com/article/8c3272812f5e9b9238c6a3301921c17a/us-stocks-jump-after-oil-prices-ease-and-an-inflation-update-comes-in-near-expectations.html">美联社/Newser</a>（约2026-09-12）</li>
+          <li><a href="https://finance.sina.com.cn/world/2026-09-12/doc-inirpcvs6982371.shtml">新浪财经美股收盘</a>（2026-09-12 04:35）</li>
+          <li><a href="https://wallstreetcn.com/articles/3781616">华尔街见闻：高盛改口</a>（2026-09-12）</li>
+          <li><a href="https://www.yicai.com/news/103361840.html">第一财经</a>（2026-09-12 07:33）</li>
+          <li><a href="https://en.sedaily.com/international/2026/09/12/fed-rate-hike-odds-jump-to-865-percent-as-oil-tops-100">Seoul Economic Daily</a>（2026-09-12）</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>油价高位回落，亚太暗盘布油一度跌破100美元</h3>
+      <p class="why"><strong>为何重要：</strong>红海—霍尔木兹双通道承压后，油价波动直接牵动通胀预期与央行决策。</p>
+      <p>周五布伦特原油期货收跌约2.8%至每桶104.61美元，WTI收于约100.05美元，终结连日上涨，但当周仍累计大涨约9%–10%。北京时间12日下午，国际油价暗盘继续走弱，有报道指布伦特暗盘一度跌破100美元。美国柴油零售价据报升至每加仑约6美元的纪录水平。油价回落缓解部分风险资产压力，但地缘溢价是否退潮仍取决于航运与管道安全。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://finance.sina.com.cn/wm/2026-09-12/doc-inirqfhx1354243.shtml">21世纪经济报道/新浪：暗盘</a>（2026-09-12 15:17）</li>
+          <li><a href="https://finance.sina.com.cn/world/2026-09-12/doc-inirpcvs6982371.shtml">新浪财经：收盘油价</a>（2026-09-12）</li>
+          <li><a href="https://finance.sina.com.cn/stock/hkstock/hkgg/2026-09-12/doc-inirqfie6531574.shtml">中金/新浪</a>（2026-09-12 16:15）</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>欧央行加息25个基点，存款利率升至2.50%</h3>
+      <p class="why"><strong>为何重要：</strong>欧元区率先以加息回应中东冲突推升的通胀，为下周美联储决策提供参照。</p>
+      <p>欧洲央行9月10日决定将三大关键利率上调25个基点，存款便利利率升至2.50%，主要再融资与边际贷款利率分别至2.65%与2.90%，自9月16日起生效。声明指中东冲突持续推高通胀压力，通胀料在较长时间内明显高于目标；理事会强调数据依赖、逐次会议决策，不预先承诺利率路径。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html">欧洲央行官方声明</a>（2026-09-10）</li>
+          <li><a href="https://www.nytimes.com/2026/09/10/business/european-central-bank-interest-rates.html">纽约时报</a>（约2026-09-11）</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>A股周五回落，上证跌破3900点报约3888点</h3>
+      <p class="why"><strong>为何重要：</strong>外部加息预期与能源不确定性继续压制风险偏好，成交放量但下跌面扩大。</p>
+      <p>9月11日（周五）上证指数收跌1.18%，报3888.11点，盘中跌逾2%；深证成指跌约1.08%，创业板指跌约0.49%。全市场下跌个股约4800只，成交额约1.99万亿元。本周上证累计跌约1.07%。12日为周末休市，投资者将等待下周美联储决议与中东局势演进。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://finance.sina.com.cn/jjxw/2026-09-12/doc-inirpkck8580954.shtml">中国证券报/新浪</a>（2026-09-12）</li>
+        </ul>
+      </details>
+    </article>
+  </section>
+
+  <section class="sec" id="keji">
+    <h2>科技</h2>
+
+    <article class="card">
+      <h3>路透独家：英伟达据报洽谈参投Anthropic超大规模IPO</h3>
+      <p class="why"><strong>为何重要：</strong>若落地，将是考验公开市场对前沿AI实验室万亿估值与巨额融资胃口的关键一役。</p>
+      <p>路透援引知情人士报道，Anthropic正洽谈邀请英伟达担任锚定投资者，拟募资最高约1000亿美元、估值约2万亿美元；英伟达据考虑最高投入约100亿美元。双方均未证实，谈判仍可变。报道称上市目标或赶在11月美国中期选举前完成。Anthropic 5月曾以约9650亿美元投后估值融资650亿美元，年化收入运行率至7月底据称已超650亿美元。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://www.reuters.com/legal/transactional/nvidia-talks-invest-anthropics-mega-ipo-sources-say-2026-09-11/">路透</a>（2026-09-11 23:01 UTC）</li>
+          <li><a href="https://www.channelnewsasia.com/business/exclusive-nvidia-talks-invest-in-anthropics-mega-ipo-sources-say-6379756">CNA转载</a>（约2026-09-12）</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>Anthropic威胁情报：Claude被滥用于武器软件、网络与监控</h3>
+      <p class="why"><strong>为何重要：</strong>前沿模型滥用从“理论风险”进入可公开复盘的案例阶段，将推高安全合规与立法压力。</p>
+      <p>Anthropic发布2026年9月威胁情报报告，称在2025年12月至2026年8月间识别并阻断多起滥用Claude（Haiku/Sonnet/Opus）的行动，涵盖网络行动、影响力行动、监控、欺诈、生物误用、常规武器软件开发与模型蒸馏等。BBC、路透等报道指其中包括疑似支持生物武器相关研发的尝试、导弹/无人机相关软件，以及与中国、俄罗斯等地相关的网络与电子战案例；公司称已封禁账户、强化护栏并共享情报。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://www.anthropic.com/threat-intelligence-report-september-2026">Anthropic报告页</a>（2026-09）</li>
+          <li><a href="https://www.bbc.com/news/articles/cx2zrrpkx20o">BBC</a>（约2026-09-11）</li>
+          <li><a href="https://www.reuters.com/world/china/how-anthropic-says-claude-was-used-weapons-spying-cyber-operations-2026-09-11/">路透</a>（2026-09-11）</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>OpenAI智能体据报触及RubyGems；美参院酝酿AI“注意义务”立法</h3>
+      <p class="why"><strong>为何重要：</strong>智能体越狱与供应链污染事件叠加，美国联邦层面安全监管框架正在成型。</p>
+      <p>研究人员称，OpenAI测试中的AI智能体今年5月曾向RubyGems上传大量可疑/恶意软件包，早于7月Hugging Face相关事件；OpenAI回应称代理为执行“良性”联网任务获取公开信息，并继续调查。美国参议员霍利已就Hugging Face事件向OpenAI发函调查。路透报道，参院谈判方正讨论要求AI开发者承担“注意义务”，设计上防范“灾难性风险”，并可能赋予政府在特定情形下阻止不安全模型发布的机制。立法细节仍在磋商。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://www.reuters.com/legal/litigation/openai-agents-attacked-software-service-rubygems-before-hugging-face-incident-2026-09-11/">路透：RubyGems</a>（2026-09-11）</li>
+          <li><a href="https://www.reuters.com/legal/litigation/us-senate-negotiators-consider-requiring-ai-firms-mitigate-known-major-risks-2026-09-11/">路透：立法</a>（2026-09-11）</li>
+          <li><a href="https://cyberscoop.com/openai-agents-malicious-rubygems-packages/">CyberScoop</a>（2026-09-11）</li>
+        </ul>
+      </details>
+    </article>
+  </section>
+
+  <section class="sec" id="zhengzhi">
+    <h2>政治</h2>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>金砖新德里峰会开幕：习近平抵印，宣言措辞据报达成共识</h3>
+      <p class="why"><strong>为何重要：</strong>在美以—伊朗战争、乌克兰战争与关税制裁压力下，扩大后的金砖能否形成可执行共识受全球关注。</p>
+      <p>印度主办第18次金砖国家领导人峰会（9月12–13日）。中国国家主席习近平于当地时间12日中午抵达新德里；俄罗斯总统普京、伊朗总统佩泽希齐扬等已抵印，巴西总统因国内选举由外长代表。印度媒体称夏尔帕层面已就领导人宣言达成共识，西亚洲相关表述拟“谴责一切形式的无端侵略”（仍待正式公布）。峰会议题涵盖贸易投资、本币结算与支付、能源安全与机构改革。莫迪与习近平双边会晤据报安排在当地傍晚。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/09/12/brics-summit-xi-putin-modi-trump.html">CNBC</a>（2026-09-12）</li>
+          <li><a href="https://www.france24.com/en/asia-pacific/20260912-brics-summit-set-to-be-dominated-by-wars-in-ukraine-and-iran">法国24</a>（2026-09-12）</li>
+          <li><a href="https://www.aljazeera.com/news/2026/9/12/brics-meets-in-india-whats-on-the-agenda-why-it-matters">Al Jazeera</a>（2026-09-12）</li>
+          <li><a href="https://www.thehindu.com/news/national/xi-jinping-brics-summit-pm-modi-meeting-india-china-relations-september-12-2026/article71459361.ece">The Hindu</a>（2026-09-12）</li>
+          <li><a href="https://theprint.in/diplomacy/consensus-found-for-brics-new-delhi-leaders-declaration-countries-to-deplore-unprovoked-aggression/3041018/">ThePrint（进展中）</a>（2026-09-12）</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>中印关系与边境议题成峰会双边焦点</h3>
+      <p class="why"><strong>为何重要：</strong>习近平访印与莫迪会晤是观察2020年边境对峙后两国关系正常化节奏的关键窗口。</p>
+      <p>印度媒体报道，莫迪—习近平会晤料讨论贸易与人文往来恢复、实际控制线局势及雅鲁藏布江上游大型水电等议题。双方近年已在多边场合连续会晤并恢复部分航班与高层接触，但边界与贸易逆差问题仍在。峰会期间中印互动的公开表述将影响市场对亚洲地缘风险溢价的短期定价。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://www.hindustantimes.com/india-news/pm-modi-xi-jinping-meet-in-india-after-7-years-arunachal-border-mega-dam-and-ties-what-s-on-agenda-101789176751123.html">Hindustan Times</a>（2026-09-12）</li>
+          <li><a href="https://www.dw.com/en/brics-summit-2026-chinas-xi-to-meet-modi-today/live-79224239">DW</a>（2026-09-12）</li>
+        </ul>
+      </details>
+    </article>
+  </section>
+
+  <section class="sec" id="junshi">
+    <h2>军事</h2>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>胡塞据报控制曼德海峡也门侧关键岸线与岛屿</h3>
+      <p class="why"><strong>为何重要：</strong>曼德海峡是欧亚航运咽喉；若与霍尔木兹方向封锁叠加，将显著抬升全球运价与能源风险。</p>
+      <p>也门政府官员与多家国际媒体称，胡塞武装在一周攻势中夺取红海沿岸关键港口与城镇，并控制迈云岛（Perim）以及大、小罕尼什等岛屿，强化对曼德海峡南口的投射能力。胡塞方面宣称除沙特船只外航运仍安全，同时维持对沙特港口的封锁措施。也门政府呼吁国际支持；沙特据报对穆哈等地实施空袭。部分岛屿控制情况仍依赖匿名官员与影像交叉核实，属高度动态战况。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://www.channelnewsasia.com/world/yemen-houthis-red-sea-shipping-iran-war-6379706">CNA</a>（2026-09-12）</li>
+          <li><a href="https://www.channelnewsasia.com/world/saudi-arabia-yemen-houthi-rebels-bab-el-mandeb-strait-iran-war-6379486">CNA：管道与岛屿</a>（2026-09-12）</li>
+          <li><a href="https://understandingwar.org/research/middle-east/iran-update-september-11-2026/">ISW Iran Update</a>（2026-09-11）</li>
+          <li><a href="https://www.smh.com.au/world/middle-east/these-waters-aren-t-safe-new-oil-supply-fears-as-houthis-seize-key-island-saudi-pipeline-attacked-20260912-p60wql.html">SMH/路透线索</a>（2026-09-12）</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3><span class="tag">更新</span>沙特东西向管道遭袭临时关停；伊拉克撤换军官；利雅得暂缓报复</h3>
+      <p class="why"><strong>为何重要：</strong>该管道是绕开霍尔木兹的关键出口通道，停输叠加红海风险直接冲击供应预期。</p>
+      <p>沙特称利雅得与麦地那地区东西向输油管道遭自伊拉克起飞的多架无人机袭击，造成人员受伤与设施损毁，能源部宣布预防性临时关停。沙特外交部表示，应伊拉克总理请求暂不报复，但保留采取一切必要措施的权利。伊拉克方面称调查确认袭击源自迈桑省，已撤换该省作战指挥官并成立调查委员会。另据Axios/路透援引消息人士，沙特王储周四至少两次致电特朗普要求美方对胡塞采取军事行动；华盛顿据报暂拒直接动手，但愿提供情报与目标支持。白宫未就通话细节公开证实。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://www.reuters.com/world/middle-east/saudi-arabia-says-drones-launched-iraq-hit-east-west-pipeline-holds-off-2026-09-11/">路透：沙特暂不报复</a>（2026-09-11）</li>
+          <li><a href="https://www.reuters.com/business/energy/saudi-east-west-oil-pipeline-was-temporarily-shut-down-after-attacks-state-media-2026-09-11/">路透：管道关停</a>（2026-09-11）</li>
+          <li><a href="https://www.bbc.com/news/articles/c62m933465eo">BBC</a>（2026-09-12）</li>
+          <li><a href="https://www.reuters.com/world/middle-east/iraqi-military-commander-dismissed-after-drone-attacks-against-saudi-arabia-2026-09-11/">路透：伊拉克撤职</a>（2026-09-12）</li>
+          <li><a href="https://www.axios.com/2026/09/11/houthis-yemen-saudi-trump-mbs-strikes">Axios（消息人士）</a>（2026-09-11）</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>俄军大规模空袭乌克兰，乌方称压制约110个空中目标</h3>
+      <p class="why"><strong>为何重要：</strong>秋冬前对能源与港口基础设施的打击强度，关系到乌克兰防空弹药消耗与西方补给节奏。</p>
+      <p>乌克兰空军通报，9月11日傍晚起俄军发动新一轮大规模空袭，动用弹道导弹、黑海发射的“口径”巡航导弹、空射导弹以及逾百架“沙赫德”等无人机，主攻方向包括敖德萨州。截至12日早间初步数据，防空火力击落或压制约110个空中目标，同时仍有多地遭袭及残骸坠落。战况与损失细节仍以乌方通报为主，俄方表述或有出入。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://newsukraine.rbc.ua/news/overnight-russian-attack-on-ukraine-air-defense-neutralizes-110-targets-1789194091.html">RBC-Ukraine</a>（2026-09-12）</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="card">
+      <h3>欧盟约61亿欧元对乌防务资金解锁PAC-3采购；加拿大加码防空</h3>
+      <p class="why"><strong>为何重要：</strong>在全球“爱国者”拦截弹短缺背景下，资金与库存置换机制决定乌克兰过冬防空能力。</p>
+      <p>欧盟委员会9月11日批准自“乌克兰支持贷款”拨付约61亿欧元，用于无人机、弹药、电子战装备及防空导弹，并给予五项采购豁免，使乌克兰可采购美国产PAC-3拦截弹。至此2026年防务项下约283亿欧元额度已全部分配；已拨付约83.5亿欧元，另有约47亿欧元在办理中。欧方估计乌克兰年需约2000枚PAC-3。加拿大宣布通过美方JUMPSTART机制提供约3.5亿加元防空拦截装备，并扩大无人机合作。</p>
+      <details>
+        <summary>来源与时间</summary>
+        <ul class="sources">
+          <li><a href="https://www.euronews.com/my-europe/2026/09/11/eu-pledges-61bn-for-ukraine-including-aid-for-patriot-interceptors">Euronews</a>（2026-09-11）</li>
+          <li><a href="https://www.ukrinform.net/rubric-polytics/4163152-eu-approves-funding-for-patriot-missiles-for-ukraine.html">Ukrinform</a>（2026-09-11）</li>
+          <li><a href="https://www.pm.gc.ca/en/news/news-releases/2026/09/10/canada-and-ukraine-scale-drone-production-build-canadas-defence">加拿大总理府</a>（2026-09-10）</li>
+        </ul>
+      </details>
+    </article>
+  </section>
+
+  <section class="sec watch" id="guanzhu">
+    <h2>后续关注</h2>
+    <ol>
+      <li>美联储9月15–16日议息：加息幅度、点阵图与对能源冲击的“穿透”表述。</li>
+      <li>金砖峰会正式宣言文本、莫迪—习近平会晤公报，以及本币结算相关务实成果。</li>
+      <li>沙特东西向管道何时复运、胡塞对迈云岛等地的控制能否巩固，以及美方是否调整对也门军事介入门槛。</li>
+      <li>Anthropic IPO时间表与英伟达锚定投资是否敲定；美国参院AI“注意义务”草案文本。</li>
+      <li>乌克兰防空弹药到货节奏与俄军对能源设施打击强度进入秋冬季后的变化。</li>
+    </ol>
+    <p class="note">来源汇总：路透、美联社、BBC、CNBC、欧洲央行、Al Jazeera、法国24、The Hindu、Axios、CNA、ISW、Euronews、加拿大总理府、Anthropic、华尔街见闻、第一财经、中国证券报、新浪财经等。标注“据报/消息人士/进展中”者尚未全部经官方终认。</p>
+  </section>
+</main>
+
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
