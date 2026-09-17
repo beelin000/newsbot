@@ -19,6 +19,7 @@ Configuration (env / GitHub Actions secrets+vars — never commit credentials):
 Usage:
   python3 scripts/email_briefing.py newsletters/global-brief-YYYY-MM-DD-morning.md
   python3 scripts/email_briefing.py --from-git-range BEFORE_SHA AFTER_SHA
+  python3 scripts/email_briefing.py --latest
 """
 
 from __future__ import annotations
@@ -245,6 +246,25 @@ def briefings_from_git_range(before: str, after: str) -> list[Path]:
     return paths
 
 
+def latest_briefing() -> Path | None:
+    """Pick the newest briefing .md by filename date/slot/hm sort key."""
+    news = ROOT / "newsletters"
+    if not news.exists():
+        return None
+    scored: list[tuple[tuple, Path]] = []
+    for path in news.rglob("global-brief-*.md"):
+        m = BRIEF_RE.match(path.name)
+        if not m:
+            continue
+        slot_rank = 0 if m.group("slot") == "morning" else 1
+        hm = m.group("hm") or ""
+        scored.append(((m.group("date"), slot_rank, hm), path))
+    if not scored:
+        return None
+    scored.sort(key=lambda x: x[0], reverse=True)
+    return scored[0][1]
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("paths", nargs="*", type=Path, help="Briefing .md paths")
@@ -254,9 +274,21 @@ def main(argv: list[str] | None = None) -> int:
         metavar=("BEFORE", "AFTER"),
         help="Send newly added briefing .md files in the git range",
     )
+    ap.add_argument(
+        "--latest",
+        action="store_true",
+        help="Send the newest briefing on disk (useful for manual workflow tests)",
+    )
     args = ap.parse_args(argv)
 
     files: list[Path] = []
+    if args.latest:
+        latest = latest_briefing()
+        if latest is None:
+            print("No briefing Markdown files found under newsletters/.", file=sys.stderr)
+            return 1
+        print(f"latest: {latest.relative_to(ROOT).as_posix()}")
+        files.append(latest)
     if args.from_git_range:
         files.extend(briefings_from_git_range(args.from_git_range[0], args.from_git_range[1]))
     files.extend(p if p.is_absolute() else ROOT / p for p in args.paths)
