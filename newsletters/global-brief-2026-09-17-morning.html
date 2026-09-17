@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月17日早报">
+<title>早报 · 2026年9月17日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root {
+    --measure: 52rem;
+    --page-pad: 1.5rem;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+    --measure: 60rem;
+    --page-pad: 2rem;
+  }
+  body { font-size: 18px; }
+}
+}
+@media (min-width: 768px) { :root { --measure: 52rem; --page-pad: 1.5rem; } }
+@media (min-width: 1100px) { :root { --measure: 60rem; --page-pad: 2rem; } body { font-size: 18px; } }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年9月17日</h1>
+  <p class="meta">生成 07:20（亚洲/上海）· 覆盖约过去12小时 · 11条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日晚报已覆盖议题仅在有实质进展时以【更新】收录。美联储决议已于北京时间约02:00前后公布。本期因PR合入路径问题补录。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li>美联储一致加息25个基点至3.75%–4.00%；点阵图显示16名官员预计年内至少再加一次。</li>
+    <li>沃什称通胀“太高太久”；美股收跌，道指跌约1.3%。</li>
+    <li><span class="tag">更新</span>油价回落：沙特经阿曼追加出口；延布停装未解。</li>
+    <li>Meta计划2027上半年部署MTIA 450；英特尔警告存储/CPU短缺；美施压墨西哥AI原产地。</li>
+    <li>冯德莱恩提议探索加拿大欧盟“准会员”；贝森特周末会晤何立峰。</li>
+    <li><span class="tag">更新</span>沙特加大空袭也门，胡塞宣称再袭延布等地。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3>美联储一致加息25基点，点阵图暗示年内或再加一次</h3>
+      <p class="why">为何重要：沃什任内首次升息，一致投票确认通胀仍是主矛盾。</p>
+      <div class="summary"><p>FOMC将联邦基金利率上调25个基点至3.75%–4.00%，投票12–0。政策利率中值约4.1%；18名提交点阵的官员中16人预计年内至少再加息。沃什称通胀太高太久。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf">Federal Reserve（2026-09-16）</a></li>
+        <li><a href="https://www.reuters.com/business/warshs-words-may-matter-more-than-anticipated-fed-rate-hike-2026-09-16/">Reuters（2026-09-16）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>美股收跌，鹰派加息被读作“还要继续”</h3>
+      <p class="why">为何重要：点阵图组合冲击风险资产定价。</p>
+      <div class="summary"><p>道指跌约1.3%，标普约0.69%，纳指约0.37%；MSCI全球约跌0.52%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/china/global-markets-wrapup-1-2026-09-16/">Reuters（2026-09-16）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>油价回落：沙特经阿曼加售</h3>
+      <p class="why">为何重要：期货回落不等于实物短缺解除。</p>
+      <div class="summary"><p>布伦特一度约107.06美元；沙特经阿曼加售缓解部分担忧；柴油仍近纪录；管道复运未定。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/business/energy/oil-falls-us-crude-inventories-rise-despite-saudi-supply-concerns-2026-09-16/">Reuters（2026-09-16）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3>Meta计划2027上半年部署新一代自研AI芯片</h3>
+      <p class="why">为何重要：云厂ASIC牵动英伟达推理份额与台积电产能。</p>
+      <div class="summary"><p>MTIA 450（Arke）由博通/台积电推进；称效率可优于英伟达现款。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-09-15/meta-touts-the-cost-saving-benefits-of-latest-in-house-ai-chips">Bloomberg（2026-09-15）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>英特尔CEO：存储涨价5–7倍，CPU约满足半数需求</h3>
+      <p class="why">为何重要：CPU与封装亦成AI基建瓶颈。</p>
+      <div class="summary"><p>陈立武称存储短缺兑现；英特尔仅能满足约50%处理器需求。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.trendforce.com/news/2026/09/16/news-intel-ceo-flags-ai-supply-squeeze-memory-prices-up-5-7x-its-cpus-meet-just-50-of-demand/">TrendForce（2026-09-16）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>美施压墨西哥收紧AI硬件原产地</h3>
+      <p class="why">为何重要：AI服务器已成墨西哥对美第一大出口。</p>
+      <div class="summary"><p>WSJ：华盛顿要求限制北美以外零部件占比；规则仍在谈判。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.wsj.com/economy/trade/u-s-pressures-mexico-to-box-out-chinas-ai-hardware-exports-4f708103">WSJ（2026-09-15）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3>冯德莱恩提议探索加拿大成欧盟首个“准会员”</h3>
+      <p class="why">为何重要：加欧加速靠拢；成员国对未经协商表述敏感。</p>
+      <div class="summary"><p>盟情咨文提出associate member设想；法律内涵未明确。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.theguardian.com/world/2026/sep/16/von-der-leyen-mark-carney-canada-eu-first-associate-member">Guardian / AP（2026-09-16）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>贝森特确认周末会晤何立峰，铺垫9月24日习特会</h3>
+      <p class="why">为何重要：峰会前最后一轮部长级谈判决定可宣布成果。</p>
+      <div class="summary"><p>贝森特、格里尔将与何立峰会谈；关税互减与AI对话在议程上。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aa.com.tr/en/americas/chinese-us-top-trade-negotiators-set-to-meet-this-weekend-ahead-of-xi-trump-summit/4058561">Anadolu（2026-09-16）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>沙特加大空袭也门，胡塞宣称再袭延布等地</h3>
+      <p class="why">为何重要：红海战事与管道中断叠加冲击能源通道。</p>
+      <div class="summary"><p>胡塞称本周约450次空袭并再袭延布与哈米斯穆谢特；F-15击落说未经核实。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.al-monitor.com/originals/2026/09/saudis-pound-yemen-houthis-solidify-gains-new-theatre-middle-east-war">Al-Monitor / Reuters（2026-09-16）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>胡塞巩固红海沿岸与曼德海峡岛屿控制</h3>
+      <p class="why">为何重要：巴布·曼德成霍尔木兹受阻后的第二咽喉。</p>
+      <div class="summary"><p>摩卡、丕林岛与哈尼什群岛控制巩固；航运再度受限。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://abcnews.com/International/houthis-yemen-gains-put-control-strategic-strait-key/story?id=136485092">ABC News（2026-09-16）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>沙特管道与延布复运时间表。</li>
+    <li>美联储第二次加息是否在12月落地。</li>
+    <li>9月24日习特会与周末经贸谈判。</li>
+    <li>加欧“准会员”跟进。</li>
+    <li>红海升级边界与美方介入红线。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：Fed · Reuters · CNBC · Bloomberg · WSJ · TrendForce 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>

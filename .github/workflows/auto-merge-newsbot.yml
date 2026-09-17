@@ -92,21 +92,34 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Bring over only newsletter paths changed in the PR (additive briefings).
-          mapfile -t CHANGED < <(git diff --name-only origin/main...pr-head)
+          # Apply newsletter (+ supporting script/workflow/docs) changes from the PR.
+          # Use -z so paths never get C-locale quoted/escaped.
+          # Handle deletes (e.g. Chinese→English renames) as well as adds/updates.
+          mapfile -d '' -t CHANGED < <(git diff -z --name-only origin/main...pr-head)
           landed=0
           for f in "${CHANGED[@]}"; do
+            f="${f#\"}"
+            f="${f%\"}"
             case "$f" in
-              newsletters/*)
+              newsletters/*|scripts/*|README.md|.github/workflows/*)
                 if git cat-file -e "pr-head:$f" 2>/dev/null; then
                   mkdir -p "$(dirname "$f")"
                   git checkout pr-head -- "$f"
                   echo "landed $f"
                   landed=1
+                elif git ls-files --error-unmatch -- "$f" >/dev/null 2>&1; then
+                  git rm -f -- "$f"
+                  echo "removed $f"
+                  landed=1
+                else
+                  echo "skip missing $f"
                 fi
                 ;;
+              index.html|archive.html|editions.json)
+                echo "skip generated Pages index (will rebuild): $f"
+                ;;
               *)
-                echo "skip generated/other path from PR: $f"
+                echo "skip other path from PR: $f"
                 ;;
             esac
           done

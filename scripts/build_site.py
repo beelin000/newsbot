@@ -21,18 +21,20 @@ from theme_briefings import restyle_all
 
 ROOT = Path(__file__).resolve().parents[1]
 NEWS = ROOT / "newsletters"
+# Filenames are ASCII-only so CI path matching never hits C-locale quoting.
+# Display titles/labels remain Chinese.
 NAME_RE = re.compile(
-    r"^全球要闻简报-(?P<date>\d{4}-\d{2}-\d{2})-(?P<slot>上午|晚上)(?:-(?P<hm>\d{4}))?\.html$"
+    r"^global-brief-(?P<date>\d{4}-\d{2}-\d{2})-(?P<slot>morning|evening)(?:-(?P<hm>\d{4}))?\.html$"
 )
-SLOT_RANK = {"上午": 0, "晚上": 1}
-SLOT_LABEL = {"上午": "早报", "晚上": "晚报"}
+SLOT_RANK = {"morning": 0, "evening": 1}
+SLOT_LABEL = {"morning": "早报", "evening": "晚报"}
 
 
 def find_editions() -> list[dict]:
     items: list[dict] = []
     if not NEWS.exists():
         return items
-    for path in NEWS.rglob("全球要闻简报-*.html"):
+    for path in NEWS.rglob("global-brief-*.html"):
         m = NAME_RE.match(path.name)
         if not m:
             continue
@@ -455,8 +457,8 @@ def build_library_html(
     <input class="search" id="q" type="search" placeholder="搜索标题或要点…" autocomplete="off">
     <div class="chip-row" role="group" aria-label="版次筛选">
       <button type="button" class="chip" data-filter="all" aria-pressed="true">全部</button>
-      <button type="button" class="chip" data-filter="晚上" aria-pressed="false">晚报</button>
-      <button type="button" class="chip" data-filter="上午" aria-pressed="false">早报</button>
+      <button type="button" class="chip" data-filter="evening" aria-pressed="false">晚报</button>
+      <button type="button" class="chip" data-filter="morning" aria-pressed="false">早报</button>
     </div>
   </section>
 
