@@ -83,3 +83,41 @@ When a calendar month has ended, the next run archives that month into a folder 
 - `newsletters/2026-08/`
 
 Open the `.html` in any browser. Pages are self-contained (inline CSS, no PDF). After each new edition, run `python3 scripts/build_site.py` so the homepage points at the latest brief.
+
+## Email delivery
+
+When new `newsletters/global-brief-*.md` files are pushed to `main`, `.github/workflows/email-briefing.yml` emails them to your inbox (HTML summary + Markdown/HTML attachments).
+
+### 1. Add GitHub Secrets / Variables
+
+Repo → **Settings → Secrets and variables → Actions**.
+
+| Name | Where | Required | Example |
+|------|--------|----------|---------|
+| `BRIEFING_EMAIL_TO` | Secret or Variable | yes | `you@example.com` (comma-separated OK) |
+| `SMTP_HOST` | Secret | yes | `smtp.gmail.com` |
+| `SMTP_USER` | Secret | yes | your SMTP login |
+| `SMTP_PASSWORD` | Secret | yes | app password (not account password for Gmail) |
+| `SMTP_PORT` | Secret or Variable | no | `587` (default) |
+| `SMTP_FROM` | Secret or Variable | no | defaults to `SMTP_USER` |
+| `SMTP_STARTTLS` | Variable | no | `1` (default); use `0` + port `465` for SSL |
+| `BRIEFING_PAGES_BASE` | Variable | no | `https://beelin000.github.io/newsbot` |
+
+**Gmail:** enable 2FA, create an [App Password](https://myaccount.google.com/apppasswords), use `smtp.gmail.com` / `587` / that app password.
+
+If secrets are missing, the workflow skips send with a notice (does not fail the deploy).
+
+### 2. Test
+
+Actions → **Email new briefings** → **Run workflow**, set e.g.:
+
+`newsletters/global-brief-2026-09-17-morning.md`
+
+Local dry-run (no send):
+
+```bash
+EMAIL_DRY_RUN=1 \
+BRIEFING_EMAIL_TO=you@example.com \
+SMTP_HOST=smtp.example.com SMTP_USER=u SMTP_PASSWORD=p \
+python3 scripts/email_briefing.py newsletters/global-brief-2026-09-17-morning.md
+```

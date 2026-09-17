@@ -1,0 +1,71 @@
+name: Email new briefings
+
+# When new global-brief-*.md files land on main, email them to BRIEFING_EMAIL_TO
+# via SMTP secrets. Skips quietly if secrets are not configured.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "newsletters/**/*.md"
+      - "newsletters/*.md"
+  workflow_dispatch:
+    inputs:
+      briefing_path:
+        description: "Optional path to a briefing .md (e.g. newsletters/global-brief-2026-09-17-morning.md). Leave empty to dry-scan latest only."
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: email-briefing
+  cancel-in-progress: false
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check email secrets
+        id: cfg
+        env:
+          BRIEFING_EMAIL_TO: ${{ secrets.BRIEFING_EMAIL_TO || vars.BRIEFING_EMAIL_TO }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [[ -z "${BRIEFING_EMAIL_TO}" || -z "${SMTP_HOST}" || -z "${SMTP_USER}" || -z "${SMTP_PASSWORD}" ]]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Email secrets/vars not fully set; skipping send. See README § Email delivery."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Send briefing email(s)
+        if: steps.cfg.outputs.configured == 'true'
+        env:
+          BRIEFING_EMAIL_TO: ${{ secrets.BRIEFING_EMAIL_TO || vars.BRIEFING_EMAIL_TO }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT || vars.SMTP_PORT || '587' }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM || vars.SMTP_FROM || secrets.SMTP_USER }}
+          SMTP_STARTTLS: ${{ vars.SMTP_STARTTLS || '1' }}
+          BRIEFING_PAGES_BASE: ${{ vars.BRIEFING_PAGES_BASE || 'https://beelin000.github.io/newsbot' }}
+        run: |
+          set -euo pipefail
+          INPUT_PATH="${{ github.event.inputs.briefing_path || '' }}"
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && -n "${INPUT_PATH}" ]]; then
+            python3 scripts/email_briefing.py "${INPUT_PATH}"
+          elif [[ "${{ github.event_name }}" == "push" ]]; then
+            python3 scripts/email_briefing.py --from-git-range \
+              "${{ github.event.before }}" "${{ github.sha }}"
+          else
+            echo "workflow_dispatch without path: nothing to send (pass briefing_path to test)."
+          fi
