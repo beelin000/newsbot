@@ -93,11 +93,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Apply newsletter (+ supporting script/workflow/docs) changes from the PR.
-          # Use -z so paths never get C-locale quoted/escaped.
-          # Handle deletes (e.g. Chinese→English renames) as well as adds/updates.
-          mapfile -d '' -t CHANGED < <(git diff -z --name-only origin/main...pr-head)
-          landed=0
-          for f in "${CHANGED[@]}"; do
+          # Parse -z --name-status so renames emit OLD + NEW paths (plain --name-only
+          # only lists the destination, leaving orphan sources on main).
+          land_path() {
+            local f="$1"
             f="${f#\"}"
             f="${f%\"}"
             case "$f" in
@@ -106,20 +105,68 @@ jobs:
                   mkdir -p "$(dirname "$f")"
                   git checkout pr-head -- "$f"
                   echo "landed $f"
-                  landed=1
+                  return 0
                 elif git ls-files --error-unmatch -- "$f" >/dev/null 2>&1; then
                   git rm -f -- "$f"
                   echo "removed $f"
-                  landed=1
+                  return 0
                 else
                   echo "skip missing $f"
+                  return 0
                 fi
                 ;;
               index.html|archive.html|editions.json)
                 echo "skip generated Pages index (will rebuild): $f"
+                return 0
                 ;;
               *)
                 echo "skip other path from PR: $f"
+                return 0
+                ;;
+            esac
+          }
+
+          mapfile -d '' -t STATUS_ENTRIES < <(git diff -z --name-status -M origin/main...pr-head)
+          i=0
+          n=${#STATUS_ENTRIES[@]}
+          while (( i < n )); do
+            status="${STATUS_ENTRIES[i]}"
+            ((i++)) || true
+            case "$status" in
+              R*|C*)
+                # rename/copy: oldpath, newpath
+                old="${STATUS_ENTRIES[i]:-}"
+                ((i++)) || true
+                new="${STATUS_ENTRIES[i]:-}"
+                ((i++)) || true
+                # Drop the old path on main, then land the new one.
+                if [[ -n "$old" ]]; then
+                  case "$old" in
+                    newsletters/*|scripts/*|README.md|.github/workflows/*)
+                      if git ls-files --error-unmatch -- "$old" >/dev/null 2>&1; then
+                        git rm -f -- "$old"
+                        echo "removed renamed-away $old"
+                      fi
+                      ;;
+                  esac
+                fi
+                if [[ -n "$new" ]]; then
+                  land_path "$new"
+                fi
+                ;;
+              A*|M*|T*|D*)
+                path="${STATUS_ENTRIES[i]:-}"
+                ((i++)) || true
+                if [[ -n "$path" ]]; then
+                  land_path "$path"
+                fi
+                ;;
+              *)
+                echo "skip unknown status entry: $status"
+                # Best-effort: if next looks like a path, consume it.
+                if (( i < n )) && [[ "${STATUS_ENTRIES[i]}" == */* || "${STATUS_ENTRIES[i]}" == *.* ]]; then
+                  ((i++)) || true
+                fi
                 ;;
             esac
           done
