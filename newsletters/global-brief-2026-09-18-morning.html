@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月18日早报">
+<title>早报 · 2026年9月18日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年9月18日</h1>
+  <p class="meta">生成 07:05（亚洲/上海）· 覆盖约过去12小时 · 11条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">17日晚报未见入库；对17日早报已覆盖议题仅在有实质进展时以【更新】收录。本期补收17日欧美交易日与隔夜要闻。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>油价再跌：布伦特约104.82美元；沙特经阿曼加售并寻求半量管道复运。</li>
+    <li>美股反弹：道指约+0.61%、标普约+1.1%、纳指约+1.7%；10年期美债约4.94%。</li>
+    <li>英央行6–3维持3.75%，预警通胀或破4%；日央行决议待周五。</li>
+    <li>英王召集AI巨头谈安全；黄仁勋称明年芯片销量或翻倍；贝森特愿谈AI共同风险。</li>
+    <li><span class="tag">更新</span>卡尼欢迎加欧“准会员”愿景但要求先定义；特朗普称伊方直接接触。</li>
+    <li><span class="tag">更新</span>塔伊夫拦截无人机致1死2伤；沙特—胡塞继续互袭。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>油价续跌：布伦特约104.8美元，阿曼加售与半量复运预期并行</h3>
+      <p class="why">为何重要：期货回落缓解通胀压力，实物短缺与红海风险仍在。</p>
+      <div class="summary"><p>布伦特结算约104.82美元，WTI一度跌破100美元。沙特经苏哈尔港船对船向亚洲加售，并寻求数日内恢复约半数东西向管道运力；延布库存与欧洲价差仍紧。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/business/energy/oil-prices-extend-losses-fears-middle-east-supply-disruptions-ease-2026-09-17/">Reuters 油价（2026-09-17）</a></li>
+        <li><a href="https://www.reuters.com/world/china/global-markets-global-markets-2026-09-17/">Reuters 全球市场（2026-09-17）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>美股反弹、全球股指回稳，消化美联储加息冲击</h3>
+      <p class="why">为何重要：市场把“再加一次”点阵图重新定价为可消化路径。</p>
+      <div class="summary"><p>道指涨约0.61%，标普约1.1%，纳指约1.7%；10年期美债收益率约4.939%。亚盘日韩台偏强、中港偏弱；现货金约4342美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/china/global-markets-global-markets-2026-09-17/">Reuters（2026-09-17）</a></li>
+        <li><a href="https://www.marketwatch.com/story/asian-stocks-trade-mixed-after-fed-s-rate-hike-update-2cf97c48">MarketWatch（2026-09-17）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>英格兰银行6–3按兵不动，预警通胀或破4%</h3>
+      <p class="why">为何重要：持有但偏鹰，与美联储加息形成央行政策分化。</p>
+      <div class="summary"><p>银行利率维持3.75%；三人主张升至4%。贝利警告高油价或迫使加息。同时通过至2034年出清金边债券的多年QT路径。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/business/finance/bank-england-sounds-inflation-alarm-it-holds-interest-rates-2026-09-17/">Reuters（2026-09-17）</a></li>
+        <li><a href="https://www.bankofengland.co.uk/-/media/boe/files/monetary-policy-summary-and-minutes/2026/monetary-policy-summary-and-minutes-september-2026.pdf">Bank of England（2026-09）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3>英王召集四大AI巨头谈安全；黄仁勋称明年芯片销量或翻倍</h3>
+      <p class="why">为何重要：治理舆论升温，但算力扩张叙事仍主导商业预期。</p>
+      <div class="summary"><p>查尔斯三世在苏格兰召集英伟达、OpenAI、Anthropic与DeepMind讨论共享原则，无约束承诺。黄仁勋称明年芯片销量有望约两倍。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/09/17/king-charles-nvidia-openai-anthropic-ai.html">CNBC（2026-09-17）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-09-17/nvidia-s-huang-expects-to-sell-twice-as-many-chips-next-year">Bloomberg（2026-09-17）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>贝森特：愿与中国讨论AI“共同风险”，覆盖开闭源权重</h3>
+      <p class="why">为何重要：AI安全并入周末经贸主渠道，铺垫9月24日习特会。</p>
+      <div class="summary"><p>贝森特称开放讨论共同风险、避免体系割裂；纽约会晤何立峰将覆盖AI、贸易与稀土。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.axios.com/2026/09/16/us-open-ai-shared-risks-china-bessent">Axios（2026-09-16）</a></li>
+        <li><a href="https://www.asiae.co.kr/en/article/2026091719471466494">Asia Business Daily（2026-09-17）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>卡尼欧洲议会演讲：欢迎“准会员”愿景，要求先定义</h3>
+      <p class="why">为何重要：加欧靠拢从象征走向具体合作清单，法律身份仍待谈判。</p>
+      <div class="summary"><p>卡尼欢迎冯德莱恩雄心，列出矿产、防务、AI等方向，强调须经议会表决；特朗普此前贬称设想“可笑”。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.pm.gc.ca/en/news/speeches/2026/09/17/prime-minister-carney-delivers-address-european-parliament">加拿大总理府（2026-09-17）</a></li>
+        <li><a href="https://www.politico.eu/article/canada-mark-carney-stops-short-of-endorsing-ursula-von-der-leyen-eu-associate-member-plan/">POLITICO（2026-09-17）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>特朗普称伊方“直接接触”，望战争接近尾声</h3>
+      <p class="why">为何重要：外交乐观叙事与红海战事升级并存。</p>
+      <div class="summary"><p>特朗普称希望走向战争尾声并称直接听到伊方信息；拟于联大期间会见海湾领导人。停火安排尚未可核验。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/middle-east/trump-hopes-iran-war-nearing-end-houthi-saudi-fighting-escalates-2026-09-17/">Reuters（2026-09-17）</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/9/17/trump-claims-direct-talks-with-iran-is-diplomacy-picking-up-again">Al Jazeera（2026-09-17）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>塔伊夫拦截胡塞无人机致1死2伤</h3>
+      <p class="why">为何重要：沙特本月首例公布境内死亡，抬高圣地周边敏感度。</p>
+      <div class="summary"><p>民防称塔伊夫拦截后残骸致1名也门籍居民死亡、2人受伤；胡塞否认针对麦加。伤亡统计依赖冲突方口径。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/asia-pacific/one-killed-saudi-arabia-intercepts-drone-launched-by-yemens-houthis-2026-09-17/">Reuters（2026-09-17）</a></li>
+        <li><a href="https://www.thenationalnews.com/news/gulf/2026/09/17/one-killed-and-two-injured-by-houthi-drone-debris-in-saudi-arabias-taif/">The National（2026-09-17）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>沙特—胡塞继续互袭，美方排除直接介入地面战</h3>
+      <p class="why">为何重要：红海成全球能源第二风险点；美方定下外溢上限。</p>
+      <div class="summary"><p>双方继续空袭与宣称打击延布、哈米斯穆谢特等目标；美方重申不直接参与也门地面战，马斯喀特接触仍在。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aljazeera.com/news/2026/9/17/yemeni-forces-target-houthis-and-a-saudi-base-as-us-rules-out-direct-role">Al Jazeera（2026-09-17）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>沙特管道“半量复运”与延布装船是否兑现。</li>
+    <li>日央行周五决议对日元与全球债市冲击。</li>
+    <li>周末贝森特—何立峰纽约会谈：AI、关税与稀土。</li>
+    <li>加欧“准会员”法律文本与成员国协调。</li>
+    <li>塔伊夫后的防空同盟与美—胡塞接触下文。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：Reuters · Bank of England · CNBC · Bloomberg · Axios · POLITICO · Al Jazeera 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
