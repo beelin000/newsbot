@@ -39,7 +39,7 @@ Enable **Settings → Pages → Source: GitHub Actions**. Push to `main` runs `.
 
 ### Auto-merge briefing PRs
 
-`.github/workflows/auto-merge-newsbot.yml` watches PRs whose head branch starts with `cursor/chinese-news-brief` or `cursor/chinese-global-news-brief`.
+`.github/workflows/auto-merge-newsbot.yml` watches PRs whose head branch starts with `cursor/chinese-news-brief`, `cursor/chinese-global-news-brief`, or `cursor/global-brief-file-management` (Cloud Agent briefing runs).
 
 **Only trusted PRs are auto-merged.** All of the following must hold:
 
