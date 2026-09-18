@@ -17,6 +17,7 @@ permissions:
   pull-requests: write
   pages: write
   id-token: write
+  actions: write
 
 jobs:
   merge:
@@ -92,6 +93,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # Newsletter .md paths landed this run — used to trigger email after push.
+          # (GITHUB_TOKEN pushes do not fire other workflows' on.push handlers.)
+          LANDED_MDS=()
+
           # Apply newsletter (+ supporting script/workflow/docs) changes from the PR.
           # Parse -z --name-status so renames emit OLD + NEW paths (plain --name-only
           # only lists the destination, leaving orphan sources on main).
@@ -105,6 +110,9 @@ jobs:
                   mkdir -p "$(dirname "$f")"
                   git checkout pr-head -- "$f"
                   echo "landed $f"
+                  if [[ "$f" == newsletters/*.md ]]; then
+                    LANDED_MDS+=("$f")
+                  fi
                   return 0
                 elif git ls-files --error-unmatch -- "$f" >/dev/null 2>&1; then
                   git rm -f -- "$f"
@@ -180,6 +188,36 @@ jobs:
             git commit -m "Auto-land PR #${PR} (${HEAD_REF}) and refresh Pages index."
             git push origin main
           fi
+
+          # Persist landed md list for the email-trigger step (same job).
+          {
+            for f in "${LANDED_MDS[@]+"${LANDED_MDS[@]}"}"; do
+              printf '%s\n' "$f"
+            done
+            # Optional one-shot catch-up list on the PR head (not landed to main).
+            if git cat-file -e "pr-head:.github/email-catchup.txt" 2>/dev/null; then
+              git show "pr-head:.github/email-catchup.txt" | sed '/^[[:space:]]*$/d; /^#/d'
+            fi
+          } | awk 'NF && !seen[$0]++' > /tmp/newsbot-email-mds.txt
+          echo "Email candidates:"
+          cat /tmp/newsbot-email-mds.txt || true
+
+      - name: Trigger email workflow for landed briefings
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [[ ! -s /tmp/newsbot-email-mds.txt ]]; then
+            echo "No briefing .md to email; skipping."
+            exit 0
+          fi
+          # workflow_dispatch IS allowed with GITHUB_TOKEN (unlike on.push from the same token).
+          while IFS= read -r f; do
+            [[ -z "$f" ]] && continue
+            echo "Dispatching Email new briefings for $f"
+            gh workflow run "Email new briefings" --repo "$GITHUB_REPOSITORY" \
+              --ref main -f "briefing_path=$f"
+          done < /tmp/newsbot-email-mds.txt
 
       - name: Mark ready and close as merged when possible
         env:
