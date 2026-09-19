@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月19日晚报">
+<title>晚报 · 2026年9月19日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年9月19日</h1>
+  <p class="meta">生成 19:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：对俄制裁法签署、阿美欧洲10月零配额，以及Anthropic新模型评估与周末中美财金会谈前夜。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>特朗普签署对俄制裁法，授权对俄能源五大买家最高约100%关税。</li>
+    <li><span class="tag">更新</span>阿美告知至少两家欧洲炼厂10月长约原油配额为零；管道部分复运与六周满负荷说法并存。</li>
+    <li>Anthropic评估发新模型对冲Astra企业渗透；IPO或延至中期选举后。</li>
+    <li>黄仁勋、奥尔特曼获邀习特白宫国宴；贝森特—格里尔周日纽约会何立峰。</li>
+    <li><span class="tag">更新</span>乌防空一夜约174无人机+2枚“锆石”；全境约11死、逾64伤。</li>
+    <li>台海侦获共机20架次（逾中线13）、共舰11、公务船3。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>阿美取消欧洲10月长约原油：管道停摆外溢至炼厂配额</h3>
+      <p class="why">为何重要：期货回落难掩盖“亚洲可转运、欧洲断配额”的区域分化；柴油溢价仍是下周核心变量。</p>
+      <div class="summary"><p>知情人士称阿美已告知至少两至三家欧洲炼厂10月长约配额为零（是否覆盖全部欧洲买家口径不一）。东西向管道仍停，争取数日部分复运、约六周满负荷；苏哈尔船对船支撑亚洲。美国柴油约6.45美元/加仑续处纪录高位。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.straitstimes.com/world/middle-east/saudi-aramco-will-not-supply-european-oil-refiners-with-crude-in-october-sources">The Straits Times / Bloomberg（2026-09-19）</a></li>
+        <li><a href="https://www.aa.com.tr/en/economy/saudi-aramco-cancels-october-crude-allocations-to-european-refiners-report/4061656">Anadolu Agency（2026-09-19）</a></li>
+        <li><a href="https://oilprice.com/Energy/Energy-General/WTI-Retreats-as-Saudi-Oil-Workaround-Eases-Supply-Fears.html">OilPrice.com（2026-09-19）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>周末定价真空：制裁法落地与中美财金会谈前</h3>
+      <p class="why">为何重要：盘中已收，叙事转向法律执行与外交文本。</p>
+      <div class="summary"><p>美股周五收盘与10年期约5.00%已在早报收录。周末焦点转为制裁法30日执行清单，以及周日贝森特—何立峰能否就关税休战与稀土给出可宣布要点。高油价继续压制亚洲风险偏好。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aljazeera.com/news/2026/9/19/trump-signs-sweeping-russia-sanctions-over-ukraine-war">Al Jazeera（2026-09-19）</a></li>
+        <li><a href="https://bernamabiz.com/news.php?id=2609125">Bernama（2026-09-19）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3>Anthropic评估发布新模型对冲Astra，IPO或延后</h3>
+      <p class="why">为何重要：CEO刚呼吁减速即讨论新模型，检验安全叙事与企业份额保卫战。</p>
+      <div class="summary"><p>路透称Anthropic正考虑发新模型回应GPT-6 Astra。Ramp：Astra约占企业AI支出13%，Claude Fable约8%。Anthropic年化收入仍领先，但IPO或推迟至11月中期选举后。奥尔特曼周六确认OpenAI 2026年不上市。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/business/anthropic-considers-releasing-new-ai-model-ahead-ipo-sources-say-2026-09-19/">Reuters（2026-09-19）</a></li>
+        <li><a href="https://insideai.news/news/ai-in-business/anthropic-new-ai-model/12310/">Inside AI（2026-09-19）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>黄仁勋、奥尔特曼获邀习特国宴；纽约财金会谈周日开场</h3>
+      <p class="why">为何重要：AI成为峰会可见配套——企业CEO同桌，财金团队谈开闭源权重。</p>
+      <div class="summary"><p>法新社：黄仁勋与奥尔特曼等获邀白宫国宴。贝森特、贸易代表格里尔周日纽约会何立峰，工作层或延至周一；议题含AI、稀土、芬太尼与关税休战延期。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.afp.com/en/nvidia-openai-ceos-attend-xi-dinner-white-house">AFP（2026-09-19）</a></li>
+        <li><a href="https://www.koreatimes.co.kr/world/20260919/us-treasurys-bessent-to-discuss-ai-rare-earths-with-chinas-he-source-says">The Korea Times（2026-09-19）</a></li>
+        <li><a href="https://www.reuters.com/world/china/us-treasurys-bessent-plans-discuss-ai-rare-earths-with-chinas-he-source-says-2026-09-18/">Reuters（2026-09-18）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>特朗普签署对俄制裁法：影子船队+买家关税权落地</h3>
+      <p class="why">为何重要：早报尚称“料于签署”；法律已启动30日执行倒计时，抬升习特会前对华印关税威胁。</p>
+      <div class="summary"><p>周五签署《林赛·格雷厄姆制裁俄罗斯与伊朗法》。制裁俄领导层、能源军工与影子船队；授权对俄能源五大买家最高约100%关税。泽连斯基称“极强大工具”；首批名单与豁免待行政令。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/us/trump-signs-russia-sanctions-bill-into-law-2026-09-18/">Reuters（2026-09-18）</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/9/19/trump-signs-sweeping-russia-sanctions-over-ukraine-war">Al Jazeera（2026-09-19）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>联大前定调：周二演讲聚焦伊核，随后会海湾六国</h3>
+      <p class="why">为何重要：将“大决定”程序化到联大日程，压缩周末升级猜测但拉长外交波动。</p>
+      <div class="summary"><p>特朗普周二联大演讲将把阻止伊核置于中心，随后会见海合会六国领导人。伊方较小代表团获准与会但活动受限；未确认美伊会晤。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.newkerala.com/news/a/trump-put-irans-nuclear-ambitions-centre-un-diplomacy-578.htm">New Kerala（2026-09-19）</a></li>
+        <li><a href="https://www.reuters.com/world/middle-east/iran-war-grinds-trump-face-skeptical-world-leaders-un-2026-09-18/">Reuters（2026-09-18）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>俄杜马选举次日：战时议会投票继续</h3>
+      <p class="why">为何重要：克里姆林宫以三日投票营造战争民意背书。</p>
+      <div class="summary"><p>450席改选进入次日，统一俄罗斯党料继续主导。初步结果待周日投票结束后公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://sundayguardianlive.com/world/russia-parliamentary-election-2026-111-million-voters-450-duma-seats-and-a-wartime-test-for-putin-check-result-date-total-duma-seats-political-parties-and-more-287525/">Sunday Guardian（2026-09-19）</a></li>
+        <li><a href="https://www.reuters.com/world/europe/voting-begins-russian-parliamentary-election-which-putin-has-cast-barometer-2026-09-18/">Reuters（2026-09-18）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>过夜大规模空袭：174无人机+2枚“锆石”；约11死</h3>
+      <p class="why">为何重要：规模高于此前约93架波次；主攻基辅—敖德萨轴。</p>
+      <div class="summary"><p>乌防空压制约138架无人机与3枚巡飞弹；“锆石”两枚未命中。全境约11死、逾64伤；巴拉克利亚双击4死；敖德萨行政楼至少11伤；基辅州九处民用设施受损。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://unn.ua/en/news/what-russia-attacked-ukraine-with-this-night-and-how-many-targets-were-shot-down">UNN / 乌空军（2026-09-19）</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-11-injure-over-64-in-ukraine-over-past-day/">Kyiv Independent（2026-09-19）</a></li>
+        <li><a href="https://unn.ua/en/news/the-alert-in-the-kyiv-region-hardly-let-up-the-regional-military-administration-spoke-about-the-consequences-of-the-attack-on-the-region">UNN 基辅州（2026-09-19）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海20机11舰；红海—曼德与沙特—胡塞互袭持续</h3>
+      <p class="why">为何重要：西太平洋保持高强度抵近；第二能源咽喉与欧洲配额冲击叠加。</p>
+      <div class="summary"><p>台防务部门：共机20架次（逾中线13）、共舰11、公务船3。沙特继续打击胡塞多点；胡塞岸线与曼德要点控制仍抬升航运成本。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/87799">台湾防务部门（2026-09-19）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202609190025.aspx">中央社（2026-09-19）</a></li>
+        <li><a href="https://news.abplive.com/videos/news/world-middle-east-crisis-saudi-strikes-houthi-targets-as-red-sea-trade-route-faces-fresh-threat-1867406">ABP Live（2026-09-19）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>周日贝森特—格里尔—何立峰：AI护栏、关税休战与稀土。</li>
+    <li>对俄制裁法30日执行清单与豁免口径。</li>
+    <li>阿美管道复运 vs 欧洲零配额与柴油价差。</li>
+    <li>联大周二演讲与海湾六国会。</li>
+    <li>俄杜马周日初步结果与乌防空压力。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：Reuters · Al Jazeera · AFP · Bloomberg · Kyiv Independent · UNN · 台湾防务部门 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
