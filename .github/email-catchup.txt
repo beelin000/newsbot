@@ -1,5 +1,8 @@
-# One-shot catch-up: paths already on main that missed email because
-# GITHUB_TOKEN auto-land pushes do not trigger on.push workflows.
-# Auto-merge reads this from the PR head only; it is not landed onto main.
-newsletters/global-brief-2026-09-17-evening.md
-newsletters/global-brief-2026-09-18-morning.md
+# Optional catch-up list (unused by auto-merge).
+#
+# Auto-merge emails only the newest edition on main after landing a briefing.
+# To re-send a specific older edition, run Actions → Email new briefings
+# manually and set briefing_path, e.g.:
+#   newsletters/global-brief-YYYY-MM-DD-evening.md
+#
+# Leave this file empty of paths (comments only).
