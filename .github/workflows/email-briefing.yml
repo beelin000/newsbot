@@ -69,8 +69,28 @@ jobs:
               python3 scripts/email_briefing.py --latest
             fi
           elif [[ "${{ github.event_name }}" == "push" ]]; then
-            python3 scripts/email_briefing.py --from-git-range \
-              "${{ github.event.before }}" "${{ github.sha }}"
+            BEFORE="${{ github.event.before }}"
+            AFTER="${{ github.sha }}"
+            # If this push added any briefing .md, email only the newest edition once.
+            if [[ -z "${BEFORE}" || "${BEFORE}" == "0000000000000000000000000000000000000000" ]]; then
+              mapfile -t ADDED < <(
+                git diff-tree --no-commit-id --name-only -r --diff-filter=A "${AFTER}" \
+                  | grep -E '^newsletters/(.*/)?global-brief-.+\.md$' || true
+              )
+            else
+              mapfile -t ADDED < <(
+                git diff --name-only --diff-filter=A "${BEFORE}...${AFTER}" \
+                  | grep -E '^newsletters/(.*/)?global-brief-.+\.md$' || true
+              )
+            fi
+            if [[ ${#ADDED[@]} -eq 0 ]]; then
+              echo "No new briefing Markdown in this push."
+            else
+              echo "New briefing(s) in push:"
+              printf '  %s\n' "${ADDED[@]}"
+              echo "Sending newest edition only (--latest)."
+              python3 scripts/email_briefing.py --latest
+            fi
           else
             echo "Unsupported event: ${{ github.event_name }}"
             exit 1
