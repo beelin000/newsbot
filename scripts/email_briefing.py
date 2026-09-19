@@ -20,6 +20,8 @@ Usage:
   python3 scripts/email_briefing.py newsletters/global-brief-YYYY-MM-DD-morning.md
   python3 scripts/email_briefing.py --from-git-range BEFORE_SHA AFTER_SHA
   python3 scripts/email_briefing.py --latest
+
+Note: CI auto-land emails only --latest once per run (not every path in a catch-up list).
 """
 
 from __future__ import annotations

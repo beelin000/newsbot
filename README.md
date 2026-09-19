@@ -86,9 +86,9 @@ Open the `.html` in any browser. Pages are self-contained (inline CSS, no PDF). 
 
 ## Email delivery
 
-When new `newsletters/global-brief-*.md` files land on `main`, `.github/workflows/email-briefing.yml` emails them to your inbox (HTML summary + Markdown/HTML attachments).
+When new `newsletters/global-brief-*.md` files land on `main`, `.github/workflows/email-briefing.yml` emails **one** briefing to your inbox (HTML summary + Markdown/HTML attachments): the newest edition on disk.
 
-Auto-merge pushes with `GITHUB_TOKEN` do **not** fire other workflows' `on.push` handlers, so after landing briefings it explicitly `workflow_dispatch`es **Email new briefings** for each new `.md` (and optional `.github/email-catchup.txt` on the PR head).
+Auto-merge pushes with `GITHUB_TOKEN` do **not** fire other workflows' `on.push` handlers, so after landing briefings it `workflow_dispatch`es **Email new briefings** once with an empty path (→ `--latest`). Older catch-up paths are not re-emailed every run; to resend a specific edition, run the workflow manually with `briefing_path`.
 
 ### 1. Add GitHub Secrets / Variables
 

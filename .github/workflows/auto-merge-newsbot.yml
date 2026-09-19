@@ -190,35 +190,30 @@ jobs:
             git push origin main
           fi
 
-          # Persist landed md list for the email-trigger step (same job).
+          # Persist whether any briefing .md landed (email step sends only --latest once).
           {
             for f in "${LANDED_MDS[@]+"${LANDED_MDS[@]}"}"; do
               printf '%s\n' "$f"
             done
-            # Optional one-shot catch-up list on the PR head (not landed to main).
-            if git cat-file -e "pr-head:.github/email-catchup.txt" 2>/dev/null; then
-              git show "pr-head:.github/email-catchup.txt" | sed '/^[[:space:]]*$/d; /^#/d'
-            fi
           } | awk 'NF && !seen[$0]++' > /tmp/newsbot-email-mds.txt
-          echo "Email candidates:"
+          echo "Landed briefing .md files this run:"
           cat /tmp/newsbot-email-mds.txt || true
 
-      - name: Trigger email workflow for landed briefings
+      - name: Trigger email workflow for latest briefing
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
           if [[ ! -s /tmp/newsbot-email-mds.txt ]]; then
-            echo "No briefing .md to email; skipping."
+            echo "No briefing .md landed; skipping email."
             exit 0
           fi
+          # One email per auto-land: newest edition on main (--latest).
+          # Do not loop catch-up paths — that re-sent older editions every run.
           # workflow_dispatch IS allowed with GITHUB_TOKEN (unlike on.push from the same token).
-          while IFS= read -r f; do
-            [[ -z "$f" ]] && continue
-            echo "Dispatching Email new briefings for $f"
-            gh workflow run "Email new briefings" --repo "$GITHUB_REPOSITORY" \
-              --ref main -f "briefing_path=$f"
-          done < /tmp/newsbot-email-mds.txt
+          echo "Dispatching Email new briefings once (--latest)"
+          gh workflow run "Email new briefings" --repo "$GITHUB_REPOSITORY" \
+            --ref main
 
       - name: Mark ready and close as merged when possible
         env:
