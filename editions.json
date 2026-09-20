@@ -1,15 +1,24 @@
 {
-  "generatedAt": "2026-09-19 23:12",
+  "generatedAt": "2026-09-20 11:05",
   "latest": {
     "date": "2026-09-20",
-    "slot": "morning",
-    "label": "早报",
+    "slot": "evening",
+    "label": "晚报",
     "hm": "",
-    "title": "全球要闻简报｜2026-09-20｜早报",
-    "path": "newsletters/global-brief-2026-09-20-morning.html",
-    "summary": "布伦特周五结算约104.87美元（−0.93%）、WTI约100.30美元；美国零售柴油约6.45美元/加仑续处纪录高位，原油回落与成品油溢价背离。；阿美欧洲10月长约冲击仍在：至少三家炼厂被告知零配额，典型对欧长约约68万桶/日；东西向管道实质复运未证实。"
+    "title": "全球要闻简报｜2026-09-20｜晚报",
+    "path": "newsletters/global-brief-2026-09-20-evening.html",
+    "summary": "欧洲实物油市极端分化：Dated Brent一度逾130美元，挪威Johan Sverdrup对Dated溢价报价最高约35美元/桶；欧洲柴油逾200美元/桶，期货约104美元难反映即期紧缺。；阿美欧洲10月零配额叙事延续；东西向管道仍停，部分复运“数日”、满负荷约五至六周说法并存，周一亚盘仍看柴油裂解。"
   },
   "editions": [
+    {
+      "date": "2026-09-20",
+      "slot": "evening",
+      "label": "晚报",
+      "hm": "",
+      "title": "全球要闻简报｜2026-09-20｜晚报",
+      "path": "newsletters/global-brief-2026-09-20-evening.html",
+      "summary": "欧洲实物油市极端分化：Dated Brent一度逾130美元，挪威Johan Sverdrup对Dated溢价报价最高约35美元/桶；欧洲柴油逾200美元/桶，期货约104美元难反映即期紧缺。；阿美欧洲10月零配额叙事延续；东西向管道仍停，部分复运“数日”、满负荷约五至六周说法并存，周一亚盘仍看柴油裂解。"
+    },
     {
       "date": "2026-09-20",
       "slot": "morning",
