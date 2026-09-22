@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月23日早报">
+<title>早报 · 2026年9月23日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年9月23日</h1>
+  <p class="meta">生成 07:05（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日晚报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：联大日落地（特朗普演讲、美伊三小时接触、泽连斯基见特朗普）、纳指再创纪录与布伦特跌破100，以及习抵美、Meta Connect临近。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>纳指再创纪录收约27244；标普持平，道指约−0.36%。</li>
+    <li><span class="tag">更新</span>布伦特收约99.25美元；AAA柴油仍处约6.51美元/加仑高位。</li>
+    <li><span class="tag">更新</span>特朗普联大：伊朗“成交或歼灭”；呼吁AI改称“超级智能”。</li>
+    <li><span class="tag">更新</span>威特科夫—阿拉格齐谈约三小时；佩泽希齐扬今演讲；直接见面仍被伊方排除。</li>
+    <li><span class="tag">更新</span>泽连斯基见特朗普约40分钟：能源休战上桌，美方将向俄转达。</li>
+    <li>Meta Connect今日主题演讲；META约−0.6%消化Muse涨势。</li>
+    <li>习近平今日抵美，特朗普料在安德鲁斯接机；正式仪式在24日。</li>
+    <li><span class="tag">更新</span>乌过去约一日至少8死37伤；Interpipe与Naftogaz再遭重创；伊久姆晚间7伤。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>周二美股：纳指再创纪录，油价缓和托底科技</h3>
+      <p class="why">为何重要：外交缓和预期继续推高成长股，但宽基不再同涨——交易更挑“AI+油价缓和”交集。</p>
+      <div class="summary"><p>纳指约+0.45%收27244.28再创纪录，纳指100约+0.82%亦创新高；标普近乎持平约7764.80；道指约−0.36%至51869。10年期美债收益率约4.955%。主线是美伊边会与霍尔木兹通航预期，而非已落地协议。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://investinglive.com/stocks/nasdaq-composite-and-nasdaq-100-close-at-records-as-iran-diplomacy-hopes-lift-sentiment/">InvestingLive（2026-09-22）</a></li>
+        <li><a href="https://www.wptf.com/2026/09/22/17903/">WPTF / AP（2026-09-22）</a></li>
+        <li><a href="https://www.seoulgazette.kr/Economy/858016-oil-prices-retreat-as-markets-welcome-us-iran-talks.html">Seoul Gazette（2026-09-22）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>布伦特跌破100收盘，柴油零售高位未解</h3>
+      <p class="why">为何重要：纸货交易外交接触，产品端短缺与泵价仍背离。</p>
+      <div class="summary"><p>布伦特收约99.25美元（约−1.1%），盘中曾跌破98；WTI约94.59美元。沙特管道恢复与美伊接触施压；特朗普称全面协议或待中期选举后。全美柴油零售约6.514美元/加仑仍近纪录。日经现货继续休市至23日。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.wptf.com/2026/09/22/17903/">WPTF / AP（2026-09-22）</a></li>
+        <li><a href="https://investinglive.com/commodities/recap-oil-settles-lower-as-saudi-flows-recover-and-us-iran-hold-talks/">InvestingLive 油市（2026-09-22）</a></li>
+        <li><a href="https://www.ttnews.com/articles/oil-prices-below-100-barrel">TT / AP（2026-09-22）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>Meta Connect今日开幕：Muse溢价消化，硬件成估值关键</h3>
+      <p class="why">为何重要：从下载热度切换到眼镜/头显能否讲清入口故事。</p>
+      <div class="summary"><p>扎克伯格主题演讲今日16:00 PT。市场预估Muse跨设备能力与传Luna眼镜/Phoenix头显——官方未确认。META约−0.6%收736.60，部分回吐周一约+11%涨势。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.meta.com/connect/">Meta Connect 官方</a></li>
+        <li><a href="https://www.engadget.com/2262932/what-to-expect-at-meta-connect-2026-new-ai-glasses-a-mixed-reality-headset-and-more/">Engadget 前瞻</a></li>
+        <li><a href="https://exa.ai/library/markets/stock/META">Exa / META报价（2026-09-22）</a></li>
+        <li><a href="https://meyka.com/blog/meta-slides-06-to-73659-as-muse-momentum-fades-on-september-22-2209/">Meyka（2026-09-22）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>特朗普联大：呼吁把AI改称“超级智能”</h3>
+      <p class="why">为何重要：把科技叙事钉到地缘竞争框架，与习特会AI对话同周并行。</p>
+      <div class="summary"><p>特朗普称应弃用“artificial”，改称“superintelligence”，并称“谁赢得超级智能，谁就赢”。与国宴科技高管边会、中美AI安全对话处于同一叙事链条。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://news.un.org/en/story/2026/09/1168397">UN News（2026-09-22）</a></li>
+        <li><a href="https://www.channelnewsasia.com/world/us-trump-un-iran-war-ai-6401241">CNA（2026-09-22）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>特朗普联大：伊朗“成交或歼灭”；同时披露美伊已接触</h3>
+      <p class="why">为何重要：强硬措辞与私下接触并行，直接扰动油价与海湾外交。</p>
+      <div class="summary"><p>特朗普称面临与伊朗成交或“歼灭”的重大抉择，呼吁更彻底经济孤立。稍后披露威特科夫等与伊方谈约三小时，称很成功并安排再谈，但全面协议或待中期选举后。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://news.un.org/en/story/2026/09/1168397">UN News（2026-09-22）</a></li>
+        <li><a href="https://www.bbc.com/news/articles/c52e0ywl9pr7o">BBC（2026-09-22）</a></li>
+        <li><a href="https://www.theguardian.com/world/2026/sep/22/iran-us-talks-sidelines-un-summit-trump-israel-us">The Guardian（2026-09-22）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>美伊边会三小时：霍尔木兹条件上桌；佩泽希齐扬今演讲</h3>
+      <p class="why">为何重要：外长级接触与可核对条件上桌——重开海峡时间表成油价核心变量。</p>
+      <div class="summary"><p>卡塔尔斡旋下阿拉格齐与威特科夫会谈；伊方称提交重开霍尔木兹条件。一名官员称若美方初步缓和，伊方愿七日重开海峡——德黑兰内部分歧仍在。伊方排除总统级直接见面。特朗普与海湾及地区领导人会谈称“有势头”，无重大宣告。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.theguardian.com/world/2026/sep/22/iran-us-talks-sidelines-un-summit-trump-israel-us">The Guardian（2026-09-22）</a></li>
+        <li><a href="https://www.iranintl.com/en/202609223522">Iran International（2026-09-22）</a></li>
+        <li><a href="https://www.al-monitor.com/originals/2026/09/trump-tells-middle-east-leaders-us-iran-talks-have-momentum">Al-Monitor（2026-09-22）</a></li>
+        <li><a href="https://www.middleeasteye.net/news/iran-and-us-held-direct-un-talks-islamic-republic-terms-reopen-hormuz-hardening">Middle East Eye（2026-09-22）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>泽连斯基见特朗普：能源休战上桌，美方将向俄转达</h3>
+      <p class="why">为何重要：把炼厂互袭与外交谈判绑在同一议程。</p>
+      <div class="summary"><p>会谈约40分钟。泽连斯基称讨论能源休战与停战路径，乌方愿任何形式推进，但未谈单方面停袭俄炼厂；美方将向俄转达。特朗普称普京愿见面。拉夫罗夫—鲁比奥会晤仍在敲定。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/ukraines-zelenskiy-says-he-discussed-peace-efforts-energy-ceasefire-with-trump-2026-09-22/">Reuters（2026-09-22）</a></li>
+        <li><a href="https://news.liga.net/en/politics/news/zelenskyy-we-discussed-an-energy-truce-with-trump-us-will-convey-proposal-to-russia">LIGA.net（2026-09-22）</a></li>
+        <li><a href="https://www.kyivpost.com/post/85171">Kyiv Post（2026-09-22）</a></li>
+        <li><a href="https://www.nampa.org/text/23021702">NAMPA / RIA（2026-09-22）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>习抵美日：安德鲁斯接机今日落地，文本预期仍降温</h3>
+      <p class="why">为何重要：国事访问进入执行日；仪式规格与可交易文本是否错位。</p>
+      <div class="summary"><p>23日特朗普料在安德鲁斯迎接（约当地16:10）；24日南草坪仪式与国宴；25日档案馆送别。休战延期文本本周料难宣布；AI安全对话约两月后或在深圳再谈。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-ahead-of-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuans-visit-to-the-white-house/">White House（2026-09-21）</a></li>
+        <li><a href="https://www.scmp.com/news/china/diplomacy/article/3367905/rare-honour-trump-will-greet-xi-andrews-not-just-white-house">SCMP（2026-09-17）</a></li>
+        <li><a href="https://www.reuters.com/world/china/chinas-xi-visit-us-september-23-25-2026-09-21/">Reuters（2026-09-21）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>乌伤亡上修：至少8死37伤；Interpipe与Naftogaz再遭重创</h3>
+      <p class="why">为何重要：能源休战外交与战场互袭同步升级。</p>
+      <div class="summary"><p>过去约一日至少8死37伤。第聂伯罗Interpipe弹道打击致4名员工死亡并停产；波尔塔瓦Naftogaz设施遭至少5枚弹道导弹、称无法恢复。乌称另袭巴什科尔托斯坦炼厂。伊久姆晚间约8枚制导航空炸弹致至少7伤（含儿童）。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-at-least-8-wound-37-across-ukraine-as-ballistic-strike-hits-major-dnipro-industrial-plant/">Kyiv Independent（2026-09-22）</a></li>
+        <li><a href="https://www.pbs.org/newshour/world/russia-and-ukraine-trade-strikes-ahead-of-zelenskyys-meeting-with-trump">PBS / AP（2026-09-22）</a></li>
+        <li><a href="https://mezha.net/eng/news/e711d395_russian_forces_strike/">Mezha 伊久姆（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>台海：等待22–23日正式窗口；前窗仍为低强度巡航</h3>
+      <p class="why">为何重要：习抵美当日，台海军情仍是峰会外围敏感指标。</p>
+      <div class="summary"><p>前窗（21日06:00–22日06:00）共机4（全部逾中线）、共舰6、公务船3。截至截稿，22–23日正式窗口公开渠道未见更新。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/87813">台湾防务部门（2026-09-22）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6444149">Taiwan News（2026-09-22）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202609220037.aspx">中央社（2026-09-22）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>佩泽希齐扬联大演讲与下一场美伊接触——霍尔木兹条件能否被回应。</li>
+    <li>习近平抵美与24日峰会——休战文本、AI通报、贸易委员会清单。</li>
+    <li>Meta Connect主题演讲——Muse数据与硬件时间表。</li>
+    <li>能源休战——美方转达与俄方回应、炼厂互袭是否降温。</li>
+    <li>油品背离——布伦特能否站回100，柴油泵价是否回落。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：Reuters · AP · UN News · BBC · The Guardian · InvestingLive · Meta · White House · Kyiv Independent · PBS · Iran International · 台湾防务部门 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
