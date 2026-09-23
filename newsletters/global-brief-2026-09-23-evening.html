@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月23日晚报">
+<title>晚报 · 2026年9月23日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年9月23日</h1>
+  <p class="meta">生成 19:05（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：周三亚盘分化（韩半导体 vs 港股AI监管）、泽连斯基细化能源休战、台海新窗口抬升，以及习抵美接机与佩泽希齐扬演讲仍待纽约日间落地。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li>亚股分化：韩综约+0.9%收7081；恒生约−1.01%失守25000；ASX近乎持平；日经连休。</li>
+    <li><span class="tag">更新</span>网信办据报调查DeepSeek与月之暗面；阿里约−4.4%，智谱约−12%。</li>
+    <li>布伦特守约99美元下方；特朗普讨论柴油出口限制；AAA柴油约6.52美元/加仑纪录。</li>
+    <li><span class="tag">更新</span>泽连斯基：能源休战须对等；吁三方会晤并争取习介入。</li>
+    <li>拉夫罗夫—鲁比奥会晤纽约当地周三上午；克宫称仍无和谈条件。</li>
+    <li>佩泽希齐扬已抵纽待演讲；习访美安德鲁斯接机约当地18:00。</li>
+    <li><span class="tag">更新</span>俄军过夜约161架无人机：全国至少9死53伤；基辅加油站遇袭。</li>
+    <li><span class="tag">更新</span>台海窗：共机10（9逾中线）、共舰6、公务船6。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3>周三亚股：韩半导体续强，港股因AI监管失守25000</h3>
+      <p class="why">为何重要：风险偏好在“算力链溢价”与“国内AI监管冲击”之间撕裂。</p>
+      <div class="summary"><p>韩综约+0.90%收7080.92，三星约+3%、海力士约+1.2%。恒生约−1.01%收24834，科指约−1.33%；阿里约−4.4%，腾讯约−2.4%。上证约−0.39%；ASX约+0.1%收8765。日经连休。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=277657">Businesskorea（2026-09-23）</a></li>
+        <li><a href="https://www.thestandard.com.hk/finance/article/343607/Hang-Seng-Index-closes-below-25000-points-Alibaba-down-4pc">The Standard（2026-09-23）</a></li>
+        <li><a href="https://www.bangkokpost.com/business/general/3324785/oil-prices-fall-after-trump-hails-good-talks-with-iran">Bangkok Post / AFP（2026-09-23）</a></li>
+        <li><a href="https://world.newsx.com/world/australias-sp-asx-200-index-axjo-closes-up-0-1-at-8765-30-236845/">NewsX ASX（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>油价：布伦特贴99下方徘徊，柴油出口禁令设想升温</h3>
+      <p class="why">为何重要：原油供应缓和预期继续压纸货，产品端短缺与泵价仍背离。</p>
+      <div class="summary"><p>亚欧早盘布伦特约99.18–99.41美元；部分WTI报价逼近90美元。沙特东—西管道复运与美伊接触预期施压。特朗普讨论临时限制柴油出口；AAA柴油约6.52美元/加仑纪录。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/business/energy/oil-falls-increased-gulf-supply-hopes-us-iran-talks-2026-09-23/">Reuters（2026-09-23）</a></li>
+        <li><a href="https://www.straitstimes.com/business/oil-holds-near-two-week-lows-on-easing-supply-concerns">The Straits Times（2026-09-23）</a></li>
+        <li><a href="https://www.theepochtimes.com/us/trump-backs-temporary-diesel-export-ban-as-fuel-costs-ripple-through-economy-6093714">Epoch Times 柴油出口（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3>网信办据报调查DeepSeek与月之暗面：港股AI链遭重估</h3>
+      <p class="why">为何重要：把Anthropic蒸馏指控转成国内数据安全执法预期，直接砸港股AI权重。</p>
+      <div class="summary"><p>网信办据报约谈七家实验室后聚焦DeepSeek与Moonshot，评估敏感数据是否经Claude路由外泄；尚未决定处罚。港股阿里、智谱、MiniMax、小米同步承压。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://news.bloomberglaw.com/artificial-intelligence/china-probes-deepseek-moonshot-over-data-breaches-information">Bloomberg Law（2026-09-22）</a></li>
+        <li><a href="https://www.thestandard.com.hk/innovation/article/343563/DeepSeek-and-Moonshot-AI-face-Beijings-probe-over-potential-data-leaks-to-Anthropic">The Standard（2026-09-23）</a></li>
+        <li><a href="https://thenextweb.com/news/china-cac-probe-deepseek-moonshot-anthropic-data">The Next Web（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>Meta Connect主题演讲临近：仍待硬件时间表验证估值</h3>
+      <p class="why">为何重要：截稿时主题演讲尚未开讲；港股监管冲击抬高对美股智能体入口叙事的对冲需求。</p>
+      <div class="summary"><p>扎克伯格演讲定于23日16:00 PT（北京时间24日07:00）。市场仍围绕Muse与传AI眼镜/头显时间表交易——官方未确认。韩半导体续强显示算力链仍有买家。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.meta.com/connect/">Meta Connect 官方</a></li>
+        <li><a href="https://www.engadget.com/2262932/what-to-expect-at-meta-connect-2026-new-ai-glasses-a-mixed-reality-headset-and-more/">Engadget 前瞻</a></li>
+        <li><a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=277657">Businesskorea（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>泽连斯基细化能源休战：对等停火 + 吁三方会晤</h3>
+      <p class="why">为何重要：把40分钟会谈推进到可核对条件——对等、非单方面停袭，并把特朗普推到组织三方会晤中心。</p>
+      <div class="summary"><p>泽连斯基称若俄停打乌电力/供暖/供水，乌愿停袭俄炼厂；否认被要求单方面停火。吁特朗普促成特—普—泽会晤并争取习介入；爱国者许可“看法积极”、交付无明确答案。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aljazeera.com/news/2026/9/23/zelenskyy-says-ukraine-ready-for-energy-truce-with-russia-after-trump-talks">Al Jazeera（2026-09-23）</a></li>
+        <li><a href="https://www.cnbc.com/2026/09/23/ukraine-war-zelenskyy-putin-trump-russia.html">CNBC（2026-09-23）</a></li>
+        <li><a href="https://www.kyivpost.com/post/85181">Kyiv Post（2026-09-23）</a></li>
+        <li><a href="https://www.aa.com.tr/en/americas/zelenskyy-says-trump-did-not-demand-ukraine-to-unilaterally-halt-strikes-on-russian-energy-infrastracture/4065391">Anadolu Agency（2026-09-22）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>联大周三：佩泽希齐扬抵纽；拉夫罗夫见鲁比奥在即；习启程访美</h3>
+      <p class="why">为何重要：人物到位、文本未出——伊朗总统到场、美俄外长会晤倒计时、安德鲁斯接机待纽约日间落地。</p>
+      <div class="summary"><p>佩泽希齐扬联大演讲定于德黑兰时间约19:45；特—佩直接见面仍无排定。鲁比奥—拉夫罗夫纽约当地周三上午会晤；克宫称仍无和谈条件。白宫日程列安德鲁斯接机约当地18:00，正式峰会24日。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://en.mehrnews.com/news/248020/President-Pezeshkian-to-address-UNGA-in-NY-tonight">Mehr News（2026-09-23）</a></li>
+        <li><a href="https://www.thenationalnews.com/news/gulf/2026/09/23/irans-hardliners-make-room-for-diplomacy-as-pezeshkian-arrives-in-new-york-for-unga/">The National（2026-09-23）</a></li>
+        <li><a href="https://www.reuters.com/world/us-top-diplomat-rubio-meet-russian-foreign-minister-lavrov-wednesday-2026-09-23/">Reuters（2026-09-23）</a></li>
+        <li><a href="https://abcnews.com/US/wireStory/chinas-xi-kicks-off-state-visit-washington-wednesday-136673852">ABC / AP（2026-09-23）</a></li>
+        <li><a href="https://www.tradingview.com/news/macenews:991d6ece8094b:0-wednesday-white-house-schedule-president-trump-greets-china-president-xi-at-joint-base-andrews-at-6p-et/">TradingView 白宫日程</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>过夜161架无人机：全国至少9死53伤，基辅加油站遇袭</h3>
+      <p class="why">为何重要：能源休战外交与加油站/电力系统打击同日并行，谈判尚未约束战场节奏。</p>
+      <div class="summary"><p>俄军一夜约161架无人机（含约82架喷气式沙赫德类）及3枚相关弹药；防空拦截/压制约119架。基辅多区加油站与仓储起火；全国日统计至少9死、53伤，含货船船长身亡。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/09/23/8054680/">Ukrainska Pravda（2026-09-23）</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-9-injure-53-across-ukraine-over-past-day-hit-commercial-cargo-ship/">Kyiv Independent（2026-09-23）</a></li>
+        <li><a href="https://www.kyivpost.com/post/85191">Kyiv Post（2026-09-23）</a></li>
+        <li><a href="https://newsukraine.rbc.ua/news/russia-strikes-ukraine-with-3-missiles-and-1790145268.html">RBC-Ukraine（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海22–23日窗口：共机10架次、9架逾中线，公务船升至6</h3>
+      <p class="why">为何重要：习访美启程日灰色地带压力抬升；空中架次与公务船同步上升。</p>
+      <div class="summary"><p>22日06:00–23日06:00：共机10架次（9架次逾中线进入西南及东部空域）、共舰6、公务船6。较前窗（4/6/3）明显抬升。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/news/plaact/87820">台湾防务部门（2026-09-23）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202609230050.aspx">中央社（2026-09-23）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6444777">Taiwan News（2026-09-23）</a></li>
+        <li><a href="https://pchome.megatime.com.tw/news/cat8/20260923/79012520063879230001.html">军闻社 / PChome（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>佩泽希齐扬联大演讲与美伊再接触。</li>
+    <li>安德鲁斯接机与24日习特会文本。</li>
+    <li>拉夫罗夫—鲁比奥会谈与能源休战转达。</li>
+    <li>Meta Connect主题演讲硬件时间表。</li>
+    <li>布伦特约99关口、柴油泵价与出口禁令。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：Reuters · AP · Al Jazeera · CNBC · Kyiv Independent · The Standard · Businesskorea · Bloomberg Law · Mehr · 台湾防务部门 · 中央社 · Meta 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
