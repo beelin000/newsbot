@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月24日晚报">
+<title>晚报 · 2026年9月24日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年9月24日</h1>
+  <p class="meta">生成 19:05（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：周四亚盘消化美债/油价、釜山式休战延至1月10日、Meta Connect硬件清单落地、基辅过夜弹道+无人机袭击；习特会白宫仪式与国宴截稿时仍在华盛顿日间推进。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li>亚股分化：日经约+0.8%收65514；恒生约−0.3%；上证约−1.2%；韩综秋夕休市；ASX约−0.8%。</li>
+    <li><span class="tag">更新</span>10年期美债欧盘一度约5.145%；日债10年约3.055%近30年高。</li>
+    <li><span class="tag">更新</span>布伦特亚盘午后一度约+3%至约106美元；霍尔木兹僵局再定价。</li>
+    <li><span class="tag">更新</span>贝森特：釜山式关税休战延至明年1月10日。</li>
+    <li>习特会白宫执行日：南草坪仪式、双边会谈与国宴推进中。</li>
+    <li><span class="tag">更新</span>Meta Connect：VR Glasses约1299美元（2027春）；Audio约349美元（10/13发货）；Muse Charm假日季。</li>
+    <li><span class="tag">更新</span>泽连斯基联大：能源+航运休战就绪；警告“痛苦冬天”。</li>
+    <li><span class="tag">更新</span>基辅过夜：弹道/高超+约282架无人机，至少2死；妇产医院受损。</li>
+    <li><span class="tag">更新</span>台海窗：共机10（5逾中线北部/中部）、共舰6、公务船6——修正早报0/1口径。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3>周四亚股：日经复市收涨，沪港承压，韩休市</h3>
+      <p class="why">为何重要：美债收益率跃升与油价反弹在亚盘落地——日本股债同时定价高利率，中国资产回吐。</p>
+      <div class="summary"><p>日经约+0.8%收65513.99（连休后复市）；恒生约−0.3%收24761；上证约−1.2%收3888。韩综秋夕休市；ASX约−0.8%至约8699。日债10年约升至3.055%近30年高。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.france24.com/en/live-news/20260924-markets-mixed-as-china-s-xi-arrives-for-us-talks">France 24 / AFP（2026-09-24）</a></li>
+        <li><a href="https://live.euronext.com/en/financial-news/bonds-shaky-oil-eases-highs-amid-trade-peace-talks">Reuters / Euronext live（2026-09-24）</a></li>
+        <li><a href="https://www.ibtimes.com.au/asx-200-falls-oil-prices-surge-1875817">IBTimes ASX（2026-09-24）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>债油双杀再起：美债收益率冲高，布伦特重返105上方</h3>
+      <p class="why">为何重要：霍尔木兹外交乐观回吐，长端利率继续威胁成长股估值。</p>
+      <div class="summary"><p>欧盘10年期美债收益率一度约5.145%。布伦特亚盘午后一度约+3%至约106.24美元，随后波动仍大。佩泽希齐扬坚持条件未满足前不开放霍尔木兹；市场对10月加息概率升至约七成。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://live.euronext.com/en/financial-news/bonds-shaky-oil-eases-highs-amid-trade-peace-talks">Reuters / Euronext live（2026-09-24）</a></li>
+        <li><a href="https://www.france24.com/en/live-news/20260924-markets-mixed-as-china-s-xi-arrives-for-us-talks">France 24 / AFP（2026-09-24）</a></li>
+        <li><a href="https://library.westpaciq.com.au/content/dam/public/westpaciq/secure/economics/documents/aus/2026/09/WBC_MorningReport24Sep2026.pdf">Westpac Morning Report 语境（2026-09-24）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>Meta Connect落地：VR眼镜1299美元 + 音频眼镜 + Muse Charm</h3>
+      <p class="why">为何重要：早报截稿时演讲刚开场；日间通稿把估值预支换成可核对定价与出货节点。</p>
+      <div class="summary"><p>Meta VR Glasses约1299美元、约100克外置计算盒、2027年春上市。Ray-Ban Meta Audio约349美元、10月13日发货；Gen 3约449美元即售。Muse登陆眼镜；Muse Charm目标假日季，价格待定。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.meta.com/blog/meta-connect-2026-everything-we-announced/">Meta 通稿（2026-09-23）</a></li>
+        <li><a href="https://www.theverge.com/tech/999593/meta-connect-2026-everything-announced">The Verge（2026-09-24）</a></li>
+        <li><a href="https://www.cnbc.com/2026/09/23/mark-zuckerberg-1299-meta-vr-glasses-ai-agent.html">CNBC（2026-09-23）</a></li>
+        <li><a href="https://www.meta.com/blog/ray-ban-meta-audio-and-deepest-ai-glasses-lineup/">Meta Audio 眼镜（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>AI硬件叙事：无摄像头路线对冲隐私争议，Charm考验独立设备</h3>
+      <p class="why">为何重要：分层交付——短期眼镜走量、中期VR空间计算、Charm为高风险实验。</p>
+      <div class="summary"><p>Audio眼镜去掉摄像头回应隐私争议；Charm对标“不必解锁手机呼叫Muse”，官方承认样机少、材料未定。若假日前无价格与产能，叙事或收缩到眼镜SKU。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware">The Verge Muse Charm（2026-09-23）</a></li>
+        <li><a href="https://www.cnn.com/2026/09/24/tech/meta-muse-ai-glasses-connect">CNN Business（2026-09-24）</a></li>
+        <li><a href="https://www.meta.com/blog/meta-connect-2026-everything-we-announced/">Meta 通稿（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>贝森特：釜山式关税休战延至1月10日；习特会进入白宫日</h3>
+      <p class="why">为何重要：明确两月延期降低“空手而归”冲击，但仍非巨型大交易。</p>
+      <div class="summary"><p>贝森特称釜山协议式缓和自11月10日延至1月10日，并指中方部分交付不够完美。周四南草坪仪式、双边会谈与东厅国宴推进；截稿美东清晨，文本结果仍待核对。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.nbcnews.com/business/economy/us-china-extend-trade-truce-trump-rcna599525">NBC News（2026-09-23）</a></li>
+        <li><a href="https://www.straitstimes.com/world/united-states/us-treasury-chief-says-to-extend-china-trade-truce-until-january">The Straits Times（2026-09-24）</a></li>
+        <li><a href="https://asia.nikkei.com/spotlight/trump-xi-summit/us-and-china-agree-to-extend-trade-truce-until-january-bessent">Nikkei Asia（2026-09-24）</a></li>
+        <li><a href="https://www.france24.com/en/live-news/20260924-markets-mixed-as-china-s-xi-arrives-for-us-talks">France 24 / AFP（2026-09-24）</a></li>
+        <li><a href="https://theprint.in/world/trump-welcomes-xi-to-washington-looking-for-a-trade-win/3051836/">Reuters / ThePrint（2026-09-24）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>泽连斯基联大：能源+航运双重休战就绪，警告“痛苦冬天”</h3>
+      <p class="why">为何重要：把“双方有兴趣”推进到联大公开条件，压力抛回莫斯科与华盛顿。</p>
+      <div class="summary"><p>泽连斯基称乌方已就绪能源休战与黑海航运休战，点名埃及/印度/土耳其关切；警告若谈不成将让俄方同样痛苦。克宫仍称无全面和谈条件。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.japantimes.co.jp/news/2026/09/24/world/zelenskyy-winter-russia-energy-talks/">The Japan Times / Reuters（2026-09-24）</a></li>
+        <li><a href="https://www.channelnewsasia.com/world/zelenskyy-says-ukraine-ready-maritime-truce-and-puts-onus-russia-respond-6406081">CNA（2026-09-23）</a></li>
+        <li><a href="https://news.liga.net/en/politics/news/both-sides-are-interested-zelenskyy-spoke-about-the-ceasefire-options-currently-under-discussion">LIGA.net（2026-09-24）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>基辅过夜：弹道/高超 + 约282架无人机，妇产医院受损</h3>
+      <p class="why">为何重要：有限停火外交与首都民用设施遇袭继续同日并行。</p>
+      <div class="summary"><p>过夜含弹道/高超与约282架无人机等；基辅至少2死、约8伤，妇产医院外观受损。泽连斯基称弹道约三波、拦截约六成，再吁美方提供拦截弹。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://theprint.in/world/russia-hits-kyiv-with-ballistic-missiles-drones-killing-two/3051868/">Reuters / ThePrint（2026-09-24）</a></li>
+        <li><a href="https://kyivindependent.com/ukraine-war-latest-russian-drone-attacks-on-kyiv-kill-2-injure-over-40-amid-day-of-repeated-strikes/">Kyiv Independent 日间对照（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海23–24日窗口：共机10（5逾中线北部/中部），共舰与公务船各6</h3>
+      <p class="why">为何重要：修正早报“0机/1舰”口径；峰会日灰色地带压力并未归零。</p>
+      <div class="summary"><p>23日06:00–24日06:00：共机10架次（5架次逾中线侵扰北部及中部空域）、共舰6、公务船6。总架次与前窗相当，逾中线方向转向北部/中部。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cna.com.tw/news/aipl/202609240045.aspx">中央社（2026-09-24）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202609230050.aspx">中央社前窗对照（2026-09-23）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>习特会南草坪/双边文本与国宴附加宣布。</li>
+    <li>美股对Connect与10年期约5.14%的定价。</li>
+    <li>霍尔木兹条件清单是否可谈判。</li>
+    <li>能源+航运有限停火的俄方书面回应。</li>
+    <li>台海24–25日窗口强度。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：AFP · Reuters · NBC · Nikkei · Meta · The Verge · CNBC · Japan Times · CNA · 中央社 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
