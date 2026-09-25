@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月25日晚报">
+<title>晚报 · 2026年9月25日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年9月25日</h1>
+  <p class="meta">生成 19:05（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：周五亚盘休市分化、油价回吐、习特会档案馆日收束、杜马最终席位、基辅约295架无人机、台海窗口口径修正。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li>亚股分化：日经约+1.2%收66318；恒生约−1%–1.7%；沪深/台/韩休市；ASX约−0.5%。</li>
+    <li><span class="tag">更新</span>布伦特回吐至约105–106美元；10年期美债约回至5.19%；欧股偏强。</li>
+    <li><span class="tag">更新</span>习特会档案馆日正式送别；休战延至1/10 + AI渠道 + 熊猫/留学，台湾/芯片/伊朗未见突破。</li>
+    <li><span class="tag">更新</span>俄杜马最终：统俄349席、投票率约59.8%，修宪多数坐实。</li>
+    <li><span class="tag">更新</span>甲骨文不可抗力余波：AI基建融资转冷；SB Energy据报推迟IPO。</li>
+    <li><span class="tag">更新</span>乌克兰约295架无人机：基辅14岁少年遇难；高等司法委员会受损。</li>
+    <li><span class="tag">更新</span>台海窗：共机2、共舰6、公务船5——修正早报1机/5舰口径。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3>周五亚股：日经领涨，港股偏淡，中/台/韩休市</h3>
+      <p class="why">为何重要：债油双杀后的亚盘验证——日本续涨，中国资产在假期真空中承压。</p>
+      <div class="summary"><p>日经约+1.2%收66318.14；恒生约−1.0%–1.7%收约24400–24510；沪深、台股、韩综休市；ASX约−0.5%收8660.30。美股期货亚盘偏弱。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.independent.co.uk/news/asian-hong-kong-japan-donald-trump-xi-jinping-b3056141.html">The Independent / AP（2026-09-25）</a></li>
+        <li><a href="https://www.thestandard.com.hk/finance/article/343872/Hong-Kong-shares-end-lower-amid-Mid-Autumn-Festival">The Standard 港股收市（2026-09-25）</a></li>
+        <li><a href="https://www.cnbctv18.com/market/asia-stocks-nikkei-topix-bond-selloff-us-treasury-yields-brent-crude-oil-irdai-pb-fintech-share-price-19998156.htm">CNBC TV18（2026-09-25）</a></li>
+        <li><a href="https://www.livemint.com/market/stock-market-news/stock-market-holidays-taiwan-to-shanghai-stock-exchange-these-asian-markets-to-remain-closed-today-11790310012890.html">LiveMint 休市说明（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>油价自一周高位回吐；10年期美债略回至约5.19%</h3>
+      <p class="why">为何重要：霍尔木兹分阶段方案希望压过胡塞袭沙余波，欧股获得喘息。</p>
+      <div class="summary"><p>布伦特约105.1–105.9美元（约−0.7%–1.4%）；WTI约92.6–93.8美元。10年期约回至5.19%。STOXX 600约+0.6%–0.7%。延布装船尚未全面恢复。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.channelnewsasia.com/business/oil-slides-us-iran-truce-hopes-outweigh-houthi-attacks-saudi-arabia-6409776">CNA / Reuters（2026-09-25）</a></li>
+        <li><a href="https://www.independent.co.uk/news/asian-hong-kong-japan-donald-trump-xi-jinping-b3056141.html">The Independent / AP（2026-09-25）</a></li>
+        <li><a href="https://www.tradingview.com/news/te_news:586821:0-european-equities-gain-as-falling-oil-prices-offer-relief/">TradingView / TE 欧股（2026-09-25）</a></li>
+        <li><a href="https://www.thenationalnews.com/business/energy/2026/09/25/oil-prices-waver-in-face-of-iran-war-truce-and-houthi-attacks/">The National 油价语境（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>甲骨文不可抗力余波：AI基建融资转冷，SB Energy推迟IPO</h3>
+      <p class="why">为何重要：冲击从单笔合同扩散到融资管道——“无限订单”让位于电力与工期约束。</p>
+      <div class="summary"><p>Project Jupiter不可抗力后，银行与投资人称其他数据中心融资讨论降温；服务OpenAI的俄亥俄州SB Energy据报推迟IPO。蓝猫头鹰与甲骨文仍称承诺不变。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.thehindu.com/sci-tech/technology/oracles-project-jupiter-delay-sends-ripple-through-ai-financing/article71507113.ece">The Hindu / Reuters（2026-09-25）</a></li>
+        <li><a href="https://www.livemint.com/technology/analysisoracle-blue-owl-project-delay-sends-ripples-through-ai-financing-sources-say-11790290849254.html">Mint / Reuters（2026-09-25）</a></li>
+        <li><a href="https://www.cnbctv18.com/technology/oracle-triggers-force-majeure-on-data-center-project-over-power-delays-report-19998223.htm">CNBC TV18（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>META vs 基建叙事背离延续：消费端硬件仍热，资本开支端承压</h3>
+      <p class="why">为何重要：可触达智能体入口与数据中心通电风险继续分裂定价。</p>
+      <div class="summary"><p>Connect定价锚未改（VR约1299/2027春、Audio约349/10月13日发货）。港股AI权重假期淡量偏弱。美股周五将再检验META与甲骨文分化。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.meta.com/blog/meta-connect-2026-everything-we-announced/">Meta Connect 通稿对照（2026-09-23）</a></li>
+        <li><a href="https://investinglive.com/stocks/us-stocks-finish-mixed-as-meta-s-muse-rally-helps-mask-the-losers/">InvestingLive 周四对照（2026-09-24）</a></li>
+        <li><a href="https://www.thehindu.com/sci-tech/technology/oracles-project-jupiter-delay-sends-ripple-through-ai-financing/article71507113.ece">The Hindu 融资语境（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>习特会档案馆日收束：仪式闭环，结算仍未至</h3>
+      <p class="why">为何重要：三天访问以象征收官；对台军售/伊朗协调交换叙事未出现。</p>
+      <div class="summary"><p>红厅早茶后赴国家档案馆参观独立宣言/宪法/权利法案并正式送别。落地文本仍以休战延至1月10日、AI对话渠道、留学与熊猫为主。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://abcnews.com/US/wireStory/xi-wrapping-visit-washington-peek-constitution-bill-rights-136743578">ABC News（2026-09-25）</a></li>
+        <li><a href="https://srnnews.com/trump-to-wrap-up-xi-summit-with-a-tour-of-us-archives/">Reuters / SRN（2026-09-25）</a></li>
+        <li><a href="https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-ahead-of-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuans-visit-to-the-white-house/">White House 行程（2026-09）</a></li>
+        <li><a href="https://www.cnbc.com/2026/09/25/china-us-xi-trump-visit-panda-student-visa-.html">CNBC 熊猫外交（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>俄国家杜马最终结果：统俄349席，修宪多数坐实</h3>
+      <p class="why">为何重要：预估约355席修正为349席，仍远超修宪门槛。</p>
+      <div class="summary"><p>统俄349、俄共37、自民23、新人19、公正俄罗斯17；投票率约59.8%。为后续立法与战争预算提供制度空间。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://en.apa.az/cis-countries/russia-announces-final-state-duma-election-results-526252">APA（2026-09-25）</a></li>
+        <li><a href="https://lenta.ru/news/2026/09/25/stal-izvesten-itogovyy-sostav-gosdumy/">Lenta.ru（2026-09-25）</a></li>
+        <li><a href="https://ria.ru/20260925/rossija-2120209892.html">RIA Novosti（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰过夜约295架无人机：基辅14岁少年遇难</h3>
+      <p class="why">为何重要：有限停火外交与首都民用/司法设施遇袭继续并行。</p>
+      <div class="summary"><p>约295架无人机（含约52架喷气式），防空宣称约267架拦截/压制。佩切尔斯克区公寓袭杀14岁少年、至少约7伤；高等司法委员会约6伤。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://hromadske.ua/en/war/271517-russia-launches-295-drones-at-ukraine-14-year-old-killed-in-kyiv">Hromadske（2026-09-25）</a></li>
+        <li><a href="https://unn.ua/en/news/russia-attacked-with-about-300-drones-approximately-one-in-six-of-them-jet-powered-how-many-were-shot-down">UNN / 乌空军（2026-09-25）</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/09/25/8054978/">Ukrainska Pravda 佩切尔斯克（2026-09-25）</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/09/25/8054999/">Ukrainska Pravda 高等司法委员会（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海24–25日窗口：共机2、共舰6、公务船5</h3>
+      <p class="why">为何重要：修正早报英文稿“1机/5舰”；补记东部舰载直升机。</p>
+      <div class="summary"><p>24日06:00–25日06:00：共机2（海峡主战机1 + 东部直升机1）、共舰6、公务船5。空中架次仍偏低，海上停留态势未消。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://udn.com/news/story/10930/9777033">中央社 / 联合新闻网（2026-09-25）</a></li>
+        <li><a href="https://ctinews.com/news/items/qXWQ6VKwaR">中天新闻网（2026-09-25）</a></li>
+        <li><a href="https://www.mnd.gov.tw/en/informationservices/publication/84940">早报英文稿对照（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>霍尔木兹分阶段方案是否出现书面文本；布伦特能否守在105下方。</li>
+    <li>密歇根终值与耐用品订单对10年期约5.2%走廊的冲击。</li>
+    <li>AI基建融资：其他Stargate相关项目条款是否跟进。</li>
+    <li>有限停火与G20迈阿密邀请进展。</li>
+    <li>台海25–26日窗口强度是否回升。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：AP · Reuters · CNA · ABC · The Hindu · Hromadske · 中央社 · APA 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
