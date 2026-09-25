@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月26日早报">
+<title>早报 · 2026年9月26日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年9月26日</h1>
+  <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">对25日晚报已覆盖议题仅在有实质进展时以【更新】收录。周六早报主轴：美股周线收胜+密歇根/耐用品落地、霍尔木兹七日方案球在美方、基辅日间伤亡上修与彼尔姆炼厂停产。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>美股周五收涨：标普约+0.5%收7743；道指约+0.9%收51829；纳指约+0.5%收27069——三周来首个周线胜利。</li>
+    <li><span class="tag">更新</span>10年期美债回落至约5.15%；布伦特收约104.32美元，WTI约92.41美元。</li>
+    <li><span class="tag">更新</span>密歇根终值48.1；一年通胀预期4.6%；耐用品持平、剔运输约+0.3%。</li>
+    <li>Anthropic—Akamai约116亿美元/七年云协议；Akamai约+3%。</li>
+    <li><span class="tag">更新</span>阿拉格齐：霍尔木兹七日方案球在美方；称接受后第六日可复航。</li>
+    <li><span class="tag">更新</span>基辅约5死/30伤；下午另波约162架无人机，宣称拦截约127架。</li>
+    <li><span class="tag">更新</span>俄彼尔姆炼厂据报停产；安赛乐米塔尔克里维里赫全面停产。</li>
+    <li>日元约+1.1%；片山—贝森特通话重申日元低估关切。</li>
+    <li>台海25–26日正式窗口截稿前未见新稿。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>美股周五收涨：油价回落托底，三周来首个周线胜利</h3>
+      <p class="why">为何重要：晚报把数据与期货偏弱交给美盘——油价回吐压过早盘债市惊吓，宽基结束三日连跌。</p>
+      <div class="summary"><p>标普约+0.5%收7743.41；道指约+478点（+0.9%）收51828.62；纳指约+0.5%收27068.72。Costco约+2.9%。周线上标普约+1.2%、纳指约+2.1%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="http://www.reflector.com/news/national/a-reprieve-from-rising-oil-prices-helps-us-stocks-rise-toward-the-finish-of-a/article_ab7939aa-ffbc-56dd-a7f0-0d98a68cd12f.html">Reflector / AP（2026-09-25）</a></li>
+        <li><a href="https://www.kiplinger.com/investing/stocks/dow-rises-478-points-under-rate-pressure-stock-market-today">Kiplinger（2026-09-25）</a></li>
+        <li><a href="https://www.fxempire.com/forecasts/article/nasdaq-index-sp500-dow-jones-forecasts-nasdaq-rebounds-as-oil-prices-retreat-1632021">FXEmpire（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>债油双缓：10年期回约5.15%，布伦特收约104美元</h3>
+      <p class="why">为何重要：密歇根通胀预期一度把长端推回约5.22%，随后油价下跌带动收益率回吐。</p>
+      <div class="summary"><p>密歇根终值48.1；一年通胀预期4.6%。10年期尾盘约5.15%；布伦特约104.32美元（−2.1%），WTI约92.41美元（−2.3%）。耐用品持平，剔运输约+0.3%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="http://www.reflector.com/news/national/a-reprieve-from-rising-oil-prices-helps-us-stocks-rise-toward-the-finish-of-a/article_ab7939aa-ffbc-56dd-a7f0-0d98a68cd12f.html">Reflector / AP（2026-09-25）</a></li>
+        <li><a href="https://energynow.ca/2026/09/oil-ends-week-lower-as-u-s-iran-truce-hopes-hit-wti-while-middle-east-supply-risks-keep-brent-above-100/">EnergyNow（2026-09-25）</a></li>
+        <li><a href="https://www.tmgm.com/en/analysis/market-news/article/gold-gains-as-us-dollar-and-yields-pause-but-weekly-loss-remains-in-sight-202609251106">TMGM（2026-09-25）</a></li>
+        <li><a href="https://www.devdiscourse.com/article/international/3982723-forex-dollar-dips-as-oil-eases-yen-jumps-on-japan-remarks">Devdiscourse / Reuters（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3>Anthropic—Akamai：约116亿美元七年云协议</h3>
+      <p class="why">为何重要：大模型厂商以长约+认股权锁定分布式算力，对冲超大规模单一供应商风险。</p>
+      <div class="summary"><p>Akamai与Anthropic达成约116亿美元/七年承诺，可再扩约90亿至潜在约200亿；认股权证至多约5%股权。Akamai周五约+3.2%。与甲骨文Jupiter融资寒意形成对照。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.globenewswire.com/news-release/2026/09/24/3368729/0/en/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand.html">GlobeNewswire / Akamai（2026-09-24）</a></li>
+        <li><a href="https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/">TechCrunch（2026-09-25）</a></li>
+        <li><a href="https://www.moneycontrol.com/world/anthropic-inks-11-6-billion-cloud-deal-with-akamai-gets-warrant-for-up-to-5-stake-article-14037802.html">Moneycontrol / Reuters（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>甲骨文Jupiter余波：AI基建融资审慎未解</h3>
+      <p class="why">为何重要：晚报SB Energy推迟IPO后，周末前无新的合同解除，但电力/工期约束仍是行业压力测试。</p>
+      <div class="summary"><p>知情人士称Jupiter工期或延约一年；蓝猫头鹰重申承诺未变。其他超大规模租户是否跟进类似条款，仍待观察。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.channelnewsasia.com/business/analysisoracle-blue-owl-project-delay-sends-ripples-through-ai-financing-sources-say-6409591">CNA / Reuters（2026-09-25）</a></li>
+        <li><a href="https://www.wsj.com/finance/investing/cracks-in-oracles-ai-data-center-build-out-appear-in-massive-new-mexico-project-effb51c2">WSJ（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>阿拉格齐：霍尔木兹七日方案“球在美方”</h3>
+      <p class="why">为何重要：伊朗把时间表说得更硬——接受即起算、第六日复航——同时坚称核问题不让步。</p>
+      <div class="summary"><p>七日方案含解除港口封锁、豁免石油制裁、解冻至少约120亿美元资产。匿名伊官员称核项目不让步。美方迄无公开接受文本。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/middle-east/irans-araqchi-says-now-up-us-accept-7-day-plan-2026-09-25/">Reuters（2026-09-25）</a></li>
+        <li><a href="https://www.iranintl.com/en/202609251286">Iran International（2026-09-25）</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/9/25/whats-in-irans-seven-day-plan-to-reopen-the-strait-of-hormuz">Al Jazeera（2026-09-25）</a></li>
+        <li><a href="https://www.reuters.com/world/middle-east/iran-will-make-no-nuclear-concessions-iranian-official-says-2026-09-25/">Reuters 核立场（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>日美财长通话：日元低估关切再确认</h3>
+      <p class="why">为何重要：特朗普—高市会晤后，片山—贝森特通话提供官方背书，日元录得数日来最大反弹。</p>
+      <div class="summary"><p>日元约+1.06%至约157.13；美元指数约−0.3%至约100.95。双方重申对日元低估的关切并将加强合作。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.devdiscourse.com/article/international/3982723-forex-dollar-dips-as-oil-eases-yen-jumps-on-japan-remarks">Devdiscourse / Reuters（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>基辅日间伤亡上修；彼尔姆炼厂据报停产</h3>
+      <p class="why">为何重要：把晚报过夜袭击推进到日间多波与对俄能源反制——外交求休战与炼厂互袭并行。</p>
+      <div class="summary"><p>基辅约5死/30伤；下午另波约162架无人机，宣称拦截约127架。路透：彼尔姆炼厂（俄约第七）停产，管道/储罐/工艺装置受损。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://ua.news/en/war-vs-rf/u-kiievi-zrosla-kilkist-postrazhdalikh-pislia-udaru-rf">UA.NEWS 基辅（2026-09-25）</a></li>
+        <li><a href="https://ua.news/en/war-vs-rf/rf-zapustila-po-ukrayini-162-droni-ppo-zneshkodila-127">UA.NEWS 无人机（2026-09-25）</a></li>
+        <li><a href="https://newsukraine.rbc.ua/news/perm-oil-refinery-halts-operations-after-1790359193.html">RBC-Ukraine 彼尔姆（2026-09-25）</a></li>
+        <li><a href="https://english.nv.ua/russian-war/drone-strikes-shut-down-perm-oil-refinery-50644775.html">NV Ukraine（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>安赛乐米塔尔克里维里赫停产；台海新窗待公布</h3>
+      <p class="why">为何重要：工业产能打击升至外资钢厂退出级决策；25–26日台海窗口截稿前未见新稿。</p>
+      <div class="summary"><p>安赛乐米塔尔宣布全面停产，预计约10亿美元非现金减值。台海上窗仍为共机2/共舰6/公务船5。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.kyivpost.com/post/85445">Kyiv Post（2026-09-26）</a></li>
+        <li><a href="https://www.mnd.gov.tw/en/Publication/87837">台湾国防部上窗（2026-09-25）</a></li>
+        <li><a href="https://news.pchome.com.tw/politics/cna/20260925/index-17903008175720318001.html">中央社上窗（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>霍尔木兹七日方案美方是否书面回应。</li>
+    <li>PCE / ISM / 非农对10月加息定价的修正。</li>
+    <li>彼尔姆停产时长与基辅伤亡终值。</li>
+    <li>AI基建融资条款是否继续收紧。</li>
+    <li>台海25–26日窗口强度。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：AP · Reuters · Kiplinger · EnergyNow · TechCrunch · Iran International · UA.NEWS · Kyiv Post · 台湾国防部 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
