@@ -1,15 +1,24 @@
 {
-  "generatedAt": "2026-09-26 11:14",
+  "generatedAt": "2026-09-26 23:09",
   "latest": {
-    "date": "2026-09-26",
-    "slot": "evening",
-    "label": "晚报",
+    "date": "2026-09-27",
+    "slot": "morning",
+    "label": "早报",
     "hm": "",
-    "title": "全球要闻简报｜2026-09-26｜晚报",
-    "path": "newsletters/global-brief-2026-09-26-evening.html",
-    "summary": "WSJ援引美方官员：特朗普私下否决伊朗霍尔木兹七日方案，并称中期选举后可能重启轰炸；德黑兰周六仍称等待美方正式回应。；白宫事实清单：美中对双向各约300亿美元非敏感商品关税优惠待遇达成共识建议；设立“超级智能（SI）”对话与事件通报渠道，下轮不晚于11月。"
+    "title": "全球要闻简报｜2026-09-27｜早报",
+    "path": "newsletters/global-brief-2026-09-27-morning.html",
+    "summary": "特朗普周六在白宫外对记者公开否决伊朗霍尔木兹七日方案，称“他们输得太惨”；并在Truth Social贴出“Trump Strait”地图。；周末亚欧现货休市；周五布伦特约104.32美元、WTI约92.41美元仍是收盘锚——公开否决后，周一亚洲复市将重定价地缘溢价。"
   },
   "editions": [
+    {
+      "date": "2026-09-27",
+      "slot": "morning",
+      "label": "早报",
+      "hm": "",
+      "title": "全球要闻简报｜2026-09-27｜早报",
+      "path": "newsletters/global-brief-2026-09-27-morning.html",
+      "summary": "特朗普周六在白宫外对记者公开否决伊朗霍尔木兹七日方案，称“他们输得太惨”；并在Truth Social贴出“Trump Strait”地图。；周末亚欧现货休市；周五布伦特约104.32美元、WTI约92.41美元仍是收盘锚——公开否决后，周一亚洲复市将重定价地缘溢价。"
+    },
     {
       "date": "2026-09-26",
       "slot": "evening",
