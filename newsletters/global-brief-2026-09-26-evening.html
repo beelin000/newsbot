@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月26日晚报">
+<title>晚报 · 2026年9月26日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年9月26日</h1>
+  <p class="meta">生成 19:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：WSJ称特朗普否决霍尔木兹七日方案、白宫公布约300亿美元关税共识与SI对话、Anthropic五角大楼上诉维持、基辅约173架无人机、台海窗共机5/舰6/公务船5。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>WSJ：特朗普私下否决霍尔木兹七日方案，并称中期选举后可能重启轰炸；伊朗仍待正式回应。</li>
+    <li><span class="tag">更新</span>白宫：美中对双向各约300亿美元非敏感商品关税优惠达成共识建议；设SI对话与事件通报渠道。</li>
+    <li>周末休市；下周焦点RBA、中国PMI、美国PCE/非农；油债悬于霍尔木兹消息。</li>
+    <li>上诉法院2比1维持Anthropic五角大楼“供应链风险”认定；Claude军方采购路径延续受限。</li>
+    <li>Anthropic称Claude Fable 5.1完成九圈散射振幅挑战，Dixon约两周核验通过。</li>
+    <li><span class="tag">更新</span>乌过夜约173架无人机：宣称拦截约134架；基辅约5伤，Lavina Mall奥乐齐受损。</li>
+    <li><span class="tag">更新</span>台海窗：共机5（1逾中线北部）、共舰6、公务船5。</li>
+    <li>胡塞周六再袭沙特：联军称拦截2枚弹道导弹与2架无人机。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹否决传闻冲击周末油市叙事；下周数据密集体</h3>
+      <p class="why">为何重要：早报把“美方是否书面回应”交给周末——若否决属实，周五布伦特约104所计入的缓和预期将在周一重定价。</p>
+      <div class="summary"><p>周五布伦特约104.32美元（−2.1%）、WTI约92.41美元（−2.3%）仍是收盘锚。WSJ否决报道后，周一亚盘地缘溢价成焦点；下周看RBA、中国PMI、美国PCE/非农。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/middle-east/iran-awaits-us-move-after-wsj-report-says-trump-rejects-peace-plan-2026-09-26/">Reuters（2026-09-26）</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/9/26/trump-reportedly-rejects-irans-seven-day-ceasefire-proposal-whats-next">Al Jazeera（2026-09-26）</a></li>
+        <li><a href="https://energynow.ca/2026/09/oil-ends-week-lower-as-u-s-iran-truce-hopes-hit-wti-while-middle-east-supply-risks-keep-brent-above-100/">EnergyNow（2026-09-25）</a></li>
+        <li><a href="https://think.ing.com/articles/asia-week-ahead-250926/">ING Asia week ahead（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>白宫公布习特会经贸文本：约300亿美元非敏感商品关税共识</h3>
+      <p class="why">为何重要：把“仪式大于结算”推进到可核对数字——双向各约300亿关税建议 + SI对话渠道。</p>
+      <div class="summary"><p>白宫称双向各约300亿美元非敏感商品关税优惠共识建议；中国同意2027–2028进口至少约1000万吨美煤；设立SI对话（不晚于11月）与事件通报渠道。芯片/台湾未见突破。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/">White House Fact Sheet</a></li>
+        <li><a href="https://www.aa.com.tr/en/asia-pacific/china-us-reach-tariff-consensus-on-30b-in-non-sensitive-goods-white-house/4069951">Anadolu（2026-09-26）</a></li>
+        <li><a href="https://english.alarabiya.net/business/technology/2026/09/26/us-china-to-set-up-communication-channel-for-ai-incidents">Al Arabiya（2026-09-26）</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says">Al Jazeera（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3>Anthropic败诉：上诉法院维持五角大楼“供应链风险”认定</h3>
+      <p class="why">为何重要：百亿云长约之外，军方采购路径被判例堵死——安全护栏与国防部署冲突进入司法文本。</p>
+      <div class="summary"><p>哥伦比亚特区巡回上诉法院2比1维持§4713供应链风险认定；多数意见指模型内置限制已导致政府任务被拒。对普通消费级Claude无全面禁令。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html">CNBC（2026-09-25）</a></li>
+        <li><a href="https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/">Ars Technica</a></li>
+        <li><a href="https://media.cadc.uscourts.gov/opinions/docs/2026/09/26-1049-2194984.pdf">CADC 意见书（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>Claude Fable 5.1：九圈散射振幅挑战据称过关</h3>
+      <p class="why">为何重要：能力展示与监管/国防叙事并行——模型是否能做真理论物理进入公开核验阶段。</p>
+      <div class="summary"><p>Anthropic称Fable 5.1基本自主完成九圈六粒子振幅，双路径交叉验证；SLAC物理学家Dixon约两周核验通过。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://startupfortune.com/claude-ran-a-nine-loop-physics-calculation-that-stumped-researchers-for-years/">Startup Fortune（2026-09-26）</a></li>
+        <li><a href="https://www.anthropic.com/threat-intelligence-report-september-2026">Anthropic 报告语境（2026-09）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>WSJ：特朗普否决霍尔木兹七日方案；伊朗等待正式回复</h3>
+      <p class="why">为何重要：把早报“球在美方”推进到否决传闻——油市缓和溢价与停火时间表同时承压。</p>
+      <div class="summary"><p>WSJ称特朗普私下否决并暗示中期选举后可能重启轰炸；佩泽希齐扬CBS称愿谈核但不接受胁迫。白宫迄无对等公开声明。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/middle-east/iran-awaits-us-move-after-wsj-report-says-trump-rejects-peace-plan-2026-09-26/">Reuters（2026-09-26）</a></li>
+        <li><a href="https://www.theguardian.com/world/2026/sep/26/trump-dismiss-iran-seven-day-peace-deal-hormuz">The Guardian（2026-09-26）</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/9/26/trump-reportedly-rejects-irans-seven-day-ceasefire-proposal-whats-next">Al Jazeera（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>沙特同盟加码：胡塞再袭被拦截；土巴防长利雅得会商</h3>
+      <p class="why">为何重要：霍尔木兹外交胶着之际，红海—沙特方向火力未停，替代通道风险上升。</p>
+      <div class="summary"><p>联军称拦截2枚弹道导弹（哈米斯穆谢特）与2架无人机（利雅得）。土、巴防长在利雅得讨论情报与军事协调。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/middle-east/iran-awaits-us-move-after-wsj-report-says-trump-rejects-peace-plan-2026-09-26/">Reuters（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰过夜约173架无人机：基辅约5伤，商场超市起火</h3>
+      <p class="why">为何重要：早报日间伤亡后新一夜再压城——有限停火外交与民用设施遇袭继续并行。</p>
+      <div class="summary"><p>约173架无人机（逾50架喷气式），宣称拦截约134架。基辅约5伤；索洛缅斯克居民楼起火；Lavina Mall奥乐齐受损；哈尔科夫约4伤。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/09/26/8055123/">Ukrainska Pravda（2026-09-26）</a></li>
+        <li><a href="https://english.nv.ua/russian-war/russian-drone-attack-injures-five-in-kyiv-damages-auchan-at-lavina-mall-50644813.html">NV Ukraine（2026-09-26）</a></li>
+        <li><a href="https://www.kyivpost.com/post/85467">Kyiv Post（2026-09-26）</a></li>
+        <li><a href="https://newsukraine.rbc.ua/news/kyiv-and-kharkiv-under-drone-attack-office-1790387462.html">RBC-Ukraine（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海25–26日窗口：共机5、共舰6、公务船5</h3>
+      <p class="why">为何重要：早报截稿前未见新窗；正式稿显示空中架次回升并再现逾中线北部活动。</p>
+      <div class="summary"><p>共机5架次（1架逾中线入北部空域）、共舰6、公务船5，合计约16机舰船。强度高于前窗2机，仍低于此前10机高位窗。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cna.com.tw/news/aipl/202609260027.aspx">中央社（2026-09-26）</a></li>
+        <li><a href="https://www.mnd.gov.tw/en/Publication/87839">台湾国防部（2026-09-26）</a></li>
+        <li><a href="https://news.pchome.com.tw/politics/cna/20260926/index-17903868601824718001.html">PChome / 中央社（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>霍尔木兹：白宫是否正式回应WSJ否决报道；布伦特周一方向。</li>
+    <li>美中文本：300亿美元清单细则、稀土出货与SI对话筹备。</li>
+    <li>美国数据周：PCE / ISM / 非农对加息与美债走廊的冲击。</li>
+    <li>乌克兰：过夜节奏、彼尔姆停产时长、能源有限停火。</li>
+    <li>台海26–27日窗口强度。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：Reuters · WSJ · Al Jazeera · White House · CNBC · Ukrainska Pravda · NV · 中央社 · 台湾国防部 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
