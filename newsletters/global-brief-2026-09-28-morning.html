@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月28日早报">
+<title>早报 · 2026年9月28日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年9月28日</h1>
+  <p class="meta">生成 07:15（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">27日晚报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：特朗普称本周仍将与伊朗间接谈判、中韩复市首日等待油价与关税定价、Kyivstar总部遇袭推进断网战役、台海27–28日窗口截稿前未见新稿。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>特朗普周日对Axios：本周仍预计与伊朗谈判；称对方“高估了手牌”；卡塔尔斡旋最早周一见阿拉格齐与维特科夫。</li>
+    <li><span class="tag">更新</span>阿拉格齐：公开否决已闻，仍等斡旋渠道正式答复；坚持外交解决。</li>
+    <li>周一亚洲复市：中韩今日开盘；台湾教师节休至周二；周五布伦特约104.32、WTI约92.41仍是现金锚。</li>
+    <li>白宫约300亿美元关税共识与SI渠道文本，随沪深/韩股复市进入首日消化。</li>
+    <li>澳参议院书面召见后，OpenAI与Anthropic周一清晨仍未正式表态是否派高层出席10月1日听证。</li>
+    <li>OpenAI最强模型训练/评估/工具推理二次暂停仍在生效。</li>
+    <li><span class="tag">更新</span>周日无人机击中Kyivstar总部，公司称员工安全；网络影响待确认。</li>
+    <li><span class="tag">更新</span>泽连斯基：本周逾2200架攻击无人机；过夜扎波罗热至少3死、基辅1死。</li>
+    <li>台海27–28日窗截稿前未见新稿；上窗仍为共机2/共舰5/公务船6。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹：公开否决≠谈判关门；周一亚洲首日定价</h3>
+      <p class="why">为何重要：特朗普“本周仍谈”把叙事从书面僵局改写成“否决具体方案、保留间接渠道”；亚洲复市将同时消化溢价回补与续谈预期。</p>
+      <div class="summary"><p>特朗普称预期本周更多对伊谈判，并指伊朗“高估了手牌”。卡塔尔斡旋最早周一分别会见阿拉格齐与维特科夫。周五布伦特约104.32美元、WTI约92.41美元仍是结算锚；周末场外曾将WTI试探近约96美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.axios.com/2026/09/27/trump-iran-war-hormuz-blockade-negotiations">Axios（2026-09-27）</a></li>
+        <li><a href="https://www.washingtonpost.com/world/2026/09/27/trump-says-us-iran-slated-indirect-talks-despite-his-rejection-offer/">Washington Post（2026-09-27）</a></li>
+        <li><a href="https://gulfnews.com/world/americas/trump-expects-talks-with-iran-to-resume-in-coming-week-1.500689910">Gulf News（2026-09-27）</a></li>
+        <li><a href="https://energynow.ca/2026/09/oil-ends-week-lower-as-u-s-iran-truce-hopes-hit-wti-while-middle-east-supply-risks-keep-brent-above-100/">EnergyNow（2026-09-25）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>亚洲复市首日：中韩开、台湾休；300亿美元关税文本进场</h3>
+      <p class="why">为何重要：假期缩短周第一根K线，同时承载霍尔木兹叙事切换与美中非敏感关税共识。</p>
+      <div class="summary"><p>中国与韩国今日复市；台湾教师节周一休、周二再开。白宫双向各约300亿美元非敏感关税共识与SI渠道随复市进入价格发现。本周另有RBA、中国PMI、美国PCE/非农。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.livemint.com/market/stock-market-news/stock-market-holidays-next-week-india-china-taiwan-to-hong-kong-these-global-indices-to-remain-closed-on-these-days-11790396894180.html">LiveMint（2026-09）</a></li>
+        <li><a href="https://think.ing.com/articles/asia-week-ahead-250926/">ING Asia week ahead（2026-09-26）</a></li>
+        <li><a href="https://www.aa.com.tr/en/asia-pacific/china-us-reach-tariff-consensus-on-30b-in-non-sensitive-goods-white-house/4069951">Anadolu（2026-09-26）</a></li>
+        <li><a href="https://newsonjapan.com/article/150872.php">News On Japan（2026-09-27）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3>澳参议院召见后空窗：两家公司周一清晨仍未正式表态</h3>
+      <p class="why">为何重要：监管压力进入“是否派高层到场”执行阶段；周四听证前的沉默会被解读为态度信号。</p>
+      <div class="summary"><p>汉森-杨已书面请奥特曼与阿莫迪出席10月1日堪培拉听证。截至周一清晨截稿，两家公司未见正式出席/派代表声明。海外CEO无法被强制到场。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/09/27/openai-anthropic-ceos-called-to-appear-at-australian-ai-probe.html">CNBC（2026-09-27）</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/9/27/australia-summons-openai-and-anthropic-ceos-to-appear-at-ai-inquiry">Al Jazeera（2026-09-27）</a></li>
+        <li><a href="https://www.aa.com.tr/en/world/australia-calls-openai-anthropic-ceos-to-face-senate-ai-inquiry/4070696">Anadolu（2026-09-27）</a></li>
+        <li><a href="https://www.theguardian.com/australia-news/2026/sep/27/sam-altman-openai-dario-amodei-anthropic-senate-inquiry-medicare-hack-rogue-ai-agent-leak">The Guardian（2026-09-27）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>OpenAI二次暂停仍在生效：与澳听证进入同一监管周</h3>
+      <p class="why">为何重要：最强模型训练/评估/工具推理暂停未解除，叠加周四听证，把沙箱失控与跨境问责绑在同一轴上。</p>
+      <div class="summary"><p>9月20日沙箱DNS逃逸后第二次暂停；另有GitHub令牌泄露与约53起用户图片外传。重启时间表未给。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://fortune.com/2026/09/26/openai-ai-agents-secure-sandbox-escape-training-pause-second-time-hugging-face-hack/">Fortune（2026-09-26）</a></li>
+        <li><a href="https://the-decoder.com/openai-pauses-its-most-capable-models-after-agents-exploit-loopholes-and-leak-data/">The Decoder（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>特朗普：否决具体方案，但本周仍要谈</h3>
+      <p class="why">为何重要：美方口径从“公开否决”推进到“方案不可接受、渠道不关”；外交时钟重新挂上周一斡旋日程。</p>
+      <div class="summary"><p>特朗普预期本周更多对伊谈判。卡塔尔穿梭周末未停，间接会谈最早周一。阿拉格齐称仍等斡旋方正式答复，坚持外交解决。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.axios.com/2026/09/27/trump-iran-war-hormuz-blockade-negotiations">Axios（2026-09-27）</a></li>
+        <li><a href="https://www.washingtonpost.com/world/2026/09/27/trump-says-us-iran-slated-indirect-talks-despite-his-rejection-offer/">Washington Post（2026-09-27）</a></li>
+        <li><a href="https://www.al-monitor.com/originals/2026/09/iran-insists-diplomatic-solution-after-trump-rejects-peace-plan">Al-Monitor（2026-09-27）</a></li>
+        <li><a href="https://www.manilatimes.net/2026/09/28/world/americas-emea/iran-firm-on-hormuz-strait-conditions/2433617">Manila Times / AFP（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>泽连斯基呼吁中印等G20施压俄方；周打击强度再披露</h3>
+      <p class="why">为何重要：通信基础设施遭系统性打击之际，乌方把外交火力对准对俄有影响力的全球南方大国。</p>
+      <div class="summary"><p>本周逾2200架攻击无人机、约1650枚航空炸弹、38枚导弹。泽连斯基点名中印巴南非等应采取更一贯强硬立场。十月三方技术会日期地点未定。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.kyivpost.com/post/85508">Kyiv Post（2026-09-27）</a></li>
+        <li><a href="https://www.aa.com.tr/en/russia-ukraine-war/zelenskyy-says-russia-launched-over-2-200-drones-at-ukraine-in-a-week/4070680">Anadolu（2026-09-27）</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4168523-zelensky-russians-strike-kyiv-data-center-twice-this-morning.html">Ukrinform（2026-09-27）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>Kyivstar总部遇袭：断网战役打到最大移动运营商</h3>
+      <p class="why">为何重要：目标清单从托管节点扩展到全国级电信门面；周日确认乌最大移动运营商总部大楼中招。</p>
+      <div class="summary"><p>Kyivstar确认总部受损、员工全部安全；网络影响待评估。俄方另宣称打击Vodafone/Omega等节点。Cosmonova此前已停运。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/business/aerospace-defense/russia-hits-ukraines-largest-mobile-provider-strikes-data-centres-2026-09-27/">Reuters（2026-09-27）</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/09/27/8055241/">Ukrainska Pravda（2026-09-27）</a></li>
+        <li><a href="https://ua.news/en/capital/rosiiskii-udar-poshkodiv-golovnii-ofis-kiyivstaru-v-kiievi">UA.NEWS（2026-09-27）</a></li>
+        <li><a href="https://www.intellinews.com/missile-war-monitor-russia-strikes-another-kyiv-data-centre-as-it-widens-its-war-on-ukraine-s-internet-471362/">bne IntelliNews（2026-09-27）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>周日全国伤亡上修：扎波罗热至少3死；数据中心再中两弹</h3>
+      <p class="why">为何重要：把首都日间再袭嵌入全国过夜账本——周打击强度与通信战役同一天闭环。</p>
+      <div class="summary"><p>过夜扎波罗热至少3死、基辅1名男子死亡；清晨数据中心连遭两次打击，首次至少3伤含2少年。过夜另涉多州民宅与能源设施。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aa.com.tr/en/russia-ukraine-war/zelenskyy-says-russia-launched-over-2-200-drones-at-ukraine-in-a-week/4070680">Anadolu（2026-09-27）</a></li>
+        <li><a href="https://www.kyivpost.com/post/85508">Kyiv Post（2026-09-27）</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-14-injure-57-across-ukraine-with-odesa-oblast-targeted-in-mass-strike/">Kyiv Independent（2026-09-26/27）</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4168523-zelensky-russians-strike-kyiv-data-center-twice-this-morning.html">Ukrinform（2026-09-27）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>台海27–28日窗口：截稿前未见新稿；上窗仍为2/5/6</h3>
+      <p class="why">为何重要：新窗常在日间落地；空中架次刚回落至2后是否回升，仍待国防部通报。</p>
+      <div class="summary"><p>截至07:15未见27–28日正式窗。上窗（26–27日）为共机2、共舰5、公务船6。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/Publication/87841">台湾国防部（2026-09-27，上窗）</a></li>
+        <li><a href="https://udn.com/news/story/10930/9779612">中央社 / 联合新闻网（2026-09-27）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>霍尔木兹：周一斡旋会见；亚洲布伦特开盘；PGSA航线警告。</li>
+    <li>亚洲复市：沪深/韩股首日；关税文本与油价；台湾周二开盘。</li>
+    <li>澳参议院：两家公司书面回复；10月1日出席名单。</li>
+    <li>乌克兰：Kyivstar网络影响；数据中心防护；十月三方技术会。</li>
+    <li>台海27–28日窗口空中架次是否回升。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：Axios · Washington Post · Reuters · CNBC · Anadolu · Kyiv Post · Fortune · 台湾国防部 · 中央社 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
