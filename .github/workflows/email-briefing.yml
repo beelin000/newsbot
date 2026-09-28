@@ -35,22 +35,35 @@ jobs:
         id: cfg
         env:
           BRIEFING_EMAIL_TO: ${{ secrets.BRIEFING_EMAIL_TO || vars.BRIEFING_EMAIL_TO }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: |
           set -euo pipefail
-          if [[ -z "${BRIEFING_EMAIL_TO}" || -z "${SMTP_HOST}" || -z "${SMTP_USER}" || -z "${SMTP_PASSWORD}" ]]; then
+          # Prefer Resend when RESEND_API_KEY is present; otherwise require SMTP.
+          if [[ -z "${BRIEFING_EMAIL_TO}" ]]; then
             echo "configured=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::Email secrets/vars not fully set; skipping send. See README § Email delivery."
-          else
+            echo "::notice::BRIEFING_EMAIL_TO missing; skipping send. See README § Email delivery."
+          elif [[ -n "${RESEND_API_KEY}" ]]; then
             echo "configured=true" >> "$GITHUB_OUTPUT"
+            echo "provider=resend" >> "$GITHUB_OUTPUT"
+            echo "::notice::Using Resend API for briefing email."
+          elif [[ -n "${SMTP_HOST}" && -n "${SMTP_USER}" && -n "${SMTP_PASSWORD}" ]]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+            echo "provider=smtp" >> "$GITHUB_OUTPUT"
+            echo "::notice::Using SMTP for briefing email."
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Neither RESEND_API_KEY nor full SMTP secrets set; skipping send. See README § Email delivery."
           fi
 
       - name: Send briefing email(s)
         if: steps.cfg.outputs.configured == 'true'
         env:
           BRIEFING_EMAIL_TO: ${{ secrets.BRIEFING_EMAIL_TO || vars.BRIEFING_EMAIL_TO }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ secrets.RESEND_FROM || vars.RESEND_FROM || secrets.SMTP_FROM || vars.SMTP_FROM }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT || vars.SMTP_PORT || '587' }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
