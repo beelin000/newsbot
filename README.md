@@ -112,7 +112,10 @@ Repo → **Settings → Secrets and variables → Actions**.
 
 1. Create an API key at [resend.com/api-keys](https://resend.com/api-keys)
 2. Verify your sending domain at [resend.com/domains](https://resend.com/domains) (or use `onboarding@resend.dev` only for Resend’s test inbox)
-3. Set `RESEND_FROM` to an address on that verified domain
+3. Set `RESEND_FROM` to an address on that verified domain, **exactly** one of:
+   - `brief@yourdomain.com`
+   - `Newsbot <brief@yourdomain.com>`
+   Do **not** wrap the value in quotes. A 422 `Invalid from field` means this secret is not in that shape.
 
 When `RESEND_API_KEY` is present, SMTP secrets are ignored.
 
