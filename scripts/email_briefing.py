@@ -167,6 +167,62 @@ def build_html_body(brief: dict) -> str:
 """
 
 
+def normalize_from_header(raw: str) -> str:
+    """Strip quotes/newlines/fullwidth punctuation that commonly break Resend."""
+    s = (raw or "").replace("\ufeff", "")
+    s = s.replace("\r", " ").replace("\n", " ").replace("\t", " ")
+    s = s.replace("\u3000", " ").replace("＜", "<").replace("＞", ">")
+    s = s.strip().strip("\"'“”‘’").strip()
+    s = " ".join(s.split())
+    # Name email@x.com  →  Name <email@x.com>
+    if "<" not in s and "@" in s and " " in s:
+        name, addr = s.rsplit(" ", 1)
+        if "@" in addr and "<" not in name:
+            s = f"{name} <{addr}>"
+    return s
+
+
+def describe_from_header(value: str) -> str:
+    """Log shape of From without printing the address (GitHub would mask it anyway)."""
+    has_at = "@" in value
+    has_lt = "<" in value
+    has_gt = ">" in value
+    quoted = value[:1] in "\"'" or value[-1:] in "\"'"
+    return (
+        f"len={len(value)} has_at={has_at} brackets={has_lt and has_gt} "
+        f"quoted={quoted} spaces={value.count(' ')}"
+    )
+
+
+def resend_from_header() -> str:
+    raw = env("RESEND_FROM") or env("SMTP_FROM") or ""
+    mail_from = normalize_from_header(raw)
+    if not mail_from:
+        raise SystemExit(
+            "RESEND_FROM is empty. Set a repository secret like: "
+            "Newsbot <brief@your-verified-domain.com> "
+            "(no extra quotes). Unverified domains: Newsbot <onboarding@resend.dev> "
+            "only delivers to your Resend account email."
+        )
+    ok = bool(
+        re.match(r"^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$", mail_from)
+        or re.match(
+            r"^.+<[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}>$",
+            mail_from,
+        )
+    )
+    print(f"resend from: {describe_from_header(mail_from)} raw={describe_from_header(raw)}")
+    if not ok:
+        raise SystemExit(
+            "Invalid RESEND_FROM format after cleanup "
+            f"({describe_from_header(mail_from)}). "
+            "Use exactly: email@domain.com  OR  Newsbot <email@domain.com>. "
+            "Do not wrap the secret in quotes. The domain must be verified in Resend "
+            "(or use onboarding@resend.dev for a test send to your Resend login)."
+        )
+    return mail_from
+
+
 def recipients_from_env() -> list[str]:
     to_raw = env("BRIEFING_EMAIL_TO")
     if not to_raw:
@@ -201,11 +257,7 @@ def attachment_payloads(brief: dict) -> list[dict]:
 
 
 def send_via_resend(brief: dict, recipients: list[str], api_key: str) -> None:
-    mail_from = (
-        env("RESEND_FROM")
-        or env("SMTP_FROM")
-        or "Newsbot <onboarding@resend.dev>"
-    )
+    mail_from = resend_from_header()
     payload = {
         "from": mail_from,
         "to": recipients,
