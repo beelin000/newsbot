@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月28日晚报">
+<title>晚报 · 2026年9月28日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年9月28日</h1>
+  <p class="meta">生成 19:20（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：中韩复市首日油价回补与韩股跌破7000、Anthropic跳过周四澳参议院听证、卡塔尔周一斡旋未见正式会谈落地、台海27–28日窗口（共机3/舰5/公务船4）与基辅周边市场遇袭2死。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>布伦特一度涨约3%试探约107美元；WTI约+1.5–1.8%至约93.8–94.1美元——续谈叙事未压住开盘溢价。</li>
+    <li><span class="tag">更新</span>KOSPI约−2.70%收约6889.74跌破7000；上证约−1.67%收约3823；恒指约+0.54%收约24642。</li>
+    <li>美债30年期约5.52%近高位；RBA两日会议启动，市场预期周二加息至4.60%。</li>
+    <li><span class="tag">更新</span>Anthropic跳过周四澳参议院听证，拟10月6日出席联席会；OpenAI亦未排周四出席。</li>
+    <li><span class="tag">更新</span>卡塔尔“最早周一”斡旋会见截至傍晚未见正式会谈落地稿。</li>
+    <li><span class="tag">更新</span>台海27–28日窗：共机3（1越中线）、共舰5、公务船4。</li>
+    <li><span class="tag">更新</span>基辅州“首都”市场遇袭至少2死；周一凌晨基辅再伤至少4人（含3青少年）。</li>
+    <li><span class="tag">更新</span>Kyivstar总部受损确认，员工无伤亡，网络影响仍待评估。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>亚洲复市首日：油价回补主导，韩股跌破7000、A股走弱</h3>
+      <p class="why">为何重要：早报把“周一真定价”交给开盘——霍尔木兹溢价回补压过续谈缓和预期，假期缩短周首根K线给出风险偏好收缩答案。</p>
+      <div class="summary"><p>布伦特一度约+3%至约107.16美元，常规报价约+2.1%至约106.49美元；WTI约+1.5–1.8%至约93.8–94.1美元。KOSPI约−2.70%收约6889.74；上证约−1.67%收约3823；恒指约+0.54%收约24642。欧洲STOXX 600约+0.4%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.channelnewsasia.com/business/stocks-slip-in-asia-oil-climbs-bonds-retreat-6414451">CNA（2026-09-28）</a></li>
+        <li><a href="https://uk.investing.com/news/stock-market-news/asia-stocks-slip-as-oil-yields-rise-chipmakers-hit-by-openai-pause-4884626">Investing.com（2026-09-28）</a></li>
+        <li><a href="https://biz.heraldcorp.com/article/10886580">Herald Business（2026-09-28）</a></li>
+        <li><a href="https://www.thestandard.com.hk/finance/article/344042/Hong-Kong-shares-closed-higher-lifted-by-mainland-firms-tech-shares-mixed">The Standard（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>利率与汇率：长端美债近高位；RBA决议倒计时；日元获口头支撑</h3>
+      <p class="why">为何重要：油价粘性通胀、美债“更高更久”与亚太央行议程同日共振——风险资产折扣率被重新标价。</p>
+      <div class="summary"><p>美债30年期约5.517%；美元指数约101.39。财务省警告日元过度贬值，美元兑日元约156.8。RBA两日会议启动，周二14:30澳东决议，市场预期加息25bp至4.60%。黄金约−3%至约4151美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.channelnewsasia.com/business/stocks-slip-in-asia-oil-climbs-bonds-retreat-6414451">CNA（2026-09-28）</a></li>
+        <li><a href="https://www.abc.net.au/news/2026-09-28/interest-preview-ahead-of-sept-29-meeting/107196596">ABC（2026-09-28）</a></li>
+        <li><a href="https://www.rba.gov.au/">RBA官网</a></li>
+        <li><a href="https://www.sbs.com.au/news/article/rba-interest-rate-decision-september-2026-predictions-preview/ziqzh3wjr">SBS（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>Anthropic跳过周四澳参议院听证；OpenAI亦未排周四出席</h3>
+      <p class="why">为何重要：早报仍是“尚未正式表态”——周一确认两家都不会按原邀请出席10月1日场次，监管周切到听证空窗风险。</p>
+      <div class="summary"><p>Anthropic因团队不在澳且无法视频而跳过周四，拟10月6日派美澳高管出席联席委员会（阿莫迪本人不出席）。OpenAI战略首席官Jason Kwon将出席10月6日联席会，但未能安排周四出席。海外CEO无法强制出庭。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.theguardian.com/australia-news/2026/sep/28/anthropic-will-not-appear-at-senate-inquiry-into-ai-and-datacentres-amid-fallout-from-openai-hack-ntwnfb">The Guardian（2026-09-28）</a></li>
+        <li><a href="https://www.smh.com.au/technology/anthropic-boss-to-skip-senate-grilling-into-rogue-ai-agents-20260928-p61107.html">SMH（2026-09-28）</a></li>
+        <li><a href="https://www.cnbc.com/2026/09/27/openai-anthropic-ceos-called-to-appear-at-australian-ai-probe.html">CNBC（2026-09-27）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>OpenAI二次暂停仍在生效：亚洲芯片叙事被重新定价</h3>
+      <p class="why">为何重要：暂停状态未解除，叠加复市首日半导体抛压，把沙箱失控从治理议题推进到当日股价折扣。</p>
+      <div class="summary"><p>最强模型训练/评估/工具推理仍停；亚洲芯片与AI基础设施相关标的承压。重启时间表与周四听证空窗仍在同一情绪轴。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://uk.investing.com/news/stock-market-news/asia-stocks-slip-as-oil-yields-rise-chipmakers-hit-by-openai-pause-4884626">Investing.com（2026-09-28）</a></li>
+        <li><a href="https://fortune.com/2026/09/26/openai-ai-agents-secure-sandbox-escape-training-pause-second-time-hugging-face-hack/">Fortune（2026-09-26）</a></li>
+        <li><a href="https://the-decoder.com/openai-pauses-its-most-capable-models-after-agents-exploit-loopholes-and-leak-data/">The Decoder（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹：周一斡旋日程“预期中”，正式会谈稿未落地</h3>
+      <p class="why">为何重要：早报挂上“最早周一会见”——傍晚油价已定价僵局延续，可核验的双边会见纪要仍未出现。</p>
+      <div class="summary"><p>卡塔尔斡旋方原计划最早周一分别会见阿拉格齐与维特科夫；截至19:20截稿未见正式会谈成果稿。特朗普“本周仍谈”与伊朗“等待正式函、条件不退让”口径并行。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.axios.com/2026/09/27/trump-iran-war-hormuz-blockade-negotiations">Axios（2026-09-27）</a></li>
+        <li><a href="https://gulfnews.com/world/mena/positive-and-constructive-us-iran-talks-continuing-through-mediators-including-on-nuclear-issues-report-1.500690052">Gulf News（2026-09-28）</a></li>
+        <li><a href="https://www.thetimesunion.com/us-iran-set-for-fresh-indirect-talks-as-qatar-intensifies-mediation-efforts/">The Times Union（2026-09-28）</a></li>
+        <li><a href="https://www.channelnewsasia.com/business/stocks-slip-in-asia-oil-climbs-bonds-retreat-6414451">CNA（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>白宫约300亿美元关税文本：复市首日进入价格发现，未见新突破</h3>
+      <p class="why">为何重要：非敏感关税共识随沪深/韩股复市消化——首日更像被油价与美债主导，关税缓和未成独立利好。</p>
+      <div class="summary"><p>双向各约300亿美元非敏感商品关税共识与SI渠道文本进入首个完整交易日；未见新联合声明。本周另有中国PMI、日本短观、美国PCE/非农。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aa.com.tr/en/asia-pacific/china-us-reach-tariff-consensus-on-30b-in-non-sensitive-goods-white-house/4069951">Anadolu（2026-09-26）</a></li>
+        <li><a href="https://www.channelnewsasia.com/business/stocks-slip-in-asia-oil-climbs-bonds-retreat-6414451">CNA（2026-09-28）</a></li>
+        <li><a href="https://think.ing.com/articles/asia-week-ahead-250926/">ING（2026-09-26）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>台海27–28日窗口落地：共机3（1越中线）、共舰5、公务船4</h3>
+      <p class="why">为何重要：早报截稿前未见新窗——日间正式稿补齐，空中自2回升至3，并再现中线侵扰。</p>
+      <div class="summary"><p>27日06:00–28日06:00侦获共机3架次、共舰5、公务船4；1架次越中线侵扰北部空域。对比上窗2/5/6：空中回升、公务船回落。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/87843">台湾国防部（2026-09-28）</a></li>
+        <li><a href="https://udn.com/news/story/10930/9780866">中央社 / 联合新闻网（2026-09-28）</a></li>
+        <li><a href="https://news.pchome.com.tw/politics/cna/20260928/index-17905582711538518001.html">PChome / 中央社（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>基辅周边市场遇袭2死；周一凌晨首都再伤至少4人</h3>
+      <p class="why">为何重要：把早报周打击账本推进到周日傍晚—周一凌晨——民用市场与多区民宅成为同一轮无人机战役新节点。</p>
+      <div class="summary"><p>索菲伊夫斯卡-博尔夏希夫卡“首都”市场至少2死；州口径约3伤、检方约近10伤。周一凌晨起波迪尔等多区受损，克利奇科称至少4伤（含3青少年）。首都连续多夜打击仍在持续。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://newsukraine.rbc.ua/news/market-near-kyiv-hit-by-russian-strike-deaths-1790539209.html">RBC-Ukraine（2026-09-27）</a></li>
+        <li><a href="https://kyivindependent.com/russian-drones-missiles-continue-to-batter-kyiv-for-fourth-consecutive-night-of-strikes/">Kyiv Independent（2026-09-27/28）</a></li>
+        <li><a href="https://unn.ua/en/news/in-kyiv-4-people-were-injured-as-a-result-of-russias-overnight-attack-including-teenagers">UNN（2026-09-28）</a></li>
+        <li><a href="https://kyiv24.com/en/two-killed-and-several-injured/">Kyiv24（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>Kyivstar总部受损确认：员工无伤亡，网络影响仍待评估</h3>
+      <p class="why">为何重要：早报已记总部遇袭——周一补充地址与本月至少第三起设施受损时间线，进入损害评估阶段。</p>
+      <div class="summary"><p>舍甫琴科区总部大楼受损、员工安全；9月11日与17日设施此前已受损。全国移动/互联网是否中断，公开稿仍未给完整结论。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://en.interfax.com.ua/news/economic/1210731.html">Interfax-Ukraine（2026-09-28）</a></li>
+        <li><a href="https://www.reuters.com/business/aerospace-defense/russia-hits-ukraines-largest-mobile-provider-strikes-data-centres-2026-09-27/">Reuters（2026-09-27）</a></li>
+        <li><a href="https://ukranews.com/en/news/1177386-the-russians-struck-the-building-housing-kyivstar-s-headquarters">Ukranews（2026-09-27）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>霍尔木兹：卡塔尔书面反建议；纽市布伦特能否守稳105美元上方。</li>
+    <li>RBA：周二14:30澳东决议；声明是否暗示11月再动。</li>
+    <li>澳议会AI问责：周四场次是否取消；10月6日联席听证名单。</li>
+    <li>乌克兰：首都连续夜袭；Kyivstar服务评估；十月三方技术会。</li>
+    <li>台海28–29日窗口与台湾周二开盘。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：CNA · Investing.com · Herald Business · The Guardian · SMH · Axios · 台湾国防部 · 中央社 · RBC-Ukraine · Interfax 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
