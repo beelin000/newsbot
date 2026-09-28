@@ -1,18 +1,27 @@
 #!/usr/bin/env python3
-"""Email one or more newsbot briefing Markdown files via SMTP.
+"""Email one or more newsbot briefing Markdown files.
+
+Prefer Resend HTTP API when RESEND_API_KEY is set; otherwise fall back to SMTP.
 
 Configuration (env / GitHub Actions secrets+vars — never commit credentials):
 
-  Required:
+  Always required:
     BRIEFING_EMAIL_TO   Comma-separated recipient addresses
+
+  Resend (preferred when set):
+    RESEND_API_KEY      Resend API key (re_…)
+    RESEND_FROM         Verified sender, e.g. Newsbot <brief@yourdomain.com>
+                        (falls back to SMTP_FROM / onboarding@resend.dev for tests)
+
+  SMTP fallback (used only when RESEND_API_KEY is unset):
     SMTP_HOST           e.g. smtp.gmail.com
     SMTP_USER
     SMTP_PASSWORD       App password / SMTP password
-
-  Optional:
     SMTP_PORT           default 587
     SMTP_FROM           default SMTP_USER
     SMTP_STARTTLS       default "1" (set "0" for SSL on 465)
+
+  Optional:
     BRIEFING_PAGES_BASE e.g. https://beelin000.github.io/newsbot
     EMAIL_DRY_RUN       if "1", print payload and do not send
 
@@ -27,13 +36,17 @@ Note: CI auto-land emails only --latest once per run (not every path in a catch-
 from __future__ import annotations
 
 import argparse
+import base64
 import html as html_lib
+import json
 import os
 import re
 import smtplib
 import ssl
 import subprocess
 import sys
+import urllib.error
+import urllib.request
 from email.message import EmailMessage
 from pathlib import Path
 
@@ -42,6 +55,7 @@ BRIEF_RE = re.compile(
     r"^global-brief-(?P<date>\d{4}-\d{2}-\d{2})-(?P<slot>morning|evening)(?:-(?P<hm>\d{4}))?\.md$"
 )
 SLOT_LABEL = {"morning": "早报", "evening": "晚报"}
+RESEND_API_URL = "https://api.resend.com/emails"
 
 
 def env(name: str, default: str | None = None) -> str | None:
@@ -153,16 +167,100 @@ def build_html_body(brief: dict) -> str:
 """
 
 
-def send_one(brief: dict) -> None:
+def recipients_from_env() -> list[str]:
     to_raw = env("BRIEFING_EMAIL_TO")
+    if not to_raw:
+        raise SystemExit(
+            "Missing required env: BRIEFING_EMAIL_TO. "
+            "Set GitHub Actions secrets/vars (see README)."
+        )
+    recipients = [a.strip() for a in to_raw.split(",") if a.strip()]
+    if not recipients:
+        raise SystemExit("BRIEFING_EMAIL_TO has no valid addresses")
+    return recipients
+
+
+def attachment_payloads(brief: dict) -> list[dict]:
+    """Build Resend-style attachment objects (base64 content)."""
+    items: list[dict] = [
+        {
+            "filename": brief["path"].name,
+            "content": base64.b64encode(brief["markdown"].encode("utf-8")).decode("ascii"),
+            "content_type": "text/markdown; charset=utf-8",
+        }
+    ]
+    if brief["html_path"].exists():
+        items.append(
+            {
+                "filename": brief["html_path"].name,
+                "content": base64.b64encode(brief["html_path"].read_bytes()).decode("ascii"),
+                "content_type": "text/html; charset=utf-8",
+            }
+        )
+    return items
+
+
+def send_via_resend(brief: dict, recipients: list[str], api_key: str) -> None:
+    mail_from = (
+        env("RESEND_FROM")
+        or env("SMTP_FROM")
+        or "Newsbot <onboarding@resend.dev>"
+    )
+    payload = {
+        "from": mail_from,
+        "to": recipients,
+        "subject": brief["title"],
+        "text": build_text_body(brief),
+        "html": build_html_body(brief),
+        "attachments": attachment_payloads(brief),
+        "tags": [
+            {"name": "product", "value": "newsbot"},
+            {"name": "slot", "value": brief["slot"] or "brief"},
+        ],
+    }
+    if (env("EMAIL_DRY_RUN", "0") or "0") == "1":
+        print(f"[dry-run] would send via Resend to {recipients}: {brief['title']}")
+        print(build_text_body(brief)[:800])
+        return
+
+    data = json.dumps(payload).encode("utf-8")
+    req = urllib.request.Request(
+        RESEND_API_URL,
+        data=data,
+        method="POST",
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            "User-Agent": "newsbot-email-briefing/1.0",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            body = resp.read().decode("utf-8", errors="replace")
+            status = getattr(resp, "status", 200)
+    except urllib.error.HTTPError as e:
+        err_body = e.read().decode("utf-8", errors="replace")
+        raise SystemExit(f"Resend API error HTTP {e.code}: {err_body}") from e
+    except urllib.error.URLError as e:
+        raise SystemExit(f"Resend API request failed: {e}") from e
+
+    email_id = ""
+    try:
+        email_id = json.loads(body).get("id", "")
+    except json.JSONDecodeError:
+        pass
+    suffix = f" id={email_id}" if email_id else f" status={status}"
+    print(f"sent(resend): {brief['title']} -> {', '.join(recipients)}{suffix}")
+
+
+def send_via_smtp(brief: dict, recipients: list[str]) -> None:
     host = env("SMTP_HOST")
     user = env("SMTP_USER")
     password = env("SMTP_PASSWORD")
-    if not to_raw or not host or not user or not password:
+    if not host or not user or not password:
         missing = [
             n
             for n, v in [
-                ("BRIEFING_EMAIL_TO", to_raw),
                 ("SMTP_HOST", host),
                 ("SMTP_USER", user),
                 ("SMTP_PASSWORD", password),
@@ -170,17 +268,14 @@ def send_one(brief: dict) -> None:
             if not v
         ]
         raise SystemExit(
-            "Missing required env: "
+            "Missing SMTP env (and RESEND_API_KEY unset): "
             + ", ".join(missing)
-            + ". Set GitHub Actions secrets/vars (see README)."
+            + ". Set Resend or SMTP secrets/vars (see README)."
         )
 
     port = int(env("SMTP_PORT", "587") or "587")
     mail_from = env("SMTP_FROM", user) or user
     starttls = (env("SMTP_STARTTLS", "1") or "1") != "0"
-    recipients = [a.strip() for a in to_raw.split(",") if a.strip()]
-    if not recipients:
-        raise SystemExit("BRIEFING_EMAIL_TO has no valid addresses")
 
     msg = EmailMessage()
     msg["Subject"] = brief["title"]
@@ -205,7 +300,7 @@ def send_one(brief: dict) -> None:
         )
 
     if (env("EMAIL_DRY_RUN", "0") or "0") == "1":
-        print(f"[dry-run] would send to {recipients}: {brief['title']}")
+        print(f"[dry-run] would send via SMTP to {recipients}: {brief['title']}")
         print(build_text_body(brief)[:800])
         return
 
@@ -221,7 +316,16 @@ def send_one(brief: dict) -> None:
         with smtplib.SMTP_SSL(host, port, context=context, timeout=60) as smtp:
             smtp.login(user, password)
             smtp.send_message(msg)
-    print(f"sent: {brief['title']} -> {', '.join(recipients)}")
+    print(f"sent(smtp): {brief['title']} -> {', '.join(recipients)}")
+
+
+def send_one(brief: dict) -> None:
+    recipients = recipients_from_env()
+    api_key = env("RESEND_API_KEY")
+    if api_key:
+        send_via_resend(brief, recipients, api_key)
+        return
+    send_via_smtp(brief, recipients)
 
 
 def briefings_from_git_range(before: str, after: str) -> list[Path]:

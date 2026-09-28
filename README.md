@@ -90,24 +90,46 @@ When new `newsletters/global-brief-*.md` files land on `main`, `.github/workflow
 
 Auto-merge pushes with `GITHUB_TOKEN` do **not** fire other workflows' `on.push` handlers, so after landing briefings it `workflow_dispatch`es **Email new briefings** once with an empty path (→ `--latest`). Older catch-up paths are not re-emailed every run; to resend a specific edition, run the workflow manually with `briefing_path`.
 
+**Provider preference:** if `RESEND_API_KEY` is set, send via [Resend](https://resend.com) HTTP API; otherwise fall back to SMTP (Gmail app password, etc.).
+
 ### 1. Add GitHub Secrets / Variables
 
 Repo → **Settings → Secrets and variables → Actions**.
 
+#### Always
+
 | Name | Where | Required | Example |
 |------|--------|----------|---------|
 | `BRIEFING_EMAIL_TO` | Secret or Variable | yes | `you@example.com` (comma-separated OK) |
-| `SMTP_HOST` | Secret | yes | `smtp.gmail.com` |
-| `SMTP_USER` | Secret | yes | your SMTP login |
-| `SMTP_PASSWORD` | Secret | yes | app password (not account password for Gmail) |
+| `BRIEFING_PAGES_BASE` | Variable | no | `https://beelin000.github.io/newsbot` |
+
+#### Option A — Resend (recommended)
+
+| Name | Where | Required | Example |
+|------|--------|----------|---------|
+| `RESEND_API_KEY` | Secret | yes (for Resend) | `re_…` from Resend dashboard |
+| `RESEND_FROM` | Secret or Variable | yes (for production) | `Newsbot <brief@yourdomain.com>` |
+
+1. Create an API key at [resend.com/api-keys](https://resend.com/api-keys)
+2. Verify your sending domain at [resend.com/domains](https://resend.com/domains) (or use `onboarding@resend.dev` only for Resend’s test inbox)
+3. Set `RESEND_FROM` to an address on that verified domain
+
+When `RESEND_API_KEY` is present, SMTP secrets are ignored.
+
+#### Option B — SMTP fallback
+
+| Name | Where | Required | Example |
+|------|--------|----------|---------|
+| `SMTP_HOST` | Secret | yes (if no Resend) | `smtp.gmail.com` |
+| `SMTP_USER` | Secret | yes (if no Resend) | your SMTP login |
+| `SMTP_PASSWORD` | Secret | yes (if no Resend) | app password (not account password for Gmail) |
 | `SMTP_PORT` | Secret or Variable | no | `587` (default) |
 | `SMTP_FROM` | Secret or Variable | no | defaults to `SMTP_USER` |
 | `SMTP_STARTTLS` | Variable | no | `1` (default); use `0` + port `465` for SSL |
-| `BRIEFING_PAGES_BASE` | Variable | no | `https://beelin000.github.io/newsbot` |
 
 **Gmail:** enable 2FA, create an [App Password](https://myaccount.google.com/apppasswords), use `smtp.gmail.com` / `587` / that app password.
 
-If secrets are missing, the workflow skips send with a notice (does not fail the deploy).
+If neither Resend nor full SMTP secrets are set, the workflow skips send with a notice (does not fail the deploy).
 
 ### 2. Test
 
@@ -116,11 +138,18 @@ Actions → **Email new briefings** → **Run workflow**.
 - Leave **briefing_path** empty → sends the **latest** edition
 - Or set e.g. `newsletters/global-brief-2026-09-17-morning.md`
 
-Check the run log for a line like `sent: 全球要闻简报｜… -> you@…`. If you only see “nothing to send”, the path was empty on an older workflow revision.
+Check the run log for a line like `sent(resend): 全球要闻简报｜… -> you@…` (or `sent(smtp): …`). If you only see “nothing to send”, the path was empty on an older workflow revision.
 
 Local dry-run (no send):
 
 ```bash
+# Resend path
+EMAIL_DRY_RUN=1 \
+BRIEFING_EMAIL_TO=you@example.com \
+RESEND_API_KEY=re_xxx RESEND_FROM='Newsbot <brief@yourdomain.com>' \
+python3 scripts/email_briefing.py newsletters/global-brief-2026-09-17-morning.md
+
+# SMTP fallback
 EMAIL_DRY_RUN=1 \
 BRIEFING_EMAIL_TO=you@example.com \
 SMTP_HOST=smtp.example.com SMTP_USER=u SMTP_PASSWORD=p \
