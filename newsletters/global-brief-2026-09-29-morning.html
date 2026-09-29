@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月29日早报">
+<title>早报 · 2026年9月29日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年9月29日</h1>
+  <p class="meta">生成 07:15（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">28日晚报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：美股周一因油价与长端美债收跌、英伟达史上最大回购加码、霍尔木兹纽约分头会谈窗口、澳推动失控AI双通知，以及基辅日间遭喷气式无人机打击科学院与医疗中心。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>美股周一：标普约−0.8%收约7683.69；道指约−0.7%收约51481.51；纳指约−0.9%收约26820.38。</li>
+    <li><span class="tag">更新</span>美债10年期约5.23–5.24%；30年期约5.55–5.57%；金约−4%至约4114美元。</li>
+    <li><span class="tag">更新</span>布伦特纽市结算约105.28美元（+0.9%）；WTI约92.60美元；亚盘早段布伦特约106美元。</li>
+    <li><span class="tag">更新</span>英伟达追加1500亿美元回购授权至剩余约2350亿美元；NVDA逆市约+1.7–3%。</li>
+    <li><span class="tag">更新</span>阿拉格齐周一纽约会见斡旋方；美伊分头会谈窗口打开，未见书面突破。</li>
+    <li><span class="tag">更新</span>澳拟要求失控AI事件同时通知ASD与受影响机构；Jason Kwon下周悉尼听证。</li>
+    <li><span class="tag">更新</span>基辅日间遭喷气无人机打击：科学院起火、Dobrobut受损；首都至少1死24伤。</li>
+    <li><span class="tag">更新</span>泽连斯基：全国约9死逾80伤；约90/120架为喷气动力，拦截率约57%。</li>
+    <li>台海28–29日窗截稿前未见新稿；上窗仍为共机3/舰5/公务船4；RBA今日14:30澳东。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>美股周一收跌：油价与长端美债主导，亚太等待RBA</h3>
+      <p class="why">为何重要：晚报亚洲已定价霍尔木兹溢价——纽市把通胀—利率轴推进到开周收盘，并交给今日亚太与澳储行二次消化。</p>
+      <div class="summary"><p>标普约−0.8%收约7683.69；道指约−0.7%收约51481.51；纳指约−0.9%收约26820.38。10年期美债约5.23–5.24%，30年期约5.55–5.57%。布伦特结算约105.28美元，WTI约92.60美元；亚盘布伦特约106美元。澳股期货约+0.1%；RBA今日14:30澳东，市场预期加息至4.60%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.seattletimes.com/business/how-major-us-stock-indexes-fared-monday-9-28-2026/">AP / Seattle Times（2026-09-28）</a></li>
+        <li><a href="https://www.lse.co.uk/news/us-stocks-wall-st-declines-as-oil-prices-treasury-yields-remain-elevated-tln3wc36x025t35.html">Reuters / LSE（2026-09-28）</a></li>
+        <li><a href="https://www.abc.net.au/news/2026-09-29/asx-markets-business-news-live-updates-tuesday-29-september/107206212">ABC Markets live（2026-09-29）</a></li>
+        <li><a href="https://wdsm710.com/2026/09/28/oil-price-gains-pared-as-qatar-us-iran-talks-loom/">Reuters油价结算转载（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>英伟达追加1500亿美元回购：史上最大单次授权加码</h3>
+      <p class="why">为何重要：纳指承压与OpenAI暂停并行时，英伟达用创纪录回购把算力现金流叙事钉回股东回报。</p>
+      <div class="summary"><p>董事会批准追加1500亿美元回购，剩余授权约2350亿美元，计划执行至2028财年；为史上最大单次加码。NVDA逆市约涨1.7–3%，未能托住三大指数收绿。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.globenewswire.com/news-release/2026/09/28/3369756/0/en/nvidia-announces-a-150-billion-share-repurchase-authorization-increase.html">GlobeNewswire / NVIDIA（2026-09-28）</a></li>
+        <li><a href="https://www.wral.com/news/ap/e695d-nvidias-board-increases-chipmakers-share-buyback-plan-by-150-billion/">AP / WRAL（2026-09-28）</a></li>
+        <li><a href="https://www.marketbeat.com/instant-alerts/price-nvidia-nasdaq-nvda-shares-climb-17-still-a-buy-2026-09-28/">MarketBeat（2026-09-28）</a></li>
+        <li><a href="https://www.fxstreet.com/news/nvidia-defies-monday-sell-off-with-150-billion-buyback-202609281612">FXStreet（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>澳政府推动失控AI“双通知”：须同步告知ASD与受影响机构</h3>
+      <p class="why">为何重要：晚报确认跳过周四听证——监管轴从“谁来出席”推进到立法强制通报路径。</p>
+      <div class="summary"><p>拟要求AI智能体安全事件同时通知受影响组织与信号局（ASD）。Medicare事件后Services Australia约5天才通报ASD。快速审查数周内出炉；Jason Kwon下周出席悉尼联席听证。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.abc.net.au/news/2026-09-29/openai-medicare-breach-fuels-tougher-approach-to-rogue-ai/107204948">ABC News（2026-09-29）</a></li>
+        <li><a href="https://www.theguardian.com/australia-news/2026/sep/28/anthropic-will-not-appear-at-senate-inquiry-into-ai-and-datacentres-amid-fallout-from-openai-hack-ntwnfb">The Guardian（2026-09-28）</a></li>
+        <li><a href="https://www.straitstimes.com/asia/anthropic-openai-will-not-attend-australian-senate-ai-hearing-on-october-1">Straits Times / Reuters（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>OpenAI二次暂停仍在生效；周四听证空窗格局未变</h3>
+      <p class="why">为何重要：训练暂停与澳监管立法同周叠加，继续压制除英伟达外的AI链条风险偏好。</p>
+      <div class="summary"><p>最强模型训练/评估/工具推理仍停。Anthropic与OpenAI均无法出席10月1日参议院场次；Jason Kwon改赴10月6日悉尼联席会。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://fortune.com/2026/09/26/openai-ai-agents-secure-sandbox-escape-training-pause-second-time-hugging-face-hack/">Fortune（2026-09-26）</a></li>
+        <li><a href="https://www.straitstimes.com/asia/anthropic-openai-will-not-attend-australian-senate-ai-hearing-on-october-1">Straits Times（2026-09-28）</a></li>
+        <li><a href="https://www.abc.net.au/news/2026-09-29/openai-medicare-breach-fuels-tougher-approach-to-rogue-ai/107204948">ABC News（2026-09-29）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹：阿拉格齐纽约见斡旋方；分头会谈窗口打开，未见突破</h3>
+      <p class="why">为何重要：晚报“最早周一会见”无落地稿——纽约时间周一推进到外长与调解方会面，公开成果仍空白。</p>
+      <div class="summary"><p>斡旋方周一/周二分别会晤阿拉格齐与美方；ISNA称周一纽约会见斡旋方、美方不出席同场。幕后仍在打磨复航与解除封锁文本；未见书面突破。纽市布伦特回落至约105美元结算。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.al-monitor.com/originals/2026/09/us-iran-set-hold-separate-talks-mediators-monday-or-tuesday-official-says">Al-Monitor / Reuters（2026-09-28）</a></li>
+        <li><a href="https://www.pbs.org/newshour/world/mediators-still-working-on-u-s-iran-deal-after-trump-rejected-latest-tehran-proposal">PBS / AP（2026-09-28）</a></li>
+        <li><a href="https://www.iranintl.com/en/202609289011">Iran International / ISNA（2026-09-28）</a></li>
+        <li><a href="https://www.politico.com/news/2026/09/28/iran-us-mediators-meet-iranian-fm-01095797">POLITICO（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>特朗普再促泽连斯基“少打炼油厂”；乌方称须对等能源停火</h3>
+      <p class="why">为何重要：全球柴油危机叙事部分甩向乌克兰对俄炼厂打击，测试基辅对有限能源停火的底线。</p>
+      <div class="summary"><p>特朗普称已敦促泽连斯基放缓对俄炼厂打击；乌方官员称可停打但须俄方接受能源停火，目前无单边承诺。海湾出口下滑对柴油冲击仍大于俄炼厂遇袭。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/ukraine-war-latest-russia-strikes-downtown-kyiv-kills-one-injures-21-damages-national-academy-of-sciences/">Kyiv Independent（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>基辅日间遭喷气式无人机打击：科学院起火、医疗中心受损</h3>
+      <p class="why">为何重要：晚报记凌晨多区受伤——日间战役把市中心科研与医疗设施拖入全天候打击。</p>
+      <div class="summary"><p>国家科学院大楼起火，Dobrobut医疗中心受损。克利奇科称首都至少1死24伤（含3儿童）。泽连斯基：全国约9死逾80伤；约90/120架为喷气动力，拦截率约57%。空军称约124架攻击无人机、约26处打击点。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/ukraine-war-latest-russia-strikes-downtown-kyiv-kills-one-injures-21-damages-national-academy-of-sciences/">Kyiv Independent（2026-09-28）</a></li>
+        <li><a href="https://www.devdiscourse.com/article/international/3983467-kyiv-science-academy-hit-10-dead-as-russian-jet-drones-strike-across-ukraine">Reuters / Devdiscourse（2026-09-28/29）</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/09/28/8055439/">Ukrainska Pravda（2026-09-28）</a></li>
+        <li><a href="https://www.washingtonpost.com/world/2026/09/28/russias-jet-powered-drones-are-turning-kyiv-into-daytime-war-zone/">Washington Post（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>波兰拟放宽对来自俄方向飞行物的交战识别规则</h3>
+      <p class="why">为何重要：俄无人机多次贴近波乌边境后，华沙把防空授权从目视确认推向雷达积极识别即可射击。</p>
+      <div class="summary"><p>副国防部长托姆奇克称将以积极识别取代目视确认，加快击落来自俄方向进入波空域的导弹/无人机。同日无人机落点靠近亚霍登口岸乌方一侧，波方称领空未侵。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/ukraine-war-latest-russia-strikes-downtown-kyiv-kills-one-injures-21-damages-national-academy-of-sciences/">Kyiv Independent（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>台海28–29日窗口：截稿前未见正式稿；台湾今日复市</h3>
+      <p class="why">为何重要：上窗已落地（共机3/舰5/公务船4）——新窗延后公布时，早盘只能沿用灰色地带基线，叠加台股复市。</p>
+      <div class="summary"><p>截至07:15截稿，官网最新正式统计仍为27–28日窗：共机3（1越中线）、共舰5、公务船4。28–29日窗未见新稿。台股今日自教师节后复市。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/87843">台湾国防部（2026-09-28）</a></li>
+        <li><a href="https://udn.com/news/story/10930/9780866">中央社 / 联合新闻网（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>RBA：今日14:30澳东决议与Bullock记者会；是否为11月留后门。</li>
+    <li>霍尔木兹：美方分头会谈纪要；布伦特105–107美元走廊。</li>
+    <li>澳AI立法：双通知义务细节；周四参议院场次是否取消。</li>
+    <li>乌克兰：基辅日间伤亡上修；波兰新交战规则；能源停火对等条件。</li>
+    <li>台海28–29日窗口与台股复市定价。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：AP · Reuters · ABC · NVIDIA · Al-Monitor · PBS · Kyiv Independent · 台湾国防部 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
