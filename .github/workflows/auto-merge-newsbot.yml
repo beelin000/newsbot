@@ -29,7 +29,8 @@ jobs:
       (
         startsWith(github.head_ref, 'cursor/chinese-news-brief') ||
         startsWith(github.head_ref, 'cursor/chinese-global-news-brief') ||
-        startsWith(github.head_ref, 'cursor/global-brief-file-management')
+        startsWith(github.head_ref, 'cursor/global-brief-file-management') ||
+        startsWith(github.head_ref, 'cursor/global-brief-')
       ) &&
       (
         github.event.pull_request.user.login == 'beelin000' ||
