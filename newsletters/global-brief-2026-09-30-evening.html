@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年9月30日晚报">
+<title>晚报 · 2026年9月30日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年9月30日</h1>
+  <p class="meta">生成 19:05（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：亚太收盘分化、中国PMI重回扩张与刺激落地、澳CPI后RBA再定价、美伊多哈反馈陷入排序僵局、基辅又一夜多弹种空袭，以及台海窗抬升并叠加日间逾中线警巡。美国PCE约上海20:30发布，截稿前未落地。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>日经约+1.94%收约66753.72；沪指约+0.31%收约3842.19；恒指约+89点收约24613；台股约+0.65%；韩综约−0.48%连跌三日；ASX约+0.92%。</li>
+    <li><span class="tag">更新</span>中国制造业PMI升至50.1（6月以来首次扩张）；PSL利率降至1.5%，房贷贴息自10月1日起。</li>
+    <li><span class="tag">更新</span>澳8月CPI年率4.0%，削尾均值月率略软；11月再加息概率压至约20%。</li>
+    <li><span class="tag">更新</span>布伦特约103–104美元回升；特朗普否认制裁松动叙事；霍尔木兹流量约战前八成。</li>
+    <li><span class="tag">更新</span>阿拉格齐多哈收到美方反馈并通报内阁；分歧在步骤排序；特朗普称“I offered them NOTHING”。</li>
+    <li><span class="tag">更新</span>乌克兰一夜188无人机+多弹种，防空160；全国至少约6死34伤；基辅约2–3死，维什霍罗德儿童遇难。</li>
+    <li><span class="tag">更新</span>台海29–30日窗：共机9/舰7/公务船6；日间约15架次逾越中线“联合战备警巡”。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>亚太收盘：日经半导体驱动反弹，韩综连跌</h3>
+      <p class="why">为何重要：早报把纽市长债新高交给亚太——周三用日韩台分化与中国政策消化完成月度收官。</p>
+      <div class="summary"><p>日经约+1.94%收约66753.72；韩综约−0.48%收约6838；台股约+0.65%收约47940；沪指约+0.31%收约3842.19；恒指约+89点；ASX约+0.92%。欧洲Stoxx 600日间反弹，但9月仍指向约六个月来首月下跌。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.nikkei.com/article/DGXZQOFL305E90Q6A930C2000000/">日本经济新闻（2026-09-30）</a></li>
+        <li><a href="https://www.sharecast.com/news/market-report-asia/asia-report-stocks-mixed-but-tech-rally-boosts-tokyo-shares--23713500.html">Sharecast Asia（2026-09-30）</a></li>
+        <li><a href="https://finance.sina.com.cn/jjxw/2026-09-30/doc-initqvax6973822.shtml">新华财经 / 新浪（2026-09-30）</a></li>
+        <li><a href="https://www.yna.co.kr/view/AKR20260930148600008">韩联社（2026-09-30）</a></li>
+        <li><a href="https://stockhead.com.au/news/closing-bell-softer-inflation-lower-yields-biscuits-all-round-except-for-tech/">Stockhead ASX（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>中国PMI重回50上方，刺激落地但欢呼有限</h3>
+      <p class="why">为何重要：国庆前最后交易日，官方景气与定向刺激同框，检验内需定价能否跟上外需/算力。</p>
+      <div class="summary"><p>制造业PMI升至50.1，非制造业约50.2。央行将PSL一年期利率降至1.5%，上调科创再贷款额度，财政部等启动房贷贴息。市场反应偏平，地产与消费弱环仍是焦点。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.stats.gov.cn/sj/zxfb/202609/t20260930_1965449.html">国家统计局（2026-09-30）</a></li>
+        <li><a href="https://asia.nikkei.com/economy/chinese-factory-activity-expands-in-september-driven-by-ai-boom">Nikkei Asia（2026-09-30）</a></li>
+        <li><a href="https://www.chinadailyhk.com/hk/article/640339">China Daily（2026-09-30）</a></li>
+        <li><a href="https://theedgemalaysia.com/node/819920">The Edge（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>澳CPI：年率升至4.0%，核心月率略软</h3>
+      <p class="why">为何重要：RBA刚加息至4.60%——翌日CPI给出混合信号，直接压低11月再加息赔率。</p>
+      <div class="summary"><p>CPI同比4.0%（燃油约+14.8%），环比约+0.4%略逊预期；削尾均值同比3.6%、环比约+0.2%。11月加息概率自约四成压至约20%；ASX地产领涨。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/asia-pacific/australia-inflation-stubbornly-high-august-defying-run-of-rate-hikes-2026-09-30/">Reuters（2026-09-30）</a></li>
+        <li><a href="https://www.abc.net.au/news/2026-09-30/inflation-august-2026-australia-bureau-of-statistics/107210688">ABC（2026-09-30）</a></li>
+        <li><a href="https://www.forex.com/en-uk/news-and-analysis/aud-usd-sinks-as-softer-inflation-unwinds-rba-hike-bets/">Forex.com（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>油价回升：特朗普否认制裁松动，布伦特守100上方</h3>
+      <p class="why">为何重要：早报写出口回升压近月——亚欧时段用外交僵局与总统否认把溢价重新钉回。</p>
+      <div class="summary"><p>布伦特约103–104美元，WTI约89.5–90.4美元。特朗普称“I offered them NOTHING”。霍尔木兹近周流量约1310–1320万桶/日；中东9月出口约1632.8万桶/日。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.channelnewsasia.com/business/oil-gains-after-trump-denies-he-willing-ease-sanctions-iran-6420121">CNA（2026-09-30）</a></li>
+        <li><a href="https://www.cnbc.com/2026/09/30/us-iran-war-trump-hormuz.html">CNBC（2026-09-30）</a></li>
+        <li><a href="https://tradearabia.com/News/487083/Gulf-oil-flows-recover-as-Hormuz-traffic-rises-Brent-stays-above-$100">Trade Arabia（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>OpenAI Dots进入安全问责二次传播</h3>
+      <p class="why">为何重要：早报记DevDay产品——日间媒体把同一发布读成“致歉与逃逸之后仍推进常驻代理”。</p>
+      <div class="summary"><p>Dots叠加auto-review/Guardian与权限审批；首发仍限高端订阅。Astra停发、二次暂停与10月6日悉尼听证未变；周四澳参议院场次两家仍不出席。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.axios.com/2026/09/30/openai-dots-ai-agent-safety">Axios（2026-09-30）</a></li>
+        <li><a href="https://www.bbc.com/news/articles/cw7v42rp083eo">BBC（2026-09-30）</a></li>
+        <li><a href="https://www.bankinfosecurity.com/openai-dots-pushes-always-on-agents-into-enterprise-a-32970">BankInfoSecurity（2026-09-29）</a></li>
+        <li><a href="https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor">The Verge（2026-09-29）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>美伊：多哈反馈送达内阁，陷入排序僵局</h3>
+      <p class="why">为何重要：早报写威胁与斡旋——日间推进到美方反馈经卡塔尔送达，但总统公开否认制裁松动。</p>
+      <div class="summary"><p>阿拉格齐多哈收到对七日方案的反馈并通报内阁；知情人士称分歧在步骤排序。特朗普否认愿松动制裁或解冻资金。卡塔尔称仍在建立共同点。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/09/30/us-iran-war-trump-hormuz.html">CNBC（2026-09-30）</a></li>
+        <li><a href="https://www.jpost.com/middle-east/iran-news/article-910161">Jerusalem Post / Reuters（2026-09-30）</a></li>
+        <li><a href="https://middle-east-online.com/en/us-iran-agree-trust-building-steps-differ-sequencing">Middle East Online（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>欧洲月线承压：日线反弹难改9月首月下跌</h3>
+      <p class="why">为何重要：在美债与能源溢价主导的季度末，欧洲提供“日线反弹、月线仍负”的对照。</p>
+      <div class="summary"><p>Stoxx 600日间约+0.4–0.7%，9月仍指向约−1.5%至−2%，为约六个月来首月下跌。德债10年自高位略回，能源→通胀→利率叙事未散。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-european-shares-head-for-first-monthly-decline-in-six-months-as-yields-rise/articleshow/134587091.cms">Economic Times / Reuters（2026-09-30）</a></li>
+        <li><a href="https://www.tradingview.com/news/te_news:588081:0-european-stock-set-to-end-september-lower/">TradingView（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>基辅又一夜：188无人机 + 多弹种</h3>
+      <p class="why">为何重要：早报截稿未见新一轮大规模战报——日间确认又一次饱和打击，能源与互联网节点再入叙事。</p>
+      <div class="summary"><p>俄方发射Zircon/Onyx、弹道导弹与188架无人机（约86架喷气）；防空160（含5枚导弹与155架无人机）；命中约18处。全国至少约6死34伤；基辅约2–3死，维什霍罗德儿童遇难。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/09/30/8055705/">Ukrainska Pravda（2026-09-30）</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-at-least-6-injure-34-across-ukraine-as-kyiv-faces-another-overnight-missile-drone-attack/">Kyiv Independent（2026-09-30）</a></li>
+        <li><a href="https://newsukraine.rbc.ua/news/russian-overnight-attack-sparks-fires-in-1790750649.html">RBC-Ukraine（2026-09-30）</a></li>
+        <li><a href="https://www.clickorlando.com/news/world/2026/09/30/russia-pounds-the-kyiv-region-killing-4-and-targeting-the-power-grid/">AP / ClickOrlando（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海：29–30日窗抬升，日间15架次逾中线</h3>
+      <p class="why">为何重要：早报仍以28–29日窗为基线——午前正式新窗落地，午后又公布日间大规模逾中线活动。</p>
+      <div class="summary"><p>29–30日窗：共机9架次（西南5）、共舰7艘、公务船6艘。另自约09:12起侦获约21架次出海，其中15架次逾越中线侵扰北/中/西南空域，配合所谓“联合战备警巡”。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/News/PLAAct/87869">台湾国防部（2026-09-30）</a></li>
+        <li><a href="https://news.pchome.com.tw/politics/mna/20260930/index-79073000047282230001.html">军闻社 / PChome（2026-09-30）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202609300152.aspx">中央社（2026-09-30）</a></li>
+        <li><a href="https://news.ebc.net.tw/news/politics/573557">东森新闻（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>美国PCE：约上海20:30发布；方法修订与FedWatch对10月加息的反应。</li>
+    <li>油价与霍尔木兹：布伦特能否守住100上方；德黑兰反建议是否公开。</li>
+    <li>中国节后政策：PMI扩张能否传导至地产与消费。</li>
+    <li>AI监管：周四澳参议院空窗；10月6日悉尼听证；Dots权限争议。</li>
+    <li>台海与乌克兰：下一正式窗；基辅能源设施是否再遭饱和打击。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：日本经济新闻 · 国家统计局 · Reuters · ABC · CNA · CNBC · Axios · BBC · 乌空军 · Kyiv Independent · 台湾国防部 · 中央社 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
