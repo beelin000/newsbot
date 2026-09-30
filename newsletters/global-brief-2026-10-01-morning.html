@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月1日早报">
+<title>早报 · 2026年10月1日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年10月1日</h1>
+  <p class="meta">生成 07:15（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">9月30日晚报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：美国8月PCE低于预期后纽市分化、长端美债仍高、油价约涨1美元完成约14%月线、FTC调查OpenAI/Anthropic，以及台海30日–10月1日正式窗与乌克兰入冬能源战口径升级。内地与香港国庆休市。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>8月PCE：整体年率约3.4%、核心约3.0%，均低于预期；FedWatch 10月加息概率约35–39%。</li>
+    <li><span class="tag">更新</span>纽市分化：道指约−0.86%收约50914；标普约−0.25%收约7652；纳指约+0.24%收约26861。</li>
+    <li><span class="tag">更新</span>10年期美债收约5.291%（盘中约5.304%）；30年期约5.631%——软通胀未压住长端。</li>
+    <li><span class="tag">更新</span>布伦特结算约103.50美元（+0.9%）；WTI约90.42美元（+1.2%）；布伦特9月约+14%。</li>
+    <li><span class="tag">更新</span>FTC证实调查OpenAI、Anthropic等超级智能安全风险，拟发CID。</li>
+    <li><span class="tag">更新</span>Anthropic–SpaceX算力协议上限约845亿美元；参议院数据中心电价案受阻。</li>
+    <li><span class="tag">更新</span>乌克兰：入冬能源战口径升级，首都周边紧急限电；全国约5–7死。</li>
+    <li><span class="tag">更新</span>台海30日–10月1日窗：共机12、共舰8、公务船3；7架次逾中线。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>PCE低于预期：10月加息概率回落，长债拒绝庆祝</h3>
+      <p class="why">为何重要：晚报把PCE标为截稿后主观察项——纽市用“软通胀 + 硬长端”完成季度末定价。</p>
+      <div class="summary"><p>整体PCE年率约3.4%（预期约3.7%），核心约3.0%（预期约3.3%），月率核心约+0.2%。方法修订下调7月基数；实际消费约+0.6%，GDP终值上修至约2.2%，但GDPNow三季度下调至约3.7%。FedWatch 10月加息概率约35–39%；高盛推迟至12月。10年期收约5.291%，30年期约5.631%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://investinglive.com/news/investinglive-americas-fx-news-wrap-30-sept-softer-pce-fails-to-hold-yields-down-dow-ends-september-at-june-lows/">investingLive（2026-09-30）</a></li>
+        <li><a href="https://www.marketscreener.com/news/s-p-500-dips-nasdaq-higher-after-data-shows-moderate-inflation-rise-ce785ad3db89fe24">MarketScreener / Reuters（2026-09-30）</a></li>
+        <li><a href="https://www.asiae.co.kr/en/article/2026100104550259818">Asiae / WSJ（2026-10-01）</a></li>
+        <li><a href="https://www.nasdaq.com/articles/stocks-push-higher-fed-rate-hike-chances-fall">Nasdaq / Barchart（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>纽市分化收官9月：道指约−4.3%，纳指独撑</h3>
+      <p class="why">为何重要：亚太国庆休市，隔夜美股成为节后开盘前主锚——广度崩坏与科技窄涨并存。</p>
+      <div class="summary"><p>道指约−0.86%收约50914（约6月初以来低位）；标普约−0.25%收约7652；纳指约+0.24%收约26861；罗素约−0.39%。9月全月道指约−4.3%、纳指约+1.9%。苹果/亚马逊/谷歌上涨，Meta约−1.8%；英特尔约+3.7%交易CPU交期拉长叙事。欧洲DAX/CAC偏弱。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://investinglive.com/news/investinglive-americas-fx-news-wrap-30-sept-softer-pce-fails-to-hold-yields-down-dow-ends-september-at-june-lows/">investingLive（2026-09-30）</a></li>
+        <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262194875-us-stock-close-nasdaq-rise-august-pce-treasury-yields-intel-micron-tradingkey">TradingKey（2026-09-30）</a></li>
+        <li><a href="https://www.lse.co.uk/news/us-stocks-sampp-500-nasdaq-advance-as-soft-inflation-tempers-fed-rate-hike-bets--ti1gx297tcuqcdm.html">LSE / Reuters（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>油价纽市约涨1美元，成品油继续去库</h3>
+      <p class="why">为何重要：晚报写亚欧回升——纽市用结算价确认月线约+14%，并把EIA结构钉进溢价。</p>
+      <div class="summary"><p>布伦特11月约+0.9%结算约103.50美元；12月约+1.9%至约98.03；WTI约+1.2%结算约90.42美元。布伦特9月约+14%。EIA：原油约+92.2万桶，汽油约−170万桶，馏分油约−230万桶。特朗普称霍尔木兹近三日流量强劲，仍无复航时间表。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://finance.yahoo.com/energy/articles/oil-gains-trump-denies-willing-043538093.html">Yahoo / Reuters（2026-09-30）</a></li>
+        <li><a href="https://investinglive.com/news/investinglive-americas-fx-news-wrap-30-sept-softer-pce-fails-to-hold-yields-down-dow-ends-september-at-june-lows/">investingLive（2026-09-30）</a></li>
+        <li><a href="https://www.channelnewsasia.com/business/oil-gains-after-trump-denies-he-willing-ease-sanctions-iran-6420121">CNA（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>FTC调查OpenAI、Anthropic等超级智能安全风险</h3>
+      <p class="why">为何重要：白宫前一日自愿备忘录无约束力——FTC把路径升级为可强制调证的消费者保护法调查。</p>
+      <div class="summary"><p>FTC证实对OpenAI、Anthropic及其他AI公司就产品危险展开调查，拟发CID强制调取文件与证词，审查不公平或欺骗性行为；主席在Hugging Face事件前已启动。二次暂停、Astra停发与10月6日悉尼听证未变；今日澳参议院场次两家仍不出席。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html">CNBC（2026-09-30）</a></li>
+        <li><a href="https://nypost.com/2026/09/30/us-news/ftc-opens-sweeping-probe-of-anthropic-openai-and-other-super-intelligence-models/">NY Post（2026-09-30）</a></li>
+        <li><a href="https://www.washingtonpost.com/technology/2026/09/30/ftc-launches-broad-investigation-into-anthropic-openai/">Washington Post（2026-09-30）</a></li>
+        <li><a href="https://news.bloomberglaw.com/artificial-intelligence/ftc-probing-openai-and-anthropic-over-product-safety-concerns">Bloomberg Law（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>Anthropic–SpaceX算力上限约845亿美元；电价案受阻</h3>
+      <p class="why">为何重要：算力租赁Obligations与数据中心电力政治同日升温，和FTC调查形成交叉压力。</p>
+      <div class="summary"><p>Anthropic招股书口径显示与SpaceX算力租赁上限约845亿美元（至2029），约为此前约450亿美元披露的近两倍，多数条款保留约90天取消权。参议院数据中心电价提案约57–43未过60票门槛。CPU交期因智能体需求拉长至约25–30周。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262194875-us-stock-close-nasdaq-rise-august-pce-treasury-yields-intel-micron-tradingkey">TradingKey / Reuters（2026-09-30）</a></li>
+        <li><a href="https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html">CNBC（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>美伊：排序僵局未解，流量叙事替代不了协议</h3>
+      <p class="why">为何重要：总统否认制裁松动后改口强调霍尔木兹“几乎完全控制”——市场读成流量而非突破。</p>
+      <div class="summary"><p>特朗普称近三日石油流量强劲、美方几乎完全控制霍尔木兹，并暗示伊朗相关进展“很快”，但无复航或书面互信文本。卡塔尔仍推动穿梭外交；核心分歧仍在步骤排序。OPEC+周日会议料按兵不动。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://finance.yahoo.com/energy/articles/oil-gains-trump-denies-willing-043538093.html">Yahoo / Reuters（2026-09-30）</a></li>
+        <li><a href="https://investinglive.com/news/investinglive-americas-fx-news-wrap-30-sept-softer-pce-fails-to-hold-yields-down-dow-ends-september-at-june-lows/">investingLive（2026-09-30）</a></li>
+        <li><a href="https://www.cnbc.com/2026/09/30/us-iran-war-trump-hormuz.html">CNBC（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰：入冬能源战口径升级，紧急限电重启</h3>
+      <p class="why">为何重要：晚报已给弹药结构——日间把同一夜袭击明确标为上一供暖季后首次大规模联合能源打击。</p>
+      <div class="summary"><p>总理称此为上一供暖季结束以来首次大规模联合打击能源设施；Ukrenergo称首都及周边实施春以来首次紧急限电。全国伤亡约5–7死（含儿童）。弹药结构仍以约188架无人机+反舰/弹道、防空约160目标为准。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.abc.net.au/news/2026-10-01/russia-hits-ukrainian-energy-grid/107214710">ABC（2026-10-01）</a></li>
+        <li><a href="https://www.manilatimes.net/2026/10/01/world/americas-emea/russia-targets-kyiv-power-supply-as-winter-nears/2436266">AFP / Manila Times（2026-10-01）</a></li>
+        <li><a href="https://www.kyivpost.com/post/85742">Kyiv Post（2026-09-30）</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/09/30/8055705/">Ukrainska Pravda（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海：30日–10月1日窗12/8/3，7架次逾中线</h3>
+      <p class="why">为何重要：晚报刚记9/7/6与日间15架次逾中线——清晨正式窗显示空中与舰艇压力仍高。</p>
+      <div class="summary"><p>30日06:00–10月1日06:00：共机12架次、共舰8艘、公务船3艘；其中7架次逾越中线进入北/西南/东南防空识别区。国军以任务机、舰与岸置飞弹应处。国庆期间需连续跟踪，不以单日峰值外推。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/informationservices/publication/84961">台湾国防部英文稿（2026-10-01）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202609300152.aspx">中央社（2026-09-30）</a></li>
+        <li><a href="https://www.mnd.gov.tw/en/News/PLAAct/87869">台湾国防部上窗对照（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>亚太节后定价：内地/香港休市；日韩台如何消化软PCE与硬长债。</li>
+    <li>联储路径：周五非农；10月概率与5.29%长端能否回落。</li>
+    <li>油价与霍尔木兹：布伦特守100；特朗普“很快”进展；OPEC+周日。</li>
+    <li>AI监管：FTC CID；今日澳参议院空窗；10月6日悉尼听证。</li>
+    <li>台海与乌克兰：1–2日正式窗；基辅电网与下一轮饱和打击。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：Reuters · BEA · investingLive · CNBC · FTC报道 · 台湾国防部 · ABC · Kyiv Post 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
