@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月2日早报">
+<title>早报 · 2026年10月2日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年10月2日</h1>
+  <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日晚报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：美股窄幅收复、美债从约24年高位回落并压低10月加息概率、布伦特收约102美元、美伊“客观保证”与美军增兵并行，以及乌克兰喷气无人机打击学校与南桥。中国内地与香港继续休市；亚太现金盘尚未开市。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>美股：道指约+0.04%收约50926.56；标普约+0.19%收约7666.45；纳指约+0.04%收约26871.60。</li>
+    <li><span class="tag">更新</span>美10年期盘中约5.34%后收约5.233%（−5.9bp）；FedWatch 10月加息概率约24–26%。</li>
+    <li><span class="tag">更新</span>ISM价格分项约77.9；布伦特约+4.37%收约102.31美元，WTI约92.87美元。</li>
+    <li><span class="tag">更新</span>美光美股约+3%；FTC CID仍在起草；10月6日悉尼听证未变。</li>
+    <li><span class="tag">更新</span>伊方要求“客观保证”复航；美军增派航母与两栖编队赴中东。</li>
+    <li><span class="tag">更新</span>基辅学校与南桥遇袭；全国约≥6死/38伤；核研究设施场地起火但反应堆未损。</li>
+    <li>台海10月1–2日正式窗未发布；最新仍为23/7/7、16架次逾中线。</li>
+    <li>周五非农共识约8.4万；澳股期货约+0.4–0.5%。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>美股四季度首日窄涨，终结三日跌势</h3>
+      <p class="why">为何重要：晚报把亚太芯片狂欢交给纽市——周四用早弱午强完成窄幅收复，定价权仍在收益率与油价。</p>
+      <div class="summary"><p>道指约+0.04%收约50926.56；标普约+0.19%收约7666.45；纳指约+0.04%收约26871.60；罗素约+0.3%收约2806.63。欧洲伦敦约−1.7%、巴黎约−1.6%。本周迄今标普约−1%、道指约−1.7%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://wtop.com/national/2026/10/how-major-us-stock-indexes-fared-thursday-10-1-2026/">WTOP / AP（2026-10-01）</a></li>
+        <li><a href="https://www.morningstar.com/news/dow-jones/202610018746/djia-rises-004-to-5092656-data-talk">Morningstar DJIA（2026-10-01）</a></li>
+        <li><a href="https://investorshub.advfn.com/market-news/article/37360/wall-street-rebounds-from-early-losses-as-chip-stocks-rally-and-treasury-yields-ease">ADVFN（2026-10-01）</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/us-stocks-higher-at-close-of-trade-dow-jones-industrial-average-up-004-4928371">Investing.com（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>美债急转弯：10年期收约5.233%，10月加息概率回落</h3>
+      <p class="why">为何重要：晚报仍写长端高位徘徊——纽市后半段出现本轮最陡峭日内反转。</p>
+      <div class="summary"><p>10年期盘中约5.34%后收约5.233%（−5.9bp），终结连升七日；2年期约−10bp至约4.78%。FedWatch 10月≥25bp约24–26%。ISM PMI约54.5，价格分项约77.9。非农共识约8.4万；澳股期货约+0.4–0.5%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.morningstar.com/news/dow-jones/202610018158/10-year-treasury-yield-falls-to-5233-data-talk">Morningstar 10年期（2026-10-01）</a></li>
+        <li><a href="https://www.marketscreener.com/news/yields-fall-after-us-10-year-hits-highest-since-2002-us-stocks-inch-up-ce785ddada8aff24">Reuters / MarketScreener（2026-10-01）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/01/the-september-jobs-report-will-be-released-friday-heres-what-to-expect.html">CNBC 非农前瞻（2026-10-01）</a></li>
+        <li><a href="https://www.afr.com/markets/equity-markets/asx-to-rise-us-bonds-rally-oil-surges-above-us102-a-barrel-20261002-p6127s">AFR（2026-10-02）</a></li>
+        <li><a href="https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-5-september-2026-ism-manufacturing-pmi-report-302894520.html">ISM / PR Newswire（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>布伦特收约102.31美元：停出口 + 增兵双催化</h3>
+      <p class="why">为何重要：晚报亚欧时段约100.15——纽市把成品油缺口与航母增派交易成约4%涨幅。</p>
+      <div class="summary"><p>布伦特12月约+4.37%收约102.31美元；WTI约+2.71%收约92.87美元。中国炼厂暂停港澳以外成品油出口；美军派出罗斯福号航母与马金岛号两栖编队。OPEC+周日会议料按兵不动。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.morningstar.com/news/dow-jones/202610017816/front-month-nymex-crude-rose-271-to-settle-at-9287-data-talk">Morningstar WTI（2026-10-01）</a></li>
+        <li><a href="https://live.euronext.com/en/financial-news/oil-jumps-4-reports-china-halts-fuel-exports-us-troops-head-middle-east">Euronext / Reuters（2026-10-01）</a></li>
+        <li><a href="https://www.reuters.com/business/energy/chinese-refiners-suspend-oct-fuel-exports-petrochina-cancels-cargoes-sources-say-2026-10-01/">Reuters 中国成品油（2026-10-01）</a></li>
+        <li><a href="https://www.marketscreener.com/news/oil-climbs-as-u-s-sends-another-aircraft-carrier-to-middle-east-2nd-update-ce785ddadb8ff124">MarketScreener（2026-10-01）</a></li>
+        <li><a href="https://www.al-monitor.com/originals/2026/10/pentagon-deploys-thousands-more-marines-another-aircraft-carrier-mideast">Al-Monitor（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>美光美股约+3%，华尔街目标价接力</h3>
+      <p class="why">为何重要：晚报已写亚盘存储狂欢——纽市现货确认把叙事钉进美元定价。</p>
+      <div class="summary"><p>美光约收1097.39美元（+3.03%）；大行目标价多见约1200–1625美元。FTC CID仍在起草；10月6日悉尼联席听证与OpenAI二次暂停安排未变。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/10/01/mu-barely-budged-on-earnings-wall-street-thinks-gains-will-come.html">CNBC（2026-10-01）</a></li>
+        <li><a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx">Micron 财报（2026-09-30）</a></li>
+        <li><a href="https://news.bloomberglaw.com/artificial-intelligence/ftc-probing-openai-and-anthropic-over-product-safety-concerns">Bloomberg Law（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>伊方要“客观保证”，美军增兵与排序僵局并行</h3>
+      <p class="why">为何重要：晚报主写驱逐叙事——周四伊方公开升格复航条件，同时航母编队启程。</p>
+      <div class="summary"><p>哈提卜扎德称复航取决于美方结束战争的“客观保证”与七日方案前置步骤，并称“球在美方一侧”。罗斯福号航母与马金岛号两栖编队赴中东，区域或短暂三航母并存。卡塔尔继续传话，无书面复航时间表。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aa.com.tr/en/us-israel-iran-war/iran-says-reopening-strait-of-hormuz-hinges-on-us-guarantees-to-end-war/4075437">Anadolu / IRNA（2026-10-01）</a></li>
+        <li><a href="https://www.axios.com/2026/10/01/rubio-iran-unga-delegation-kicked-out">Axios（2026-10-01）</a></li>
+        <li><a href="https://www.al-monitor.com/originals/2026/10/pentagon-deploys-thousands-more-marines-another-aircraft-carrier-mideast">Al-Monitor（2026-10-01）</a></li>
+        <li><a href="https://www.arabnews.com/middle-east/us-moves-thousands-of-troops-to-middle-east-as-trump-weighs-iran-strikes-3004154">Arab News / AP（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>基辅日间：学校与南桥遇袭，喷气无人机扩线</h3>
+      <p class="why">为何重要：晚报写电网修复——清晨更多披露民用与交通目标，能源战延伸到城市动脉。</p>
+      <div class="summary"><p>喷气无人机击中基辅学校（儿童在掩体、无伤亡）与南桥桥墩，过桥交通一度中断。核研究设施场地起火但试验堆未损。全国约≥6死/38伤。空军口径约107架无人机（63喷气），约87被压制。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.abc.net.au/news/2026-10-02/school-and-nuclear-facility-hit-in-latest-russian-air-strikes/107218686">ABC News（2026-10-02）</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-at-least-6-injure-38-across-ukraine-amid-another-overnight-drone-barrage-nationwide/">Kyiv Independent（2026-10-01）</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/10/01/8055909/">Ukrainska Pravda（2026-10-01）</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1212602.html">Interfax-Ukraine（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>台海：1–2日正式窗未发布，仍以23/7/7为最新</h3>
+      <p class="why">为何重要：避免用旧年同日文档污染基线——截稿前下一正式窗仍空。</p>
+      <div class="summary"><p>最新可核验正式窗仍为30日06:00–10月1日06:00：共机23架次、共舰7艘、公务船7艘；16架次逾中线。10月1–2日窗至07:10截稿未发布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/87884">台湾国防部（2026-10-01）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202610010051.aspx">中央社（2026-10-01）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6449780">Taiwan News（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>美国非农（周五20:30上海）：10月加息路径与长端美债。</li>
+    <li>亚太开盘：日经/韩综续涨弹性；澳股收复进度。</li>
+    <li>油品与OPEC+：中国成品油出口能否在假期后重启；布伦特能否站稳102。</li>
+    <li>美伊：客观保证是否进入书面草案；航母抵达与护航流量。</li>
+    <li>台海与乌克兰：下一正式窗；南桥通车与新一轮打击。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：WTOP · Morningstar · Reuters · CNBC · AFR · ISM · Micron · Anadolu · Al-Monitor · ABC · Kyiv Independent · 台湾国防部 · 中央社 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
