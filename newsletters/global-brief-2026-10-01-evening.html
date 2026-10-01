@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月1日晚报">
+<title>晚报 · 2026年10月1日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年10月1日</h1>
+  <p class="meta">生成 19:05（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：亚太对软PCE与美光财报的分裂定价、油价V型并叠加中国成品油出口暂停、美伊排序僵局与驱逐叙事、台海正式窗上修为23/7/7，以及乌克兰电网日间修复与晚高峰节约令。中国内地与香港国庆休市。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>日经约+3.30%收约68956.72；韩综约+1.95%收约6971.35；台股约+0.86%收约48353.49创收盘新高；ASX约−1.99%收约8614.4。</li>
+    <li><span class="tag">更新</span>美光财季营收约542.3亿美元，全年约1331.9亿美元；HBM 2027绝大多数比特已签约提价。</li>
+    <li><span class="tag">更新</span>韩国9月出口约+83.5%，半导体约+262.8%至约603亿美元。</li>
+    <li><span class="tag">更新</span>油价V型：布伦特早盘一度约97美元，后因中国成品油出口暂停报道重回约100.15美元；WTI约91.74美元。</li>
+    <li><span class="tag">更新</span>澳参议院AI场次空窗；10月6日悉尼联席听证未变；FTC CID仍在起草。</li>
+    <li><span class="tag">更新</span>鲁比奥要求伊朗联大代表团离境；七日方案分歧仍在步骤排序。</li>
+    <li><span class="tag">更新</span>乌克兰能源取消计划限电，但基辅晚高峰须节约；五州仍有停电。</li>
+    <li><span class="tag">更新</span>台海30日–10月1日窗上修：共机23/舰7/公务船7；16架次逾中线。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>亚太收盘：日韩台芯片狂欢，澳股被长债打回</h3>
+      <p class="why">为何重要：早报把软PCE与硬长债交给亚太——周四用半导体暴涨与利率敏感板块重挫完成分裂定价。</p>
+      <div class="summary"><p>日经约+3.30%收约68956.72；韩综约+1.95%收约6971.35；台股约+0.86%收约48353.49创收盘新高。ASX 200约−1.99%收约8614.4，11行业全跌。欧洲Stoxx 600约−0.6%至−1.6%；美10年期仍约5.29–5.32%。中国内地/香港休市。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.dimsumdaily.hk/tokyo-shares-surge-as-technology-heavyweights-propel-nikkei-to-strong-finish/">DimsumDaily（2026-10-01）</a></li>
+        <li><a href="https://www.mt.co.kr/en/stock/2026/10/01/2026100115011320735">MoneyToday / KOSPI（2026-10-01）</a></li>
+        <li><a href="https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d5a0d27a-befe-4cd8-afad-dc3796a66087&amp;c=MB010000">MoneyDJ 台股（2026-10-01）</a></li>
+        <li><a href="https://www.marketindex.com.au/news/evening-wrap-asx-200-tumbles-as-all-sectors-finish-in-the-red-midweek-bounce">MarketIndex ASX（2026-10-01）</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/european-stocks-slip-as-q4-begins-on-soaring-energy-and-inflation-pain-4926358">Investing.com Europe（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>韩国9月出口爆发，半导体约+263%</h3>
+      <p class="why">为何重要：出口数据把存储周期与AI资本开支重新钉进东北亚基本面。</p>
+      <div class="summary"><p>9月出口约+83.5%至约1209亿美元；半导体约+262.8%至约603亿美元。数据与美光叙事叠加，推动韩综逼近7000。韩元收约1358.4。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mt.co.kr/en/stock/2026/10/01/2026100115011320735">MoneyToday（2026-10-01）</a></li>
+        <li><a href="https://en.edaily.co.kr/news/eda202610015822/">Edaily（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>油价V型：出口回升压近月，中国停出口抬油品</h3>
+      <p class="why">为何重要：早报纽市约103.50收官——亚欧先交易中东出口回升，再交易中国成品油停出口。</p>
+      <div class="summary"><p>布伦特早盘一度约96.9美元，后因路透称中国炼厂暂停港澳以外成品油出口、中石油取消部分汽油/航煤货盘，反弹至约100.15美元；WTI约91.74美元。延布装船与东—西管道部分恢复仍在压制原油地缘溢价。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/10/01/oil-prices-today-wti-brent.html">CNBC（2026-10-01）</a></li>
+        <li><a href="https://www.reuters.com/business/energy/chinese-refiners-suspend-oct-fuel-exports-petrochina-cancels-cargoes-sources-say-2026-10-01/">Reuters（2026-10-01）</a></li>
+        <li><a href="https://economymiddleeast.com/news/oil-prices-fall-1-percent-as-brent-drops-below-97-on-recovering-exports-u-s-stock-build/">Economy Middle East（2026-10-01）</a></li>
+        <li><a href="https://www.energyconnects.com/news/oil/2026/october/oil-edges-lower-with-middle-east-shipments-back-in-the-spotlight/">Energy Connects / Bloomberg（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>美光创纪录季报驱动亚盘存储链</h3>
+      <p class="why">为何重要：纽市收盘后的美光数字成为周四亚洲半导体主剧本。</p>
+      <div class="summary"><p>财季营收约542.3亿美元，全年约1331.9亿美元；云内存（含HBM）约162.8亿美元。HBM 2027绝大多数比特已签约且显著提价，并与英伟达推进定制HBM4E。东京电子、爱德万等领涨。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx">Micron 财报（2026-09-30）</a></li>
+        <li><a href="https://in.investing.com/news/stock-market-news/micron-q4-2026-slides-record-54b-revenue-tight-supply-outlook-93CH-5613729">Investing.com（2026-09-30）</a></li>
+        <li><a href="https://en.edaily.co.kr/news/eda202610015822/">Edaily（2026-10-01）</a></li>
+        <li><a href="https://www.tradingkey.com/news/transcripts/262195079-tradingkey">TradingKey（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>澳参议院AI场次空窗；FTC无新节点</h3>
+      <p class="why">为何重要：早报预告空窗——日间确认两家缺席，焦点移向10月6日悉尼与CID。</p>
+      <div class="summary"><p>OpenAI与Anthropic均未出席今日堪培拉场次。10月6日悉尼联席听证（Kwon与Anthropic代表）未变。FTC调查仍处起草CID阶段；OpenAI二次暂停与Astra停发未变。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.channelnewsasia.com/business/anthropic-openai-will-not-attend-australian-senate-ai-hearing-october-1-6416181">CNA（2026-09-28）</a></li>
+        <li><a href="https://www.theguardian.com/australia-news/2026/sep/28/anthropic-will-not-appear-at-senate-inquiry-into-ai-and-datacentres-amid-fallout-from-openai-hack-ntwnfb">The Guardian（2026-09-28）</a></li>
+        <li><a href="https://www.smh.com.au/technology/anthropic-boss-to-skip-senate-grilling-into-rogue-ai-agents-20260928-p61107.html">SMH（2026-09-28）</a></li>
+        <li><a href="https://news.bloomberglaw.com/artificial-intelligence/ftc-probing-openai-and-anthropic-over-product-safety-concerns">Bloomberg Law（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>美伊：驱逐叙事升温，排序僵局未解</h3>
+      <p class="why">为何重要：早报写流量强劲——日间外交线转为鲁比奥驱逐代表团与卡塔尔传话后的排序僵持。</p>
+      <div class="summary"><p>Axios称鲁比奥要求伊朗联大代表团离境；德黑兰确认已收美方对七日方案反馈，分歧仍在步骤排序。延布装船与管道部分恢复继续压原油溢价，但无可核验复航时间表。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.axios.com/2026/10/01/rubio-iran-unga-delegation-kicked-out">Axios（2026-10-01）</a></li>
+        <li><a href="https://www.thenationalnews.com/news/gulf/2026/10/01/us-kicks-out-irans-un-delegation-as-peace-talks-stall/">The National（2026-10-01）</a></li>
+        <li><a href="https://www.middleeastmonitor.com/20261001-tehran-receives-us-response-to-hormuz-reopening-proposal-but-differences-remain-over-implementation/">Middle East Monitor（2026-10-01）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/01/oil-prices-today-wti-brent.html">CNBC（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰电网：计划限电取消，晚高峰仍紧</h3>
+      <p class="why">为何重要：早报定性入冬能源战——日间焦点转向修复节奏与晚高峰脆弱窗口。</p>
+      <div class="summary"><p>乌克兰能源取消小时级计划限电，但要求基辅及周边17:00–22:00节约用电；五州仍有用户停电。Trypilska火电受损。全国约7死口径与188无人机结构仍为基准。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.euronews.com/2026/10/01/several-regions-of-ukraine-hit-by-power-cuts-after-russian-strikes-grid-operator-says">Euronews（2026-10-01）</a></li>
+        <li><a href="https://mezha.net/eng/news/b0f12716_ukrenergo_cancels_planned/">Mezha / Ukrenergo（2026-10-01）</a></li>
+        <li><a href="https://unn.ua/en/news/the-outage-schedules-have-been-canceled-but-this-may-change-which-regions-should-prepare">UNN（2026-10-01）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/01/russia-ukraine-war-energy-power-winter.html">CNBC（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海窗上修：23架次 / 7舰 / 7公务船</h3>
+      <p class="why">为何重要：更正早报12/8/3口径——正式窗实为23/7/7，16架次逾中线。</p>
+      <div class="summary"><p>30日06:00–10月1日06:00：共机23架次、共舰7艘、公务船7艘；16架次逾越中线进入北/中/西南防空识别区。10月1–2日下一正式窗截稿前未发布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/87884">台湾国防部（2026-10-01）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202610010051.aspx">中央社（2026-10-01）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6449780">Taiwan News（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>美国非农（周五）：联储路径与长端美债能否松动。</li>
+    <li>油品：中国成品油出口10月7日后是否重启；布伦特能否站稳100；OPEC+周日。</li>
+    <li>美伊：排序僵局与卡塔尔下一轮传话。</li>
+    <li>AI监管：10月6日悉尼听证；FTC CID；OpenAI暂停。</li>
+    <li>台海与乌克兰：下一正式窗；基辅晚高峰与新一轮能源打击。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：DimsumDaily · MoneyToday · MoneyDJ · MarketIndex · Micron · Reuters · CNBC · Axios · Euronews · 台湾国防部 · 中央社 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
