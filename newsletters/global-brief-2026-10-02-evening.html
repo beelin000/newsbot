@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月2日晚报">
+<title>晚报 · 2026年10月2日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年10月2日</h1>
+  <p class="meta">生成 19:15（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：亚太收盘分裂（韩综重返7000、台股再新高、日经回吐、澳股科技反弹）、欧盟柴油/原油储备谈判压低油价、欧元区通胀闪估约3.8%，以及基辅再袭南桥与台海1–2日正式窗落地。中国内地与香港继续休市；非农仍待20:30发布。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>亚太：日经约−0.79%收约68413；韩综约+0.46%收约7003.74；台股约+0.25%收约48475.74新高；ASX约+0.79%收约8682.1。</li>
+    <li><span class="tag">更新</span>油价：布伦特约−2.5%至约99.74美元；WTI约−3.8%至约89.34美元；欧洲柴油约跌5%。</li>
+    <li><span class="tag">更新</span>欧盟讨论释放约5000万桶柴油 + IEA约5000万桶原油；法国另有约1亿桶量级评估口径。</li>
+    <li><span class="tag">更新</span>欧元区9月闪估通胀约3.8%（能源约+18.8%）；Stoxx 600约+0.9%。</li>
+    <li><span class="tag">更新</span>爱德万创纪录约+5%；澳科技约+4.4%；台积电收2500持平。</li>
+    <li><span class="tag">更新</span>特朗普称中期选举后可能加码空袭；伊方“客观保证”僵局未解；美军增兵叙事延续。</li>
+    <li><span class="tag">更新</span>乌克兰约108架无人机（47喷气），约88被压制；基辅约1死/2伤；南桥再封闭。</li>
+    <li><span class="tag">更新</span>台海1–2日正式窗：共机6 / 舰7 / 公务船8；4架次逾中线。</li>
+    <li>美国非农仍待今晚20:30上海时间发布。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>亚太收盘分裂：韩综7000、台股新高，日经回吐</h3>
+      <p class="why">为何重要：早报把美债急跌交给亚盘——周五完成利率喘息与油价/非农谨慎的再定价。</p>
+      <div class="summary"><p>日经约−0.79%收约68413.03；韩综约+0.46%收约7003.74；台股约+0.25%收约48475.74再创新高；ASX 200约+0.79%收约8682.1，科技约+4.4%。中国内地/香港休市。欧洲Stoxx 600午前约+0.9%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.brecorder.com/news/40442329">Business Recorder / Reuters 日经（2026-10-02）</a></li>
+        <li><a href="https://www.koreajoongangdaily.com/business/kospi-closes-up-045-on-bargain-hunting-for-tech-shares/12902818">Korea JoongAng（2026-10-02）</a></li>
+        <li><a href="https://focustaiwan.tw/business/202610020014">Focus Taiwan（2026-10-02）</a></li>
+        <li><a href="https://www.marketindex.com.au/news/evening-wrap-asx-200-bounces-off-four-month-low-as-tech-surges-4-4-bond">MarketIndex ASX（2026-10-02）</a></li>
+        <li><a href="https://www.finanznachrichten.de/nachrichten-2026-10/69740294-european-shares-rebound-as-yields-and-oil-prices-ease-020.htm">dpa-AFX 欧洲（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>油价回吐约3%：欧盟柴油储备谈判压溢价</h3>
+      <p class="why">为何重要：早报布伦特收约102.31——欧市把定价权切到欧洲是否释放库存。</p>
+      <div class="summary"><p>布伦特约−2.5%至约99.74美元；WTI约−3.8%至约89.34美元；欧洲柴油约跌5%。法国提案讨论约5000万桶柴油 + IEA约5000万桶原油。中国成品油停出口叙事仍在，但释放预期暂时压过缺口溢价。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/business/energy/oil-rises-slightly-market-weighs-mixed-supply-signals-2026-10-02/">Reuters 油价（2026-10-02）</a></li>
+        <li><a href="https://live.euronext.com/en/financial-news/oil-falls-about-3-talks-over-diesel-crude-stock-releases">Euronext / Reuters（2026-10-02）</a></li>
+        <li><a href="https://www.politico.eu/article/france-floats-major-release-of-oil-and-diesel-reserves-in-response-to-us-pressure/">POLITICO（2026-10-02）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html">CNBC（2026-10-02）</a></li>
+        <li><a href="https://www.reuters.com/business/energy/china-fuel-export-suspension-choke-supplies-asia-2026-10-02/">Reuters 中国成品油（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>欧元区闪估通胀约3.8%，能源约+18.8%</h3>
+      <p class="why">为何重要：油价回落与能源通胀粘性并置，ECB加息压力回潮。</p>
+      <div class="summary"><p>9月HICP闪估约3.8%（8月约3.2%，共识约3.6%）；能源约+18.8%；核心约2.5%。Stoxx 600午前仍因油价与美债喘息约+0.9%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-02102026-ap">Eurostat（2026-10-02）</a></li>
+        <li><a href="https://www.reuters.com/business/euro-zone-inflation-surges-keeping-pressure-ecb-hike-2026-10-02/">Reuters（2026-10-02）</a></li>
+        <li><a href="https://www.fxstreet.com/news/eurozone-flash-hicp-rises-faster-by-38-yoy-in-september-beats-36-estimates-202610020904">FXStreet（2026-10-02）</a></li>
+        <li><a href="https://www.euronews.com/2026/10/02/eurozone-inflation-spikes-to-38-is-your-country-on-the-worst-list">Euronews（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>存储链再分化：爱德万创纪录，澳科技大涨</h3>
+      <p class="why">为何重要：早报美光美股确认——亚盘拆成设备狂欢与成芯片窄幅消化。</p>
+      <div class="summary"><p>爱德万盘中创纪录并约涨近5%。三星/SK海力士由回吐转近平至微涨。台积电收2500持平，环球晶约涨停。澳股科技约+4.4%。FTC CID与10月6日悉尼听证安排未变。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://news.trustfinance.com/news/en-US/advantest-stock-hits-record-high-on-microns-ai-driven-outlook">TrustFinance 爱德万（2026-10-02）</a></li>
+        <li><a href="https://pulse.mk.co.kr/news/english/12167000">Pulse / Maeil（2026-10-02）</a></li>
+        <li><a href="https://focustaiwan.tw/business/202610020014">Focus Taiwan（2026-10-02）</a></li>
+        <li><a href="https://www.marketindex.com.au/news/evening-wrap-asx-200-bounces-off-four-month-low-as-tech-surges-4-4-bond">MarketIndex（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>美压欧洲放柴油；中期选举空袭威胁与保证僵局并行</h3>
+      <p class="why">为何重要：早报写客观保证与航母启程——周五扩展到跨大西洋能源外交与选举日历。</p>
+      <div class="summary"><p>华盛顿敦促欧洲立即释放柴油储备；法国提出约5000万桶柴油+IEA约5000万桶原油框架。特朗普称中期选举后“可能”加码空袭。罗斯福号与马金岛号增兵约9000–10000人叙事延续；霍尔木兹书面复航时间表仍无。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html">CNBC（2026-10-02）</a></li>
+        <li><a href="https://www.politico.eu/article/france-floats-major-release-of-oil-and-diesel-reserves-in-response-to-us-pressure/">POLITICO（2026-10-02）</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/10/02/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate">Al Jazeera（2026-10-02）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/02/us-iran-war-trump-hormuz-.html">CNBC 增兵（2026-10-02）</a></li>
+        <li><a href="https://www.aa.com.tr/en/us-israel-iran-war/iran-says-reopening-strait-of-hormuz-hinges-on-us-guarantees-to-end-war/4075437">Anadolu / IRNA 对照（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>基辅再袭：高层住宅致死，南桥与过江通道受限</h3>
+      <p class="why">为何重要：早报写日间学校/南桥——Overnight再波钉住跨河交通与居民楼。</p>
+      <div class="summary"><p>约108架无人机（约47喷气），约88被压制。达尼茨基区高层约1死/2伤；南桥再封闭，帕特恩桥等受限。泽连斯基称乌方打击俄萨马拉与伏尔加格勒油设施。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/russian-strike-kills-1-injures-2-in-kyiv-as-southern-bridge-hit-again-overnight/">Kyiv Independent（2026-10-02）</a></li>
+        <li><a href="https://www.kyivpost.com/post/85907">Kyiv Post（2026-10-02）</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4170304-zelensky-russia-launched-over-100-attack-drones-at-ukraine-overnight-nearly-50-of-them-jetpowered.html">Ukrinform（2026-10-02）</a></li>
+        <li><a href="https://www.dw.com/en/ukraine-kyiv-bridges-shut-after-fatal-russian-drone-assault/a-79510950">DW（2026-10-02）</a></li>
+        <li><a href="https://www.reuters.com/business/energy/oil-rises-slightly-market-weighs-mixed-supply-signals-2026-10-02/">Reuters 乌方油设施（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海：1–2日正式窗落地为6/7/8，4架次逾中线</h3>
+      <p class="why">为何重要：早报截稿时空窗——国防部日间稿补齐，架次较前日23/7/7回落。</p>
+      <div class="summary"><p>10月1日06:00–2日06:00：共机6架次、共舰7艘、公务船8艘；4架次逾中线进入西南/东部ADIZ。国军以任务机、舰与岸置飞弹应处。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/En/Publication/87893">台湾国防部（2026-10-02）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6450691">Taiwan News（2026-10-02）</a></li>
+        <li><a href="https://www.mnd.gov.tw/en/Publication/87884">前一日对照（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>美国非农（今晚20:30上海）：10月加息路径与长端美债。</li>
+    <li>欧盟柴油/原油释放：法国提案能否落地；布伦特能否站稳100下方。</li>
+    <li>OPEC+周日与中国国庆后成品油出口能否重启。</li>
+    <li>美伊：客观保证书面草案；航母抵达与中期选举前风险。</li>
+    <li>乌克兰过江通道修复；台海下一正式窗。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：Reuters · Eurostat · MarketIndex · Focus Taiwan · Korea JoongAng · POLITICO · CNBC · Al Jazeera · Kyiv Independent · 台湾国防部 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
