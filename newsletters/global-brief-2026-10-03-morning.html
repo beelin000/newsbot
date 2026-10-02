@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月3日早报">
+<title>早报 · 2026年10月3日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年10月3日</h1>
+  <p class="meta">生成 07:20（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日晚报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：美国9月非农仅增约2.9万后纽市收涨、纳指创纪录、美债先跌后升收约5.28%、G7敲定约1亿桶柴油/原油储备释放，以及基辅南桥周五傍晚再遭第四击。周六亚太休市；中国内地与香港继续休市。台海2–3日正式窗未以2026年口径发布。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>非农约+2.9万（共识约8.4–9万）；失业率约4.2%；7–8月合计下修约6万。</li>
+    <li><span class="tag">更新</span>美股：道指约+0.49%收约51176.96；标普约+0.73%收约7722.72；纳指约+1.19%收约27190.86（盘中纪录）。</li>
+    <li><span class="tag">更新</span>美10年期盘中约5.16–5.17%后收约5.276%；FedWatch 10月加息约17–23%。</li>
+    <li><span class="tag">更新</span>G7经IEA释放约1亿桶储备（四个月，20日内前置柴油）；布伦特收约102.25美元，WTI约91.11美元。</li>
+    <li><span class="tag">更新</span>费城半导体约+3%；西部数据/希捷因东芝扩产叙事各跌约14%。</li>
+    <li><span class="tag">更新</span>基辅南桥当地约17:40再遭第四击；过夜108机/88压制与1死/2伤口径延续。</li>
+    <li>台海2–3日正式窗未发布；最新仍为1–2日6/7/8、4架次逾中线。</li>
+    <li>周末亚太休市；下一现金主锚约在周一10月5日。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>非农仅增约2.9万，纳指创纪录收官</h3>
+      <p class="why">为何重要：晚报把非农留作待发——数据落地后纽市完成周线收官，软就业压低10月加息概率，但长端美债并未投降。</p>
+      <div class="summary"><p>非农约+2.9万，失业率约4.2%，两月合计下修约6万。道指约+0.49%收约51176.96；标普约+0.73%收约7722.72；纳指约+1.19%收约27190.86；罗素约+0.9%收约2832.90。本周标普约−0.27%、道指约−1.26%、纳指约+0.45%。FedWatch 10月≥25bp约17–23%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.the-journal.com/articles/associated-press/asian-shares-mixed-after-global-bond-sell-off-deepens-and-ahead-of-us-jobs-data/">AP / The Journal（2026-10-02）</a></li>
+        <li><a href="https://www.streetinsider.com/Market+Check/Equities+close+higher+as+softer+jobs+data+quiets+rate-hike+expectations/27138219.html">StreetInsider / Reuters（2026-10-02）</a></li>
+        <li><a href="https://www.stl.news/stock-market-rallies-on-friday-oct-2-2026/">STL.News（2026-10-02）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html">CNBC FedWatch（2026-10-02）</a></li>
+        <li><a href="https://www.bridgepointrea.com/blog/bls-september-2026-employment-situation">Bridge Point / BLS（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>美债先跌后升：10年期收约5.276%</h3>
+      <p class="why">为何重要：非农初段压低收益率，午后抛售把“软就业=降息”交易打回原形。</p>
+      <div class="summary"><p>10年期盘中约5.16–5.17%后收约5.276%（+4.3bp）；2年期约4.83%；30年期约5.63%。本周10年期约升9.6bp，连升五周。Freddie Mac 30年期房贷约7.28%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.morningstar.com/news/dow-jones/202610025719/10-year-treasury-yield-rises-to-5276-this-week-data-talk">Morningstar 10年期（2026-10-02）</a></li>
+        <li><a href="https://www.livemint.com/market/us-yields-rise-reversing-initial-reaction-to-weak-jobs-report-11790969678755.html">Reuters / LiveMint（2026-10-02）</a></li>
+        <li><a href="https://www.housingwire.com/articles/even-a-missed-jobs-report-and-the-fed-talking-dovish-arent-keeping-yields-lower/">HousingWire（2026-10-02）</a></li>
+        <li><a href="https://www.morningstar.com/news/dow-jones/202610024078/us-bond-yields-ease-as-job-creation-slows-3rd-update">Morningstar 债市（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>G7敲定约1亿桶释放；布伦特收约102.25美元</h3>
+      <p class="why">为何重要：晚报写储备谈判与欧市急跌——周五傍晚G7落成声明，纽市半收复。</p>
+      <div class="summary"><p>经IEA协调立即启动约1亿桶柴油及其他油品/原油释放，为期约四个月，20日内前置大量柴油；重申不对盟友能源出口限制。布伦特约−0.06%收约102.25美元；WTI约−1.90%收约91.11美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/10/02/g7-leaders-statement-on-global-energy-security-and-market-stability/">European Council G7（2026-10-02）</a></li>
+        <li><a href="https://www.rte.ie/news/europe/2026/1002/1593744-eu-meeting-diesel-prices/">RTE（2026-10-02）</a></li>
+        <li><a href="https://euobserver.com/240914/g7-releases-diesel-stocks-after-trump-pressure-eu-denies-caving/">EUobserver（2026-10-02）</a></li>
+        <li><a href="https://energynow.ca/2026/10/oil-ends-volatile-week-mixed-as-emergency-reserve-release-knocks-wti-lower-but-brent-holds-above-102/">EnergyNow（2026-10-02）</a></li>
+        <li><a href="https://www.morningstar.com/news/dow-jones/202610025482/front-month-ice-brent-crude-rose-494-this-week-to-settle-at-10225-data-talk">Morningstar Brent（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>纳指创纪录：费城半导体约+3%，硬盘股分化</h3>
+      <p class="why">为何重要：晚报写亚盘芯片纪录——纽市用非农压低利率路径，把AI硬件链再推到美元纪录价。</p>
+      <div class="summary"><p>费城半导体约+3%；英伟达盘中再创纪录。东芝拟扩硬盘产能报道后，西部数据与希捷各跌约14%。FTC CID仍在起草；10月6日悉尼听证与OpenAI二次暂停未变。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.lse.co.uk/news/us-stocks-nasdaq-hits-record-high-after-softer-jobs-data-tempers-rate-hike-bets-557k1he4uf1csfr.html">Reuters / LSE（2026-10-02）</a></li>
+        <li><a href="https://www.fxempire.com/forecasts/article/nasdaq-index-record-high-as-weak-payrolls-cut-rate-hike-bets-and-yields-fall-1634847">FXEmpire（2026-10-02）</a></li>
+        <li><a href="https://247wallst.com/investing/2026/10/02/amd-climbs-3-as-chip-stocks-extend-their-run-arm-jumps-8-nvidia-rises-2/">24/7 Wall St.（2026-10-02）</a></li>
+        <li><a href="https://news.bloomberglaw.com/artificial-intelligence/ftc-probing-openai-and-anthropic-over-product-safety-concerns">Bloomberg Law（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>G7能源协调落地，美伊保证文本仍空</h3>
+      <p class="why">为何重要：晚报写增兵与空袭选项——周五能源侧先走出多边释放，外交复航文本未至。</p>
+      <div class="summary"><p>罗斯福号航母与马金岛号两栖编队赴中东叙事延续，区域或短暂三航母并存。伊方“客观保证”与七日排序仍无书面复航时间表。G7释放与不对盟友禁运措辞对冲柴油出口限制威胁，不等于霍尔木兹复航协议。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aljazeera.com/news/2026/10/02/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate">Al Jazeera（2026-10-02）</a></li>
+        <li><a href="https://www.miamitimesonline.com/news/world_national/third-aircraft-carrier-and-thousands-of-troops-head-to-mideast-as-trump-weighs-new-iran/article_a8126024-b83e-4692-9616-b6bfbf09620e.html">AP / Miami Times（2026-10-02）</a></li>
+        <li><a href="https://gulfnews.com/world/mena/us-iran-war-we-blow-them-up-or-make-a-deal-trump-says-end-is-very-soon-1.500694334">Gulf News（2026-10-02）</a></li>
+        <li><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/10/02/g7-leaders-statement-on-global-energy-security-and-market-stability/">European Council G7（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>基辅南桥傍晚再遭第四击</h3>
+      <p class="why">为何重要：晚报已写过夜108机与达尼茨基伤亡——当地约17:40再袭发生在晚报截稿之后。</p>
+      <div class="summary"><p>南桥约17:40–17:50再遭无人机打击（两日约第四击），桥面与地铁仍关闭。过夜口径约108架（约47喷气）/约88被压制；达尼茨基区约1死/2伤。进入3日清晨的新一轮空军终报至截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/traffic-chaos-in-kyiv-after-russian-strikes-hit-key-bridge/">Kyiv Independent（2026-10-02）</a></li>
+        <li><a href="https://www.kyivpost.com/post/85971">Kyiv Post（2026-10-02）</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1213703.html">Interfax-Ukraine（2026-10-02）</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4170304-zelensky-russia-launched-over-100-attack-drones-at-ukraine-overnight-nearly-50-of-them-jetpowered.html">Ukrinform（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>台海：2–3日正式窗未发布，仍以6/7/8为最新</h3>
+      <p class="why">为何重要：拒绝民国114年/2025年同日镜像——截稿前下一正式窗仍空。</p>
+      <div class="summary"><p>最新可核验正式窗仍为10月1–2日：共机6架次、共舰7艘、公务船8艘；4架次逾中线西南/东部。2–3日窗至07:20截稿未以2026年国防部稿发布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/En/Publication/87893">台湾国防部（2026-10-02）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6450691">Taiwan News（2026-10-02）</a></li>
+        <li><a href="https://www.cna.com.tw/">中央社对照频道</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>周一亚盘（10月5日）：纳指纪录与5.28%十年期、布伦特102如何被日韩台澳定价。</li>
+    <li>柴油释放执行：G7/IEA 20日前置量；中国成品油停出口是否延长。</li>
+    <li>美联储路径：10月按兵不动 vs 12月高概率加息。</li>
+    <li>美伊：客观保证书面草案；航母抵达与护航流量。</li>
+    <li>台海与乌克兰：2–3日正式窗；南桥结构评估与下一波次。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：AP · Reuters · StreetInsider · CNBC · Morningstar · BLS · European Council · RTE · EnergyNow · Al Jazeera · Kyiv Independent · Kyiv Post · 台湾国防部 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
