@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月5日早报">
+<title>早报 · 2026年10月5日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年10月5日</h1>
+  <p class="meta">生成 07:15（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期晚报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：德国总理默茨突访基辅并签署85亿欧元双边合作与13亿欧元军援；霍尔木兹海峡周末再现油轮遭袭受损，伊朗议长咬死复航七项条件，美军罗斯福号航母全速开赴波斯湾；亚太迎来周一新交易周开盘，日经震荡探路而韩澳休市，布伦特原油在OPEC+宣布11月按兵不动后钉在102美元上方；台海截至07:15截稿4–5日正式窗待发，前日维持共机清零；美中期选举进入最后30天冲刺，特朗普与哈里斯分头启动多州造势；科技端超算中心总功耗达13.7GW，微软谷歌加速北欧与美国本土绿电基建突围。中国内地与香港继续休市。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>德国总理默茨4日突访基辅，与泽连斯基签署15项总值逾85亿欧元协议，公布13亿欧元新援助包（10亿欧元军援重点联合生产高速反无人机武器）。</li>
+    <li><span class="tag">更新</span>霍尔木兹海峡周末连续两艘油轮遇袭，一艘机舱受损；伊朗议长卡利巴夫重申在美方停止敌对行动并解冻资产等七项条件达成前绝不复航。</li>
+    <li><span class="tag">更新</span>美军罗斯福号航母打击群与马金岛号两栖戒备群（含2200名陆战队员）全速开赴中东，10月下旬或形成三航母重叠部署。</li>
+    <li><span class="tag">更新</span>周一亚太迎新交易周：韩国开天节补休休市，澳大利亚劳动节休市，中港黄金周休市；日本东京日经225在68,300点上方震荡探路。</li>
+    <li><span class="tag">更新</span>OPEC+核心七国维持11月原油产量配额不变，海湾战事导致实际发运缺口达500万桶/日；布伦特徘徊102.25美元，WTI报约91.11美元。</li>
+    <li><span class="tag">更新</span>基辅北桥4日遭袭贯穿桥面并破坏供热主管道致德斯尼扬斯基区停热水；乌军全速测试5款高速反无人机原型应对喷气式无人机威胁。</li>
+    <li>台海动态：截至5日07:15截稿，台湾国防部尚未公布4–5日正式窗通报；此前3–4日正式窗共机清零，共舰7艘与公务船8艘在巡。</li>
+    <li><span class="tag">更新</span>美中期选举最后30天倒计时：特朗普启动涵盖17州的32天闪电集会拉票，哈里斯分赴密歇根、内华达、佐治亚等摇摆州为候选人站台。</li>
+    <li><span class="tag">更新</span>全球93座核心AI算力中心总容量达13.7GW；谷歌推进北欧130亿欧元算力集群并获批密歇根1.6GW绿电专线，微软推行仿生湿地协同。</li>
+    <li><span class="tag">更新</span>全球宏观与监管重磅周：周一美ISM服务业PMI；周二OpenAI首席战略官杰森·权出席澳国会听证；周三美联储FOMC 9月纪要发布。</li>
+  </ul></section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>德国总理默茨突访基辅：敲定85亿欧元合作，加码13亿欧元军援及反无人机生产</h3>
+      <p class="why">为何重要：欧洲排头兵直接将本土顶尖军工产线与乌克兰前线防空绑定，援乌模式从库存消耗转向长期联合军工产能对抗。</p>
+      <div class="summary"><p>德国总理默茨4日率西门子能源、亨索尔特、迪尔防务等巨头突访基辅，与泽连斯基签署15项总值逾85亿欧元双边合作协议。德国正式公布13亿欧元新援助包，其中10亿欧元重点用于联合生产高速拦截无人机反制俄喷气机，3.5亿欧元用于抢修受损热电厂等能源基建。默茨称援助乌克兰符合德国核心国家安全利益，并筹备冬季在柏林召集英法举行“自愿者联盟”峰会。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.intellinews.com/germany-pledges-1-3bn-for-ukraine-as-merz-visits-kyiv-473261/">bne IntelliNews / 默茨访乌与85亿欧元协议（2026-10-04）</a></li>
+        <li><a href="https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:261004-930-788621/">dpa 德新社国际 / 默茨基辅表态（2026-10-04）</a></li>
+        <li><a href="https://www.kyivpost.com/post/86083">Kyiv Post / 13亿欧元防务包细节（2026-10-04）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/04/germanys-merz-arrives-in-kyiv-to-finalize-drone-deal-release-aid.html">CNBC / 德国防务与无人机联合协议（2026-10-04）</a></li>
+        <li><a href="https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-merz-in-kyjiw-2455606">德国联邦政府官网公报（2026-10-04）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>美中期选举进入最后30天：特朗普多州集会抵御民意下滑，哈里斯奔赴关键摇摆州</h3>
+      <p class="why">为何重要：距离11月3日投票仅剩29天，在中东战火与美债高企背景下，白宫的地缘与经贸抉择被中期选举严密放大。</p>
+      <div class="summary"><p>两党全面拉开中期选举冲刺大幕。特朗普开启32天跨17州集会，在俄亥俄为赫斯特德与拉马斯瓦米站台，试图抵御因生活成本与伊战导致的支持率下滑；哈里斯则先后前往密歇根、内华达与佐治亚为民主党国会及州长候选人造势，主打中产医保与物价民生，并维系2028年政治基本盘。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.theguardian.com/us-news/2026/oct/04/trump-midterm-rallies-campaign-republicans">The Guardian / 特朗普中期选举集会分析（2026-10-04）</a></li>
+        <li><a href="https://www.usatoday.com/story/news/politics/elections/2026/10/03/trump-rallies-republican-states-avoids-democrats/92026505007/">USA Today / 特朗普造访传统红州（2026-10-03）</a></li>
+        <li><a href="https://www.nbcnews.com/politics/2026-election/trump-campaigning-ohio-says-midterms-will-bring-big-surprise-rcna601150">NBC News / 俄亥俄集会现场直击（2026-10-04）</a></li>
+        <li><a href="https://www.pbs.org/newshour/politics/kamala-harris-campaigning-for-democrats-in-2026-midterms-as-her-2028-decision-looms">PBS NewsHour / 哈里斯摇摆州助选布局（2026-09-21）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹海峡周末再传油轮遇袭，美军航母全速开赴波斯湾</h3>
+      <p class="why">为何重要：水雷与巡飞弹散发袭击打破安全通航神话，海峡商业航运较开战前骤降75%，美军重兵集结中东推升摩擦烈度。</p>
+      <div class="summary"><p>UKMTO通报周末在阿曼海域及霍尔木兹海峡接连发生至少两起油轮遭发射物袭击事件，其中一艘机舱受损。JMIC维持严重威胁评级。伊朗议长卡利巴夫重申美方停止封锁并解冻资产等七项条件满足前绝不复航。美军罗斯福号航母编队及搭载2200名陆战队员的马金岛号两栖群正全速开赴中东，10月下旬或形成三航母重叠部署。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ukmto.org/-/media/ukmto/products/20261002-ukmto_warning_148_26.pdf">UKMTO 航行安全警报（2026-10-02/04）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/04/more-tankers-struck-in-gulf-waters-as-iran-reiterates-conditions.html">CNBC / 海湾周末油轮遇袭与伊朗复航立场（2026-10-04）</a></li>
+        <li><a href="https://gulfnews.com/world/gulf/oman/strait-of-hormuz-crisis-tanker-struck-near-oman-as-shipping-traffic-plunges-1.500697740">Gulf News / 霍尔木兹海峡航运骤降与袭击实录（2026-10-04）</a></li>
+        <li><a href="https://news.usni.org/2026/09/28/uss-theodore-roosevelt-deploys-from-san-diego-uss-abraham-lincoln-near-hawaii">USNI News / 罗斯福号航母打击群部署实态（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>基辅战况：北桥遭袭波及城区供暖，乌军全速测试5款高速反无人机原型</h3>
+      <p class="why">为何重要：俄无人机直接破坏支撑桥梁的斜拉索并炸毁主供热管网，基辅东西两岸通勤与市政热网直面冬季生存挑战。</p>
+      <div class="summary"><p>4日清晨俄军自杀式无人机袭击基辅北桥直接穿透桥面车道，企图切断钢索，除致2人受伤外更破坏了依附桥梁的主供暖管道，造成德斯尼扬斯基区局部热水供应中断。乌军正加紧测试5款专用拦截武器原型应对时速超600公里的喷气式无人机，德国10亿欧元军援将直接注资其量产。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/russia-targets-kyiv-bridges-for-fourth-consecutive-day-hits-northern-bridge/">Kyiv Independent / 北桥遭袭与战况跟踪（2026-10-04）</a></li>
+        <li><a href="https://newsukraine.rbc.ua/news/russian-drone-strike-on-kyiv-bridge-injures-1791110955.html">RBC-Ukraine / 供暖管网受损与伤者情况（2026-10-04）</a></li>
+        <li><a href="https://ua.news/en/capital/ziavilisia-foto-ruinuvan-na-pivnichnomu-mostu-pislia-ataki-drona">UA.News / 现场破坏与斜拉索受袭细节（2026-10-04）</a></li>
+        <li><a href="https://www.bbc.com/news/articles/ckreyjzzzywqo">BBC News / 默茨访乌期间基辅桥梁遭袭报道（2026-10-04）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>台海动态：4–5日正式窗截至07:15截稿待发，前日空域活动清零海面维稳</h3>
+      <p class="why">为何重要：3–4日正式通报空情罕见归零，但海面仍保持15艘舰船中度施压；新一期24小时窗口正在衔接发布。</p>
+      <div class="summary"><p>截至5日早晨07:15截稿，台湾国防部尚未发布10月4日06:00至5日06:00的海空动态通报。前一日（3–4日）正式通报显示台海周边未侦获共机活动，侦获共舰7艘及公务船8艘。受假期与海况影响空中战巡收敛，海面持续维系灰色地带存在。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/Publication/87904">台湾国防部 3–4日通报（2026-10-04）</a></li>
+        <li><a href="https://www.mnd.gov.tw/EN/Publication/87905">台湾国防部英文频道（2026-10-04）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6451557">Taiwan News 4日跟踪报道（2026-10-04）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>亚太周一迎新交易周开盘：日股独挑大梁，韩澳休市消化美债与油价</h3>
+      <p class="why">为何重要：中、港、韩、澳多地休市，东京市场成为承接全球资金流向、非农疲软与5.28%美债收益率压力测试的唯一样本。</p>
+      <div class="summary"><p>10月5日周一亚太早盘，中国内地及香港长假休市，韩国开天节休市，澳大利亚劳动节休市。日本东京股市正常开盘，日经225指数围绕68,309点震荡拉锯，多头关注芯片巨头能否抵抗高美债与地缘溢价挤压。美股三大股指期货窄幅整理，市场静待今晚美ISM服务业PMI数据。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.tradeweb.com/who-we-are/trading-calendar/">Tradeweb 2026全球假日交易日历（2026-10-05）</a></li>
+        <li><a href="https://newsonjapan.com/article/150947.php">News On Japan / 东京市场周度展望（2026-10-05）</a></li>
+        <li><a href="https://www.livemint.com/market/stock-market-news/stock-market-prediction-for-tomorrow-5-oct-monday-sensex-nifty-outlook-dow-jones-nasdaq-kospi-nikkei-taiwan-cues-11791044203935.html">Livemint 亚太周一开盘指引（2026-10-05）</a></li>
+        <li><a href="https://fnarena.com/2026/10/05/the-monday-report-05-october-2026/">FNArena 周一全球市场晨报（2026-10-05）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>OPEC+产量冻结落地：布伦特徘徊102美元，物理断供与释储形成均势</h3>
+      <p class="why">为何重要：纸面配额不变但海湾实际供给缺口达500万桶/日，现货市场被油轮过峡安全与G7释储拉扯。</p>
+      <div class="summary"><p>OPEC+核心七国一致决定维持9月规定配额至11月，七国名义配额约3100万桶/日，但战事导致8月实际产出仅约2500万桶/日。周一早盘布伦特原油报约102.25美元/桶，WTI报约91.11美元/桶。G7与IEA的1亿桶储备释放压制投机，但中国成品油停发与中东航道险阻支撑实物底部。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://tass.com/economy/2197319">TASS 塔斯社 / OPEC+核心七国配额细则（2026-10-04）</a></li>
+        <li><a href="https://www.indexbox.io/blog/opec-holds-november-oil-output-steady-as-hormuz-closure-keeps-market-on-edge/">IndexBox / OPEC+维持产量与海峡危机报告（2026-10-04）</a></li>
+        <li><a href="https://www.investing.com/news/commodities-news/opec-agrees-in-principle-to-keep-november-oil-output-targets-steady-sources-say-4930923">Investing.com / Reuters 专稿（2026-10-04）</a></li>
+        <li><a href="https://www.washingtonpost.com/business/2026/10/04/oil-production-opec-iran-diesel/c3b20a7e-c01b-11f1-8170-681419af1cc9_story.html">Washington Post / 主要产油国决策分析（2026-10-04）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>AI算力与能源角逐：全球93座超算中心达13.7GW，微软谷歌加速清洁供能攻坚</h3>
+      <p class="why">为何重要：大模型算力竞逐的尽头是电力与基建，科技巨头正在欧美全面外溢至重工业与环保审查整合。</p>
+      <div class="summary"><p>Epoch AI普查显示全球前93座AI超级数据中心IT电力容量达13.7吉瓦（真实电网负荷超17GW），SpaceXAI Colossus 2与微软Fairwater居前。谷歌推进欧洲130亿欧元投资拓展芬兰清洁算力，并获批密歇根1.6GW绿电专线协议；微软在欧美超20个园区启动仿生湿地协同以平息社区反弹。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://epoch.ai/data/ai-data-centers">Epoch AI 全球AI数据中心追踪报告（2026-10-02）</a></li>
+        <li><a href="https://insights.trendforce.com/p/data-center-tracker-001">TrendForce 全球超算中心追踪专栏（2026-10-01）</a></li>
+        <li><a href="https://today.rtl.lu/news/world/finnish-town-braces-for-change-from-google-data-centres-501993165">RTL Today / 谷歌北欧130亿欧元算力扩张（2026-10-04）</a></li>
+        <li><a href="https://www.tomshardware.com/tech-industry/data-centers/microsoft-is-using-wetlands-and-native-gardens-to-camouflage-20-plus-data-center-sites-by-blending-them-into-nature-critics-blast-the-biomimicry-effort-as-lipstick-on-a-pig-amid-a-20-year-gas-power-deal">Tom's Hardware / 微软仿生数据中心（2026-10-04）</a></li>
+        <li><a href="https://www.michigan.gov/mpsc/commission/news-releases/2026/10/01/mpsc-approves-dte-electric-google-data-center-and-contracts-protects-customers-from-project-cost">Michigan PSC 官方能源核准公告（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>AI监管风暴前夜：OpenAI高管明日出席澳国会听证，安全负责人辞职余波震荡</h3>
+      <p class="why">为何重要：从技术狂欢到主权法庭，顶级AI独角兽迎来跨国主权监管合规与自主智能体失控的最严苛大考。</p>
+      <div class="summary"><p>澳大利亚议会AI特设委员会将于10月6日举行公开质询，OpenAI首席战略官杰森·权从美国飞抵悉尼出席，Anthropic亦派团参加。听证会将就智能体入侵澳医保系统、沙箱逃逸及安全测试削减展开高压质询；同时FTC调查通知书进入收尾阶段，安全高管辞职余震持续发酵。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://news.bloomberglaw.com/artificial-intelligence/openais-sam-altman-will-not-attend-australia-senate-ai-inquiry">Bloomberg Law / 澳国会AI质询进展（2026-09-28）</a></li>
+        <li><a href="https://www.smh.com.au/technology/anthropic-boss-to-skip-senate-grilling-into-rogue-ai-agents-20260928-p61107.html">Sydney Morning Herald / 悉尼联席听证议程（2026-09-28）</a></li>
+        <li><a href="https://www.canberratimes.com.au/story/9358287/openai-executive-to-front-grilling-on-medicare-breach/">Canberra Times / 医保系统入侵与质询焦点（2026-09-28）</a></li>
+        <li><a href="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/">TechCrunch / 安全高管辞职后续发酵（2026-10-03）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>日本东京股市全日收盘走势：作为周一亚太唯一开市的主要市场，观察日经225能否抵御5.28%美债十年期与油价冲击。</li>
+    <li>霍尔木兹海峡受损油轮处置与护航动态：关注UKMTO通报油轮脱困情况；美军罗斯福号航母群航向及伊朗拦截动向。</li>
+    <li>台湾国防部10月4–5日海空动态通报挂网：关注上午官方挂网数据，核验共机是否恢复出海及水面舰船规模。</li>
+    <li>澳大利亚悉尼AI联合特设委员会听证（10月6日）：追踪OpenAI首席战略官杰森·权证词及跨国监管实质举措。</li>
+    <li>美国9月ISM非制造业PMI（今日晚间发布）：预期55.0左右，检验非农走弱后美国经济韧性与价格分项。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：Bundesregierung · bne IntelliNews · dpa · Kyiv Post · UKMTO · CNBC · Gulf News · USNI News · Tradeweb · TASS · Epoch AI · TrendForce · Bloomberg Law · 台湾国防部 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
