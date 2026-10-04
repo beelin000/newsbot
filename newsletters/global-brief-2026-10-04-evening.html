@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月4日晚报">
+<title>晚报 · 2026年10月4日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年10月4日</h1>
+  <p class="meta">生成 19:30（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#military">军事</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">同日早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：OPEC+核心七国周日决议维持11月石油产量目标不变、布伦特原油在百美元上方震荡；美军罗斯福号航母赴中东宣示封锁，伊朗议长称未达七项条件绝不复航，贝森特指伊海上原油归零；基辅第聂伯河北桥遭无人机打击2伤，南桥全封闭筹备浮桥；台海3–4日正式窗未侦获共机、仅7舰8船在巡；OpenAI安全核心负责人辞职直指文化受损，英伟达披露Blackwell底层加速GPT-6 Astra。中国内地与香港继续休市。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>OPEC+核心七国10月4日线上会议正式决定：维持11月石油产量配额与9月水平一致，暂不增产；下次例会11月1日。</li>
+    <li><span class="tag">更新</span>布伦特周末场外报约102–102.7美元，WTI报约93.9美元；IEA披露此前承诺的4亿桶储备中已投放约3.25亿桶。</li>
+    <li><span class="tag">更新</span>美防长海格塞斯称美军牢固控制霍尔木兹海峡；罗斯福号航母编队及马金岛号两栖群开赴中东；美财长贝森特称伊朗在途原油海运已归零。</li>
+    <li><span class="tag">更新</span>伊朗议长卡利巴夫周日重申：基于伊斯兰堡备忘录的七项和平复航条件落实前，海峡绝不会开放。</li>
+    <li><span class="tag">更新</span>基辅连续第四日遭桥梁定点袭击：4日晨北桥路面及电车网遭袭2伤；南桥全封闭，基辅市筹备浮桥应急预案。</li>
+    <li><span class="tag">更新</span>泽连斯基称过去一周全境遭逾1900架无人机（超800架喷气式）与1700枚航弹空袭；5款喷气无人机专用拦截武器加紧测试。</li>
+    <li><span class="tag">更新</span>台海3–4日正式窗：未侦获共机，侦获共舰7艘、公务船8艘；空情显著降温。</li>
+    <li><span class="tag">更新</span>OpenAI安全领导人戴维·罗宾逊发长文辞职，直指公司“安全文化已崩溃”；发言人称已放慢先进制程训练与发布。</li>
+    <li><span class="tag">更新</span>英伟达与OpenAI披露以内部模型优化Blackwell底层算子，GPT-6 Astra Ultrafast达8倍加速；Claude Opus 5.5在终端编程评测以66.4%反超Astra。</li>
+    <li>下周开盘定调：周一亚盘首度消化非农后纳指纪录与5.28%十年期美债；本周美ISM服务业PMI、FOMC 9月纪要及澳AI听证居前。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>OPEC+核心七国一致同意维持11月石油产量配额不变</h3>
+      <p class="why">为何重要：打消增产压价猜测——沙特与俄罗斯等国在海峡战事与产能重审僵局下保持产量克制。</p>
+      <div class="summary"><p>沙特、俄罗斯、伊拉克、科威特、哈萨克斯坦、阿尔及利亚和阿曼等核心七国10月4日视频会议决定，维持2026年9月的规定产量水平至11月，不作进一步增产；下次会议定于11月1日。海湾成员国近期实际出口仅维持在正常水平的60%–80%，2027年配额产能评估因战事推迟。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.opec.org/pr-detail/1891616-4-october-2026.html">OPEC 官方公报（2026-10-04）</a></li>
+        <li><a href="https://www.streetinsider.com/Reuters/OPEC%2B+agrees+in+principle+to+keep+November+oil+output+targets+steady%2C+sources+say/27144369.html">StreetInsider / Reuters（2026-10-04）</a></li>
+        <li><a href="https://tass.com/economy/2197221">TASS / JMMC审议报道（2026-10-04）</a></li>
+        <li><a href="https://www.businesstimes.com.sg/companies-markets/energy-commodities/opec-set-keep-november-oil-output-targets-steady-amid-iran-war-disruptions-sources">Business Times / 市场分析（2026-10-04）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>IEA披露3.25亿桶应急油已投放，原油周日徘徊102美元关口</h3>
+      <p class="why">为何重要：厘清新旧释储额度——3月4亿桶承诺已投放逾八成，G7新释储下周落地对冲裂解缺口。</p>
+      <div class="summary"><p>IEA数据显示3月宣布的4亿桶紧急储备中已释放约3.25亿桶（逾80%）。周五G7在马克龙协调下达成的4个月内1亿桶释放协议（前20日大幅前置柴油）将进一步执行。布伦特周末在部分国际期货盘与场外报约102.7美元/桶，WTI报约93.9美元/桶。中国成品油停发与中东航道风险支撑油价下限。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.euronews.com/2026/10/03/iea-says-325-million-barrels-of-emergency-oil-released-with-75-million-still-to-come">Euronews / IEA审计公报（2026-10-03）</a></li>
+        <li><a href="https://au.investing.com/news/commodities-news/g7-countries-agree-on-release-of-diesel-and-oil-stocks-after-us-pressure-4671057">Reuters / Investing.com（2026-10-02）</a></li>
+        <li><a href="https://ilkha.com/english/economy/brent-crude-rises-to-$1027-amid-renewed-middle-east-tensions-527526">ILKHA / 国际原油动态（2026-10-04）</a></li>
+        <li><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/10/02/g7-leaders-statement-on-global-energy-security-and-market-stability/">Consilium G7声明归档（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>全球宏观周瞻：亚盘周一开门定调，美联储9月纪要居前</h3>
+      <p class="why">为何重要：非农大幅走弱但长端美债守在5.28%高位，周一亚太将全面消化股债与大宗背离。</p>
+      <div class="summary"><p>10月5日至9日周度焦点：周一美国9月ISM非制造业PMI（预期55.0）；周三美联储FOMC 9月加息会议纪要及印度央行决议；周四欧洲央行9月纪要与美初请失业金；周五美密歇根大学消费者信心初值。中国内地与香港假期休市至10月7日，亚太由日韩台澳盘主导。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.commsec.com.au/content/dam/EN/ResearchNews/2026Reports/October/ECO_Insights_021026-Week-Ahead.pdf">CommSec 周度展望（2026-10-02）</a></li>
+        <li><a href="https://www.newsquawk.com/content/research_sheets/production/original/000/042/327/Week_in_Focus_4_9th_October_2026__FOMC_Minutes__US_ISM_Services_PMI__OPEC___Canadian_Jobs_and_ECB_Minutes__3_.pdf">Newsquawk 宏观焦点（2026-10-04）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/02/stock-market-next-week-outlook-for-oct-5-9-2026-.html">CNBC 华尔街展望（2026-10-02）</a></li>
+        <li><a href="https://nordfx.com/market-news/forex-cryptocurrency-forecast-october-05-09-2026">NordFX 宏观前瞻（2026-10-04）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>OpenAI安全负责人辞职警告文化受损</h3>
+      <p class="why">为何重要：AI自主智能体失控与安全审计从技术问题升级为顶级大厂公司治理危机。</p>
+      <div class="summary"><p>任职逾三年半的安全团队核心领导人戴维·罗宾逊在《大西洋月刊》发表公开信宣布辞职，直指公司“安全文化已崩溃”。发言人回应称正升级监控体系，重申已暂停先进制程模型训练并下架高风险模型。此事件将加剧下周澳AI特设委员会联席听证与FTC调查中的问责烈度。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/">TechCrunch（2026-10-03）</a></li>
+        <li><a href="https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken">The Guardian（2026-10-03）</a></li>
+        <li><a href="https://www.insurancejournal.com/news/national/2026/10/02/887673.htm">Insurance Journal / FTC进展（2026-10-02）</a></li>
+        <li><a href="https://lufkindailynews.com/news_reuters/business/anthropic-openai-will-not-attend-australian-senate-ai-hearing-on-october-1/article_e039def2-c9ba-56e4-a1cc-e26106b1d65c.html">Lufkin Daily News / 澳听证进展（2026-09-28）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>英伟达披露Blackwell加速，Anthropic编程基准反超</h3>
+      <p class="why">为何重要：算力端端协同与编程性价比贴身肉搏，模型落地竞争白热化。</p>
+      <div class="summary"><p>OpenAI披露利用内部大模型调优英伟达Blackwell底层算子，为GPT-6 Astra Ultrafast实现最高8倍加速。而基准测试显示，Claude Opus 5.5在真实命令行编码Terminal-Bench 4.0中以66.4%压制Astra（57.9%），且每百万Token调用费用仅为其40%左右。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://mixed-news.com/en/openai-internal-models-optimised-astra-ultrafast-nvidia-blackwell/">Mixed-News / 软硬件加速（2026-10-04）</a></li>
+        <li><a href="https://nvidianews.nvidia.com/">NVIDIA Newsroom（2026-10-01）</a></li>
+        <li><a href="https://startupfortune.com/claude-opus-55-is-beating-openais-astra-on-coding-benchmarks-and-price/">Startup Fortune / 基准对比（2026-10-04）</a></li>
+        <li><a href="https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html">CNBC FTC调查（2026-09-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>美防长称掌控海峡，伊朗议长重申七项条件未达绝不复航</h3>
+      <p class="why">为何重要：美军以绝对海空力量宣示封锁，伊方以地缘通道为筹码咬死前提，极限施压加剧。</p>
+      <div class="summary"><p>美防长海格塞斯公开称美军坚不可摧地掌控霍尔木兹海峡封锁线。伊朗议长卡利巴夫周日重申，在基于伊斯兰堡备忘录的七项和平复航条件落实前，海峡绝不会开放；证实双方正通过中间人博弈，但拒绝美方口径。罗斯福号航母编队正航向波斯湾。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.thenationalnews.com/news/gulf/2026/10/04/iran-says-strait-of-hormuz-will-not-reopen-until-its-conditions-are-met/">The National / 卡利巴夫（2026-10-04）</a></li>
+        <li><a href="https://www.jpost.com/middle-east/iran-news/article-910482">Jerusalem Post / 海格塞斯（2026-10-04）</a></li>
+        <li><a href="https://gcaptain.com/us-adds-carrier-and-10000-troops-to-mideast/">gCaptain / 航母部署（2026-10-03）</a></li>
+        <li><a href="https://www.thenationalnews.com/news/us/2026/10/01/us-sends-third-aircraft-carrier-to-middle-east/">The National / 兵力调动（2026-10-01）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>美财长称伊朗海上原油归零，里亚尔跌破历史极值</h3>
+      <p class="why">为何重要：海空实体封锁与金融结算切断双重夹击，伊朗经济承压逼近临界点。</p>
+      <div class="summary"><p>美财长贝森特称本周伊朗在公海航道上已无原油在途货轮，原油海运财政收入实质断流。伊朗自由汇市美元兑里亚尔触及约272.3万里亚尔历史低位，单日贬值逾1.3%，国内通胀率逼近90%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.iranintl.com/en/202610047100">Iran International / 贝森特与里亚尔（2026-10-04）</a></li>
+        <li><a href="https://news.usni.org/2026/09/28/uss-theodore-roosevelt-deploys-from-san-diego-uss-abraham-lincoln-near-hawaii">USNI News / 舰队封锁（2026-09-28）</a></li>
+        <li><a href="https://www.businesstimes.com.sg/companies-markets/energy-commodities/opec-set-keep-november-oil-output-targets-steady-amid-iran-war-disruptions-sources">Business Times / 海运分析（2026-10-04）</a></li>
+        <li><a href="https://gulfnews.com/world/mena/us-iran-war-we-blow-them-up-or-make-a-deal-trump-says-end-is-very-soon-1.500694334">Gulf News / 局势背景（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>基辅跨江大桥连遭四日定点打击，北桥受损2伤</h3>
+      <p class="why">为何重要：跨河通道战从单一夜袭升级为系统性围困，基辅东西两岸战略交通严重受阻。</p>
+      <div class="summary"><p>4日晨俄无人机击中基辅第聂伯河北桥路面及供电线致2伤；此前南桥因结构受损已双向全封闭。基辅市军事管理局宣布空袭警报期间严控桥梁通行，并启动架设浮桥渡口及调配轮渡预案。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/russia-targets-kyiv-bridges-for-fourth-consecutive-day-hits-northern-bridge/">Kyiv Independent / 北桥遭袭（2026-10-04）</a></li>
+        <li><a href="https://meduza.io/en/feature/2026/10/04/russia-has-begun-striking-kyiv-s-bridges-across-the-dnipro-for-the-first-time-since-invading-ukraine">Meduza / 桥梁战术深度（2026-10-04）</a></li>
+        <li><a href="https://www.telegraph.co.uk/world-news/2026/10/03/russia-bombs-kyiv-bridge-in-new-tactic-to-carve-city-in-two/">The Telegraph / 交通割裂（2026-10-03）</a></li>
+        <li><a href="https://en.lb.ua/news/2026/10/03/43908_shahed_rock-paper-scissors_how.html">LB.ua / 南桥技术评估（2026-10-03）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>泽连斯基称单周遭1900架无人机空袭，测试5款拦截原型</h3>
+      <p class="why">为何重要：喷气式无人机俯冲速度高达375英里/时，传统拦截率大幅降至57%，消耗战逼近转折点。</p>
+      <div class="summary"><p>泽连斯基披露过去一周俄军动用逾1900架无人机（超800架喷气式）、1700枚航弹与25枚导弹；乌军目前正测试5款针对高速喷气无人机的专用拦截原型武器，加紧补齐防空短板。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4170304-zelensky-russia-launched-over-100-attack-drones-at-ukraine-overnight-nearly-50-of-them-jetpowered.html">Ukrinform / 袭击统计（2026-10-04）</a></li>
+        <li><a href="https://www.telegraph.co.uk/world-news/2026/10/03/russia-bombs-kyiv-bridge-in-new-tactic-to-carve-city-in-two/">FT / 泽连斯基专访（2026-10-03）</a></li>
+        <li><a href="https://kyivindependent.com/russia-targets-kyiv-bridges-for-fourth-consecutive-day-hits-northern-bridge/">Kyiv Independent（2026-10-04）</a></li>
+        <li><a href="https://euromaidanpress.com/2026/10/02/russia-attacks-bridge-connecting-kyivs-two-sides/">Euromaidan Press（2026-10-02）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海：10月3–4日正式窗未侦获共机，7舰8船在巡</h3>
+      <p class="why">为何重要：国防部补齐正式窗，空域活动罕见清零，海面多船维系灰色地带牵制。</p>
+      <div class="summary"><p>台湾国防部通报10月3日06:00至4日06:00期间未侦获共机，共侦获共舰7艘及公务船8艘。此前2–3日窗为共机5架次（2架逾西南东部）、共舰6艘及公务船7艘。空中规模阶段性收缩。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/news/plaact/87904">台湾国防部 3–4日通报（2026-10-04）</a></li>
+        <li><a href="https://www.mnd.gov.tw/En/News/PLAAct/87905">台湾国防部英文频道（2026-10-04）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6451557">Taiwan News 4日报道（2026-10-04）</a></li>
+        <li><a href="https://www.mnd.gov.tw/en/Publication/87902">台湾国防部 2–3日对照（2026-10-03）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ul class="bullets">
+    <li>周一全球开市：亚欧盘如何消化非农疲弱、5.28%美债十年期与OPEC+产量按兵不动。</li>
+    <li>基辅交通与浮桥：北桥修复进度、南桥封闭持续时间与浮桥疏解效果。</li>
+    <li>霍尔木兹海峡：罗斯福号航母航向与抵达节点；卡利巴夫七项复航条件间接磋商。</li>
+    <li>AI监管与安全听证：10月6日OpenAI高管杰森·权出席澳联合特设委员会听证；FTC进展。</li>
+    <li>黄金周与成品油：中国内地及香港休市至10月7日，成品油出口限制观察。</li>
+  </ul></section>
+  <footer class="footer"><p>来源：OPEC · Reuters · StreetInsider · Euronews · CommSec · Newsquawk · TechCrunch · The Guardian · NVIDIA · The National · Jerusalem Post · Kyiv Independent · Meduza · 台湾国防部 等。本页为单机静态文件。</p></footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
