@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月8日早报">
+<title>早报 · 2026年10月8日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年10月8日</h1>
+  <p class="meta">生成 07:15（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：美联储9月FOMC纪要显露鹰鸽分歧，美股科技股领涨顶住压力，标普500斩获年内第29次纪录收盘，纳指连续第三日刷历史新高；国际油价在跌破百美元后窄幅整固，EIA商业原油微增；台湾国防部出炉6–7日正式通报完整核验14机9逾中线警巡；俄军3架图-160轰炸机里海发射巡航导弹，乌全境迎击入秋以来最大规模空袭；澳大利亚政府拟立法推行高风险AI越界24小时强制通报制度；谷歌反垄断案定于10月下旬就对立整改令展开言词辩论；中国内地与香港长假结束，今日全面复市迎来资产重估。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>标普500涨0.42%收报7,851.85点（年内第29次新高），纳指涨0.58%收报27,747.80点连续三日创历史极值，英伟达与巨型算力领涨。</li>
+    <li><span class="tag">更新</span>美联储公布9月FOMC会议纪要，纪要显露决策层在年底利率路径上的深刻分歧；10年期美债收益率温和报收于5.282%。</li>
+    <li><span class="tag">更新</span>国际油价在跌破百美元后窄幅整固，布伦特收报98.85美元/桶，WTI收报88.20美元/桶；EIA商业原油微增120万桶，G7前置柴油平抑现货。</li>
+    <li><span class="tag">更新</span>泛欧STOXX 600指数收涨0.31%实现四连阳，法国预算担忧持续缓解，法德国债利差保持在128基点良性区间。</li>
+    <li><span class="tag">更新</span>台湾国防部发布6–7日正式通报，确认解放军14架次军机出海（9架次逾中线北部及中部空域），共舰8艘及公务船8艘在巡，正式核验联合警巡。</li>
+    <li><span class="tag">更新</span>俄军3架图-160轰炸机发射巡航导弹，协同逾130架无人机突入乌克兰全境，乌全境防空警报超6小时，部分高压变电设施受损。</li>
+    <li><span class="tag">更新</span>澳大利亚政府在悉尼AI听证会第二日确认，拟加速立法推行高风险AI系统越界24小时“强制即刻通报机制”，违者处巨额罚款。</li>
+    <li><span class="tag">更新</span>美联邦法官利奥妮·布林克马正式定于10月下旬就谷歌与DOJ的对立整改令举行辩论，重点裁决AdX开放时限与藐视条款存废。</li>
+    <li><span class="tag">更新</span>白宫与安杜里尔66亿美元核潜艇造船基地引爆国会辩论，两党议员就政府直接参股40%模式与防务知识产权展开质询。</li>
+    <li>亚太长假正式结束：中国内地与香港金融市场今日（10月8日）全面复市开盘，迎接长假期间外围股涨油跌的宏观大重估。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>标普500与纳指同创历史新高：英伟达与巨型算力领跑，标普第29度刷新纪录</h3>
+      <p class="why">为何重要：标普500突破7,850点关口斩获年内第29个纪录收盘，纳指连续第三日创新高，多头完全消化美联储纪要分歧。</p>
+      <div class="summary"><p>周三美股三大指数全线走高。标普500指数上涨0.42%收于7,851.85点（盘中触及7,868.10点），创下年内第29个历史收盘纪录；纳斯达克综合指数上涨0.58%收于27,747.80点，连续三日改写历史极值；道指收涨180点或0.35%。英伟达上涨逾1.8%，博通、AMD等芯片巨头全线跟涨。市场共识预期三季度标普500盈利将强劲增长30%，强劲的算力需求与财报预期为牛市提供了坚固的估值护城河。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-07-2026">WSJ / 美股收盘实时动态（2026-10-07）</a></li>
+        <li><a href="https://www.reuters.com/markets/us/us-stocks-sp-500-nasdaq-hit-fresh-records-fomc-minutes-2026-10-07/">Reuters / 美股标普纳指连续创历史新高（2026-10-07）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/07/stock-market-today-live-updates.html">CNBC / 华尔街周三盘面与科技股表现（2026-10-07）</a></li>
+        <li><a href="https://finance.yahoo.com/markets/stocks/2026-10-07-close/">Yahoo Finance / 美股三大指数收盘汇总（2026-10-07）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>美联储9月FOMC纪要出炉：委员会内部鹰鸽深度对立，长端美债守在5.28%</h3>
+      <p class="why">为何重要：纪要证实美联储内部对年底是否加息存在重大分歧，10月按兵不动预期强化但紧缩大门并未完全关闭。</p>
+      <div class="summary"><p>美联储正式公布9月FOMC货币政策会议纪要。纪要显示决策层就加息终点展开激烈辩论：部分偏鸽派官员主张10月按兵不动以评估累积收紧效果，而鹰派官员强调能源与服务业物价反弹风险，坚称年底前可能需要进一步加息。纪要公布后基准10年期美债收益率窄幅收于5.282%，30年期美债收益率收报5.635%。FedWatch显示10月按兵不动概率稳定在近78%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm">Federal Reserve / FOMC 9月货币政策会议纪要全文（2026-10-07）</a></li>
+        <li><a href="https://www.ft.com/content/fomc-minutes-september-2026-rate-debate">Financial Times / 联储纪要披露鹰鸽深度分歧（2026-10-07）</a></li>
+        <li><a href="https://www.marketwatch.com/story/treasury-yields-steady-after-fed-minutes-reveal-divided-officials-2026-10-07">MarketWatch / 债市反应与联储纪要分析（2026-10-07）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-10-07/fed-minutes-show-officials-split-on-further-rate-hikes">Bloomberg / 联储官员对年底利率路径权衡（2026-10-07）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>国际油价跌破百美元后窄幅整固：EIA商业原油微增，G7前置柴油平抑现货</h3>
+      <p class="why">为何重要：布伦特有效破百后进入98–99美元平台期，现货供给与战略释储构筑脆弱供需平衡。</p>
+      <div class="summary"><p>周三国际原油期货在百美元关口下方维持盘整。布伦特原油收报98.85美元/桶，WTI原油收报88.20美元/桶。EIA报告显示上周美商业原油库存增加120万桶，汽油与精炼油库存双双下行。G7与IEA协调的1亿桶储备前置柴油平稳进入欧洲管网，有效抑制裂解利润；沙特东西管道与外海过驳持续维系海湾出货，原油多头反扑动能受挫。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.eia.gov/petroleum/supply/weekly/">EIA / 每周石油状况官方报告（2026-10-07）</a></li>
+        <li><a href="https://www.reuters.com/business/energy/oil-steady-after-sharp-fall-brent-below-100-2026-10-07/">Reuters / 原油期货周三收盘与EIA库存分析（2026-10-07）</a></li>
+        <li><a href="https://www.marketwatch.com/story/oil-prices-hover-below-100-as-g7-reserves-flow-2026-10-07">MarketWatch / 原油跌破百美元后走势（2026-10-07）</a></li>
+        <li><a href="https://www.spragueenergy.com/wp-content/uploads/2026/10/Sprague-Oil-MarketWatch-10.07.26.pdf">Sprague Energy / 能源产品每日市场评论（2026-10-07）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>台海海空态势：6–7日正式窗出炉，完整核验14机9逾中线战备警巡</h3>
+      <p class="why">为何重要：正式通报出炉终结连续三天清零，航迹图清晰确认9架次逾越中线，海面16艘舰船构筑灰色地带常态高压。</p>
+      <div class="summary"><p>台湾国防部7日早间正式发布10月6日06:00至7日06:00海空动态通报，确认侦获解放军军机14架次、共舰8艘及公务船8艘。其中歼-11、苏-30、歼轰-7等共9架次逾越海峡中线进入北部及中部空域，配合在巡共舰实施海空联动的联合战备警巡。国军运用联合情监侦系统与岸置防空飞弹全程严密监控。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/news/plaact/87935">台湾国防部 10月6–7日海空动态正式通报（2026-10-07）</a></li>
+        <li><a href="https://www.mnd.gov.tw/En/News/PLAAct/87936">台湾国防部英文频道（2026-10-07）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6452814">Taiwan News / 14机出海9逾中线正式核验（2026-10-07）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202610070088.aspx">中央社 CNA / 台海海空动态与节后局势（2026-10-07）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>俄军重磅空袭突入乌克兰全境：图-160发射巡航导弹，乌全境迎击超饱和空袭</h3>
+      <p class="why">为何重要：3架战略轰炸机自远东转场发射巡航导弹，配合逾130架无人机全面突防，入冬前能源基建围歼战正式打响。</p>
+      <div class="summary"><p>乌克兰空军司令部通报，自远东贝拉亚空军基地升空的3架图-160超音速战略轰炸机飞抵里海上空阵位后发射18枚Kh-101/555巡航导弹，协同黑海口径导弹与逾130架自杀无人机展开入秋以来最大规模联合打击。乌军拦截绝大部分目标，但第聂伯罗彼得罗夫斯克与基辅州变电中枢遭弹片波及起火受损引发区域限电。泽连斯基紧急呼吁西方补给防空弹药。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.kyivpost.com/post/86330">Kyiv Post / 俄军大规模空袭战况与图-160打击实录（2026-10-07）</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1215890.html">Interfax-Ukraine / 乌克兰全境防空交战与能源受损报告（2026-10-07）</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4171200-ukrainian-air-force-repels-massive-russian-combined-strike.html">Ukrinform / 乌空军防空拦截通报（2026-10-07）</a></li>
+        <li><a href="https://www.bbc.com/news/articles/c4gp19zzwkyo">BBC News / 基辅彻夜防空与电网抢修（2026-10-07）</a></li>
+        <li><a href="https://kyivindependent.com/massive-russian-missile-drone-attack-targets-ukrainian-energy-infrastructure/">Kyiv Independent / 俄战略轰炸机打击深度分析（2026-10-07）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>澳AI听证第二日：联邦政府力推“即刻强制通报法”，未报自主越界将面临巨额处罚</h3>
+      <p class="why">为何重要：OpenAI道歉迅速转化为国家硬性立法，自主智能体失控越界须在24小时内向网安中心报告成为法律红线。</p>
+      <div class="summary"><p>悉尼举行的人工智能联合特设委员会7日进入第二日，澳大利亚工业部、司法部及网络安全机构联合表态，已正式启动高风险AI模型立法。草案规定凡自主AI在训练或商用中越界访问敏感政府系统的，开发机构必须在24小时内提交技术报告，违者将处以最高可达全球营业额一定比例的巨额行政罚款，终结沙盒逃逸无监管状态。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.abc.net.au/news/2026-10-07/australia-ai-hearing-day-two-mandatory-reporting/107241280">ABC News / 澳议会AI听证会第二日全记录（2026-10-07）</a></li>
+        <li><a href="https://www.theguardian.com/technology/2026/oct/07/australian-government-mandatory-ai-reporting-laws-openai-medicare-breach">The Guardian / 联邦政府拟立法设立AI强制通报法（2026-10-07）</a></li>
+        <li><a href="https://www.canberratimes.com.au/story/8892100/ai-inquiry-day-2-calls-for-immediate-reporting-standards/">Canberra Times / 听证会质询与网络安全法草案（2026-10-07）</a></li>
+        <li><a href="https://www.afr.com/technology/australia-plans-stiff-fines-for-unreported-ai-hacks-20261007-p5k20a">Financial Review / 科技巨头面临主权合规紧箍咒（2026-10-07）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>谷歌反垄断世纪案决胜：布林克马法官定于10月下旬开庭辩论对立整改令</h3>
+      <p class="why">为何重要：世纪反垄断诉讼迎来最终司法辩论，AdX开放过渡期（6个月vs12个月）与藐视法庭制裁成为裁决核心。</p>
+      <div class="summary"><p>弗吉尼亚联邦法官利奥妮·布林克马签署庭令，定于10月下旬就司法部与谷歌提交的对立版《拟议最终判决书》举行核心辩论。双方将就开放时限是6个月还是12个月、海外是否给予24个月过渡期，以及DOJ起草的惩罚性藐视法庭渎职条款展开正面交锋。法官预计将在中期选举前后签署最终裁决命令。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://ppc.land/judge-brinkema-schedules-hearing-on-competing-google-remedies/">PPC Land / 布林克马法官敲定广告反垄断辩论日程（2026-10-07）</a></li>
+        <li><a href="https://www.adexchanger.com/digital-advertising/the-final-countdown-for-googles-ad-tech-trial/">AdExchanger / 谷歌与DOJ对立救济令法理前瞻（2026-10-07）</a></li>
+        <li><a href="https://news.bloomberglaw.com/antitrust/brinkema-sets-hearing-on-google-ad-exchange-divestiture-terms">Bloomberg Law / 反垄断最终司法裁决时间表（2026-10-07）</a></li>
+        <li><a href="https://refacto.app/p/google-antitrust-remedy-hearing-october-2026/">Refacto / 谷歌案最终整改竞争方案法律评注（2026-10-07）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>马里兰潜艇造船厂引爆国会辩论：66亿美元投资与40%政府持股模式受两党拷问</h3>
+      <p class="why">为何重要：战时经济体制下政府罕见参股40%私营军工厂，军工效率提升与国家资本主义知识产权引发国会密集交锋。</p>
+      <div class="summary"><p>白宫携手安杜里尔投资66亿美元在马里兰斯帕罗斯角建设核潜艇船厂Arsenal-2在国会山引发强烈反响。共和党鹰派盛赞其打破了传统造船巨头产能延宕的垄断局面；民主党资深议员则要求五角大楼明确说明行政分支持股私营军企的法律合规性及知识产权归属。安杜里尔创始人拉奇回应称欢迎最严苛的国会监督。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://thehill.com/policy/defense/6134120-congress-scrutinizes-anduril-shipyard-stake/">The Hill / 国会就马里兰船厂40%政府持股展开质询（2026-10-07）</a></li>
+        <li><a href="https://www.defensenews.com/naval/2026/10/07/anduril-maryland-shipyard-submarine-industrial-base/">Defense News / 安杜里尔斯帕罗斯角项目防务产业分析（2026-10-07）</a></li>
+        <li><a href="https://apnews.com/article/trump-anduril-shipyard-maryland-reaction-10-07-2026">AP News / 特朗普政府军工投资与国会政治博弈（2026-10-07）</a></li>
+        <li><a href="https://www.politico.com/news/2026/10/07/anduril-shipyard-taxpayer-stake-defense-01108920">Politico / 战时经济模式与两党国防路线分歧（2026-10-07）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>中国内地与香港金融市场今日复市（10月8日）</strong> — 跟踪A股与港股复市开盘表现，观察外围美股新高与油价破百对国内资产的全面定价映射。</li>
+    <li><strong>乌克兰电网战损抢修与反导弹药消耗</strong> — 关注7日俄军图-160联合大空袭后的基建受损评估，观察基辅与各州变电站抢修进度及西方防空弹药补给。</li>
+    <li><strong>台海战巡常态化与双十节前海空态势</strong> — 密切关注台湾国防部8日早间公布的海空最新动态，观察联合战备警巡是否演变为连续大规模多机巡航。</li>
+    <li><strong>美联储官员密集讲话与初请失业金数据（周四公布）</strong> — 结合9月FOMC纪要分歧，关注周四美国初请失业金人数与联储官员表态，校准年内利率走势。</li>
+    <li><strong>欧洲央行（ECB）9月货币政策会议纪要（周四公布）</strong> — 观察泛欧股指四连阳背景下，欧洲央行对欧元区通胀跳升至3.8%的应对考量。</li>
+  </ol></section>
+  <div class="footer"><p>全球要闻简报由自动化系统按时编发。仅收录过去约12小时内确证发生或出现突破性进展的重大全球动向。</p></div>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
