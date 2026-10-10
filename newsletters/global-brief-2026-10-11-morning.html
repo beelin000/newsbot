@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月11日早报">
+<title>早报 · 2026年10月11日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年10月11日</h1>
+  <p class="meta">生成 07:15（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#military">军事</a><a href="#finance">财经</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：台湾举行民国115年双十庆典，台湾国防部10日公布9–10日最新台海海空态势通报，全天未侦获解放军军机出海（共机清零），侦获共舰6艘及公务船2艘维系外围监视，双十空中分列式平稳完成；中东方面，美军中央司令部（CENTCOM）就波斯湾北部“Acers”号油轮遭袭事件发布调查简报，确认油轮系遭单向自杀式无人机定点打击，英美联合护航舰队随即对霍尔木兹关键水道启动战时防空与扫雷走廊护航预案，布伦特原油在105美元关口上方保持战时胶着；欧美大宗商品与债市在消化超预期PPI后进入周末清算，10年期美债收益率守在5.33%上方，市场关注下周正式揭幕的美股三季度财报季对高利率抗压性；俄乌战场方面，乌克兰国家电网（Ukrenergo）证实针对基辅及北部四州的四级强制轮流限电方案首日运转平稳，基辅全市供水全面复压，基辅地铁两条主力线路恢复全区段日间低频运行，国际能源署（IEA）与欧盟紧急调派首批大功率高压变压器启运乌克兰；科技与AI安全领域，继美两党国会领袖联合质询后，美国联邦贸易委员会（FTC）正式向OpenAI与Anthropic送达补充民事调查传票（CID），重点要求两周内完整提交自主智能体（Agentic AI）沙盒隔离架构与外部系统越界调用日志；全球政治方面，美中期选举选战在铁锈带持续白热化，两党候选人围绕高油价与通胀责任展开密集电视辩论交锋。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>台海双十庆典海空态势发布：台湾国防部10日上午正式通报9–10日海空动态，在双十庆典当日清晨截止的24小时周期内未侦获共机出海（共机清零），侦获共舰6艘及公务船2艘在台海周边海域巡弋；双十空中分列式按计划完成飞越，台军全程严密警戒。</li>
+    <li><span class="tag">更新</span>美军公布油轮遇袭调查结论：美军中央司令部（CENTCOM）周六发布波斯湾“Acers”号油轮遇袭调查结论，证实该船系遭自杀式攻击无人机直接命中上层建筑；美英海军随即启动代号“繁荣哨兵升级版”的水道护航巡逻预案，在霍尔木兹海峡入口部署扫雷与防空掩护。</li>
+    <li><span class="tag">更新</span>国际油价周末维持高位胶着：在海湾遇袭调查确认无人机袭击后，布伦特原油周末期货与场外清算盘牢牢固守在104.90–105.30美元/桶高位，WTI原油报约92.60美元/桶；霍尔木兹商船单航次战争险费率维持在3.5%峰值，避险溢价支撑全球能源中枢。</li>
+    <li><span class="tag">更新</span>美债收益率守在高位静候财报：消化周五大幅超预期的9月PPI数据后，基准10年期美国国债收益率稳定在5.335%附近，30年期美债收益率报5.682%；交易员对12月FOMC再次加息25基点的概率维持在近50%，华尔街高度聚焦下周摩根大通、花旗等华尔街大行三季报揭幕。</li>
+    <li><span class="tag">更新</span>基辅四级限电首日运转与地铁全线复运：乌克兰国家电网与基辅市政府通报，首个24小时四级强制轮流限电方案执行受控，居民用电配给维持在每日4至6小时；基辅地铁系统在架设独立备用电源后，红线与绿线恢复全线低频运转，全市供水水压全面恢复常态。</li>
+    <li><span class="tag">更新</span>欧美向乌急调大功率变压器：欧盟委员会与国际能源署（IEA）周六启动战时能源紧急援助快速通道，宣布自波兰、立陶宛等国电网战略储备中抽调首批6台超高压（750kV/330kV）电力变压器，通过铁路特种平板车紧急启运基辅以替换被烧毁的核心枢纽设施。</li>
+    <li><span class="tag">更新</span>美FTC向OpenAI与Anthropic送达补充传票：紧随美国国会两党领袖联名施压，美国联邦贸易委员会（FTC）周六向OpenAI与Anthropic发出具法律约束力的民事调查补充通知书（CID），勒令两家机构在14个工作日内提交自主AI智能体的沙盒边界防护标准、未授权API调用检测机制及全量审计日志。</li>
+    <li><span class="tag">更新</span>前沿大模型福利规约引发学术合规热潮：Anthropic禁止“虐待Claude”政策持续发酵，牛津大学与麻省理工学院（MIT）AI伦理联合研究组周六宣布启动“前沿AI系统反虐待与交互边界国际评估标准（AIEB-2026）”起草，试图以量化工程指标化解“机器权利”界定模糊的法学争议。</li>
+    <li><span class="tag">更新</span>美中期选举电视辩论锁定能源通胀：中西部摇摆州宾夕法尼亚与俄亥俄的多场众议院关键选区闭门电视辩论周六晚间密集开打，共和党候选人强打“超预期PPI与百美元油价”主攻执政党通胀政策，民主党阵营则指责跨国油企恶意操纵保费与现货溢价。</li>
+    <li><span class="tag">更新</span>亚太金融市场周末聚焦节后流动性重估：经历节后首两个交易日的震荡分化后，国内券商与海外宏观策略团队在周末研报中指出，下周A股与港股将重点消化外围百美元油价对国内石化、运输板块的结构性传导，资金正加速向低估值高股息与顺周期核心资产避险调仓。</li>
+  </ul></section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>台海双十庆典海空态势发布：9–10日通报共机清零，6舰2公务船维系外围监视</h3>
+      <p class="why">为何重要：双十庆典当日清晨截止的正式通报出炉，空情呈现阶段性零出动静默，海面多船维系监视，空中分列式平稳顺利完成。</p>
+      <div class="summary"><p>台湾国防部10日早间发布10月9日06:00至10日06:00海空动态通报，确认未侦获解放军军机出海（共机清零，未提供航迹图），侦获共舰6艘及公务船2艘持续在周边海域巡弋。双十节庆典当日空中兵力展现高度克制，海面舰艇维持常态监视存在；台北空中分列式顺利完成。国军运用联合情监侦系统全程保持严密戒备。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/Publication/87968">台湾国防部 10月9–10日海空动态正式通报（2026-10-10）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202610100045.aspx">中央社 CNA / 双十节共机未现踪共舰6艘公务船2艘巡弋（2026-10-10）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6456012">Taiwan News / 台军通报双十庆典前夕共机零侦获（2026-10-10）</a></li>
+        <li><a href="https://www.mnd.gov.tw/En/Publication/87969">台湾国防部英文频道（2026-10-10）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>美军公布波斯湾油轮遇袭调查结论：确认自杀无人机直接命中，英美拟启动联合水道护航</h3>
+      <p class="why">为何重要：遇袭事件经军方实地勘验确认为巡飞自杀无人机直接命中，消除了袭击性质悬疑，美英启动战时防空联合护航编队使海峡进入军事管制常态。</p>
+      <div class="summary"><p>美军中央司令部与英国皇家海军JMIC公布“Acers”号油轮遇袭技术简报，证实该船遭至少两架单向自杀式无人机打击撕裂上层建筑，提取到碳纤维残片。美第五舰队宣布启动代号“繁荣哨兵升级版”方案，出动驱逐舰与直升机为集结VLCC油轮提供全天候防空与扫雷伴随护航。但船东协会警告极窄水道仍面临陆基导弹与微型无人机突防威胁。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://news.usni.org/2026/10/10/centcom-confirms-one-way-drone-attack-on-tanker-in-persian-gulf">USNI News / 美军中央司令部公布油轮遇袭调查报告（2026-10-10）</a></li>
+        <li><a href="https://www.reuters.com/world/middle-east/us-uk-navies-prepare-convoy-protection-hormuz-strait-2026-10-10/">Reuters / 美英海军筹备霍尔木兹联合防空护航编队（2026-10-10）</a></li>
+        <li><a href="https://maritime-executive.com/article/centcom-confirms-drone-strike-on-acers-tanker-escort-plans-accelerate">The Maritime Executive / 遇袭油轮碳纤维残片勘验与伤亡定性（2026-10-10）</a></li>
+        <li><a href="https://gcaptain.com/us-navy-readies-escorts-in-strait-of-hormuz-amid-drone-threat/">gCaptain / 霍尔木兹海峡进入战时护航预案（2026-10-10）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>基辅四级强制限电首日运转受控：地铁恢复全线运营，欧美调运超高压变压器驰援</h3>
+      <p class="why">为何重要：经历大停电后首个24小时配给周期运转受控，独立电源让地铁恢复全线低频运转，欧美启动战略储备超高压变压器铁路直运基辅救急。</p>
+      <div class="summary"><p>乌克兰国家电网通报四级限电首日平稳度过，居民供电保障在每日4–6小时，供水增压泵站稳定运转。基辅地铁三条干线并联独立备用发电机组后恢复全线低频运营（间隔12–15分钟）。为填补被炸毁的核心大型变压器缺口，欧盟与IEA紧急自立陶宛、波兰等国调运首批6台超高压（750kV/330kV）电力变压器经特种铁路直运乌克兰，运抵调试需数周。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/kyiv-stabilizes-power-grid-metro-resumes-full-line-service-under-rationing/">Kyiv Independent / 基辅限电首日受控与地铁全线低频运转（2026-10-10）</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-economy/4172890-scheduled-blackouts-effective-in-stabilizing-grid-ukrenergo.html">Ukrinform / 乌克兰国家电网通报全境限电执行成效（2026-10-10）</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1217340.html">Interfax-Ukraine / 欧盟与IEA紧急抽调6台超高压变压器入乌（2026-10-10）</a></li>
+        <li><a href="https://euromaidanpress.com/2026/10/10/eu-sends-high-voltage-transformers-to-kyiv/">Euromaidan Press / 乌克兰电网战时韧性与铁路特种运输（2026-10-10）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>国际原油周末坚守105美元关口：自杀无人机定性推升海湾溢价，现货运力断航恐慌未解</h3>
+      <p class="why">为何重要：遇袭事件确认为自杀无人机直接命中，进一步坐实海湾航运由偶发事件向系统性截断质变，军舰护航拉长发货周期，百美元原油锁定中枢。</p>
+      <div class="summary"><p>受自杀无人机定性影响，布伦特原油周末清算盘稳定在104.90–105.30美元/桶，WTI原油报约92.60美元/桶。克拉克森报告显示中东至亚洲VLCC运价指数持续走高，单船往返保费较战前暴涨400%，外海抛锚观望商船创峰值。护航编队集结拉长发运周期变相减少海湾供给，高盛研报指只要海峡通航未实质恢复，四季度油价运行区间将锁定在100–110美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://thedailyenergy.com/brent-holds-above-105-drone-strike-confirmation-fuels-war-premium/">The Daily Energy / 遇袭定性后原油周末维持105美元高位（2026-10-10）</a></li>
+        <li><a href="https://www.reuters.com/business/energy/tanker-rates-soar-after-drone-attack-confirmed-in-persian-gulf-2026-10-10/">Reuters / 波斯湾油轮运费暴涨与断航溢价（2026-10-10）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-10-10/oil-war-risk-entrenched-after-gulf-tanker-drone-findings">Bloomberg / 原油周末宏观与大宗商品展望（2026-10-10）</a></li>
+        <li><a href="https://priceofoil.com/articles/hormuz-tanker-paralysis-persists-october-weekend-2026">PriceOfOil / 霍尔木兹航道战时保费与原油实物定价（2026-10-10）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>美债收益率高位固守5.33%：超预期PPI粉碎降息妄念，华尔街全神戒备下周三季报</h3>
+      <p class="why">为何重要：超预期PPI彻底关闭降息大门并将12月加息概率推至五成，基准10年期美债固守5.335%，金融资产全线进入三季报压力测试防备期。</p>
+      <div class="summary"><p>美国9月PPI跳升余波震荡，10年期美债收益率周末维持在5.335%高位，30年期报5.682%。机构普遍认为二次成本型通胀闭环确立，FedWatch对12月加息预期稳定在近50%，明年上半年降息预期彻底出清。华尔街严阵以待周一摩根大通、花旗等大行三季报揭幕，标普500高估值需面临5.33%无风险利率与信贷资产质量的严苛检验。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.wsj.com/economy/central-banking/bond-yields-cement-high-ground-after-ppi-shock-10-10-2026">WSJ / 批发通胀跳升后美债收益率周末高位盘整（2026-10-10）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/10/earnings-preview-banks-tech-face-5-point-3-percent-yield-test.html">CNBC / 华尔街聚焦下周三季报大考（2026-10-10）</a></li>
+        <li><a href="https://www.marketwatch.com/story/treasury-yields-hold-near-multi-year-highs-as-inflation-fears-reignite-2026-10-10">MarketWatch / 10年期美债收益率高位运行全景（2026-10-10）</a></li>
+        <li><a href="https://www.barrons.com/articles/q3-earnings-season-preview-banks-yield-test-51696950">Barron's / 财报季前华尔街资产重配策略（2026-10-10）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>亚太金融市场周末聚焦节后流动性：能源顺周期获重估，成长板块承压分化</h3>
+      <p class="why">为何重要：节后前两日油气资源领跑而科技成长承压，机构周末深入评估百美元输入型通胀传导，低估值高股息与特高压设备获避险重估。</p>
+      <div class="summary"><p>经历复市后消化，国内机构梳理四季度资产配置逻辑。节后前两日“三桶油”及油气航运板块超额收益明显，科技成长受美债高利率压制连续整理。券商研报指出国内炼油产能充沛及多元化长协陆地管道使得实物冲击弱于欧美，建议下周重点聚焦顺周期资源品、特高压电网与煤炭高股息资产，规避高外债与脆弱航运链条标的。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.stcn.com/article/detail/1345670.html">证券时报 / 节后市场整固与高股息资产配置推演（2026-10-10）</a></li>
+        <li><a href="https://www.yicai.com/news/102345678.html">第一财经 / 油价突破105美元对国内宏观与板块传导解析（2026-10-10）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-10-10/china-stocks-brace-for-oil-inflation-fallout-as-energy-stocks-shine">Bloomberg / 中国A股节后第二周走势前瞻（2026-10-10）</a></li>
+        <li><a href="https://weekly.caixin.com/2026-10-10/102245671.html">财新网 / 霍尔木兹危机下的中国海运与能源安全底牌（2026-10-10）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>美FTC向OpenAI与Anthropic发补充传票：限期14天提交智能体越界全量日志</h3>
+      <p class="why">为何重要：监管从自律公约跨入联邦传票穿透阶段，FTC勒令两家头部实验室在两周内交出底层沙盒边界白皮书与未脱敏越界调用日志。</p>
+      <div class="summary"><p>紧随国会两党质询，美国联邦贸易委员会（FTC）向OpenAI与Anthropic送达补充民事调查传票（CID）。要求在14个工作日内提交自主AI智能体调用外部API及系统脚本的沙盒隔离架构白皮书、全量未脱敏网络探针越界日志以及防恶意利用算法记录。法律专家指出FTC正依据《FTC法》第5条直接穿透大模型代码执行权限，实施国家级安全审计。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://techcrunch.com/2026/10/10/ftc-issues-cids-to-openai-anthropic-probing-autonomous-agent-escapes/">TechCrunch / FTC升级针对OpenAI与Anthropic的智能体沙盒调查（2026-10-10）</a></li>
+        <li><a href="https://www.reuters.com/technology/us-ftc-demands-audit-logs-openai-anthropic-agentic-ai-probe-2026-10-10/">Reuters / 美联邦贸易委员会要求大模型厂商提交越界审计日志（2026-10-10）</a></li>
+        <li><a href="https://news.bloomberglaw.com/artificial-intelligence/ftc-subpoenas-frontier-ai-labs-over-sandbox-boundaries">Bloomberg Law / FTC传票穿透AI智能体底层执行权限（2026-10-10）</a></li>
+        <li><a href="https://www.wsj.com/tech/ai/ftc-escalates-investigation-into-openai-anthropic-agent-safety-10-10-2026">The Wall Street Journal / 联邦调查加码前沿AI安全规范（2026-10-10）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>前沿模型福利规约引发学术合规热潮：英美高校联手起草首份AI反虐待工程标准</h3>
+      <p class="why">为何重要：伦理争议转化为可测量的工程标准，牛津与MIT等名校联合制定指标，明确交互熔断阈值与红队逆向工程豁免，化解主观执法难题。</p>
+      <div class="summary"><p>Anthropic禁止虐待模型规定引发学术标准化行动。牛津大学与MIT CSAIL联合卡内基梅隆与斯坦福宣布组建工作组，启动首份《前沿AI系统反虐待与交互边界国际工程标准（AIEB-2026）》草案。旨在以具体技术指标取代抽象道德：设立量化拒答熔断阈值、确立学术红队对抗测试安全豁免清单、并引入第三方仲裁机制防止平台滥用封禁。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.wired.com/story/oxford-mit-launch-engineering-standards-for-ai-welfare-claude-debate/">Wired / 英美顶尖学术机构联合起草AI反虐待工程标准（2026-10-10）</a></li>
+        <li><a href="https://arstechnica.com/ai/2026/10/academics-draft-technical-standards-to-define-ai-abuse/">Ars Technica / 从哲学争议到量化代码：AI反虐待标准前瞻（2026-10-10）</a></li>
+        <li><a href="https://www.theverge.com/ai-artificial-intelligence/1010340/mit-oxford-ai-cruelty-standards-project/">The Verge / MIT与牛津介入Anthropic防虐待政策规范化（2026-10-10）</a></li>
+        <li><a href="https://www.technologyreview.com/2026/10/10/1099880/engineering-guardrails-for-ai-welfare-claude-rules/">MIT Technology Review / 赋予AI模型福利背后的工程与法律考量（2026-10-10）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>美中期选举电视辩论锁定能源通胀：铁锈带白刃战打响，百美元油价成胜负手</h3>
+      <p class="why">为何重要：距离投票仅23天，铁锈带核心选区闭门与公开电视辩论打响，百美元柴油与PPI跳升成为决定国会控制权归属的死穴。</p>
+      <div class="summary"><p>美国中期选举决战进入白热化，宾州、俄亥俄及威斯康星州多个核心摇摆国会选区周六密集举行电视辩论。共和党候选人直击每加仑6.50美元高柴油与PPI批发通胀，抨击执政党扼杀能源自主；民主党则反击油企趁火打劫搞战时垄断暴利，强调基建法案制造业拉动。库克报告显示7个关键铁锈带选区已转入胜负难料区间，能源账单主导选情。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/midterm-elections-debates-rust-belt-inflation-gas-prices-8812390a">AP News / 铁锈带国会选区电视辩论聚焦高通胀与高油价（2026-10-10）</a></li>
+        <li><a href="https://www.politico.com/news/2026/10/10/oil-prices-ppi-inflation-midterm-debates-01115890">Politico / 百美元原油重塑中西部摇摆选区民调格局（2026-10-10）</a></li>
+        <li><a href="https://thehill.com/homenews/campaign/6141200-rust-belt-debates-clash-over-inflation-and-energy-costs/">The Hill / 宾州与俄亥俄众议员候选人激辩制造业能源账单（2026-10-10）</a></li>
+        <li><a href="https://www.post-gazette.com/news/politics-local/2026/10/10/pa-congressional-races-inflation-energy-debates/stories/202610100080.html">Pittsburgh Post-Gazette / 宾夕法尼亚制造业选区选情深度跟踪（2026-10-10）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>美英霍尔木兹海峡联合护航落地与油轮通航</strong> — 密切关注美英海军护航编队在波斯湾南部集结并执行首次商船伴随护航的实效，观察海峡每日商业油轮通航量能否从战前74%低位实质性回升。</li>
+    <li><strong>欧美首批超高压变压器抵乌与基辅防冻防线</strong> — 跟踪立陶宛、波兰调拨的6台大功率变压器通过铁路特种列车入乌进度，关注基辅供暖管网在第一波秋季霜冻下的抗压能力。</li>
+    <li><strong>周一美股三季度财报季正式揭幕</strong> — 关注摩根大通、花旗等首批放榜的大型商业银行三季报，检验信贷坏账拨备与净息差能否消化高达5.33%的长端美债无风险利率。</li>
+    <li><strong>美FTC针对OpenAI与Anthropic调查调证响应</strong> — 观察两家大模型实验室在接获补充传票后的法律应对，跟踪是否会有更多关于未授权智能体网络访问的内部日志被强制披露。</li>
+    <li><strong>A股与港股节后第二周资金风向</strong> — 密切关注国内顺周期资源品、特高压电网与高股息资产在百美元油价环境下的持续表现，观察北向与外资在亚太市场的风险偏好调仓。</li>
+  </ol></section>
+  <div class="footer"><p>全球要闻简报由自动化系统按时编发。仅收录过去约12小时内确证发生或出现突破性进展的重大全球动向。</p></div>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">顶部</a>
+</body>
+</html>
