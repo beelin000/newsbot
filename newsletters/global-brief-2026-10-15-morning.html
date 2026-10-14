@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月15日早报">
+<title>早报 · 2026年10月15日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年10月15日</h1>
+  <p class="meta">生成 07:15（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期早报已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：长端美债收益率固守5.70%高位持续压制美股估值，标普500收跌0.16%，华尔街财报季信贷收紧与坏账拨备担忧进一步发酵；霍尔木兹海峡局势方面，美英联合护航第二梯队（3艘VLCC与2艘LNG船）在伯克级驱逐舰掩护下顺利穿出海峡北口危险水道，布伦特原油在105.60美元/桶窄幅震荡，3.5%战时保险费率持续固化；亚太市场早盘延续顺周期抗通胀防御，特高压设备龙头与高股息能源权重继续获增量资金配置；俄乌战局方面，基辅右岸枢纽6台欧盟超高压变压器顺利完成首期连续48小时真空注油，基辅夜间最低气温稳定在0至零下1度，供热微压循环运转受控；科技与监管治理领域，OpenAI与Anthropic正式向FTC合规专员备案首批脱敏的安全红队审计日志与沙盒白皮书，英国ICO量化智能体安全审查全面覆盖欧洲开源大模型开发群体；全美中期选举决战进入最后19天倒计时，提前实地投票站排队人数维持高位，高柴油价格与生活账单持续牵动选战民意天平。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>长端美债收益率固守5.70%高位压制美股：美国30年期国债收益率隔夜收报5.708%，10年期基准国债收益率攀升至5.348%；借贷成本高企加剧高估值板块承压，标普500指数微跌0.16%收报7,743.60点，纳指跌0.25%报27,087.50点，道指跌0.12%报51,091.20点。</li>
+    <li><span class="tag">更新</span>霍尔木兹第二批商船编队安全穿出海峡：美军中央司令部海军部队（NAVCENT）证实，由3艘超大型原油轮（VLCC）与2艘大型LNG船组成的第二支联合护航编队已在伯克级驱逐舰全天候防空掩护下安全穿过霍尔木兹海峡北口危险区；布伦特原油收报105.60美元/桶，WTI原油报92.95美元/桶。</li>
+    <li><span class="tag">更新</span>亚太周三早盘防御配置格局延续：日韩主要股指受外部长端高利率抑制维持窄幅震荡，中国A股与港股在顺周期抗通胀主线下展现韧性，上游油气开采、煤炭采掘及特高压电网设备龙头维持稳健资金净流入。</li>
+    <li><span class="tag">更新</span>台海海空防务态势维持常态平稳：台湾防务部门最新海空动态通报显示，过去24小时联合情监侦系统侦获海面解放军军舰6艘及海警等公务船2艘常态巡查，未侦获突发空中战巡战机，海空态势维持克制受控基线。</li>
+    <li><span class="tag">更新</span>欧盟超高压变压器完成首期48小时连续注油：运抵基辅第聂伯河右岸关键枢纽的6台欧盟与IEA援助的超高压（750kV/330kV）电力变压器，顺利完成首轮高真空注油与介质损耗初测，全面转入母线接口绝缘对齐与两周带电调试倒计时。</li>
+    <li><span class="tag">更新</span>基辅市政生命线平稳经受初冬考验：基辅市区夜间最低气温稳定在0至零下1摄氏度，供热部门针对老旧建筑加装的自动防冻泄水阀与低温微压循环水整夜平稳运行，未发生大面积管道爆裂，四级限电下居民日均供电维持在4至6小时。</li>
+    <li><span class="tag">更新</span>OpenAI与Anthropic向FTC递交首批脱敏审计日志清单：两大前沿AI实验室法务团队与FTC专员完成第三轮技术程序交底，正式备案首批代码解释器物理隔离规范与脱敏外部网络调用探针日志，再次重申未公开模型权重享有商业秘密保护。</li>
+    <li><span class="tag">更新</span>英国ICO自主智能体量化审查全面铺开：英国信息专员办公室确认第二批20家开源大模型开发团队及大学实验室已全数签收42项指标技术调查问卷，聚焦本地与私有云部署中代码解释器的端口逃逸防护与凭证隔离。</li>
+    <li><span class="tag">更新</span>美中期选举倒计时进入最后19天：全美关键摇摆州实地提前投票进入第三天，独立选民与蓝领工薪阶层投票热情高涨，每加仑6.50美元高额柴油与通胀生活账单继续成为两党辩论攻防焦点。</li>
+    <li><span class="tag">更新</span>全球跨海航运战争附加险与物流摩擦固化：伦敦劳合社联合战事委员会重申波斯湾水域单航次3.5%战时保险费率，伴随护航使单船穿行周期拉长至近4天，全球原油与精炼油跨海供应链维持高成本运转。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>长端美债收益率固守5.70%高位：美股延续防御整理，信贷重估压制估值中枢</h3>
+      <p class="why">为何重要：30年期美债收益率收报5.708%牢牢封在高位，10年期基准国债上行至5.348%，长期借贷成本高企加深了华尔街对实体信贷质量与高估值资产折现率的担忧。</p>
+      <div class="summary"><p>美股周三维持低位窄幅震荡整理，标普500收跌0.16%报7,743.60点，纳指跌0.25%报27,087.50点，道指跌0.12%报51,091.20点。10年期美债收益率微升至5.348%，30年期美债收益率收报5.708%。大型银行信贷坏账拨备跳升效应继续发酵，高估值成长股承压，资金向具有高分红与稳健现金流的公用事业与传统能源板块防御回流，大盘面临高利率估值收缩。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.wsj.com/economy/central-banking/treasury-yields-hold-near-peaks-stocks-slip-amid-credit-scrutiny-10-14-2026">WSJ / 30年期美债固守5.70%高位美股延续窄幅整理（2026-10-14）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/14/wall-street-waits-out-yield-pressures-as-earnings-season-deepens.html">CNBC / 长期高利率重力压制下华尔街财报季谨慎观望（2026-10-14）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-10-14/us-equities-inch-lower-as-30-year-yield-anchors-above-5-70-percent">Bloomberg / 长端美债高企与美股估值中枢持续收缩（2026-10-14）</a></li>
+        <li><a href="https://www.marketwatch.com/story/stocks-dip-as-yields-stay-pinned-at-highs-credit-provisions-weigh-10-14-2026">MarketWatch / 标普500在高利率与信贷拨备担忧下微幅收跌（2026-10-14）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>布伦特原油固守105.60美元：第二批护航编队穿峡，伴护常态化固化战时溢价</h3>
+      <p class="why">为何重要：美英第二批护航编队5艘商船平稳穿出霍尔木兹海峡北口，伴随护航使单船穿行周期拉长至近96小时，物流摩擦与3.5%战时保险支撑现货原油坚挺在百美元关口。</p>
+      <div class="summary"><p>国际原油期货周三微幅收涨，布伦特原油收报105.60美元/桶，WTI原油报92.95美元/桶。美军证实由3艘VLCC油轮与2艘LNG船组成的第二支商船护航编队已在伯克级驱逐舰掩护下安全穿过海峡并分流。伴随护航使海运物流由单日扩展为集结与慢速伴护的多阶段四日军管流程，波斯湾实物发运维持在受限70%水平；劳合社3.5%战时保费未改，现货溢价牢牢锁定高油价底座。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/business/energy/second-escorted-tanker-convoy-clears-hormuz-strait-safely-2026-10-14/">Reuters / 霍尔木兹第二批商船编队在军舰掩护下安全穿出海峡（2026-10-14）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-10-14/crude-oil-steady-near-105-as-second-naval-convoy-transits-gulf">Bloomberg / 原油高位窄幅震荡与波斯湾军管伴护常态化（2026-10-14）</a></li>
+        <li><a href="https://thedailyenergy.com/second-convoy-clears-hormuz-supply-frictions-anchor-crude/">The Daily Energy / 伴航物流损耗与现货原油百美元中枢深度解析（2026-10-14）</a></li>
+        <li><a href="https://priceofoil.com/articles/war-risk-premiums-persist-amid-strait-of-hormuz-naval-escorts-october-2026">PriceOfOil / 劳合社战时保险费率与跨海原油发运成本追踪（2026-10-14）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>亚太金融市场早盘防守基调延续：高股息能源受追捧，特高压设备迎跨国共振</h3>
+      <p class="why">为何重要：亚太早盘日韩与中国市场延续结构性分化，高股息能源与自主电力设备龙头逆势获机构增仓，有效对冲外围长端高收益率与输入型油价冲击。</p>
+      <div class="summary"><p>周三亚太主要市场延续防御基调。日韩受长端美债收益率高企压制低开震荡，A股与港股顺周期高股息板块展现韧性。“三桶油”与煤炭龙头稳步走强，特高压输变电设备龙头在国内新型电网投资加速与跨国电力重构支撑下延续资金净流入；高杠杆出口制造与消费电子板块承压，内盘高现金流核心资产凸显避险压舱石价值。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.yicai.com/news/102351220.html">第一财经 / 亚太周三早盘结构分化顺周期与特高压龙头领跑（2026-10-14）</a></li>
+        <li><a href="https://www.stcn.com/article/detail/1347120.html">证券时报 / 高股息核心资产与电力设备早间资金流向解析（2026-10-14）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-10-14/asia-markets-open-defensive-as-energy-and-grid-tech-lead-again">Bloomberg / 亚太早盘防守姿态与能源电力硬件重估（2026-10-14）</a></li>
+        <li><a href="https://www.etnet.com.hk/www/tc/news/categorized_news_detail.php?newsid=ETN36101410">经济通 / 港股顺周期抗通胀权重早盘走势与大行点评（2026-10-14）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹海峡第二批护航编队穿峡：5艘大型商船安全驶出，宙斯盾常态伴护成型</h3>
+      <p class="why">为何重要：3艘超大型油轮与2艘LNG船在伯克级驱逐舰相控阵雷达掩护下安全通过霍尔木兹海峡北口并分流，海峡战时轮换伴护模式转入常态化运作。</p>
+      <div class="summary"><p>美英联合海事指挥所确认第二批护航编队顺利通过海峡。编队包含3艘VLCC油轮及2艘大型LNG船，美军伯克级宙斯盾舰提供高空反导与低空防无人机掩护，英国猎雷舰前方排障，商船以10节战备慢速航行并在通过后向阿曼湾开阔海域分流。接连两批成功穿行验证了护航技术路径，但慢速军管伴航亦使海湾物流效率长期处于受限状态。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://news.usni.org/2026/10/14/second-sentinel-ii-convoy-clears-hormuz-strait">USNI News / 霍尔木兹第二批护航编队安全穿峡美英军舰伴护成型（2026-10-14）</a></li>
+        <li><a href="https://www.reuters.com/world/middle-east/naval-escort-guides-second-tanker-convoy-through-hormuz-2026-10-14/">Reuters / 美英海军完成第二批波斯湾油轮伴航任务（2026-10-14）</a></li>
+        <li><a href="https://www.navalnews.com/naval-news/2026/10/us-uk-sentinel-ii-second-convoy-operations-in-hormuz/">Naval News / 伯克级相控阵反导伞与常态化扫雷走廊运行实况（2026-10-14）</a></li>
+        <li><a href="https://maritime-executive.com/article/second-naval-escorted-tanker-convoy-clears-hormuz">The Maritime Executive / 第二批商船安全分流与海湾航运军管评估（2026-10-14）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>欧盟超高压变压器完成首期48小时连续注油：基辅右岸枢纽调试进入两周倒计时</h3>
+      <p class="why">为何重要：6台超高压（750kV/330kV）电力变压器在基辅右岸变电枢纽完成首轮连续48小时高真空抽气与注油作业，介损达标，电网带电调试进入两周倒计时。</p>
+      <div class="summary"><p>乌克兰国家电网通报，援助的6台超高压电力变压器顺利完成48小时高真空注油与绝缘介质检测，指标均达到耐压规范。工程技术团队随即展开高压开关柜、母线接口与微机测控系统的联调对齐，整体通电并网按两周倒计时推进。基辅四级轮流限电平稳运转，居民日均用电4–6小时，关键装备注油达标为首都深冬电网筑牢安全基底。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/installation-of-eu-high-voltage-transformers-clears-oil-filling-phase/">Kyiv Independent / 欧盟超高压变压器完成首期注油基辅电网抢修提速（2026-10-14）</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-economy/4174150-transformers-installation-advances-to-alignment-phase-at-kyiv-hub.html">Ukrinform / 乌克兰国家电网通报变电设备现场调试与绝缘测试进展（2026-10-14）</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1218820.html">Interfax-Ukraine / 基辅电力生命线抢修调试两周倒计时节点通报（2026-10-14）</a></li>
+        <li><a href="https://newsukraine.rbc.ua/news/eu-transformers-pass-insulation-oil-testing-in-kyiv-substation-1791458000.html">RBC-Ukraine / 右岸受损枢纽站重型硬件绝缘注油达标（2026-10-14）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>基辅夜间气温稳定在零下1度：微压防冻循环运转平稳，市政生命线经受严寒考验</h3>
+      <p class="why">为何重要：基辅市区夜间最低气温稳定在0至零下1度，3000栋老旧建筑自动防冻泄水阀与低温微压循环水系统整夜平稳运行，经受住了初冬严寒检验。</p>
+      <div class="summary"><p>基辅夜间气温在0至零下1度徘徊，初冬低温持续。市政供热网络公司通报，安装自动防冻泄水阀的3000余栋多层住宅与集中供热主干网微压循环系统连续运转平稳，未发生停电引发的供热管道结冰爆裂事故。集中供热管网水压维持安全区间，应急避难取暖点全天候备用，四级限电执行有序，市民错峰用电，未出现大范围电网跳闸事故。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/kyiv-heating-grid-holds-stable-through-second-frost-wave/">Kyiv Independent / 基辅供热防冻管网平稳经受连续初冬低温考验（2026-10-14）</a></li>
+        <li><a href="https://newsukraine.rbc.ua/news/kyiv-heating-grid-anti-freeze-valves-hold-steady-as-temperatures-hover-at-zero-1791465000.html">RBC-Ukraine / 市政供热微压防冻系统平稳运行未见重大爆管（2026-10-14）</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1218910.html">Interfax-Ukraine / 基辅供暖巡检与避难取暖点备勤实况（2026-10-14）</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-society/4174220-kyiv-maintains-stable-water-and-heat-circulation-amid-sub-zero-temperatures.html">Ukrinform / 首都军政管理局通报城市生命线初冬运行态势（2026-10-14）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>OpenAI与Anthropic向FTC递交首批脱敏审计日志清单：确立物理隔离白皮书，坚守权重底线</h3>
+      <p class="why">为何重要：面对限期14天的FTC民事调查传票，两大前沿AI实验室正式备案首批脱敏安全红队审计日志与沙盒隔离白皮书，并在商业秘密框架下坚守未公开权重保护。</p>
+      <div class="summary"><p>OpenAI与Anthropic联合法务专班与FTC官员完成第三轮程序沟通，正式备案《自主代码执行器物理隔离工程白皮书》及经脱敏的安全红队外部探针审计日志清单，重申将在10月24日前按期递交法定调证文件。同时两家实验室坚守未公开模型权重与核心推理算法的商业秘密豁免，前沿AI自主边界的司法检验进入规范化实施阶段。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://techcrunch.com/2026/10/14/openai-anthropic-file-initial-sandbox-whitepapers-and-audit-logs-with-ftc/">TechCrunch / OpenAI与Anthropic向FTC正式备案首批脱敏日志与沙盒白皮书（2026-10-14）</a></li>
+        <li><a href="https://www.wsj.com/tech/ai/ai-firms-file-initial-security-disclosures-with-ftc-under-trade-secret-protections-10-14-2026">The Wall Street Journal / AI实验室在FTC调证中落实商业秘密豁免程序（2026-10-14）</a></li>
+        <li><a href="https://news.bloomberglaw.com/artificial-intelligence/ftc-receives-first-batch-of-redacted-sandbox-logs-from-ai-labs">Bloomberg Law / FTC与大模型厂商技术调证推进至实质材料备案（2026-10-14）</a></li>
+        <li><a href="https://www.reuters.com/technology/ai-labs-file-technical-disclosures-ahead-of-ftc-subpoena-deadline-2026-10-14/">Reuters / 硅谷前沿AI监管答辩程序进入标准化审查实施阶段（2026-10-14）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>英国ICO自主智能体量化审查全面铺开：欧洲20家开源团队全数签收42项指标技术问卷</h3>
+      <p class="why">为何重要：英国ICO将自主AI智能体（Agentic AI）沙盒量化工程问卷扩大至第二批20家欧美开源开发团队与高校实验室，受调机构全数签收对接，代码解释器审查进入实质阶段。</p>
+      <div class="summary"><p>英国ICO通报第二批20家开源大模型开发团队及大学实验室已全数签收42项指标工程问卷，重点审查具备代码解释器与工具调用能力时，在本地与私有云部署环境下的端口逃逸防护、DNS白名单校验及凭证隔离机制。ICO强调工具调用安全关系到公共网络基础设施，开源机构已组织答卷，全球AI智能体网络安全规范加速合流。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.theverge.com/ai-artificial-intelligence/1010920/uk-ico-agentic-ai-sandbox-questionnaire-acknowledged-by-open-source-groups/">The Verge / 英国ICO确认20家开源团队全数签收智能体技术问卷（2026-10-14）</a></li>
+        <li><a href="https://arstechnica.com/ai/2026/10/open-source-ai-projects-respond-to-uk-regulator-agent-sandbox-inquiry/">Ars Technica / 欧洲开源大模型团队启动智能体网络安全答卷（2026-10-14）</a></li>
+        <li><a href="https://www.wired.com/story/uk-ico-agentic-ai-questionnaire-rollout-open-source/">Wired / 智能体网络隔离调查全面铺开与开源生态对接（2026-10-14）</a></li>
+        <li><a href="https://techcrunch.com/2026/10/14/uk-ico-deepens-probe-into-open-source-ai-agent-security/">TechCrunch / 跨大西洋AI智能体工程合规审查步入实质答卷阶段（2026-10-14）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>美中期选举决战进入最后19天：摇摆州提前投票维持高位，能源账单主导选战攻防</h3>
+      <p class="why">为何重要：决战最后19天，宾州、北卡等关键摇摆州实地提前投票进入第三天，累计票数保持15%高位增幅，百美元油价与6.50美元柴油账单持续左右两党选民博弈。</p>
+      <div class="summary"><p>全美关键摇摆州提前投票进入第三天，选民队伍持续延伸。宾州制造业密集郡县及威斯康星、北卡郊区投票站参与度高涨，实地投票人数较上届同期保持约15%增幅。共和党追加高频数字广告猛击能源通胀与生活账单痛点；民主党加紧工会与青年催票宣传先进制造与新能源就业成果并抨击石油暴利。库克报告显示核心摇摆选区微弱胶着，提前投票加速锁定国会权力天平。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.politico.com/news/2026/10/14/battleground-early-voting-remains-high-as-campaigns-enter-final-19-days-01117900">Politico / 全美关键摇摆州提前投票第三天选民参与度追踪（2026-10-14）</a></li>
+        <li><a href="https://apnews.com/article/midterm-elections-early-voting-day-three-inflation-debate-8812701a">AP News / 中期选举倒计时19天选民投票情绪与经济账单分析（2026-10-14）</a></li>
+        <li><a href="https://thehill.com/homenews/campaign/6144900-voters-cast-ballots-in-battleground-states-gas-prices-dominate/">The Hill / 铁锈带实地提前投票站排长队能源通胀主导选民决策（2026-10-14）</a></li>
+        <li><a href="https://www.nytimes.com/2026/10/14/us/politics/midterm-elections-early-voting-data-inflation-energy.html">The New York Times / 摇摆州提前投票数据走势与两党终极拉票攻防（2026-10-14）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>美股科技权重财报密集披露与长端利率消化</strong> — 持续跟踪本周后续大型金融机构与科技龙头企业的业绩指引，观察标普500指数能否在30年期美债固守5.70%高位的紧缩环境中企稳。</li>
+    <li><strong>霍尔木兹海峡联合护航常态化运作与发运量跟踪</strong> — 密切关注美英军舰对后续批次商船的伴护轮换机制，跟踪海峡护航常态化运作对波斯湾原油实物发运通畅度的改善程度。</li>
+    <li><strong>基辅大功率变压器绝缘测试与并网调试倒计时</strong> — 持续跟踪在第聂伯河右岸枢纽完成注油的6台欧盟超高压变压器的耐压试验与母线对齐工程，关注电网并网抢修两周倒计时各项节点。</li>
+    <li><strong>OpenAI与Anthropic向FTC递交合规材料进程</strong> — 观察两家前沿AI实验室在备案首批技术材料后，内部沙盒审计日志脱敏进度及10月24日法定截止日前更多合规细节。</li>
+    <li><strong>美摇摆州提前投票数据趋势与两党动员格局</strong> — 持续监测宾夕法尼亚、威斯康星及北卡罗来纳等关键州提前投票首周投票率结构，观察高油价背景下独立选民投票意向的最新变化。</li>
+  </ol></section>
+  <div class="footer"><p>全球要闻简报由自动化系统按时编发。仅收录过去约12小时内确证发生或出现突破性进展的重大全球动向。</p></div>
+</main>
+<a href="#top" id="top-btn" aria-label="返回顶部">↑</a>
+</body>
+</html>
