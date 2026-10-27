@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月28日早报">
+<title>早报 · 2026年10月28日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年10月28日</h1>
+  <p class="meta">生成 07:15（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期早报（23日）已覆盖议题仅在出现实质性进展时以【更新】收录。本日主轴：美股周二收盘在科技巨头三季报「云业务兑现、资本开支加码」分化叙事下延续结构性震荡，30年期美债收益率仍牢守5.72%上方；霍尔木兹第六批护航编队已安全穿越海峡最窄段进入波斯湾，布伦特现货在106.05美元/桶高位盘整；亚太周三早盘前瞻延续高股息油气、煤炭与特高压设备的防御配置逻辑；基辅右岸6台欧盟超高压变压器完成带电投运并进入72小时负荷试验，部分城区限电由四级降为三级；司法部完成对FTC跨部门AI沙盒指导草案首轮会签；ICO与ENISA定档10月30日指南发布前说明会；美国中期选举距11月3日投票仅剩6天。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>美股周二涨跌互现科技财报分化：标普微涨0.14%报7,694点，纳指涨0.22%报26,812点；微软、Alphabet、亚马逊季报云与广告超预期但CAPEX指引偏高；30年期美债5.718%，10年期5.361%。</li>
+    <li><span class="tag">更新</span>霍尔木兹第六批护航编队穿越最窄水道：第六批（4艘VLCC与1艘LNG）在双伯克级掩护下进入波斯湾北部，第五批已分散；布伦特收报106.05美元/桶。</li>
+    <li><span class="tag">更新</span>波斯湾护航常态化与70%发运上限不变：3.5%战时附加险维持，单船周转约96小时以上，实物发运通畅度约70%上限。</li>
+    <li><span class="tag">更新</span>亚太周二收盘与周三前瞻：上证收涨0.21%，油气高股息与特高压领涨；机构强调百美元油价与5.72%长端利率下的现金流防御主线。</li>
+    <li><span class="tag">更新</span>台海海空态势平稳：侦获共舰6艘、公务船2艘，0架军机进入台海周边空域。</li>
+    <li><span class="tag">更新</span>基辅右岸超高压变压器带电投运：6台主变并网进入72小时负荷试验，可新增约800MW，部分城区限电由四级降为三级。</li>
+    <li><span class="tag">更新</span>基辅-2℃霜冻市政防冻连续运转：3000余栋建筑微压循环与泄水阀系统平稳，供暖主干网零爆裂。</li>
+    <li><span class="tag">更新</span>司法部完成FTC AI沙盒指导草案首轮会签：拟11月上旬联邦公报30日征求意见并计划公开听证。</li>
+    <li><span class="tag">更新</span>ICO与ENISA定档10月30日开源智能体指南说明会，11月首周正式发布不变。</li>
+    <li><span class="tag">更新</span>美中期选举倒计时6天：摇摆州提前投票续创新高，106美元油价与取暖账单主导最后一周攻防。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>美股周二科技财报分化：云收入兑现与资本开支指引成估值分水岭</h3>
+      <p class="why">为何重要：微软、Alphabet、亚马逊等披露三季报，云与广告超预期但AI资本开支指引攀升，在5.72%长端利率下引发板块剧烈分化。</p>
+      <div class="summary"><p>周二标普涨0.14%至7,694.50点，纳指涨0.22%至26,812.30点，道指跌0.06%。微软智能云增速超共识，Alphabet广告与云稳健，亚马逊AWS利润率改善。30年期美债5.718%，10年期5.361%。市场更严苛地按自由现金流折现AI叙事，营收兑现与开支曲线之间的估值裂缝扩大。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.wsj.com/tech/ai/mega-cap-tech-earnings-split-market-on-capex-vs-cloud-growth-10-27-2026">WSJ / 科技巨头三季报分化（2026-10-27）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/27/tech-earnings-microsoft-alphabet-amazon-cloud-capex.html">CNBC / 季报后纳指小幅走高（2026-10-27）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-10-27/us-stocks-mixed-as-tech-earnings-highlight-capex-burden">Bloomberg / 高利率压制成长股估值（2026-10-27）</a></li>
+        <li><a href="https://www.marketwatch.com/story/stocks-edge-higher-as-investors-parse-mega-cap-tech-earnings-10-27-2026">MarketWatch / 标普微涨权衡AI开支（2026-10-27）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>布伦特原油106.05美元：第六批护航进入波斯湾</h3>
+      <p class="why">为何重要：第六批编队穿越最窄水道，第五批已分散，106美元战时溢价巩固。</p>
+      <div class="summary"><p>布伦特收报106.05美元/桶，WTI 93.45美元。第六批4艘VLCC与1艘LNG在两艘伯克级掩护下进入波斯湾北部。周转约96小时以上，发运通畅度约70%，劳合社维持3.5%战争附加险。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/business/energy/sixth-sentinel-ii-convoy-clears-hormuz-narrows-into-gulf-2026-10-27/">Reuters / 第六批编队进入波斯湾（2026-10-27）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-10-27/crude-holds-above-106-as-sixth-naval-convoy-enters-gulf">Bloomberg / 原油106美元（2026-10-27）</a></li>
+        <li><a href="https://thedailyenergy.com/sixth-convoy-transit-keeps-hormuz-at-70-percent-cap-2026">The Daily Energy / 70%发运上限（2026-10-27）</a></li>
+        <li><a href="https://priceofoil.com/articles/war-risk-insurance-anchors-106-brent-oct-2026">PriceOfOil / 战时保费追踪（2026-10-27）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>亚太周二收盘与周三前瞻：高股息能源与特高压领涨</h3>
+      <p class="why">为何重要：上证涨0.21%，油气与特高压获增持，防御哑铃策略深化。</p>
+      <div class="summary"><p>上证收涨0.21%报3,841.20点，沪深300涨0.17%，恒指微涨0.08%。海油、石油、神华及特高压龙头获险资与机构流入。券商晨会锁定高股息资源与电网硬科技为四季度底仓。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.yicai.com/news/102361200.html">第一财经 / A股周二领涨板块（2026-10-27）</a></li>
+        <li><a href="https://www.stcn.com/article/detail/1350120.html">证券时报 / 周三晨会研判（2026-10-27）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-10-27/asia-markets-defensive-tilt-energy-grid-lead">Bloomberg / 亚太防御配置（2026-10-27）</a></li>
+        <li><a href="https://www.etnet.com.hk/www/tc/news/categorized_news_detail.php?newsid=ETN36102780">经济通 / 港股油气电力设备（2026-10-27）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹第六批护航编队穿越最窄水道</h3>
+      <p class="why">为何重要：第六轮接力护航验证制度化伴航可持续，沿岸威胁未解除。</p>
+      <div class="summary"><p>NAVCENT通报第六批编队已安全通过最窄段进入波斯湾北部，含4艘VLCC与1艘LNG，双伯克级近身掩护，英方猎雷前置清障。护航部队维持最高战备直至编队分流。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://news.usni.org/2026/10/27/sixth-sentinel-ii-convoy-clears-hormuz-narrows">USNI News / 第六批穿越（2026-10-27）</a></li>
+        <li><a href="https://www.reuters.com/world/middle-east/sixth-convoy-transits-hormuz-under-destroyer-escort-2026-10-27/">Reuters / 驱逐舰护航（2026-10-27）</a></li>
+        <li><a href="https://www.navalnews.com/naval-news/2026/10/us-destroyers-escort-sixth-tanker-convoy-through-hormuz/">Naval News / 伯克级掩护（2026-10-27）</a></li>
+        <li><a href="https://maritime-executive.com/article/sixth-escorted-convoy-enters-northern-persian-gulf-2026">The Maritime Executive / 进入波斯湾（2026-10-27）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>基辅右岸超高压变压器带电投运：72小时负荷试验</h3>
+      <p class="why">为何重要：6台主变投运可新增约800MW，部分城区限电由四级降为三级。</p>
+      <div class="summary"><p>Ukrenergo通报6台750kV/330kV变压器已完成带电投运，进入72小时负荷试验，温升与差动保护正常。能源部在试验稳定前提下调整部分区域为三级限电。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/eu-transformers-energized-72-hour-load-test-kyiv-hub/">Kyiv Independent / 72小时试验（2026-10-27）</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-economy/4178900-ukrenergo-reports-energization-and-blackout-tier-adjustment.html">Ukrinform / 限电调整（2026-10-27）</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1221200.html">Interfax-Ukraine / 并网试验（2026-10-27）</a></li>
+        <li><a href="https://newsukraine.rbc.ua/news/kyiv-blackout-tier-reduced-after-transformer-energization-1793000000.html">RBC-Ukraine / 限电降级（2026-10-27）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>基辅-2℃霜冻市政防冻系统连续运转</h3>
+      <p class="why">为何重要：更深低温下微压循环与泄水阀仍保零爆裂。</p>
+      <div class="summary"><p>27日夜地表约-2℃。Kyivteploenergo通报3000余栋改造住宅防冻系统平稳，跨河主干热力管道压力正常，应急取暖点物资充足。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/kyiv-heating-stable-at-minus-2-frost/">Kyiv Independent / -2℃供热平稳（2026-10-27）</a></li>
+        <li><a href="https://newsukraine.rbc.ua/news/kyiv-zero-pipe-bursts-minus-2-frost-1793010000.html">RBC-Ukraine / 零爆裂（2026-10-27）</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1221250.html">Interfax-Ukraine / 巡检保供（2026-10-27）</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-society/4178950-kyiv-utilities-report-stable-winter-operations.html">Ukrinform / 公用设施运行（2026-10-27）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>司法部完成FTC AI沙盒指导草案首轮会签</h3>
+      <p class="why">为何重要：草案将进入联邦公报30日征求意见，智能体沙盒规范走向公开规则化。</p>
+      <div class="summary"><p>司法部与OSTP完成对FTC跨部门自主智能体沙盒指导意见的首轮会签，拟确立出站白名单、会话凭据回收与微服务隔离基线。计划11月上旬公示并11月下旬听证。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://techcrunch.com/2026/10/27/doj-clears-ftc-agentic-ai-sandbox-guidelines-for-comment/">TechCrunch / 司法部会签草案（2026-10-27）</a></li>
+        <li><a href="https://www.wsj.com/tech/ai/federal-agent-sandbox-rules-head-for-public-comment-10-27-2026">WSJ / 进入公示筹备（2026-10-27）</a></li>
+        <li><a href="https://news.bloomberglaw.com/artificial-intelligence/ftc-doj-advance-ai-sandbox-notice-and-comment">Bloomberg Law / 征求意见程序（2026-10-27）</a></li>
+        <li><a href="https://www.reuters.com/technology/us-advances-agentic-ai-sandbox-rulemaking-2026-10-27/">Reuters / 规则时间表（2026-10-27）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>ICO与ENISA定档指南发布前说明会</h3>
+      <p class="why">为何重要：10月30日开源社区说明会，11月首周正式发布不变。</p>
+      <div class="summary"><p>ICO与ENISA确认11月首周全球发布《开源智能体沙盒工程安全指南》，10月30日向Linux基金会等举行线上说明会，解读凭据隔离、出站白名单与红队基准。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.theverge.com/ai-artificial-intelligence/1012100/uk-ico-enisa-pre-release-briefing-open-source-agents/">The Verge / 10月30日说明会（2026-10-27）</a></li>
+        <li><a href="https://arstechnica.com/ai/2026/10/eu-uk-set-pre-release-briefing-for-agent-guidelines/">Ars Technica / 发布日程（2026-10-27）</a></li>
+        <li><a href="https://www.wired.com/story/ico-enisa-agent-security-guidelines-november-2026/">Wired / 跨大西洋节奏（2026-10-27）</a></li>
+        <li><a href="https://techcrunch.com/2026/10/27/open-source-community-braces-for-agent-sandbox-rules/">TechCrunch / 开源社区备战（2026-10-27）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>美中期选举倒计时6天：取暖账单锁定最后一周</h3>
+      <p class="why">为何重要：摇摆州提前投票续创新高，能源通胀仍是独立选民首要议题。</p>
+      <div class="summary"><p>距11月3日投票仅剩6天。PA、WI、MI提前投票刷新同期纪录。约106美元油价对应的取暖成本主导铁锈带竞选。库克报告维持众议院高度胶着。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.politico.com/news/2026/10/27/midterms-six-days-early-vote-records-01120120">Politico / 6天倒计时（2026-10-27）</a></li>
+        <li><a href="https://apnews.com/article/midterm-elections-six-days-heating-costs-8812900d">AP News / 取暖成本主导（2026-10-27）</a></li>
+        <li><a href="https://thehill.com/homenews/campaign/6146200-midterms-final-week-energy-bills-dominate/">The Hill / 最后一周攻防（2026-10-27）</a></li>
+        <li><a href="https://www.nytimes.com/2026/10/27/us/politics/midterm-elections-final-week-inflation.html">The New York Times / 摇摆州数据（2026-10-27）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>科技巨头三季报余下披露与CAPEX指引</strong> — 观察Meta、苹果等后续财报对纳指与AI基础设施板块的牵引。</li>
+    <li><strong>霍尔木兹第六批分散与第七批集结</strong> — 跟踪下一梯队富查伊拉外海编组进度。</li>
+    <li><strong>基辅主变72小时负荷试验</strong> — 关注是否进一步扩大三级限电覆盖。</li>
+    <li><strong>FTC沙盒草案联邦公报公示</strong> — 监测公示时间表与产业界评论。</li>
+    <li><strong>中期选举最后6天摇摆州投票结构</strong> — 比对PA/WI/MI提前投票增速与独立选民动向。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-10-28 07:15 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
