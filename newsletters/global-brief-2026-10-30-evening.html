@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年10月30日晚报">
+<title>晚报 · 2026年10月30日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>晚报 · 2026年10月30日</h1>
+  <p class="meta">生成 21:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为29日早报；29日晚报与30日早报未产出。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：Alphabet创纪录跌幅拖累纳指，亚马逊与英特尔盘后再压周五期指；亚太芯片链重挫、港股逆势；霍尔木兹连续发生不明弹体与贴船爆炸物袭击，CENTCOM司令当面汇报对伊选项，布伦特约116美元；第聂伯罗火车站日间遭袭15死，隔夜电网打击使当地逾20万人仍停电；币安热钱包遭约63亿美元盗窃；中期选举倒计时4天。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>美股周四科技重挫：标普跌0.3%报7,720.39点，纳指跌1.4%报26,184.72点；Alphabet跌12.6%；亚马逊盘后约跌6%、英特尔约跌24%；纳指100期指周五早盘跌约2.6%。</li>
+    <li><span class="tag">更新</span>亚太周五芯片链普跌、港股逆势：日经跌2.12%，KOSPI跌3.48%，台股跌2.49%；上证跌1.44%报3,599点，沪深300月线约-8.5%；恒生涨1.46%。</li>
+    <li><span class="tag">更新</span>油价与美债背离：布伦特约116.09美元/桶，WTI约103.17美元；10年期美债约4.935%，30年期约5.30%。</li>
+    <li><span class="tag">更新</span>霍尔木兹连续袭击：出峡油轮遭不明弹体击中；另一艘在哈萨布东北约25海里遭小艇贴装爆炸物、机舱起火后续航。</li>
+    <li><span class="tag">更新</span>CENTCOM司令库珀白宫当面汇报对伊军事选项与海军封锁，沙特呼吁先给外交机会。</li>
+    <li><span class="tag">更新</span>台海：共机6架次（3架次逾中线进入北、东、西南空域）、共舰7艘、公务船1艘。</li>
+    <li><span class="tag">更新</span>第聂伯罗火车站日间遭喷气无人机袭击，死亡升至15人；隔夜电网打击使当地一度约35万人停电，周五仍有逾20万用户未复电。</li>
+    <li>币安热钱包遭约63亿–64亿美元盗窃，链上分析指向朝鲜；约30亿美元被冻结，提现暂停约48小时。</li>
+    <li>FCC拟11月19日表决禁止中国移动、中国电信、中国联通等直接接入美国电话号码。</li>
+    <li><span class="tag">更新</span>美中期选举倒计时4天：司法部确认FBI与ICE不派员监票；能源价格与对伊战事主导终盘。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>美股周四科技重挫：Alphabet创纪录跌幅，亚马逊英特尔再压期指</h3>
+      <p class="why">为何重要：巨额AI资本开支被重新定价为现金流负担，纳指四日连涨终结，周五期指续弱。</p>
+      <div class="summary"><p>周四标普跌0.3%至7,720.39点，纳指跌1.4%至26,184.72点，道指跌132点收52,342.56点。Alphabet因增速与自由现金流不及预期跌12.64%。亚马逊三季报每股1.89美元、营收2,019.4亿美元略低于共识，自由现金流-424亿美元，资本开支指引维持2,200亿美元；英特尔下调四季报展望，盘前约跌24%。纳指100期指周五早盘跌约2.6%。9月PCE环比+0.5%、同比+3.6%；美联储本周维持3.75%–4.00%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/stocks-markets-ai-oil-fed-1b5c71d31b4ce1e46b0db47b33141f6b">AP / Alphabet创纪录跌幅（2026-10-29）</a></li>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-2c26b0b1bbc3bfab9f3f4b902172f458">AP / 周四三大指数收盘（2026-10-29）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html">CNBC / 亚马逊英特尔后纳指期指下跌（2026-10-30）</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-10-29/stock-market-today-dow-s-p-live-updates">Bloomberg / 科技抛售与油价（2026-10-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>亚太周五收盘：韩台日芯片链重挫，港股金融地产逆势</h3>
+      <p class="why">为何重要：AI开支再定价经存储与光模块链条传导，A股月线录得逾十年最差表现。</p>
+      <div class="summary"><p>日经跌2.12%报63,290.11点，KOSPI跌3.48%报5,730.74点（盘中触发sidecar），台股跌2.49%报45,211.83点。上证跌1.44%报3,599.02点，沪深300月线约-8.5%。恒生涨1.46%报23,294.42点，金融与内房走强。光模块与存储领跌，资金转向防御。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://news.rthk.hk/rthk/en/component/k2/1875967-20261030.htm">RTHK / 港股逆势A股芯片链重挫（2026-10-30）</a></li>
+        <li><a href="https://www.marketsfn.com/article/asian-markets-report-hang-seng-index-rises-amidst-nikkei-decline">MarketsFN / 亚太收盘一览（2026-10-30）</a></li>
+        <li><a href="https://www.twse.com.tw/exchangeReport/MI_INDEX?response=open_data">台湾证券交易所 / 加权指数（2026-10-30）</a></li>
+        <li><a href="https://www.cnbctv18.com/market/asia-market-stocks-share-price-kospi-nikkei-taiex-ai-stocks-amazon-intel-earnings-wall-street-selloff-20022913.htm">CNBC-TV18 / 韩股近4%重挫（2026-10-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>布伦特约116美元、美债收益率回落</h3>
+      <p class="why">为何重要：海峡袭击抬升原油尾部风险，避险买盘同时压低美债收益率。</p>
+      <div class="summary"><p>布伦特约116.09美元/桶，WTI约103.17美元。10年期美债约4.935%，30年期约5.30%，2年期约4.598%。黄金约4,016美元/盎司。比特币因币安被盗下跌约1.8%–3%。能源通胀溢价与风险资产去杠杆同时出现。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://report.az/en/finance/key-indicators-of-world-commodity-stock-and-currency-markets-30-10-2026">Report.az / 大宗商品快报（2026-10-30）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/30/us-treasury-yields-fed-interest-rates.html">CNBC / 美债收益率回落（2026-10-30）</a></li>
+        <li><a href="https://www.swissinfo.ch/eng/tech-stock-selloff-deepens-on-earnings%2C-oil-rises%3A-markets-wrap/92299351">swissinfo / 市场综述（2026-10-30）</a></li>
+        <li><a href="https://apnews.com/article/stock-markets-ai-alphabet-oil-16c266731fdf64178f38070af2b42497">AP / 期指下跌油价受海峡风险支撑（2026-10-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹数小时内两起商船袭击：不明弹体与贴船爆炸物</h3>
+      <p class="why">为何重要：攻击手法转向近舷贴装爆炸物，护航与商船自卫成本上升。</p>
+      <div class="summary"><p>UKMTO确认29日约16:00 UTC一艘出峡油轮遭不明弹体击中，邻近哈萨布，无伤亡无溢油。同日约22:12 UTC，巴拿马籍Louise 1在哈萨布东北约25海里遭小艇在船体贴装两枚爆炸物，机舱起火后扑灭续航。稍早起火下沉目标被澄清为地区单桅商船，船员已撤离。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.arabnews.com/middle-east/fire-hit-tanker-continues-journey-after-being-attacked-in-strait-of-hormuz-ukmto-says-3008930">Arab News / 起火油轮续航（2026-10-30）</a></li>
+        <li><a href="https://www.seatrade-maritime.com/security/tanker-catches-fire-in-hormuz-after-explosives-attached-to-hull">Seatrade Maritime / 贴船爆炸物（2026-10-30）</a></li>
+        <li><a href="https://gulfnews.com/world/mena/tankers-hit-by-unknown-projectiles-in-strait-of-hormuz-as-ship-attacks-escalate-1.500729052">Gulf News / 不明弹体（2026-10-30）</a></li>
+        <li><a href="https://www.bairdmaritime.com/security/incidents/boat-with-explosives-rams-tanker-in-strait-of-hormuz">Baird Maritime / 小艇爆炸物袭击（2026-10-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>CENTCOM司令白宫当面汇报对伊军事选项</h3>
+      <p class="why">为何重要：选举前外交窗口与选举后军事窗口并行，市场将其定价为11月4日之后。</p>
+      <div class="summary"><p>海军上将Brad Cooper周四向特朗普汇报对伊军事选项、海军封锁与油轮护航，赫格塞斯、凯恩、贝森特、万斯等出席。CENTCOM本月已提交重启并强化打击的计划。特朗普表示无意在中期选举前发动新攻势；沙特呼吁先给外交机会；卡塔尔斡旋仍在敏感阶段。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.wsj.com/politics/national-security/top-admiral-briefs-trump-on-iran-attack-options-5bd6f13c">WSJ / Cooper汇报对伊选项（2026-10-29）</a></li>
+        <li><a href="https://www.axios.com/2026/10/29/brad-cooper-briefs-trump-iran-naval-blockade">Axios / 封锁与护航（2026-10-29）</a></li>
+        <li><a href="https://www.al-monitor.com/originals/2026/10/centcom-chief-briefs-trump-iran-strike-options">Al-Monitor / 权衡重启作战（2026-10-29）</a></li>
+        <li><a href="https://www.jpost.com/middle-east/iran-news/article-913297">Jerusalem Post / CENTCOM汇报（2026-10-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>第聂伯罗火车站日间遭袭15死，隔夜电网打击致大面积停电</h3>
+      <p class="why">为何重要：平民交通枢纽与能源设施同一昼夜被打，局部停火并未约束纵深空袭。</p>
+      <div class="summary"><p>29日约11时喷气无人机击中第聂伯罗主站月台，死亡升至15人、至少14人受伤。切尔尼戈夫两名15岁女孩遇难。隔夜弹道导弹与113架无人机袭击使基辅1人死亡，第聂伯罗地区一度约35万人停电，周五仍有逾20万用户未复电。奥列什基局部停火启动，援助车队进入俄占城镇。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.bbc.com/news/articles/c9p8gdlz1p2ko">BBC / 火车站袭击（2026-10-29）</a></li>
+        <li><a href="https://kyivindependent.com/breaking-russia-strikes-train-at-dnipro-station-with-jet-powered-drone-at-least-13-dead/">Kyiv Independent / 死亡升至15人（2026-10-30）</a></li>
+        <li><a href="https://kyivindependent.com/russian-night-attacks-kill-1-in-kyiv-leave-350-000-in-dnipro-without-power/">Kyiv Independent / 隔夜停电（2026-10-30）</a></li>
+        <li><a href="https://www.france24.com/en/europe/20261030-live-russia-strikes-energy-facilities-kyiv-aid-convoy-heads-besieged-town-oleshky-ukraine">France 24 / 复电与奥列什基援助（2026-10-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海：共机6架次、共舰7艘，3架次逾中线</h3>
+      <p class="why">为何重要：空域活动从零出动窗口回升，并出现北、东、西南多向进入。</p>
+      <div class="summary"><p>国防部通报29日6时至30日6时侦获共机6架次（3架次逾中线进入北部、东部及西南空域）、共舰7艘、公务船1艘。国军以任务机、舰及岸置导弹应处。TSIA同日支持评估重启核电，以保障芯片电力。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/88097">台湾国防部英文通报（2026-10-30）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202610300030.aspx">中央社 / 14机舰船活动（2026-10-30）</a></li>
+        <li><a href="https://www.mnd.gov.tw/news/plaact/88096">国防部中文通报（2026-10-30）</a></li>
+        <li><a href="https://www.fdd.org/overnight-brief/october-30-2026/">FDD / TSIA核电表态（2026-10-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3>币安热钱包遭约63亿美元盗窃，链上分析指向朝鲜</h3>
+      <p class="why">为何重要：加密货币史上最大单笔盗窃，热钱包授权与工程师终端成为国家级攻击入口。</p>
+      <div class="summary"><p>攻击者在约11条链抽干热钱包，损失约63亿–64亿美元。币安称或与DevOps笔记本被入侵有关，未发现私钥泄露。Chainalysis与Elliptic指向朝鲜TraderTraitor，约30亿美元被冻结。提现暂停约48小时，平台承诺全额赔付。比特币应声下跌。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7">币安公告 / 安全事件更新（2026-10-30）</a></li>
+        <li><a href="https://apnews.com/article/binance-cryptocurrency-security-hack-north-korea-550e9b876550f71f07098494fe735beb">AP / 朝鲜关联评估（2026-10-30）</a></li>
+        <li><a href="https://www.chainalysis.com/blog/binance-exploit-latest-findings-and-response/">Chainalysis / TraderTraitor评估（2026-10-30）</a></li>
+        <li><a href="https://www.elliptic.co/insights/binance-largest-hack-in-history/">Elliptic / 史上最大盗窃（2026-10-30）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>FCC拟11月19日禁止中国电信运营商直接接入美国号码</h3>
+      <p class="why">为何重要：限制从落地牌照延伸到号码资源，并与反诈骗机器人呼叫捆绑。</p>
+      <div class="summary"><p>FCC将于11月19日表决禁止中国移动、中国电信、中国联通及其他IP语音服务商直接接入美国电话号码，并限制使用华为、中兴等涵盖清单设备的服务商。中国外交部周五表示坚决反对并将采取必要措施。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.yahoo.com/news/politics/articles/us-plans-ban-chinese-telecom-035556558.html">Reuters / 拟禁止直接接入美国号码（2026-10-29）</a></li>
+        <li><a href="https://www.channelnewsasia.com/world/us-plans-ban-chinese-telecom-firms-direct-access-phone-numbers-6505891">CNA / 11月19日表决（2026-10-30）</a></li>
+        <li><a href="https://www.fcc.gov/November2026">FCC / 11月公开会议议程</a></li>
+        <li><a href="https://www.business-standard.com/world-news/us-plans-to-ban-chinese-telecom-firms-from-direct-access-to-phone-numbers-126103000244_1.html">Business Standard / 外交部回应（2026-10-30）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>美中期选举倒计时4天：司法部调整监票人员</h3>
+      <p class="why">为何重要：争议从政策辩论转向谁有权站在投票站门口，能源与战争议题锁定终盘。</p>
+      <div class="summary"><p>距11月3日仅剩4天。司法部确认FBI与ICE不派员监票，改由联邦监狱局、ATF与DEA人员担任观察员。联邦法官要求列出曾被要求改变选举行政的州名单。能源价格、取暖账单与对伊战事仍是铁锈带独立选民核心议题。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.justsecurity.org/162627/early-edition-october-30-2026/">Just Security / 早间辑要监票安排（2026-10-30）</a></li>
+        <li><a href="https://www.fdd.org/overnight-brief/october-30-2026/">FDD Overnight Brief（2026-10-30）</a></li>
+        <li><a href="https://www.al-monitor.com/originals/2026/10/centcom-chief-briefs-trump-iran-strike-options">Al-Monitor / 选举前不对伊发动新攻势（2026-10-29）</a></li>
+        <li><a href="https://www.axios.com/2026/10/29/brad-cooper-briefs-trump-iran-naval-blockade">Axios / 选举前谈判与选举后预案（2026-10-29）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>拉加德宣布2027年2月7日提前卸任欧央行行长</h3>
+      <p class="why">为何重要：换帅窗口与法国大选重叠，欧洲利率路径将同时被人事与政治重写。</p>
+      <div class="summary"><p>拉加德将于2027年2月7日卸任，较原任期提前约九个月。欧洲理事会立即启动继任程序。她称提前交棒为获得更大言论自由。Lane与Schnabel明年亦将离任。欧央行本周维持利率不变。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html">欧央行声明（2026-10-29）</a></li>
+        <li><a href="https://apnews.com/article/ecb-lagarde-resignation-bank-c657d818e8f487f2ce990fe57ba55d4a">AP / 提前辞职（2026-10-29）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html">CNBC / 继任人选（2026-10-29）</a></li>
+        <li><a href="https://www.dw.com/en/european-central-bank-ecb-head-christine-lagarde-to-step-down-in-february-before-her-term-ends/a-79794353">DW / 明年2月离任（2026-10-29）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>美股周五现金开盘与10月月线收官</strong> — 观察亚马逊、英特尔开盘定价是否向半导体与云基础设施扩散。</li>
+    <li><strong>霍尔木兹贴船爆炸物是否再现、白宫选举后打击窗口</strong> — 跟踪UKMTO新预警与沙特/卡塔尔斡旋。</li>
+    <li><strong>第聂伯罗复电与奥列什基人道走廊</strong> — 关注停电用户能否从20万继续压降。</li>
+    <li><strong>币安提现恢复与赃款追索</strong> — 48小时窗口内的地址控制重建与冻结比例。</li>
+    <li><strong>中期选举最后4天监票争议</strong> — 比对PA/WI/MI投票结构与司法部州名单披露。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-10-30 21:10 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
