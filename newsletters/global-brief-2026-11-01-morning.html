@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月1日早报">
+<title>早报 · 2026年11月1日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月1日</h1>
+  <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为10月31日早报（31日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：OPEC+核心七国会前原则上维持12月纸面配额；革命卫队称四艘油轮触雷，最高领袖下令无地理限制反击，复航执行期谈到两天；第聂伯罗修复点再被打中，约28万户停电，奥列什基撤离完成；币安补仓90%，提现仍为目标；中期选举倒计时2天，提前投票逾5050万张。亚太周日休市。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>OPEC+核心七国今日线上审议12月配额：会前消息称原则上维持与11月相同的纸面产量，正式公报截稿时未见。</li>
+    <li><span class="tag">更新</span>周末休市，周五现金坐实：纳指跌2.86%报25,437点，标普跌1.82%报7,580.07点，道指报51,770.31点；布伦特117.64美元、WTI 104.12美元；比特币回稳约77,500美元。</li>
+    <li><span class="tag">更新</span>霍尔木兹：革命卫队称周五四艘油轮触雷起火（含一艘逾200万桶）；阿曼救出25名船员；LNG船AL MAYEDA遭弹体击中左舷。</li>
+    <li><span class="tag">更新</span>最高领袖下令「立即、无地理限制」反击；阿拉格希称霍尔木兹执行期压至两天。美方代表未现身多哈。</li>
+    <li><span class="tag">更新</span>台海30–31日官方：共机13架次（6逾中线）、共舰7艘、公务船2艘；午后另有联合战备警巡22架次（18逾中线）。31–1日窗口未公布。</li>
+    <li><span class="tag">更新</span>乌克兰约28万户停电；DTEK抢修点再被打中；奥列什基撤离完成；爱国者500枚或需数年交货。</li>
+    <li><span class="tag">更新</span>币安补仓约90%，十大币种1:1；零知识证明预计11月3日。提现仍按周日目标推进，截稿时未见已恢复。</li>
+    <li><span class="tag">更新</span>美中期选举倒计时2天：提前投票已逾5050万张，比2022年中期全部提前票还多近500万。</li>
+    <li>哈里斯亚特兰大呼吁票数「大到无法操纵」；特朗普周六改远程拉票，周日计划在堪萨斯集会。</li>
+    <li>取暖油全国均价仍高于6美元/加仑，锁定缅因、新罕布什尔、阿拉斯加等参议院选区。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>OPEC+今日开会：会前消息称12月纸面配额原则上不变</h3>
+      <p class="why">为何重要：会前原则协议把「加纸面供给」从定价公式里拿掉，海湾实际产量仍被霍尔木兹卡住。</p>
+      <div class="summary"><p>核心七国11月1日线上审议12月所需产量。阿加姆引述路透社称已原则上维持与11月相同的目标；正式公报截稿时未见。11月纸面配额仍为沙特1047.8万桶/日等。海湾实际产量显著低于配额，2027年产能评估被战争推迟。联合部长级监督委员会下次会议11月29日。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.argaam.com/en/article/articledetail/id/1948879">Argaam / 会前原则维持12月配额（2026-10-31）</a></li>
+        <li><a href="https://www.opec.org/pr-detail/616-4-october-2026.html">OPEC / 10月4日声明与11月1日下次会议</a></li>
+        <li><a href="https://ishookfinance.com/opec-plus-meeting-november-1-december-output-oil-october-gain-brent-wti-corn-wheat-slide-oct-31-2026-206355">iShook Finance / 周日会议与10月月线</a></li>
+        <li><a href="https://www.thedailystar.net/business/global-economy/news/oil-jumps-11764-4312211">The Daily Star / 布伦特117.64美元（2026-11-01）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>周末休市：纳指周五确认跌2.86%，原油与比特币停在现金锚</h3>
+      <p class="why">为何重要：周末没有新的期货定价，周一亚太开盘要同时消化科技抛售、117美元油价与今日OPEC+公报。</p>
+      <div class="summary"><p>纳指跌2.86%报25,437.00点（6月以来最差单日），标普跌1.82%报7,580.07点，道指跌1.09%报51,770.31点。10月纳指-5.3%、标普-0.9%、道指+1.7%。布伦特到期117.64美元，WTI 104.12美元。比特币回稳约77,519–77,592美元。亚太周日休市，周一开盘。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html">CNBC / 纳指25437点、月线-5.3%（2026-10-30）</a></li>
+        <li><a href="https://www.thedailystar.net/business/global-economy/news/oil-jumps-11764-4312211">The Daily Star / 原油结算（2026-11-01）</a></li>
+        <li><a href="https://exa.ai/library/markets/crypto/BTC">exa.ai / 比特币约77519美元（2026-10-31）</a></li>
+        <li><a href="https://tindex.app/en/indicators/Cryptocurrency/btc/">Tindex / 比特币约77592美元（2026-11-01）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>革命卫队称四艘油轮触雷；阿曼救出25人；LNG船遭弹体</h3>
+      <p class="why">为何重要：海峡同时出现水雷叙事与弹体叙事，护航与保险无法按单一攻击模式定价。</p>
+      <div class="summary"><p>革命卫队称周五四艘油轮在「未授权」南部航线触雷起火，其中一艘超大型油轮载逾200万桶。阿曼从距穆桑达姆1.6海里的巴拿马籍油轮救出25名船员。UKMTO报拉万岛以南约40海里一艘船遭不明弹体击中左舷，后被识别为马绍尔群岛籍LNG船AL MAYEDA，船员安全。伊方称两名渔民失踪。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.abc.net.au/news/2026-10-31/four-tankers-strike-mines-in-strait-of-hormuz/107332392">ABC / 四艘触雷、阿曼救出25人（2026-10-31）</a></li>
+        <li><a href="https://www.manilatimes.net/2026/11/01/world/americas-emea/iran-says-4-tankers-hit-mines-catch-fire-in-hormuz-strait/2458755">Manila Times / 美联社四艘触雷（2026-11-01）</a></li>
+        <li><a href="https://english.news.cn/20261031/b150ed4d429747d19ab7e611307c262f/c.html">新华社 / UKMTO拉万岛以南弹体（2026-10-31）</a></li>
+        <li><a href="https://www.cwdynamics.com/alerts/alert/33549">Clearwater Dynamics / AL MAYEDA识别</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>最高领袖下令无地理限制反击；复航执行期谈到两天</h3>
+      <p class="why">为何重要：德黑兰把反击授权写宽，同时把复航时间表写短，外交与战争准备仍并行。</p>
+      <div class="summary"><p>穆杰塔巴·哈梅内伊下令对任何袭击作「立即、有力、无地理限制」反击并更新目标库。ABC称海湾盟友被示警，新攻势最早可能在11月4日。阿拉格希称卡塔尔斡旋已将霍尔木兹方案执行期压至两天，条件包括解除制裁、削减驻军、恢复石油豁免并解冻资金。美方代表未现身多哈。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.abc.net.au/news/2026-10-31/four-tankers-strike-mines-in-strait-of-hormuz/107332392">ABC / 哈梅内伊命令与两日复航（2026-11-01）</a></li>
+        <li><a href="https://www.manilatimes.net/2026/11/01/world/americas-emea/iran-says-4-tankers-hit-mines-catch-fire-in-hormuz-strait/2458755">Manila Times / 卡塔尔团队与海峡</a></li>
+        <li><a href="https://www.aa.com.tr/en/middle-east/iran-says-4th-oil-tanker-hit-mine-caught-fire-in-strait-of-hormuz/4107011">Anadolu / 第四艘触雷说法（2026-10-31）</a></li>
+        <li><a href="https://www.thedailystar.net/business/global-economy/news/oil-jumps-11764-4312211">The Daily Star / 选举后升级溢价</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>约28万户停电；奥列什基撤离完成；爱国者或需数年</h3>
+      <p class="why">为何重要：修复点被再打中，撤离从进行中变成完成，拦截弹从意向书变成数年交货期。</p>
+      <div class="summary"><p>隔夜134架无人机、击落105架。泽连斯基称基辅热电联产厂、四座变电站、绍斯特卡热电联产厂遭袭，约20万户（第聂伯罗）与逾8万户（基辅州）停电。DTEK称抢修近两日的站点再被打中。奥列什基愿赴乌居民已入境，停火至今晚。美国批准潜在出售500枚PAC-3约21亿美元，泽连斯基警告交货可能要数年。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://en.interfax.com.ua/news/general/1229160.html">Interfax-Ukraine / 20万+8万户停电（2026-10-31）</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1229142.html">Interfax-Ukraine / DTEK抢修点再被打中</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-5-injure-at-least-46-as-ukraine-faces-difficult-energy-situation/">Kyiv Independent / 134/105无人机、5死46伤</a></li>
+        <li><a href="https://www.rferl.org/a/zelenskyy-warns-of-long-delay-as-us-approves-patriot-interceptors-sale/33887884.html">RFE/RL / 奥列什基完成与爱国者数年交货</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海30–31日官方13机/7舰/2公务船；午后22架次联合巡航</h3>
+      <p class="why">为何重要：31日早报该窗口尚未公布；下午单独通报不可加进06:00窗口，31–1日窗口截稿时仍未公布。</p>
+      <div class="summary"><p>30日6时至31日6时：共机13架次（6架次逾中线进入北、中、西南空域）、共舰7艘、公务船2艘。31日13:15起另侦获歼-10、歼-16、空警-500、运油-20等22架次，18架次逾中线及延伸线进入北、中、西南及西太平洋。英文列表最新条目仍为2026.10.31。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/88099">台湾国防部英文通报（30–31日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/EN/news/PlaactList">台湾国防部英文列表（截至今晨）</a></li>
+        <li><a href="https://www.mnd.gov.tw/En/Publication/88100">国防部新闻稿 / 31日1700联合战备警巡</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202610310025.aspx">中央社 / 22机舰船（2026-10-31）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>币安称已补仓90%：十大币种1:1，证明推迟到11月3日</h3>
+      <p class="why">为何重要：补仓进度从约80%写到90%，但用户可自行验证的零知识证明往后推了两天，提现仍是目标而非已打开。</p>
+      <div class="summary"><p>币安用公司资金并部分动用SAFU与期货保险基金补足约90%；BTC、ETH、USDT等十币种达100%备付，余下10%为低流动性代币。准备金快照时间为10月31日00:00 UTC，完整零知识证明预计11月3日。提现「仍按11月1日时间表推进」，截稿时未见已恢复确认。比特币回稳约77,500美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.brecorder.com/news/40446865">Business Recorder / 路透：补仓90%（2026-11-01）</a></li>
+        <li><a href="https://www.cryptotimes.io/2026/11/01/binance-targets-november-1-withdrawal-reopening-after-90-replenishment/">Crypto Times / 第三份事故通报</a></li>
+        <li><a href="https://www.businesstoday.in/technology/news/story/binance-says-90-of-stolen-crypto-assets-replenished-withdrawals-to-resume-on-november-1-564957-2026-10-31">Business Today / 零知识证明预计11月3日</a></li>
+        <li><a href="https://www.theverge.com/tech/1024091/binance-ceo-90-percent-stolen-crypto">The Verge / 周日提现仍为目标</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>中期选举倒计时2天：提前投票已逾5050万张</h3>
+      <p class="why">为何重要：周六多州窗口关门之后，留下的是已经进箱的票，而不是新的民调。</p>
+      <div class="summary"><p>佛罗里达大学统计，截至周六上午全美提前投票已逾5050万张，比2022年中期全部提前票还多近500万。公布党籍的州：登记民主党人约1070万、共和党人约780万。得州提前票已逾700万。佛罗里达、北卡、弗吉尼亚现场提前投票周六结束。共和党守卫参议院53–47。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.theguardian.com/us-news/2026/oct/31/early-voting-midterms">The Guardian / 逾5050万张提前票（2026-10-31）</a></li>
+        <li><a href="https://ballotpedia.org/Early_voting_dates,_2026">Ballotpedia / 各州提前投票日期</a></li>
+        <li><a href="https://apnews.com/article/midtermelections-trump-texas-michigan-talarico-23bc8f51f73358260297b044241d7d0f">AP / 得州终盘（2026-10-31）</a></li>
+        <li><a href="https://www.politico.com/storyline/live/2026/10/31/2026-midterm-elections-preview-saturday">Politico / 最后竞选周末</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>哈里斯「大到无法操纵」；特朗普改远程拉票；取暖油锁定北部参议院</h3>
+      <p class="why">为何重要：终盘动员改成把已登记的人拉去投票，取暖账单把对伊战争写成选民自己的发票。</p>
+      <div class="summary"><p>哈里斯周六在亚特兰大呼吁投票率「大到无法操纵」。特朗普周六暂停现场集会，周日计划在堪萨斯州出席。得州帕克斯顿对塔拉里克进入终盘。取暖油全国均价仍高于6美元/加仑，东北储备已释出31.5万桶。缅因、新罕布什尔、阿拉斯加把取暖成本写成参议院选战主轴。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.washingtonpost.com/politics/2026/10/31/kamala-harris-trump-2026-midterm-elections/d3fc2338-d53d-11f1-9931-2a41b76fc976_story.html">Washington Post / 哈里斯亚特兰大（2026-10-31）</a></li>
+        <li><a href="https://apnews.com/article/midtermelections-trump-texas-michigan-talarico-23bc8f51f73358260297b044241d7d0f">AP / 特朗普远程拉票与得州终盘</a></li>
+        <li><a href="https://thehill.com/homenews/campaign/6183400-senate-rising-home-heating-costs/">The Hill / 取暖油与参议院战场</a></li>
+        <li><a href="https://www.investing.com/news/economic-indicators/as-winter-nears-heating-oil-emerges-as-hurdle-for-republicans-in-us-senate-races-4970790">Reuters / 取暖油>$6与东北储备</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>OPEC+周日公报</strong> — 确认12月纸面配额是否按会前口径维持不变。</li>
+    <li><strong>币安提现开关与11月3日零知识证明</strong> — 测试是否通过，以及提现恢复后比特币流动性。</li>
+    <li><strong>奥列什基局部停火今晚到期</strong> — 撤离完成后空袭是否回潮到左岸人道走廊。</li>
+    <li><strong>霍尔木兹四艘事故的船名对账，以及11月4日军事窗口</strong> — 跟踪UKMTO/阿曼船名与两日复航方案。</li>
+    <li><strong>中期选举最后48小时</strong> — 比对TX/KS/ME/NH/AK提前投票结构。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-01 07:10 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
