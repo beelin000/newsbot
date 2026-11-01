@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月2日早报">
+<title>早报 · 2026年11月2日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月2日</h1>
+  <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月1日早报（1日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：OPEC+正式确认12月纸面配额不变；币安周日重开提现、净流出约36.4亿美元；霍尔木兹周日再报两艘触雷，多哈第三日未见两日协议；奥列什基停火到期；台海31–1日官方32机/26逾中线；中期选举倒计时1天、提前投票逾5200万张。亚太现金盘截稿时未开。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>OPEC+核心七国周日正式确认12月所需产量维持9月纸面水平，合计约3100万桶/日；下次全体会议11月29日。</li>
+    <li><span class="tag">更新</span>周一亚太现金盘截稿未开：ASX期货近乎持平；十年期美债约4.93%，现货金约3876美元；布伦特夜盘约+2.1%。周五纳指-2.86%报25,437点仍是现金锚。</li>
+    <li><span class="tag">更新</span>霍尔木兹：革命卫队称周日再有两艘油轮触雷爆炸；UKMTO另报不明弹体。卡塔尔确认周五遇袭的是LNG船Al-Mayeda，船员无伤。</li>
+    <li><span class="tag">更新</span>多哈第三日：阿拉格希称两日方案尚未达成最终结论。特朗普称「要么协议、要么结束」；鲁比奥说总统尚未决定选举后是否恢复军事行动。</li>
+    <li><span class="tag">更新</span>乌克兰周六夜433架无人机、击落371架；周日白天再有326架。奥列什基局部停火周日22:59（基辅时间）到期，俄方拒绝延期。</li>
+    <li><span class="tag">更新</span>台海31–1日官方：共机32架次（26逾中线）、共舰7艘、公务船2艘。该窗口已含31日午后22架次联合警巡。1–2日窗口未公布。</li>
+    <li><span class="tag">更新</span>币安周日分阶段重开提现：首批15条网络打开，净流出约36.4亿美元（约2.1% AUM）；补仓约95%。准备金报告预计今日上线。</li>
+    <li>OpenAI本轮融资目标由约300亿美元下调至约200亿美元，投后估值目标约1.25万亿美元；截至期限约110亿美元已获承诺。</li>
+    <li><span class="tag">更新</span>美中期选举倒计时1天：提前投票已逾5200万张；得州提前票约761.5万，哈里斯县逾100万。</li>
+    <li><span class="tag">更新</span>特朗普周日爱荷华+堪萨斯连场，为参议员马歇尔助选；称若民主党拿下国会，自己可能变成「否决先生」。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>OPEC+正式确认：12月纸面配额维持9月水平</h3>
+      <p class="why">为何重要：会前原则协议现已写成公报，纸面供给公式没有改，海峡实物短绌也没有被开会补上。</p>
+      <div class="summary"><p>核心七国11月1日线上会议决定，12月所需产量维持与9月相同的水平，合计约3100万桶/日。沙特配额仍为1047.8万桶/日。声明未给增产时间表。海湾实际产量显著低于配额。真正的考验在11月29日部长级会议，届时审议2027年配额。俄罗斯将柴油出口禁令延至2027年1月31日。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.opec.org/pr-detail/2033620-1-november-2026.html">OPEC / 11月1日七国声明</a></li>
+        <li><a href="https://www.thenationalnews.com/business/energy/2026/11/01/opec-holds-december-oil-output-targets-steady-as-iran-war-disrupts-supply/">The National / 12月目标维持约3100万桶（2026-11-01）</a></li>
+        <li><a href="https://ca.investing.com/news/commodities-news/opec-keeps-december-oil-output-targets-steady-ahead-of-tougher-call-for-2027-4920344">Reuters / 容易的决定与11月29日考验</a></li>
+        <li><a href="https://www.arabnews.com/business/opec-holds-december-oil-output-targets-unchanged-3009277">Arab News / 各国配额表（2026-11-01）</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>周一亚太尚未开盘：十年期美债约4.93%，金价一年低点</h3>
+      <p class="why">为何重要：开盘缺口要同时消化纳指抛售、OPEC+公报、霍尔木兹周日事故，以及中国官方PMI重新掉回收缩。</p>
+      <div class="summary"><p>截稿时东京、首尔、台北、沪深港现金盘均未开。ASX期货约-0.04%。周五现金锚：纳指-2.86%报25,437点，标普-1.82%报7,580点。夜盘十年期美债约4.93%，现货金约3,876美元（约一年低点），布伦特1月约+2.1%。中国10月制造业PMI 49.3，非制造业49.7。比特币约77,800美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.marketindex.com.au/news/morning-wrap-asx-200-futures-flat-nasdaq-suffers-its-worst-day-since-june">Market Index / 周一早盘综述（2026-11-02）</a></li>
+        <li><a href="https://www.newsquawk.com/headlines/newsquawk-daily-asia-pac-opening-news---2nd-november-2026">Newsquawk / 亚太开盘快照</a></li>
+        <li><a href="https://newsonjapan.com/article/151211.php">News on Japan / 日经周五收63290点</a></li>
+        <li><a href="https://www.thenationalnews.com/business/energy/2026/11/01/opec-holds-december-oil-output-targets-steady-as-iran-war-disrupts-supply/">The National / 布伦特周五117.64美元</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>革命卫队称周日再有两艘油轮触雷爆炸；卡塔尔确认Al-Mayeda</h3>
+      <p class="why">为何重要：周五四艘触雷与LNG弹体之后，周日又出现一轮触雷叙事与弹体叙事，卡塔尔把周五那艘写成可运营。</p>
+      <div class="summary"><p>革命卫队称周日两艘油轮在「未授权航线」触雷爆炸，其中一艘超大型油轮大火。UKMTO另报海峡内一艘商船遭不明弹体。卡塔尔确认周五遇袭的是本国LNG船Al-Mayeda，船员无伤、船舶可运营。10月海峡及周边商船遇袭至少35起。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.streetinsider.com/Reuters/Irans+IRGC+Navy+says+two+tankers+exploded+after+hitting+mines+in+hormuz/27267745.html">Reuters / 周日两艘触雷爆炸（2026-11-01）</a></li>
+        <li><a href="https://www.jpost.com/middle-east/iran-news/article-913514">Jerusalem Post / 超大型油轮大火与UKMTO弹体</a></li>
+        <li><a href="https://www.arabnews.com/middle-east/uk-agency-reports-vessel-strike-in-hormuz-irans-guards-say-tankers-hit-mines-3009316">Arab News / 卡塔尔确认Al-Mayeda</a></li>
+        <li><a href="https://www.thenationalnews.com/business/energy/2026/11/01/opec-holds-december-oil-output-targets-steady-as-iran-war-disrupts-supply/">The National / 10月至少35起商船遇袭</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>多哈第三日：两日方案未见协议；特朗普称「协议或结束」</h3>
+      <p class="why">为何重要：复航时间表被压到两天，选举后军事窗口仍写在11月4日，两边都还没签字。</p>
+      <div class="summary"><p>伊朗谈判代表周日在多哈进入第三日磋商。阿拉格希称两日方案尚未达成最终结论。卡塔尔正争取解冻逾60亿美元伊朗资产。特朗普称对伊「要么达成协议，要么直接结束」。鲁比奥说总统尚未决定是否在选举后恢复军事行动。美方代表仍未现身多哈。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/01/iranian-negotiators-in-qatar-to-continue-talks-to-end-war-reuters.html">CNBC / 路透：多哈第三日（2026-11-01）</a></li>
+        <li><a href="https://www.theguardian.com/world/2026/nov/01/negotiators-braced-for-worst-over-us-iran-talks-to-reopen-strait-of-hormuz">The Guardian / 逾60亿美元解冻与「准备最坏」</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/01/mediators-continue-us-iran-negotiations-amid-war-rhetoric-what-we-know">Al Jazeera / 两日复航条件清单</a></li>
+        <li><a href="https://www.newsquawk.com/headlines/newsquawk-daily-asia-pac-opening-news---2nd-november-2026">Newsquawk / 特朗普与鲁比奥表态</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>奥列什基停火到期；周六夜433架无人机；周日白天再打326架</h3>
+      <p class="why">为何重要：局部停火如期结束且俄方拒绝延期，能源打击从隔夜一波变成白天接着打。</p>
+      <div class="summary"><p>周六夜433架无人机、击落或压制371架。泽连斯基称四州能源设施遭袭，仍有数十万户停电。周日白天06:30–19:00再有326架无人机及6枚班德罗尔，击落274架并拦截全部6枚。奥列什基停火于基辅时间周日22:59到期。官方空袭警报应用一度遭干扰，军方澄清无辐射威胁。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/01/8060713/">Ukrainska Pravda / 四州能源设施（2026-11-01）</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/01/8060690/">Ukrainska Pravda / 433/371无人机</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/01/ukraine-evacuates-civilians-in-kherson-region-as-localised-ceasefire-ends">Al Jazeera / 奥列什基停火到期</a></li>
+        <li><a href="https://www.bbc.com/news/articles/c64g1y90p71eo">BBC / 停火结束与文尼察伤亡</a></li>
+        <li><a href="https://www.radiosvoboda.org/a/news-povitrjani-syly-drony-rf-den-1-lystopada/33888424.html">Radio Svoboda / 周日白天326/274</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海31–1日官方32机/7舰/2公务船（26架次逾中线）</h3>
+      <p class="why">为何重要：1日早报该窗口尚未公布；午后22架次联合警巡已含在06:00窗口内，不可再加计。</p>
+      <div class="summary"><p>31日6时至1日6时：共机32架次（26架次逾中线进入北、中、西南及东部空域）、共舰7艘、公务船2艘。该窗口覆盖31日13:15起单独通报的22架次联合战备警巡。英文列表最新条目仍为2026.11.01；1–2日窗口截稿时未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/News/PLAAct/88102">台湾国防部英文通报（31–1日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/EN/news/PlaactList">台湾国防部英文列表（截至今晨）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202611010016.aspx">中央社 / 32机26逾中线（2026-11-01）</a></li>
+        <li><a href="https://www.mnd.gov.tw/En/Publication/88101">国防部中文区域动态（31–1日）</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>币安提现开关已打开：首日净流出36.4亿美元，补仓约95%</h3>
+      <p class="why">为何重要：开关已经打开，用户用脚投票的数字也出来了，但零知识证明和其余网络仍未写完。</p>
+      <div class="summary"><p>周日06:00 UTC起分阶段重开，12:36 UTC首批15条网络全部打开。06:00–15:30 UTC提现46.49亿美元、入金10.1亿，净流出约36.4亿美元，约合管理资产2.1%。补仓约95%。更新版准备金报告预计11月2日上线，完整零知识证明此前预计11月3日。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/">TechCrunch / 提现重开与46亿提现（2026-11-01）</a></li>
+        <li><a href="https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack">CoinDesk / 分阶段重开、补仓95%</a></li>
+        <li><a href="https://www.streetinsider.com/Reuters/Binance+resumes+bitcoin%2C+ether+withdrawals+after+covering+bulk+of+stolen+%246.3+billion/27267615.html">Reuters / 净流出36.4亿美元</a></li>
+        <li><a href="https://exchange.news/news/binance-withdrawals-4-65-billion-net-outflow-2-1-percent-proof-of-reserves/">exchange.news / 官方16:12 UTC更新</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>OpenAI把本轮融资目标从约300亿下调到约200亿美元</h3>
+      <p class="why">为何重要：纳指科技抛售不只打上市公司——私人市场里最贵的那张估值票据，也在同一周被改了价格。</p>
+      <div class="summary"><p>OpenAI本轮融资目标下调至约200亿美元，投后估值目标由约1.4万亿美元降至约1.25万亿美元。截至10月31日期限约110亿美元已获承诺，首轮交割预计低于200亿美元。报道归因于AI股抛售与Anthropic预计上市分流。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ft.com/content/bb564eb1-79d4-4694-aa24-1155202a9abc">Financial Times / 估值目标降至1.25万亿美元</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html">CNBC / 融资目标下调至约200亿美元（2026-10-31）</a></li>
+        <li><a href="https://www.cnbc.com/2026/10/31/openai-funding-target-cut-10-billion.html">CNBC / FT：目标砍100亿美元</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>中期选举倒计时1天：提前投票已逾5200万张</h3>
+      <p class="why">为何重要：全国提前票已推过5200万，得州提前窗口已经关门，剩下的是尚未投票的人和周二的箱子。</p>
+      <div class="summary"><p>路透引述佛罗里达大学：全美提前投票已逾5200万张，高于2022年中期全部提前票近4600万。得州提前票约761.5万，哈里斯县逾100万。共和党守卫参议院53–47。能源价格、对伊战事与生活成本仍是主轴。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.investing.com/news/politics-news/trump-heads-to-iowa-kansas-for-rallies-before-midterms-4989654">Reuters / 逾5200万张提前票（2026-11-01）</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/01/more-than-50-million-votes-cast-in-us-midterm-elections-what-does-it-mean">Al Jazeera / UF实验室约5314万</a></li>
+        <li><a href="https://www.khou.com/article/news/politics/elections/texas-early-voting-numbers/285-ab5bc4f5-f820-4df8-bc57-d3ed0f008beb">KHOU / 得州761.5万、哈里斯县逾100万</a></li>
+        <li><a href="https://apnews.com/article/trump-iowa-kansas-republicans-midterms-d66c92d2c171cf4dc434078c64cf2cd1">AP / 周日爱荷华与堪萨斯终盘</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>特朗普周日爱荷华+堪萨斯连场；称或成「否决先生」</h3>
+      <p class="why">为何重要：终盘改回两场农带集会，目标是两年来不该这么紧的参议员席位。</p>
+      <div class="summary"><p>特朗普周日先到爱荷华迪比克，再赴堪萨斯塞莱纳机场为参议员马歇尔助选。对手亚当·汉密尔顿获民主党约6200万美元电视广告。堪萨斯提前票已逾42.2万张。特朗普称若民主党拿下国会，自己可能变成「否决先生」。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.investing.com/news/politics-news/trump-heads-to-iowa-kansas-for-rallies-before-midterms-4989654">Reuters / 爱荷华与堪萨斯集会</a></li>
+        <li><a href="https://apnews.com/live/midterm-elections-trump-news-updates-11-01-2026">AP / 塞莱纳机场为马歇尔助选</a></li>
+        <li><a href="https://apnews.com/article/trump-iowa-kansas-republicans-midterms-d66c92d2c171cf4dc434078c64cf2cd1">AP / 农带选情与国会控制权</a></li>
+        <li><a href="https://www.newsquawk.com/headlines/newsquawk-daily-asia-pac-opening-news---2nd-november-2026">Newsquawk / 「否决先生」与行政令预案</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>周一亚太现金开盘</strong> — 日经、韩国、台湾、A股与港股如何消化纳指抛售、OPEC+公报与霍尔木兹周日事故。</li>
+    <li><strong>币安准备金报告与11月3日零知识证明</strong> — 今日PoR页面是否上线，以及其余网络何时打开。</li>
+    <li><strong>中期选举最后24小时与11月4日军事窗口</strong> — 鲁比奥「尚未决定」会否在投票日后变成时间表。</li>
+    <li><strong>霍尔木兹周日两艘事故的船名对账</strong> — 跟踪UKMTO/阿曼/卡塔尔船名与两日复航文本。</li>
+    <li><strong>奥列什基停火结束后的左岸与电网</strong> — 人道走廊是否回潮、第聂伯罗近10万户停电能否稳住。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-02 07:10 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
