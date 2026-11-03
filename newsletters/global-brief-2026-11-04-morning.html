@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月4日早报">
+<title>早报 · 2026年11月4日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月4日</h1>
+  <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月3日早报（3日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：选举日美股芯片反弹、美军对格什姆岛实施6月以来首次打击；俄军289架无人机加巡航与弹道导弹合成突击；台海共机49架次创2026年单日最高；澳储银加息至4.85%。上海日历已进入美国选举夜，美东此时约周二18:05，首批投票站刚关，尚无国会席位被宣布。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>周二美股分化：道指-0.38%报51,786.72，标普+0.36%报7,568.92，纳指+0.83%报25,372.01。布伦特结算-1.12%报103.60美元，WTI -0.38%报96.09美元。十年期美债约4.951%。苹果约-1.8%；AMD盘后约+8%。</li>
+    <li><span class="tag">更新</span>亚太周二：日经文化日休市。韩国-3.59%报5,648.79，台股-3.59%报43,307.54，上证-0.82%报3,608.10，恒指+0.57%。澳储银加息至4.85%；外汇存款准备金率4%调至6%。</li>
+    <li><span class="tag">更新</span>美军周一夜间对格什姆岛实施「防御性」打击，为6月以来对该岛首次动手。卡塔尔在德黑兰谈了三小时；伊方称仍相距甚远。油价冲高后回落。</li>
+    <li><span class="tag">更新</span>乌克兰2日夜289架无人机、59枚巡航导弹及17枚弹道导弹；防空击落或压制309个目标。过去一日至少38死/167伤。科梅舒瓦哈人道点至少31人遇难。</li>
+    <li><span class="tag">更新</span>台海2–3日官方：共机49架次（31架次进入中西南东）、共舰6艘、公务船6艘，2026年单日最高。3–4日窗口未公布。</li>
+    <li><span class="tag">更新</span>币安第6份更新：04:00 UTC起九条网络分批重开更多资产提现。下一次更广覆盖快照定在今日。比特币约7.77万美元。</li>
+    <li>AMD第三季营收133.8亿美元（+45%），数据中心+97%；第四季指引约170亿美元。盘后约+8%。苹果现金盘消化毛利率指引。</li>
+    <li><span class="tag">更新</span>美国中期选举夜开局：提前票约5910万–6010万张。肯塔基、印第安纳部分投票站刚关；参议院0/35、众议院0/435尚未被宣布。</li>
+    <li><span class="tag">更新</span>最高法院周一晚否决司法部紧急申请，加州约2万张争议邮寄选票不必隔离。</li>
+    <li>部分机构投资者把Anthropic IPO估值压向约1.5万亿–1.6万亿美元，低于近期约2万亿讨论。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>选举日美股：芯片把纳指拉回来，苹果把道指按下去</h3>
+      <p class="why">为何重要：芯片超卖可以买一点，谈和溢价还没死，但苹果毛利率指引和十年期回升提醒账单没有消失。</p>
+      <div class="summary"><p>道指-0.38%报51,786.72，标普+0.36%报7,568.92（结束三日连跌），纳指+0.83%报25,372.01。纳斯达克100仍较近期高点回撤约10%。WTI结算96.09美元（-0.38%），布伦特103.60美元（-1.12%）。十年期美债约4.951%。苹果近-2%拖住道指；AMD、博通、美光、英伟达反弹。AMD盘后因财报再涨约8%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html">CNBC / 周二美股与布伦特103.60美元（2026-11-03）</a></li>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-95ac47c160dba546cbbdf72c10010e2c">AP / 周二指数</a></li>
+        <li><a href="https://www.marketwatch.com/story/u-s-stocks-mixed-amid-midterm-iran-war-nerves-1910f17e">MarketWatch / 道指与十年期美债</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/03/oil-prices-climb-after-us-reportedly-strikes-irans-qeshm-island.html">CNBC / 原油第二日下跌</a></li>
+        <li><a href="https://edgeconsultancykw.com/commodities-wrap-03-november-2026/">The Edge / WTI与布伦特结算</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>亚太：韩台芯片再摔逾3%；澳储银加到4.85%</h3>
+      <p class="why">为何重要：首尔和台北把周一芯片抛售一次结清；堪培拉把中东能源通胀写成18年最高现金利率。</p>
+      <div class="summary"><p>日经文化日休市。韩国综指-3.59%报5,648.79，台股-3.59%报43,307.54，上证-0.82%报3,608.10，恒指+0.57%报23,525.97。澳储银6比3加息25基点至4.85%，ASX 200仍+0.34%报8,886.8。央行宣布11月15日起外汇存款准备金率由4%调至6%。日韩现金盘截稿未开。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://en.infomaxai.com/news/articleView.html?idxno=146721">Yonhap Infomax / 亚太收盘综述</a></li>
+        <li><a href="https://news.rthk.hk/rthk/en/component/k2/1876397-20261103.htm">RTHK / 港股与内地稳市</a></li>
+        <li><a href="https://www.rba.gov.au/media-releases/2026/mr-26-30.html">RBA / 现金利率上调至4.85%</a></li>
+        <li><a href="https://english.news.cn/20261103/675daab9069d4063ab6569a54fd89292/c.html">新华社 / 外汇存款准备金率调至6%</a></li>
+        <li><a href="https://www.marketindex.com.au/news/evening-wrap-asx-200">Market Index / ASX 200收于8886.8</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>美军打格什姆岛，卡塔尔在德黑兰谈了三小时</h3>
+      <p class="why">为何重要：授权还在，周一夜间的导弹也在，两条轨道并行，选举夜被市场当成下一道闸门。</p>
+      <div class="summary"><p>美官员称对格什姆岛实施防御性打击，目标为对美资产发射的防空导弹，为6月以来对该岛首次动手。卡塔尔代表团同晚在德黑兰谈了三小时；伊方称仍相距甚远。油价早盘因打击冲高后回落，把这一轮读成有限。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aljazeera.com/news/2026/11/3/us-hits-qeshm-island-pezeshkian-signals-more-diplomacy-iran-war-latest">Al Jazeera / 格什姆岛打击与斡旋并行（2026-11-03）</a></li>
+        <li><a href="https://www.iranintl.com/en/202611035599">Iran International / 卡塔尔谈三小时</a></li>
+        <li><a href="https://www.al-monitor.com/originals/2026/11/iran-us-still-far-apart-deal-end-war-qatar-pushes-mediation">Al-Monitor / 伊方称仍相距甚远</a></li>
+        <li><a href="https://www.marketwatch.com/story/oil-settles-lower-as-market-holds-out-hope-for-middle-east-diplomacy-3nd-update-5e0c6814">MarketWatch / 油价结算与格什姆</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/03/oil-prices-climb-after-us-reportedly-strikes-irans-qeshm-island.html">CNBC / 布伦特103.60、WTI 96.09</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰夜间合成突击：289机、59巡航、17弹道</h3>
+      <p class="why">为何重要：喷气式、巡航导弹和弹道导弹同一夜到齐，人道点、医院和电站被放进同一张打击清单。</p>
+      <div class="summary"><p>2日夜至3日晨289架无人机（120架喷气式）、59枚巡航导弹及17枚弹道导弹；防空击落或压制309个目标。过去一日至少38死/167伤。科梅舒瓦哈人道物资点至少31人遇难；哈尔科夫医院伤约73人。3–4日夜间官方窗口截稿时未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/03/8060979/">Ukrainska Pravda / 309个目标（2026-11-03）</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-across-ukraine-kill-38-injure-158-as-russia-hits-dnipro-hospitals-in-morning-missile-strike/">Kyiv Independent / 38死167伤</a></li>
+        <li><a href="https://www.bbc.com/news/articles/c65ynez5y599o">BBC / 科梅舒瓦哈人道点</a></li>
+        <li><a href="https://apnews.com/article/russia-ukraine-humanitarian-attack-drones-power-264da8725dc2bb1f0039a698a59af9fc">AP / 人道点死亡升至31人</a></li>
+        <li><a href="https://www.euronews.com/2026/11/03/russia-pounds-ukraine-with-289-drones-and-17-ballistic-missiles-in-overnight-strikes-zelen">Euronews / 17枚弹道与下周谈判</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海2–3日官方49机/6舰/6公务船（31架次进入中西南东）</h3>
+      <p class="why">为何重要：机次跳到2026年单日最高；未公布窗口不能写成零出动。</p>
+      <div class="summary"><p>2日6时至3日6时：共机49架次（31架次进入中部、西南及东部空域）、共舰6艘、公务船6艘。英文列表最新条目仍为2026.11.03；3–4日窗口截稿时未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/EN/news/plaact/88121">台湾国防部英文通报（2–3日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/EN/news/PlaactList">台湾国防部英文列表（截至今晨）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202611030037.aspx">中央社 / 49机31架次进入中西南东</a></li>
+        <li><a href="https://www.taiwanplus.com/news/taiwan-news/military/261103008/chinese-military-sorties-around-taiwan-hit-single-day-high-for-2026">TaiwanPlus / 2026年单日最高架次</a></li>
+        <li><a href="https://www.taipeitimes.com/News/taiwan/archives/2026/11/04/2003867122">Taipei Times / 灰色地带施压</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>币安第6份更新：九条网络分批重开，快照盯住今天</h3>
+      <p class="why">为何重要：开关已经拧过一圈，但拧开的是资产–网络配对，不是失窃已经补完。</p>
+      <div class="summary"><p>11月3日04:00 UTC起在九条网络分批重开更多资产提现；以太坊先开五种稳定币，随后再开数十个ETH与SOL代币。补仓仍约95%。下一次更广覆盖快照定在今日。比特币约7.77万美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.binance.com/en/support/announcement/detail/2d83c325ab6e49c6bd6c5de8803b11a6">Binance / Recovery Update #6（2026-11-03）</a></li>
+        <li><a href="https://crypto.news/binance-restores-withdrawals-for-more-ethereum-solana-tokens-after-6-3b-hack/">Crypto.news / 以太坊与Solana第二批</a></li>
+        <li><a href="https://cryptowatchdesk.com/news/binance-reopens-withdrawals-second-batch-assets-nine-networks-recovery-update-6">CryptoWatchDesk / 九条网络分批打开</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>AMD季报：数据中心近乎翻倍，盘后约+8%</h3>
+      <p class="why">为何重要：这张财报会成为周三亚太开盘给芯片链的第一张定价单，也要和苹果毛利率指引放在同一把尺子上。</p>
+      <div class="summary"><p>AMD第三季营收133.8亿美元（+45%），数据中心85.5亿（+97%），调整后EPS 2.09美元；第四季营收指引约170亿美元（±3%）。盘后约+8%–9%。苹果现金盘近-2%。部分投资者把Anthropic IPO估值压向约1.5万亿–1.6万亿美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results">AMD / 2026年第三季财报</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html">CNBC / AMD盘后约+8%</a></li>
+        <li><a href="https://ca.investing.com/news/earnings/amd-stock-jumps-after-hours-as-quarterly-results-revenue-guidance-beat-estimates-4926884">Investing.com / 第四季指引170亿</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/anthropics-quarterly-loss-shrinks-revenue-jumps-ahead-of-blockbuster-ipo-4992139">Reuters / Anthropic估值下修讨论</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>选举夜开局：提前票约6000万，零席被宣布</h3>
+      <p class="why">为何重要：箱子已经开始关，但还没有任何一张「当选」标签可以贴上国会席位。</p>
+      <div class="summary"><p>提前投票已升至约5910万–6011万张。肯塔基、印第安纳部分投票站美东18:00关闭。卫报17:18 EST：参议院0/35、众议院0/435尚未被宣布。北卡因设备故障推迟至少45分钟。民主党翻众议院仍需净得3席。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.theguardian.com/us-news/ng-interactive/2026/nov/03/midterm-elections-full-results-senate-house-governor-races">The Guardian / 选举夜互动（0席已宣布）</a></li>
+        <li><a href="https://www.nbcnews.com/politics/2026-elections/early-vote">NBC / 提前票约6011万</a></li>
+        <li><a href="https://www.nbcnews.com/politics/2026-elections/senate-results">NBC / 参议院尚未开计</a></li>
+        <li><a href="https://www.npr.org/2026/11/03/nx-s1-5992757/election-day-live-updates-key-races">NPR / 首批18:00关闭</a></li>
+        <li><a href="https://www.foxnews.com/live-news/election-day-results-11-3-2026">Fox / 北卡推迟45分钟</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>最高法院否决隔离加州约2万张争议邮寄选票</h3>
+      <p class="why">为何重要：大法官在选举前夜用一句话把联邦最后一次干预挡下。</p>
+      <div class="summary"><p>最高法院周一晚以一句话、无异议否决司法部紧急申请。加州约2万张争议邮寄选票不必隔离，可照常计入。第九巡回与地方法院此前已驳回。加州已收回逾600万张邮寄票。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cbsnews.com/news/supreme-court-rejects-trump-california-mail-ballots-alleged-noncitizens/">CBS / 最高法院驳回隔离申请（2026-11-02）</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/02/supreme-court-california-mail-ballots-election.html">CNBC / 一句话裁定、无异议</a></li>
+        <li><a href="https://www.scotusblog.com/2026/11/court-wont-intervene-in-california-ballot-dispute/">SCOTUSblog / 26A624申请被拒</a></li>
+        <li><a href="https://www.bbc.com/news/articles/cm5ynekkn5qko">BBC / 下级法院判断有效</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>美国中期选举开票</strong> — 美东18:00之后席位宣布节奏；众议院控制权在2022年曾耗时数日。</li>
+    <li><strong>选举后对伊军事窗口与调解方案</strong> — 格什姆岛有限打击会否扩大，草案能否写成时间表。</li>
+    <li><strong>币安今日更广覆盖快照</strong> — 11月4日快照是否按时拍摄，九条网络剩余资产何时通过核验。</li>
+    <li><strong>AMD财报在亚太开盘的定价</strong> — 日韩台如何消化盘后约+8%与苹果毛利率指引。</li>
+    <li><strong>乌克兰3–4日官方08:00窗口</strong> — 合成突击后的电网与医院，以及威特科夫所称下周谈判。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-04 07:10 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
