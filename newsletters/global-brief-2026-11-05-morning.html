@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月5日早报">
+<title>早报 · 2026年11月5日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月5日</h1>
+  <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月4日早报（4日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：民主党拿下参众两院；道指+3.03%、布伦特约-8.7%；特朗普确认格什姆岛「小打」同时承认战争伤了票；乌克兰310机、科梅舒瓦哈死亡升至40人；币安补仓约98%。东京、首尔现金盘截稿未开。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>民主党拿下国会：参议院至少54–44，净翻至少7席（含得州、堪萨斯、南卡）；阿拉斯加与密西西比仍未宣布。众议院至少净得28席、至少222席。万斯把败选写成「就是战争」；舒默称将用拨款权结束战争。</li>
+    <li><span class="tag">更新</span>周三美股大涨、原油重挫：道指+3.03%报53,356.12，标普+1.58%报7,688.62，纳指+1.44%报25,736.51。布伦特约-8.67%报94.62美元，WTI约-8.29%报88.12美元。十年期美债约4.89%；黄金重回约4,060美元；比特币约8.0万美元。</li>
+    <li><span class="tag">更新</span>亚太周三：日经-1.42%报62,188.63（盘中近-4.8%），韩国+0.62%报5,683.80，台股-0.83%，上证+2.16%，恒指+1.67%。周四日韩现金未开；恒指缺口约+2.3%，ASX期货约+1.9%。</li>
+    <li><span class="tag">更新</span>特朗普确认格什姆岛打击是「小规模」「不是战争」。礼萨伊重申七项条件未获令人信服的回应。油价交易的是1月才就职的新国会。</li>
+    <li><span class="tag">更新</span>乌克兰3–4日官方：310架无人机（81架喷气式），防空击落或压制272架。科梅舒瓦哈人道点死亡升至40人。阿布扎比三边谈判定于11月10–11日。4–5日窗口未公布。</li>
+    <li><span class="tag">更新</span>台海3–4日官方：共机22架次（14架次进入西南东）、共舰7艘、公务船5艘。4日11:08起另有14架次出海、12架次越中线。4–5日完整窗口未公布。</li>
+    <li><span class="tag">更新</span>币安第7份更新：补仓约98%；11月4日00:00 UTC快照覆盖44个代币；完整零知识证明仍需约50–60小时。比特币约8.0万美元。</li>
+    <li>高通指引偏弱盘后约-6%，手机芯片-26%；Arm版税不及预期盘后约-3.8%；AppLovin盘后约+18%。费城半导体指数约-3.1%。</li>
+    <li><span class="tag">更新</span>得州塔拉里科赢参议院、希诺霍萨赢州长；赛义德成首位穆斯林联邦参议员；杰夫里斯料成首位黑人众议院议长。</li>
+    <li>10月ISM服务业54.5；ADP私营就业+8.6万。欧元区10月通胀快报4.0%。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>开票日美股：道指+3%，油价-8%，芯片把监管先付现</h3>
+      <p class="why">为何重要：投票箱把「分裂政府少立法」写成蓝筹反弹，把「国会会逼停霍尔木兹战争」写成原油两月低点。</p>
+      <div class="summary"><p>道指+3.03%报53,356.12（2025年4月9日以来最大单日涨幅），标普+1.58%报7,688.62，纳指+1.44%报25,736.51。布伦特结算约94.62美元（-8.67%），WTI约88.12美元（-8.29%）。十年期美债约4.89%。苹果约+5.3%、微软约+6.7%；费城半导体指数约-3.1%。黄金重回约4,060美元，比特币约8.0万美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-c0be7ca45b5875abe758e0570cb9a265">AP / 周三指数（2026-11-04）</a></li>
+        <li><a href="https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182">AP / 标普三个月最佳</a></li>
+        <li><a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-wall-street-ends-higher-after-democrats-win-congress-data-centre-stocks-tumble">Business Times / 道指与能源板块</a></li>
+        <li><a href="https://en.sedaily.com/international/2026/11/05/oil-plunges-8-percent-on-hopes-for-wars-end-after">Seoul Economic Daily / 布伦特94.62、WTI 88.12</a></li>
+        <li><a href="https://www.fxstreet.com/news/gold-reclaims-4-000-as-us-midterm-sweep-sinks-usd-oil-plunges-202611041803">FXStreet / 黄金与十年期美债</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>亚太：日韩台先给芯片付现，内地稳市工具把缺口买回来</h3>
+      <p class="why">为何重要：开盘先买AMD财报，随后把民主党横扫读成数据中心监管；内地用超过2000亿元再贷款申请把稳市写成真金白银。</p>
+      <div class="summary"><p>日经-1.42%报62,188.63（盘中近-4.8%），韩国综指+0.62%报5,683.80，台股-0.83%报42,948.91，上证+2.16%报3,686.17，恒指+1.67%报23,919.50。央行称股票增持再贷款申请已超2000亿元。周四日韩现金未开；恒指缺口约+2.3%，ASX期货约+1.9%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://news.rthk.hk/rthk/en/component/k2/1876550-20261104.htm">RTHK / 港股与上证（2026-11-04）</a></li>
+        <li><a href="https://globalmarketnow.org/news/asia-stocks-today-nikkei-falls-tokyo-reopens-china-jumps/">Global Market Now / 日经与韩台收盘</a></li>
+        <li><a href="https://themarketonline.com.au/market-open-asx-set-for-sharp-rebound-as-wall-street-rallies-and-oil-tumbles-2026-11-05/">The Market Online / 周四ASX期货</a></li>
+        <li><a href="https://www.marketindex.com.au/news/morning-wrap-asx-200-to-rise-s-and-p-500-and-nasdaq-rally-on-democratic">Market Index / 晨间综述</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>特朗普把格什姆岛写成「小打」；国会把战争写成拨款案</h3>
+      <p class="why">为何重要：总统定性「不是战争」，副总统把败选写成「就是战争」，多数党领袖把结束战争写成钱袋子。三条句子同时有效。</p>
+      <div class="summary"><p>特朗普确认打击一座建了约两个月的防空设施，「小规模」「不是战争」。礼萨伊重申美方对七项条件的回应不能令人信服。万斯称「我们输就是因为战争」；舒默称将用拨款权结束战争。新国会1月才就职。油价已先行交易这条路径。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes">Al Jazeera / 特朗普确认打击（2026-11-04）</a></li>
+        <li><a href="https://abcnews.com/amp/Politics/vance-blames-iran-war-republicans-midterms-defeat-trump/story?id=137849295">ABC / 万斯归咎战争</a></li>
+        <li><a href="https://thehill.com/homenews/senate/6198699-schumer-republicans-iran-war-end/">The Hill / 舒默与拨款权</a></li>
+        <li><a href="https://www.reuters.com/3fec1b0a85a0/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/">Reuters / 开票后白宫</a></li>
+        <li><a href="https://en.sedaily.com/international/2026/11/05/oil-plunges-8-percent-on-hopes-for-wars-end-after">Seoul Economic Daily / 油价与万斯</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰3–4日310机；科梅舒瓦哈死亡升至40人</h3>
+      <p class="why">为何重要：没有巡航和弹道的那一夜仍有310架；废墟下的数字还在涨；阿布扎比已经写出日期。</p>
+      <div class="summary"><p>3日18:00至4日08:00：310架无人机（81架喷气式），防空击落或压制272架，19处遭击中。科梅舒瓦哈人道点死亡升至40人，废墟下或仍有30余人。泽连斯基与威特科夫、库什纳通话90分钟；阿布扎比谈判定于11月10–11日。4–5日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/04/8061162/">Ukrainska Pravda / 310机272拦截（2026-11-04）</a></li>
+        <li><a href="https://www.kyivpost.com/post/89068">Kyiv Post / 能源与敖德萨</a></li>
+        <li><a href="https://apnews.com/article/ukraine-russia-war-kyiv-airstrike-water-37dc5e85a5c8c135996bc2720e0674d9">AP / 死亡升至40、基辅停电</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1231196.html">Interfax-Ukraine / 泽连斯基：40死</a></li>
+        <li><a href="https://www.kyivpost.com/post/89174">Kyiv Post / 与威特科夫通话90分钟</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海3–4日官方22机/7舰/5公务船；白天再出联合警巡</h3>
+      <p class="why">为何重要：机次从49回落到22，不能把回落读成收兵；当天下午国防部又写了一行联合战备警巡。</p>
+      <div class="summary"><p>3日6时至4日6时：共机22架次（14架次进入西南及东部空域）、共舰7艘、公务船5艘。4日11:08起另有14架次出海，其中12架次越中线进入北、中、西南空域。4–5日完整窗口截稿时未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/En/News/PLAAct/88141">台湾国防部英文通报（3–4日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/EN/news/PlaactList">台湾国防部英文列表（截至今晨）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202611040038.aspx">中央社 / 22机7舰5公务船</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202611040264.aspx">中央社 / 12架次越中线联合警巡</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>币安第7份更新：补仓约98%，快照扩到44个代币</h3>
+      <p class="why">为何重要：快照已经拍下，覆盖从10个代币扩到44个；可核验的完整证明仍要再等两到三天。</p>
+      <div class="summary"><p>补仓约98%，余下约2%为低流动性代币。11月4日00:00 UTC新快照覆盖44个代币；完整零知识证明约需50–60小时。提现仍分阶段重开。调查初报称入口包括假招聘面试木马。比特币约8.0万美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.binance.com/en/support/announcement/detail/c6ba9aa726974fc6b9332a2c8f63b405">Binance / Recovery Update #7（2026-11-04）</a></li>
+        <li><a href="https://www.cryptotimes.io/2026/11/04/binance-replenishes-98-of-assets-affected-by-6-3b-security-incident/">CryptoTimes / 补仓98%</a></li>
+        <li><a href="https://www.bbc.com/news/articles/ck5ynwz9gy67o">BBC / 假面试与内部AI工具</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>高通指引偏弱盘后约-6%；Arm版税不及预期</h3>
+      <p class="why">为何重要：选举把数据中心监管写进费城半导体指数的-3%；盘后再来两张手机和版税的账单，给周四亚太留下第二张定价单。</p>
+      <div class="summary"><p>高通调整后EPS 2.17美元、营收104.4亿美元，当季指引弱于预期，手机芯片-26%至51.4亿美元，盘后约-6%。Arm版税6.70亿美元低于预期，盘后约-3.8%。AppLovin营收21.8亿美元（+55%），盘后约+18%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/04/qualcomm-qcom-earnings-report-q4-2026.html">CNBC / 高通盘后约-6%（2026-11-04）</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/why-is-arm-stock-sliding-today-93CH-5001498">Investing.com / Arm版税不及预期</a></li>
+        <li><a href="https://seekingalpha.com/news/4665578-applovin-shares-rally-as-q3-results-top-estimates-q4-outlook-beats">Seeking Alpha / AppLovin盘后约+18%</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html">CNBC / AMD季报与选举夜定价</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>民主党拿下参众两院：至少7席翻盘，得州改色</h3>
+      <p class="why">为何重要：投票箱已经把2027年1月起的分裂政府写成法律事实，只差阿拉斯加与密西西比两席把54写成56。</p>
+      <div class="summary"><p>参议院至少54–44，净翻至少7席，含得州塔拉里科、堪萨斯汉密尔顿。众议院至少净得28席、至少222席。希诺霍萨拿下得州州长；赛义德成首位穆斯林联邦参议员；杰夫里斯料成首位黑人议长。约翰逊表示明年不再领导党团。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/3fec1b0a85a0/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/">Reuters / 参院至少54–44、众院至少+28（2026-11-04）</a></li>
+        <li><a href="https://www.npr.org/2026/11/04/nx-s1-6027319/democrats-sweep-senate-and-house-in-a-resounding-rebuke-to-trump-gop">NPR / 七席翻盘名单</a></li>
+        <li><a href="https://www.nbcnews.com/politics/2026-election/democrats-capture-full-control-congress-nbc-news-projects-fueled-victo-rcna607042">NBC / 国会两院易手</a></li>
+        <li><a href="https://www.bbc.com/news/articles/cmr4y92rgd9po">BBC / 得州塔拉里科与希诺霍萨</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3>万斯把败选写成伊朗战争；特朗普说「再来一次还是会打」</h3>
+      <p class="why">为何重要：白宫承认油价伤了票，但没有改口；新多数要到1月才有拨款权，12月临时拨款仍在共和党手里。</p>
+      <div class="summary"><p>万斯称「我们输就是因为战争」。特朗普称大体正确，但再来一次仍会打，且拥有否决权。舒默称将用钱袋子结束战争。ABC选民调查：腐败约55%、生活成本约49%、伊朗战争约34%对其投票至关重要。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://abcnews.com/amp/Politics/vance-blames-iran-war-republicans-midterms-defeat-trump/story?id=137849295">ABC / 万斯归咎战争、特朗普称值得（2026-11-04）</a></li>
+        <li><a href="https://www.foxnews.com/politics/trump-couldnt-transfer-love-supporters-other-republicans-amid-historic-midterm-loss">Fox / 特朗普：没法转移支持者的爱</a></li>
+        <li><a href="https://thehill.com/homenews/senate/6198699-schumer-republicans-iran-war-end/">The Hill / 舒默与拨款权</a></li>
+        <li><a href="https://www.reuters.com/3fec1b0a85a0/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/">Reuters / 特朗普称大概能与民主党相处</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>12月拨款与1月战争权力</strong> — 跛脚鸭期共和党仍可塞进优先事项；舒默的钱袋子要到1月才换手。</li>
+    <li><strong>阿布扎比11月10–11日三边谈判</strong> — 梅金斯基再出场；地点有了，停火没有。</li>
+    <li><strong>币安零知识证明</strong> — 44币快照完整证明约50–60小时；全量提现仍无日期。</li>
+    <li><strong>高通与Arm在亚太开盘的定价</strong> — 手机芯片-26%与版税不及预期如何被消化。</li>
+    <li><strong>台海4–5日与乌克兰4–5日官方窗口</strong> — 白天12架次越线尚未写入完整统计；基辅此时约01:00。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-05 07:10 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
