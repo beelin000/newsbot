@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月8日早报">
+<title>早报 · 2026年11月8日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月8日</h1>
+  <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月7日早报（7日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：周末休市、周一亚太开盘；CENTCOM打残货轮Huda并组建「铁门」特遣队；乌克兰36枚弹道打基辅、北桥封闭、科梅舒瓦哈死亡升至55人；台海11机/9架次越线；泽连斯基警告「雅尔塔2.0」。亚太与华尔街现金盘今日休市。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>周末休市。周五仍是最后锚：道指-0.46%报51,285.73，标普+0.31%报7,376.86，纳指+1.09%报24,579.42。十年期约4.86%，FedWatch十二月约77%。日经周五-5.96%，韩国-6.02%。比特币约7.57万美元。明日周一亚太开盘。</li>
+    <li><span class="tag">更新</span>美国现货比特币ETF周五净流出4.119亿美元（IBIT赎回4.030亿），11月2–6日五个交易日合计约-12.82亿美元。</li>
+    <li><span class="tag">更新</span>CENTCOM7日在阿曼湾打残圣基茨旗货轮M/V Huda船尾。自7月以来改道147艘、打残5艘，并摧毁10艘影子油轮。同日组建「铁门」特遣队盯陆路与里海。</li>
+    <li><span class="tag">更新</span>霍尔木兹周六再有船触雷起火。UKMTO一周至少11艘遭袭、3艘沉没，进出峡约-65%。特朗普称格什姆为「小规模打击」。革命卫队称2,000公里射程限制已解除。胡塞宣称袭击利雅得，沙特未评论。</li>
+    <li><span class="tag">更新</span>乌克兰6–7日官方：172架无人机（137架喷气式）加导弹，防空击落或压制4枚导弹与149架无人机。泽连斯基称36枚弹道全部对准基辅及州。北桥双向封闭。科梅舒瓦哈死亡升至55人。7–8日窗口未公布。</li>
+    <li><span class="tag">更新</span>台海6–7日官方：共机11架次（9架次越中线进入北、西南）、共舰10艘、公务船3艘。7–8日完整窗口未公布。</li>
+    <li><span class="tag">更新</span>币安仍无第10份更新。滕天籁确认目标下周内重开HYPE、INJ、APT、PLASMA、NEAR、LTC。补仓仍约98%。比特币约7.57万美元。</li>
+    <li><span class="tag">更新</span>Vox：赛义德主张前沿研究全面暂停；坎特韦尔框架含强制安全标准与独立测试；马基称将印「整片森林」的传票。地方公投约40/41项限制数据中心。</li>
+    <li><span class="tag">更新</span>泽连斯基对CNN称特朗普的欧洲安全安排有「雅尔塔2.0」风险，拒绝交出顿巴斯。阿布扎比11月10–11日俄方升格梅金斯基带队、里亚布科夫首次参加。</li>
+    <li><span class="tag">更新</span>阿拉斯加仍差约637票、约74%已计；密西西比仍约2,500票，誓证书法律战开打。参议院仍至少54–44。美联社众议院约254–162，约19席未决。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>周末休市：周五现金盘仍是锚，周一亚太要对6%的账单</h3>
+      <p class="why">为何重要：非农、加息概率与日韩各跌约6%都还停在周五；开盘前能更新的只有比特币还在流出。</p>
+      <div class="summary"><p>道指-0.46%报51,285.73，标普+0.31%报7,376.86，纳指+1.09%报24,579.42。十年期约4.86%，FedWatch十二月约77%。日经-5.96%报57,434.77，韩国-6.02%。布伦特结算98.32美元。比特币约7.57万美元。现货比特币ETF周五净流出4.119亿美元，五会话约-12.82亿。股指期货约上海时间周一07:00才开盘。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-806f71d95105bc7efbc760b194dd8cad">AP / 周五指数（2026-11-06）</a></li>
+        <li><a href="https://www.foxbusiness.com/markets/stocks-11-6-2026">Fox Business / 纳指+1.09%</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/06/treasury-yields-inch-lower-as-investors-look-ahead-to-key-jobs-data-.html">CNBC / 十年期约4.86%</a></li>
+        <li><a href="https://tradinggain.io/news/crypto-market-today-8-november-2026-1834/">TradingGain / 比特币约75,691美元</a></li>
+        <li><a href="https://cryptowatchdesk.com/news/etf-desk-nov-6-bitcoin-etfs-412-million-outflow-ibit-403-million-week-1-28-billion">CryptoWatchDesk / ETF周五-4.119亿美元</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>油价仍停在约98美元：海峡又打船，周末没有重写全周阴线</h3>
+      <p class="why">为何重要：停战预期写在98美元上；UKMTO的3艘沉船和Huda的船尾写的是封锁还在执行。</p>
+      <div class="summary"><p>布伦特周五结算98.32美元，WTI 90.83美元。UKMTO：一周至少11艘遭袭、3艘沉没，进出峡约-65%。CENTCOM称封锁近月挡住逾250亿美元原油出口。胡塞宣称袭击利雅得机场与阿美设施，沙特截稿未证实。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html">CNBC / 布伦特98.32、全周约-16%</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation">Al Jazeera / UKMTO一周11艘、3艘沉没</a></li>
+        <li><a href="https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4644273/us-forces-disable-cargo-vessel-attempting-to-violate-naval-blockade/">CENTCOM / 封锁执行声明</a></li>
+        <li><a href="https://www.khaleejtimes.com/world/mena/us-to-set-up-new-team-against-iran-land-commerce-task-force-iron-gate">Khaleej Times / 逾250亿美元原油被挡</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>CENTCOM打残货轮Huda；「铁门」特遣队把封锁接到陆路</h3>
+      <p class="why">为何重要：华盛顿周六同时承认格什姆「小规模打击」、把商船打到开不走、再设一个盯陆路的编制。</p>
+      <div class="summary"><p>美军飞机在阿曼湾以精确弹药击中圣基茨旗M/V Huda船尾。自7月以来改道147艘、打残5艘，并摧毁10艘影子油轮。约20人编制的「铁门」特遣队盯陆路与里海。伊方称周六油轮触雷起火；革命卫队称2,000公里射程限制已解除。卡塔尔首相称选举后美方仍愿谈。胡塞宣称六轮袭击利雅得，沙特未评论。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4644273/us-forces-disable-cargo-vessel-attempting-to-violate-naval-blockade/">CENTCOM / 打残M/V Huda（2026-11-07）</a></li>
+        <li><a href="https://apnews.com/article/commercial-vessel-gulf-oman-breach-blockade-iran-bc902d3400cb5d022f8bafd247ef975b">AP / 阿曼湾商船遭射击</a></li>
+        <li><a href="https://www.stripes.com/theaters/middle_east/2026-11-07/centcom-strikes-commercial-cargo-vessel-23394462.html">Stars and Stripes / 铁门特遣队</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation">Al Jazeera / 格什姆、MQ-9、UKMTO周报</a></li>
+        <li><a href="https://www.iranintl.com/en/202611070389">Iran International / 卡塔尔首相：仍愿谈</a></li>
+        <li><a href="https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-attacks-saudi-aramco-sites-riyadh-airport-and-troops">Middle East Eye / 胡塞宣称六轮袭击</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰6–7日172机+36枚弹道；北桥封闭；科梅舒瓦哈55人</h3>
+      <p class="why">为何重要：227架那一夜换成36枚弹道打基辅；废墟下的数字从53升到55。阿布扎比日期未改。</p>
+      <div class="summary"><p>6日18:00至7日09:00：172架无人机（137架喷气式）加伊斯坎德尔-M/锆石/KN-23/S-400，防空击落或压制4枚导弹与149架无人机。泽连斯基称36枚弹道全部对准基辅及州，并打到核电外送变电站。北桥双向封闭。科梅舒瓦哈死亡升至55人。俄方升格梅金斯基带队、里亚布科夫首次参加阿布扎比11月10–11日三边。7–8日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4182349-air-defense-downs-four-missiles-149-drones-used-by-russia-to-attack-ukraine-overnight.html">Ukrinform / 4枚导弹+149机（2026-11-07）</a></li>
+        <li><a href="https://kyivindependent.com/russian-ballistic-missiles-slam-kyiv-after-zelensky-warns-of-mass-attack/">Kyiv Independent / 36枚弹道、北桥</a></li>
+        <li><a href="https://www.theguardian.com/world/2026/nov/07/blackout-water-shortage-kyiv-russia-strike-ukraine-energy-grid">The Guardian / 电网与北桥</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/07/8061683/">Ukrainska Pravda / 死亡升至55</a></li>
+        <li><a href="https://kyivindependent.com/russia-to-send-senior-diplomats-military-officials-to-upcoming-peace-talks-in-abu-dhabi/">Kyiv Independent / 俄方升格代表团</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海6–7日官方11机/10舰/3公务船；9架次越中线</h3>
+      <p class="why">为何重要：空中从3架次回升到11架次，9架次越线进入北部及西南。回升不是收兵。</p>
+      <div class="summary"><p>6日6时至7日6时：共机11架次（9架次逾越中线进入北部及西南空域）、共舰10艘、公务船3艘。国防部英文列表最新条目仍为2026.11.07；7–8日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/En/news/plaact/88166">台湾国防部英文通报（6–7日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/EN/News/PlaactList">台湾国防部英文列表（截至今晨）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202611070034.aspx">中央社 / 11机10舰3公务船</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6473240">Taiwan News / 11机13艘</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>币安仍无第10份更新；滕天籁把六枚代币写成「下周内」</h3>
+      <p class="why">为何重要：44币证明已可核验；周六没有新的恢复编号，只有「下周内」六枚代币的目标。</p>
+      <div class="summary"><p>滕天籁确认目标下周内重开HYPE、INJ、APT、PLASMA、NEAR、LTC，并覆盖已恢复网络上的全部代币。补仓仍约98%。11月4日44币零知识证明已就绪。比特币约7.57万美元。现货比特币ETF周五净流出4.119亿美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.thecoinrepublic.com/2026/11/07/binance-news-richard-teng-confirms-withdrawal-timeline-for-6-altcoins-after-binance-hack/">The Coin Republic / 六枚代币时间表（2026-11-07）</a></li>
+        <li><a href="https://cryptobriefing.com/binance-withdrawal-restoration-next-week/">CryptoBriefing / 目标下周</a></li>
+        <li><a href="https://exchange.news/news/binance-recovery-update-9-withdrawals-reopen-usde-xrp-cake-nine-networks/">Exchange.news / Recovery Update #9</a></li>
+        <li><a href="https://cryptowatchdesk.com/news/etf-desk-nov-6-bitcoin-etfs-412-million-outflow-ibit-403-million-week-1-28-billion">CryptoWatchDesk / ETF周五-4.119亿美元</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>Vox：1月议程不只是数据中心——坎特韦尔框架与马基传票</h3>
+      <p class="why">为何重要：立法清单把人写长了：安全标准、独立测试、全面暂停。传票要到1月才印。</p>
+      <div class="summary"><p>赛义德主张前沿研究全面暂停并与中国谈条约。坎特韦尔料掌参议院商务委员会，框架含强制安全标准、独立测试与事故报告。马基称将印「整片森林」的传票。约40/41项地方公投限制数据中心。得州停建令不必等到1月。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.vox.com/future-perfect/509829/data-centers-ai-midterm-election-congress">Vox / 民主党人工智能议程（2026-11-07）</a></li>
+        <li><a href="https://www.westhawaiitoday.com/2026/11/07/nation-world-news/democrats-planning-flood-of-ai-bills-when-they-take-control-of-congress/">Reuters / 一揽子立法</a></li>
+        <li><a href="https://edition.cnn.com/2026/11/07/politics/democrats-midterms-data-centers-ken-paxton-james-talarico">CNN / 数据中心怒火</a></li>
+        <li><a href="https://www.theguardian.com/us-news/2026/nov/06/democrats-renew-calls-for-datacenter-pauses">The Guardian / 再提数据中心暂停</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>泽连斯基：特朗普的欧洲安全安排有「雅尔塔2.0」风险</h3>
+      <p class="why">为何重要：阿布扎比日期未改；基辅把内容写成危险。弹道没有等10日开场。</p>
+      <div class="summary"><p>泽连斯基对CNN称「不想要雅尔塔2.0」，先停战、再给乌克兰安全保障，然后才谈欧洲架构；拒绝交出顿巴斯。俄方升格梅金斯基带队、里亚布科夫首次参加11月10–11日阿布扎比三边。美方仍是维特科夫与库什纳。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.kyivpost.com/post/89405">Kyiv Post / 雅尔塔2.0（2026-11-07）</a></li>
+        <li><a href="https://www.politico.com/news/2026/11/07/russia-upgrades-abu-dhabi-delegation-as-zelenskyy-warns-trumps-plan-is-dangerous">POLITICO / 俄方升格代表团</a></li>
+        <li><a href="https://english.nv.ua/russian-war/medinsky-to-lead-russian-delegation-at-abu-dhabi-peace-talks-reuters-50657217.html">NV / 梅金斯基带队</a></li>
+        <li><a href="https://apnews.com/article/russia-ukraine-war-kyiv-talks-abu-dhabi-b042adf1f95848f5d233da866a72e312">AP / 基辅遇袭、阿布扎比在即</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>两席参议院仍未投影：法律战开打；众议院约254–162</h3>
+      <p class="why">为何重要：领先幅度几乎没动，律师已经进场。谁掌钱袋子不变。</p>
+      <div class="summary"><p>佩尔托拉仍以约637票领先（约74%已计）；科洛姆仍约2,500票，共和党要求82县另行保管誓证书。参议院仍至少54–44。美联社众议院约254–162，约19席未决。杰夫里斯料成首位黑人议长。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.usatoday.com/story/news/politics/elections/2026/11/07/mississippi-alaska-senate-races-still-undecided-as-legal-fights-loom/92659758007/">USA Today / 两州法律战（2026-11-07）</a></li>
+        <li><a href="https://www.washingtonpost.com/politics/2026/11/07/here-are-midterm-races-watch-that-are-still-too-close-call/">Washington Post / 约19席众院未决</a></li>
+        <li><a href="https://launchpaddigitalfl.com/articles/state-election-florida-house-still-uncalled-morning-nov-7-2026/">Launchpad / 美联社约254–162</a></li>
+        <li><a href="https://www.cbsnews.com/live-updates/house-election-results-2026/">CBS / 杰夫里斯：至少255席</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>周一亚太开盘</strong> — 日经、韩国周五各跌约6%；非农后FedWatch十二月约77%；周末叠加Huda被打残。</li>
+    <li><strong>阿布扎比11月10–11日</strong> — 俄方升格；泽连斯基拒绝「雅尔塔2.0」与交顿巴斯。</li>
+    <li><strong>霍尔木兹：卡塔尔「不完美协议」vs 铁门特遣队</strong> — 七项条件未松；2,000公里射程限制已解除。胡塞宣称尚未被利雅得证实。</li>
+    <li><strong>币安六枚代币「下周内」与比特币ETF流出</strong> — 44币证明已可核验；现货ETF五会话已流出约12.8亿美元。</li>
+    <li><strong>台海7–8日与乌克兰7–8日官方窗口</strong> — 6–7日已是11机/10舰/3公务船。阿拉斯加排序复计目标11月18日，密西西比认证11月13日。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-08 07:10 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
