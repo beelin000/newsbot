@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月9日早报">
+<title>早报 · 2026年11月9日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月9日</h1>
+  <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月8日早报（8日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：周一亚太开盘、大阪日经期货约+1.4%；霍尔木兹周日再烧船、沙特证实利雅得阿美楼受损、特朗普称「高度不可能」再打；乌克兰7–8日164机、第聂伯60万停电；英伟达董事会调查黄仁勋；币安重开HYPE/APT，比特币跌至约7.37万美元。东京、首尔现金盘约08:00才开。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>周一亚太刚开盘。大阪隔夜日经期货报58,250，较周五57,434.77约+1.4%。澳股期货约+0.2%报9,036。东京、首尔现金盘截稿未开。周五华尔街仍是最后锚：道指-0.46%、标普+0.31%、纳指+1.09%。比特币周日最低约73,708美元，截稿约7.42万美元。</li>
+    <li><span class="tag">更新</span>伊拉克外长称已与美方就经阿曼附近航道出口原油达成谅解；伊战损失约600亿美元。十月出口约350万桶/日。油价仍约98美元。</li>
+    <li><span class="tag">更新</span>霍尔木兹周日：革命卫队称两艘油轮触雷、第三艘起火。特朗普对CNN称「高度不可能」再打，同时点名38座桥。沙特证实利雅得阿美行政楼遭破片轻微损坏，无伤亡。</li>
+    <li><span class="tag">更新</span>乌克兰7–8日官方：3枚Kh-59/69加164架无人机（112架喷气式），防空击落或压制137架。敖德萨1死。第聂伯逾60万用户停电。科梅舒瓦哈死亡仍55人。8–9日窗口未公布。</li>
+    <li><span class="tag">更新</span>台海7–8日官方：共机4架次（2架次进入西南）、共舰6艘、公务船2艘。相对6–7日的11机/9架次越线明显回落。8–9日完整窗口未公布。</li>
+    <li><span class="tag">更新</span>英伟达董事会周日启动独立调查：据报道黄仁勋与美方认定替北京收集信息的Megaspeed高管有亲密关系。黄仁勋承认不忠，称将继续任职。董事会称目前无理由相信机密已泄露。</li>
+    <li><span class="tag">更新</span>币安周日重开HYPE、APT提现；INJ、PLASMA、NEAR、LTC仍待检。仍无编号第10份更新。比特币约7.42万美元。</li>
+    <li><span class="tag">更新</span>卡塔尔否认美伊谈崩。七项开峡条件未改。阿布扎比三边仍定11月10–11日，明天开场。</li>
+    <li><span class="tag">更新</span>阿拉斯加州长：大票11月13日、较小一批15日、最终计票25日。佩尔托拉仍约637票；科洛姆领先2,574票。参议院仍至少54–44。众院美联社约254–162，约19席未决。</li>
+    <li><span class="tag">更新</span>泽连斯基已把特朗普的欧洲安全安排写成「雅尔塔2.0」。俄方升格梅金斯基带队、里亚布科夫首次参加。弹道没有等10日开场。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>周一开盘：大阪期货把日经写成+1.4%，现金盘还没对上周五那6%</h3>
+      <p class="why">为何重要：日韩各跌约6%的账单还在；期货给出浅反弹。比特币没有等开盘，先把7.5万美元跌破了。</p>
+      <div class="summary"><p>大阪隔夜日经期货报58,250，较周五现金盘57,434.77约+815点。澳股期货约+0.2%报9,036。东京、首尔约08:00才开；中国CPI/PPI约09:30。周五华尔街：道指-0.46%报51,285.73，标普+0.31%报7,376.86，纳指+1.09%报24,579.42。十年期约4.86%，FedWatch十二月约77%。布伦特约98.32美元。比特币周日最低约73,708美元，截稿约7.42万美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://newsonjapan.com/article/151291.php">News On Japan / 大阪期货58,250（2026-11-08）</a></li>
+        <li><a href="https://www.abc.net.au/news/2026-11-09/asx-markets-business-live-news/107361534">ABC / 周一盘前与比特币73,708美元</a></li>
+        <li><a href="https://www.marketindex.com.au/news/morning-wrap-asx-200-to-rise-s-and-p-500-and-nasdaq-rebound-from-ai-rout">Market Index / ASX期货+0.22%</a></li>
+        <li><a href="https://www.channelnewsasia.com/business/cryptocurrencies-slide-two-month-lows-after-us-midterms-6534751">CNA / 路透：比特币两月低点</a></li>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-806f71d95105bc7efbc760b194dd8cad">AP / 周五指数</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>油价仍约98美元：伊拉克拿到阿曼侧航道谅解，海峡周日又烧了三艘</h3>
+      <p class="why">为何重要：巴格达说出口走阿曼附近航道已经谈通；海峡里的船还在起火。98美元听的是谅解，不是航道已经安全。</p>
+      <div class="summary"><p>伊拉克外长侯赛因称已与美方就经阿曼附近航道出口原油达成谅解；伊战损失约600亿美元。十月出口约350万桶/日（九月约265万）。美国财政部要求关闭除两处外的对伊口岸。革命卫队称两艘油轮触雷、第三艘起火；开源情报将其中一艘暂定为Navig8 Messi。布伦特仍约98.32美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.arabnews.com/middle-east/iraq-has-reached-understandings-with-us-to-allow-oil-exports-through-hormuz-minister-says-3010576">Reuters / 伊拉克阿曼侧航道谅解（2026-11-08）</a></li>
+        <li><a href="https://english.news.cn/20261108/35f56d5f87294f648f3223cea814e580/c.html">Xinhua / 革命卫队称两艘触雷</a></li>
+        <li><a href="https://maritime-executive.com/article/tanker-burns-after-strike-in-strait-of-hormuz">Maritime Executive / Navig8 Messi起火</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html">CNBC / 布伦特周五98.32美元</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>特朗普称「高度不可能」再打；沙特首都阿美楼被破片打到</h3>
+      <p class="why">为何重要：华盛顿把再打击写成高度不可能，同时报出38座桥。利雅得把阿美行政楼写成轻微损坏。破片已经掉在金融区。</p>
+      <div class="summary"><p>特朗普对CNN称，只要签下强硬协议，「高度不可能」再打伊朗；若再打，已点名38座桥「一小时内就能炸掉」。沙特能源部证实利雅得阿美行政楼遭破片轻微损坏，无伤亡。联军称拦截1架无人机与4枚导弹。革命卫队称两艘油轮触雷。卡塔尔否认已经谈崩。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/middle-east/iran-suggests-blasts-are-not-us-attacks-both-sides-report-ships-hit-2026-11-08/">Reuters / 特朗普：高度不可能再打（2026-11-08）</a></li>
+        <li><a href="https://apnews.com/article/mideast-news-november-8-2026-090d96e25872f5c63e105b9dd3e5dc60">AP / 沙特拦截导弹、阿美楼受损</a></li>
+        <li><a href="https://www.france24.com/en/middle-east/20261108-yemen-s-houthis-claim-attack-on-aramco-building-in-riyadh-s-financial-district">France 24 / 能源部：轻微损坏</a></li>
+        <li><a href="https://www.bbc.com/news/articles/c6ly3mjx958eo">BBC / 阿美塔楼画面</a></li>
+        <li><a href="https://www.aa.com.tr/en/world/saudi-led-coalition-says-it-intercepted-drone-4-missiles-over-riyadh-southern-regions/4115656">Anadolu / 联军拦截1机4弹</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰7–8日164机+3枚Kh-59/69；第聂伯60万停电；科梅舒瓦哈55人</h3>
+      <p class="why">为何重要：36枚弹道那一夜换成164架无人机；废墟下仍是55人。阿布扎比明天开场，发射没有停。</p>
+      <div class="summary"><p>7日18:00至8日08:00：3枚Kh-59/69加164架无人机（112架喷气式），防空击落或压制137架。敖德萨1死。第聂伯逾60万用户停电。科梅舒瓦哈死亡仍55人，已确认29人身份，45人在失踪名单；8日晨无人机打到搜救现场。8–9日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://en.lb.ua/news/2026/11/08/48514_air_defences_down_137_164.html">LB.ua / 137/164（2026-11-08）</a></li>
+        <li><a href="https://newsukraine.rbc.ua/news/drones-and-missiles-strike-overnight-how-1794120602.html">RBC-Ukraine / 敖德萨1死</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4182688-airstrike-on-underground-school-in-komyshuvakha-29-of-55-victims-identified.html">Ukrinform / 55人、29人已确认</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/08/8061823/">Ukrainska Pravda / 45人失踪</a></li>
+        <li><a href="https://english.nv.ua/nation/russian-drone-targets-rescuers-at-komyshuvakha-airstrike-site-where-55-were-killed-50657344.html">NV / 无人机打到搜救现场</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海7–8日官方4机/6舰/2公务船；2架次进入西南</h3>
+      <p class="why">为何重要：空中从11架次回落到4架次。回落不是收兵，是窗口从周六降到周日。</p>
+      <div class="summary"><p>7日6时至8日6时：共机4架次（2架次进入西南空域）、共舰6艘、公务船2艘。国防部英文列表最新条目仍为2026.11.08；8–9日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/En/news/plaact/88168">台湾国防部英文通报（7–8日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/EN/News/PlaactList">台湾国防部英文列表（截至今晨）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202611080017.aspx">中央社 / 6舰2公务船、2架次西南</a></li>
+        <li><a href="https://mna.mnd.gov.tw/news/detail/?UserKey=cc4c2dc2-a197-4c46-b584-0934c86213d8">军闻社 / 4机6舰2公务船</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>英伟达董事会周日查黄仁勋：情报部门指关系对象为中方间谍</h3>
+      <p class="why">为何重要：芯片周五已经买过一轮超卖；调查要到周一开盘才定价。国家与出口管制已经进了董事会议室。</p>
+      <div class="summary"><p>董事会因报道黄仁勋成为外国情报活动目标，启动独立董事委员会调查。据《纽约时报》，其关系对象黄爱丽丝与新加坡云厂商Megaspeed有关，美方认定其替北京收集信息。黄仁勋承认不忠，称将继续任职并配合调查。董事会称目前无理由相信机密已泄露。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">NVIDIA / 董事会声明（2026-11-08）</a></li>
+        <li><a href="https://apnews.com/article/nvidia-jensen-huang-investigation-chinese-spy-68839e7ca6ba2b121529f7e475e501d6">AP / 黄仁勋成为外国情报目标</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-email-board-of-directors-statement.html">CNBC / 员工信全文</a></li>
+        <li><a href="https://www.bbc.com/news/articles/c3dxw10rjn9no">BBC / 黄爱丽丝与Megaspeed</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>币安周日重开HYPE、APT；比特币跌破7.5万后回升约7.42万</h3>
+      <p class="why">为何重要：「下周内」六枚代币先落地两枚。用户能提走的仍不是全量；价格已经先反映监管与黑客。</p>
+      <div class="summary"><p>币安周日宣布重开HYPE、APT提现；INJ、PLASMA、NEAR、LTC仍待安全检查。仍无编号第10份恢复更新。比特币周日最低约73,708美元（8月以来最低），截稿约7.42万美元。现货比特币ETF周五净流出4.119亿美元仍是上周最后会话。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://crypto.news/binance-restores-hype-apt-withdrawals-after-hack/">crypto.news / 重开HYPE、APT（2026-11-08）</a></li>
+        <li><a href="https://www.odaily.news/zh-CN/newsflash/532116">Odaily / 币安X更新</a></li>
+        <li><a href="https://www.channelnewsasia.com/business/cryptocurrencies-slide-two-month-lows-after-us-midterms-6534751">CNA / 比特币73,708美元</a></li>
+        <li><a href="https://www.abc.net.au/news/2026-11-09/asx-markets-business-live-news/107361534">ABC / 回升约74,189美元</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>特朗普：谈得成就高度不可能再打；阿布扎比明天开场</h3>
+      <p class="why">为何重要：总统把再打击概率说低了，但把38座桥写进同一通采访。两张谈判桌都还没有停火。</p>
+      <div class="summary"><p>特朗普对CNN称再打击「高度不可能」，前提是签下强硬协议。卡塔尔否认已经谈崩。彭博称伊朗正在研究此前不在桌面上的核方案。阿布扎比11月10–11日俄方仍由梅金斯基带队、里亚布科夫首次参加。泽连斯基已警告「雅尔塔2.0」，拒绝交出顿巴斯。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/middle-east/iran-suggests-blasts-are-not-us-attacks-both-sides-report-ships-hit-2026-11-08/">Reuters / 特朗普CNN采访（2026-11-08）</a></li>
+        <li><a href="https://www.japantimes.co.jp/news/2026/11/07/world/politics/us-iran-deal-nuclear/">Japan Times / 彭博：核问题回到桌面</a></li>
+        <li><a href="https://www.iranintl.com/en/202611068634">Iran International / 卡塔尔调解</a></li>
+        <li><a href="https://www.kyivpost.com/post/89466">Kyiv Post / 俄方高规格代表团</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>阿拉斯加州长给出点票日历；密西西比领先2,574票</h3>
+      <p class="why">为何重要：领先幅度几乎没动，朱诺把日历写出来了。谁掌钱袋子不变。</p>
+      <div class="summary"><p>邓利维：大票11月13日、较小一批15日、最终计票25日。佩尔托拉仍以约637票领先（约74%已计）。科洛姆领先2,574票（约97%已计），誓证书11月10日前补正，认证13日。参议院仍至少54–44。美联社众议院约254–162，约19席未决。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://thehill.com/homenews/campaign/6206385-alaska-dunleavy-vote-update/">The Hill / 邓利维点票日历（2026-11-08）</a></li>
+        <li><a href="https://abcnews.com/Politics/wireStory/scott-colom-black-mississippians-stand-cusp-senate-history-137938378">ABC / 637票与2,574票</a></li>
+        <li><a href="https://www.usatoday.com/story/news/politics/elections/2026/11/07/mississippi-alaska-senate-races-still-undecided-as-legal-fights-loom/92659758007/">USA Today / 两州法律战</a></li>
+        <li><a href="https://www.foxnews.com/elections/2026/midterm-results/house">Fox News / 众院254–162</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>东京、首尔约08:00现金开盘</strong> — 大阪期货约+1.4%；周五日经-5.96%、韩国-6.02%。中国CPI/PPI约09:30。英伟达调查与比特币跌破7.5万叠在同一根开盘上。</li>
+    <li><strong>阿布扎比11月10–11日</strong> — 明天开场。俄方升格；泽连斯基拒绝「雅尔塔2.0」。第聂伯60万户还没来电。</li>
+    <li><strong>霍尔木兹：38座桥 vs 高度不可能 vs 阿美楼破片</strong> — 七项条件未松；伊拉克阿曼侧航道谅解未等于海峡已安全。</li>
+    <li><strong>币安剩余四枚代币与比特币ETF</strong> — HYPE/APT已开；INJ、PLASMA、NEAR、LTC仍待检。</li>
+    <li><strong>台海8–9日与乌克兰8–9日官方窗口</strong> — 7–8日已是4机/6舰/2公务船。阿拉斯加13日大票，密西西比10日誓证书截止。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-09 07:10 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
