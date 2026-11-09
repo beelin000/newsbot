@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月10日早报">
+<title>早报 · 2026年11月10日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月10日</h1>
+  <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月9日早报（9日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：华尔街周一道指+1104点、台股+4.94%、布伦特落到92.57美元；特朗普见卡塔尔首相后称战争「军事上已结束」；乌克兰8–9日317机，阿布扎比今天开场；英伟达-4.27%对费城半导体+6.85%；中国CPI 0.7%、PPI 5.7%；密西西比誓证书今天截止。美国十月CPI约21:30公布。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>周一现金盘。道指+2.15%报52,389.75（+1,104点），标普+2.35%报7,549.94，纳指+2.74%报25,253.14，纳指100+3.40%。费城半导体+6.85%，英伟达-4.27%。日经+2.33%，台股+4.94%报41,661.70，韩国-0.81%。布伦特-5.85%报92.57美元。FedWatch十二月约84%。美国十月CPI今日21:30。</li>
+    <li><span class="tag">更新</span>中国十月CPI同比+0.7%（前值+0.9%），环比持平；PPI同比+5.7%，四年多最快。上证+0.32%，恒指-0.13%。</li>
+    <li><span class="tag">更新</span>特朗普与卡塔尔首相谈约45分钟后称对伊战争「军事上实际上已经结束」，再打击「相当不可能」，同时写「锁定装填」。鲁比奥称伊方要求「离谱可笑」。</li>
+    <li><span class="tag">更新</span>乌克兰8–9日官方：317架无人机（105架喷气式），防空击落或压制271架加5枚班杰罗。克雷门丘克7伤。白天再打基辅四区，无伤亡。科梅舒瓦哈仍55死、30人已确认。9–10日窗口未公布。</li>
+    <li><span class="tag">更新</span>台海8–9日官方：共机1架次（进入北部、越过中线）、共舰7艘、公务船1艘。9–10日完整窗口未公布。</li>
+    <li><span class="tag">更新</span>英伟达-4.27%报178.67美元；同期AMD+13.26%、费城半导体+6.85%。黄仁勋女儿取消首尔行程。董事会仍称无理由相信机密已泄露。</li>
+    <li><span class="tag">更新</span>币安周一重开Alpha板块BSC/ETH/Base/Arbitrum提现；INJ、PLASMA、NEAR、LTC原生链仍待检。比特币约7.38万美元。</li>
+    <li><span class="tag">更新</span>阿布扎比美乌俄三边今天至11日开场。白宫谨慎乐观；法国称欧洲到场，克宫称三边不含欧洲官员。顿巴斯仍是卡点。</li>
+    <li><span class="tag">更新</span>密西西比誓证书今天截止。科洛姆仍约领先2,500–2,570票。佩尔托拉仍约637票。参议院仍至少54–44。福克斯众院约254–164。</li>
+    <li><span class="tag">更新</span>霍尔木兹周日三艘起火与伊拉克阿曼侧航道谅解未改。油价从约98美元一天写成约92.57美元，听的是再打击概率，不是航道已经安全。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>周一现金盘：道指+1104点，台股+4.94%，油价一天抹掉约6美元</h3>
+      <p class="why">为何重要：东京、台北已经买回一部分周五跌幅，首尔没有。华尔街把标普写成4月8日以来最佳单日；英伟达把同一根K线写成调查定价。</p>
+      <div class="summary"><p>道指+2.15%报52,389.75，标普+2.35%报7,549.94，纳指+2.74%报25,253.14，纳指100+3.40%报27,907.63。费城半导体+6.85%；英伟达-4.27%。日经+2.33%报58,775.50，台股+4.94%报41,661.70，韩国-0.81%报5,018.85。上证+0.32%，恒指-0.13%。布伦特-5.85%报92.57美元，WTI-4.38%报86.85美元。十年期约4.863%，VIX 19.92，FedWatch十二月约84%。黄金期货约4,149.50美元。比特币约73,848美元。美国十月CPI今日21:30。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html">CNBC / 道指+1104、纳指+2.74%（2026-11-09）</a></li>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-f7ec9680fc858e3c2505913e7b3a54e2">AP / 周一美股</a></li>
+        <li><a href="https://www.cna.com.tw/news/afe/202611090096.aspx">中央社 / 台股+1960点</a></li>
+        <li><a href="https://english.news.cn/20261109/e3c75c9f50f34f57a63c0bf9ec2e791e/c.html">新华社 / 上证与恒指收盘</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/09/oil-falls-as-trump-says-new-iran-attacks-unlikely.html">CNBC / 布伦特92.57美元</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>中国十月CPI回落到0.7%，PPI四年最快至5.7%</h3>
+      <p class="why">为何重要：消费端被食品按住，出厂端被油气煤顶住。门口的通胀和菜篮子的通缩叠在同一张表上。</p>
+      <div class="summary"><p>CPI同比+0.7%（前值+0.9%，路透预期+0.8%），环比持平；核心+0.8%。食品-2.9%，汽油+22.4%。PPI同比+5.7%（四年多最快，路透预期+5.3%），环比+0.7%，八成来自油气煤。上证+0.32%报3,660.79，深成-0.27%，恒指-0.13%报24,448.95。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.stats.gov.cn/sj/sjjd/202611/t20261109_1965796.html">国家统计局 / 董莉娟解读（2026-11-09）</a></li>
+        <li><a href="https://english.news.cn/20261109/02a4309cb884474686bfa25d07e8f05b/c.html">新华社 / CPI+0.7%、PPI+5.7%</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html">CNBC / PPI四年最快</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>特朗普称战争「军事上已结束」；再打「相当不可能」，仍「锁定装填」</h3>
+      <p class="why">为何重要：总统把结束写进椭圆形办公室。鲁比奥还在说离谱；油价已经先按结束定价。</p>
+      <div class="summary"><p>特朗普与卡塔尔首相谈约45分钟后称对伊战争「军事上实际上已经结束」，再打击「相当不可能」，同时写「锁定装填」。鲁比奥称伊方要求「离谱可笑」，谈不上突破。两日开峡方案仍等美方书面答复。布伦特一天落到92.57美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/iran-us-war-trump-qatar-c38770b168faf5e094e96c1e1e212cff">AP / 军事上实际上已结束（2026-11-09）</a></li>
+        <li><a href="https://www.iranintl.com/en/202611090440">Iran International / Axios：45分钟会谈</a></li>
+        <li><a href="https://www.thenationalnews.com/news/us/2026/11/09/trump-meets-qatari-pm-and-calls-renewed-military-action-on-iran-quite-unlikely/">The National / 相当不可能、锁定装填</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/09/us-iran-war-trump-hormuz.html">CNBC / 鲁比奥：离谱可笑</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰8–9日317机（105喷气）；白天再打基辅；废墟下仍55人</h3>
+      <p class="why">为何重要：164机那一夜换成317机。阿布扎比今天开场，发射没有按日历停。</p>
+      <div class="summary"><p>8日18:00至9日08:00：317架无人机（105架喷气式），防空击落或压制271架加5枚班杰罗，31处遭击中。克雷门丘克7伤。白天喷气式再打基辅四区，无伤亡。科梅舒瓦哈死亡仍55人，已确认30人身份，约19人可能仍在废墟下。9–10日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4182779-air-defense-neutralizes-271-of-317-russian-drones-targeting-ukraine-overnight.html">Ukrinform / 271/317（2026-11-09）</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/09/8061879/">Ukrainska Pravda / 271架+5枚班杰罗</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-injure-28-across-ukraine-over-past-day-as-russia-continues-strikes-on-energy-infrastructure/">Kyiv Independent / 28伤</a></li>
+        <li><a href="https://english.nv.ua/nation/russian-jet-drones-attack-kyiv-on-november-9-causing-a-fire-50657517.html">NV / 白天喷气式打基辅</a></li>
+        <li><a href="https://kyivindependent.com/police-identify-30-of-55-bodies-recovered-from-komyshuvakha-airstrike/">Kyiv Independent / 55人中30人已确认</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海8–9日官方1机/7舰/1公务船；1架次进入北部、越过中线</h3>
+      <p class="why">为何重要：空中从4架次回落到1架次。一架越过中线进入北部，不是零。</p>
+      <div class="summary"><p>8日6时至9日6时：共机1架次（进入北部空域并越过中线）、共舰7艘、公务船1艘。国防部英文列表最新条目仍为2026.11.09；9–10日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/88171">台湾国防部英文通报（8–9日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/EN/News/PlaactList">台湾国防部英文列表（截至今晨）</a></li>
+        <li><a href="https://www.cna.com.tw/news/aipl/202611090019.aspx">中央社 / 7舰1公务船、1架次北部</a></li>
+        <li><a href="https://mna.mnd.gov.tw/news/detail/?UserKey=fa56e18c-7b5a-49ac-aa14-b0f4573e8c92">军闻社 / 1机7舰1公务船</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>英伟达-4.27%，费城半导体+6.85%：调查把龙头从反弹里摘出去</h3>
+      <p class="why">为何重要：指数把超卖买回去，黄仁勋的公司没有。成交量说市场在给领导层风险标价。</p>
+      <div class="summary"><p>英伟达收178.67美元，-4.27%，成交约4.55亿股。同期费城半导体+6.85%，AMD+13.26%报508.58美元，英特尔+5.49%。黄仁勋女儿取消首尔行程。董事会仍称无理由相信机密已泄露，黄仁勋继续任职。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html">CNBC / 英伟达-4.27%（2026-11-09）</a></li>
+        <li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/09/stock-market-today-nov-9-nvidia-stock-plunges-4-on-jensen-huang-investigation-as-nasdaq-surges-nearly-3/">Motley Fool / 178.67美元、成交量</a></li>
+        <li><a href="https://news.rthk.hk/rthk/en/component/k2/1877136-20261109.htm">RTHK / 麦迪逊取消首尔行程</a></li>
+        <li><a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">NVIDIA / 董事会声明</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>币安重开Alpha四条网络；原生INJ/LTC等四条仍待检</h3>
+      <p class="why">为何重要：可提名单在变长；原生链句号还没画上。比特币连收三根阴线。</p>
+      <div class="summary"><p>币安周一宣布Alpha板块在BSC、ETH、Base、Arbitrum重开提现。INJ、PLASMA、NEAR、LTC原生链仍待检。仍无编号第10份更新。比特币约73,848美元，贴近周日两月低点。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://ripplecoinnews.com/binance-alpha-withdrawals-four-networks/">RippleCoinNews / Alpha四网络（2026-11-09）</a></li>
+        <li><a href="https://www.bitcoininsider.org/article/binance-hype-apt-withdrawals-reopen">Bitcoin Insider / INJ等仍待</a></li>
+        <li><a href="https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average">CoinDesk / 比特币仍贴低点</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>阿布扎比今天开场：白宫谨慎乐观，欧洲到场，克宫说没有欧洲</h3>
+      <p class="why">为何重要：时差已经把明天写成今天。军事组谈监测，政治组仍卡顿巴斯。欧洲在走廊里。</p>
+      <div class="summary"><p>美乌俄工作层三边11月10–11日在阿布扎比举行。白宫谨慎乐观。军事工作组由美军欧洲司令部司令格林克维奇牵头；政治工作组仍卡在顿巴斯。法国称欧洲到场，克宫称三边不含欧洲官员。泽连斯基拒绝「雅尔塔2.0」与交顿巴斯。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.axios.com/2026/11/09/ukraine-russia-zelensky-putin-peace-abu-dhabi">Axios / 白宫谨慎乐观（2026-11-09）</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/9/no-concession-what-to-expect-from-russia-us-ukraine-talks-in-abu-dhabi">Al Jazeera / 不让步、欧洲在场争议</a></li>
+        <li><a href="https://www.npr.org/2026/11/08/nx-s1-6034014/europe-join-us-brokered-ukraine-talks-abu-dhabi-russia">NPR / 法国：欧洲会到场</a></li>
+        <li><a href="https://www.kyivpost.com/post/89466">Kyiv Post / 俄方高规格代表团</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>密西西比誓证书今天截止；众院福克斯约254–164</h3>
+      <p class="why">为何重要：领先幅度几乎没动。谁掌钱袋子不变；厚度还在未计的票和法院里。</p>
+      <div class="summary"><p>科洛姆仍以约2,500–2,570票领先，誓证书与缺席票今天截止，认证13日。佩尔托拉仍约637票，大票13日。参议院仍至少54–44。福克斯截至9日17:55 ET众院约254–164。杰夫里斯料1月3日成为首位黑人议长。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.usatoday.com/story/news/politics/elections/2026/11/09/when-will-mississippi-alaska-senate-elections-be-called/92691597007/">USA Today / 两州何时能定（2026-11-09）</a></li>
+        <li><a href="https://www.foxnews.com/elections/2026/midterm-results/house">Fox News / 众院254–164</a></li>
+        <li><a href="https://www.npr.org/2026/11/09/nx-s1-6032755/some-house-and-senate-races-remain-uncalled-what-we-know">NPR / 未决席位</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>美国十月CPI今日21:30</strong> — 共识环比约+0.3%/核心+0.2%，本月无同比。FedWatch十二月约84%。油价刚从98落到92。</li>
+    <li><strong>阿布扎比11月10–11日</strong> — 今天开场。军事组谈监测，政治组仍卡顿巴斯。9–10日乌克兰官方窗口待出。</li>
+    <li><strong>霍尔木兹：结束 vs 锁定装填 vs 92美元</strong> — 七项条件未松；两日方案仍等美方书面答复。</li>
+    <li><strong>英伟达调查与币安剩余四条原生链</strong> — 费城半导体已反弹，龙头还在折价。比特币贴着两月低点。</li>
+    <li><strong>台海9–10日官方06:00窗口与密西西比今天截止</strong> — 8–9日已是1机/7舰/1公务船。阿拉斯加13日大票。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-10 07:10 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
