@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月12日早报">
+<title>早报 · 2026年11月12日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月12日</h1>
+  <p class="meta">生成 07:10（亚洲/上海）· 覆盖约过去12小时 · 9条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月11日早报（11日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：华尔街周三纳指+400点、费城半导体+5.66%，CoreWeave约+24.7%；台股再+3.62%；霍尔木兹再报触雷，布伦特反弹至92.76美元；乌克兰10–11日163机，阿布扎比第二天原则上换俘；英伟达+2.87%但贝瑞德砍到中性；密西西比领先扩至约3,000票仍未判定。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>华尔街周三：道指+0.49%报52,486.49，标普+1.31%报7,619.38，纳指+1.60%报25,466.19，纳指100+2.28%报28,374.25。费城半导体+5.66%报10,564.11。英伟达+2.87%报173.73美元。债市因退伍军人节休市，十年期仍约4.98%。FedWatch十二月加25个基点约87%、加50个基点约13%。布伦特+1.39%报92.76美元。</li>
+    <li><span class="tag">更新</span>亚太周三：台股+3.62%报44,257.15（台积电约+4.81%报2,395元），韩国+2.60%报5,375.36，日经+1.31%报61,248.59。恒指-0.98%报24,315.92，为主要指数唯一收跌。周四07:10东京、首尔尚未开。</li>
+    <li><span class="tag">更新</span>伊朗军方周三称一艘进入禁区的油轮触雷起火；UKMTO另报海峡油轮遇险。路透核实迪达马尔岛导航设施遇袭、卫星可见热源。布伦特却反弹至92.76美元。11月前十日至少10艘遇袭。</li>
+    <li><span class="tag">更新</span>乌克兰10–11日官方：1枚Kh-59/69加163架无人机（91架喷气式），防空击落或压制130架加14枚班杰罗。两枚班杰罗进入摩尔多瓦领空。乌军称袭击乌斯特卢加港。11–12日窗口未公布。</li>
+    <li><span class="tag">更新</span>台海10–11日官方：共机4架次、共舰7艘、公务船3艘。2架次越中线进入西南防空识别区。11–12日完整窗口未公布。</li>
+    <li><span class="tag">更新</span>英伟达+2.87%报173.73美元。贝瑞德降至中性，目标价从500美元砍到200美元。CoreWeave营收36.6亿美元（同比约+168%），现金盘约+24.7%。</li>
+    <li><span class="tag">更新</span>阿布扎比第二天近2小时。原则上同意最大规模换俘，数字「明天敲定」。库什纳、维特科夫今天赴莫斯科见普京，再飞都柏林。顿巴斯无突破公报。</li>
+    <li><span class="tag">更新</span>密西西比科洛姆领先扩至约3,000票，仍未判定，认证13日。佩尔托拉约49%，若无人过半则18日排序复计。参议院仍至少54–44。福克斯众院255–168。</li>
+    <li><span class="tag">更新</span>油价把「再打不太可能」又买了一截：布伦特从盘中89.16回到92.76。币安仍无第10份恢复更新。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>CoreWeave把AI买回来：纳指+400点，费城半导体+5.66%，债市放假</h3>
+      <p class="why">为何重要：周二那一刀被买回去一截。定价换手的不是通胀，是一份云厂商财报。债市因退伍军人节没有开盘。</p>
+      <div class="summary"><p>道指+0.49%报52,486.49，标普+1.31%报7,619.38，纳指+1.60%报25,466.19，纳指100+2.28%报28,374.25。费城半导体+5.66%报10,564.11。英伟达+2.87%报173.73美元，美光+11.89%。CoreWeave约+24.7%。VIX约17.49。十年期仍约4.98%。FedWatch十二月加25个基点约87%、加50个基点约13%。布伦特+1.39%报92.76美元，黄金期货-0.74%报4,000.50美元。比特币约74,440美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-027cd5f4583d1a11c1795150bf065afb">AP / 周三美股（2026-11-11）</a></li>
+        <li><a href="https://www.aa.com.tr/en/economy/us-stock-markets-close-midweek-higher/4121530">Anadolu / 道指52,486.49</a></li>
+        <li><a href="https://www.kiplinger.com/investing/stocks/nasdaq-adds-400-points-after-coreweave-earnings-stock-market-today">Kiplinger / 纳指+400点、CoreWeave约+24.7%</a></li>
+        <li><a href="https://schwabnetwork.com/articles/closing-bell-stocks-rally-as-coreweave-results-revive-the-ai-trade">Schwab Network / 纳指100+2.28%、费城半导体+5.66%</a></li>
+        <li><a href="https://edgeconsultancykw.com/commodities-wrap-11-november-2026/">The Edge / 布伦特92.76</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>亚太周三：台股再+3.62%，韩国+2.60%，港股独自收跌</h3>
+      <p class="why">为何重要：它们看见了0.4%的CPI，却先给CoreWeave盘后那张表定价。台北把44,000写回来；香港把利率写成跌。</p>
+      <div class="summary"><p>台股+3.62%报44,257.15（台积电约+4.81%报2,395元），韩国综指+2.60%报5,375.36，日经+1.31%报61,248.59，东证+0.92%报3,929.39。上证+0.46%报3,680.64，深成+1.32%，澳股+0.27%报9,153.20。恒指-0.98%报24,315.92。印度排灯节后+0.84%。周四07:10东京、首尔现金盘尚未开。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://edgeconsultancykw.com/asia-market-wrap-11-november-2026/">The Edge / 台股44,257.15、韩国5,375.36（2026-11-11）</a></li>
+        <li><a href="https://www.coinlive.com/news-flash/1169981">Coinlive / 日经61,248.59、恒指24,315.92</a></li>
+        <li><a href="https://news.cnyes.com/news/id/6658635">鉅亨網 / 台积电2,395元</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹再报触雷；迪达马尔岛导航站冒烟，油价回到92.76美元</h3>
+      <p class="why">为何重要：总统说相当快结束。航道没有按这句话停。纸货却把结束又买了一截。</p>
+      <div class="summary"><p>伊朗军方周三称一艘进入禁区的油轮触雷起火。UKMTO另报海峡油轮遇险，船员与污染当时未知。路透核实伊朗打击阿曼迪达马尔岛导航设施，卫星可见热源。11月前十日至少10艘遇袭。布伦特结算92.76美元（+1.39%）。七项条件未见改写。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.arabnews.com/middle-east/iran-says-oil-tanker-hit-mine-and-caught-fire-in-strait-of-hormuz-3011095">Arab News / 触雷起火、迪达马尔岛（2026-11-11）</a></li>
+        <li><a href="https://www.al-monitor.com/originals/2026/11/tankers-burn-middle-east-despite-hopes-de-escalation">Al-Monitor / UKMTO再报油轮</a></li>
+        <li><a href="https://gulfnews.com/world/mena/why-is-iran-attacking-tankers-during-peace-talks-the-high-risk-strategy-behind-the-hormuz-escalation-1.500743616">Gulf News / 11月前十日至少10艘</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰10–11日163机+1枚空地导弹；乌斯特卢加港起火</h3>
+      <p class="why">为何重要：162机那一夜换成163机加一枚Kh-59/69。阿布扎比开第二天，发射和还击都没有按日历停。</p>
+      <div class="summary"><p>10日18:00至11日08:00：1枚Kh-59/69加163架无人机（91架喷气式），防空击落或压制130架加14枚班杰罗，17处遭击中。两枚班杰罗进入摩尔多瓦领空四五分钟。乌军称袭击乌斯特卢加港五座油罐。11–12日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4183607-air-defense-neutralizes-14-banderol-missiles-130-russian-drones-overnight.html">Ukrinform / 130机+14枚班杰罗（2026-11-11）</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/11/8062257/">Ukrainska Pravda / 1枚Kh-59/69+163机</a></li>
+        <li><a href="https://kyivindependent.com/ukraine-reportedly-strikes-ust-luga-baltic-sea-port-as-drones-attack-regions-across-russia/">Kyiv Independent / 乌斯特卢加港</a></li>
+        <li><a href="https://abcnews.com/International/ukraine-russia-exchange-hundreds-drones-day-2-abu/story?id=138038984">ABC / 谈判第二天与无人机对打</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海10–11日官方4机/7舰/3公务船；2架次越中线进西南空域</h3>
+      <p class="why">为何重要：空中仍是4架次，但越线从「未越」写成2架次。公务船从1艘升到3艘。</p>
+      <div class="summary"><p>10日6时至11日6时：共机4架次、共舰7艘、公务船3艘。2架次逾越中线、进入西南防空识别区。国防部英文列表最新条目仍为2026.11.11；11–12日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/informationservices/publication/88195">台湾国防部英文通报（10–11日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/EN/news/plaactlist">台湾国防部英文列表（截至今晨）</a></li>
+        <li><a href="https://mna.mnd.gov.tw/news/detail/?UserKey=af6e097a-1c54-4c04-a35e-cfb07976f5ac">军闻社 / 4机7舰3公务船、2架次越中线</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6474684">Taiwan News / 4机7舰3公务船</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>英伟达+2.87%报173.73美元：贝瑞德砍到中性、目标价500改200</h3>
+      <p class="why">为何重要：指数把超卖买回去；卖方把2027年能见度写成降级。股票和目标价朝相反方向走。</p>
+      <div class="summary"><p>英伟达收173.73美元，+2.87%，结束连两日下跌；自周五186.64美元仍约-6.9%。费城半导体+5.66%。贝瑞德从跑赢大盘降至中性，目标价从500美元下调至200美元，并写明CEO去留不确定性。摩根士丹利移出「首选」名单，仍维持增持。17日三季报仍在日历上。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://schwabnetwork.com/articles/closing-bell-stocks-rally-as-coreweave-results-revive-the-ai-trade">Schwab Network / 贝瑞德降至中性（2026-11-11）</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/us-stocks-higher-at-close-of-trade-dow-jones-industrial-average-up-048-5019892">Investing.com / 收173.73美元</a></li>
+        <li><a href="https://www.kiplinger.com/investing/stocks/nasdaq-adds-400-points-after-coreweave-earnings-stock-market-today">Kiplinger / 降级仍上涨</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>CoreWeave把营收写成36.6亿美元：同比约+168%，现金盘约+25%</h3>
+      <p class="why">为何重要：这是过去一周「AI资本开支是否撑得住」最硬的一张表。亏仍在扩，但收入和指引一起上修。</p>
+      <div class="summary"><p>第三季营收36.6亿美元（共识35.5亿），同比约+168%。调整后每股亏0.95美元（共识亏1.16美元）。全年营收指引上修至130–133亿美元，资本开支370–390亿美元。管理层称不走无担保债市场。现金盘约+24.7%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html">CNBC / 营收36.6亿美元（2026-11-10盘后）</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/11/coreweave-q3-earnings-stock-analysts.html">CNBC / 卖方仍谨慎</a></li>
+        <li><a href="https://schwabnetwork.com/articles/closing-bell-stocks-rally-as-coreweave-results-revive-the-ai-trade">Schwab Network / 指引与资本开支</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>阿布扎比第二天近2小时：原则上最大规模换俘，库什纳今天去莫斯科</h3>
+      <p class="why">为何重要：两日已经谈完。有换俘原则，没有停火公报。下一站从场边的欧洲，换成克宫门口。</p>
+      <div class="summary"><p>第二天近2小时。库什纳称同意最大规模人道主义释放战俘，数字明天敲定。梅金斯基称原则上同意。乌梅罗夫承认重大分歧仍在。库什纳、维特科夫今天赴莫斯科见普京，再飞都柏林；目标之一是争取把欧洲写进多边桌。顿巴斯无突破公报。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.nbcnews.com/world/middle-east/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-rcna608714">NBC / AP：原则上换俘、赴莫斯科（2026-11-11）</a></li>
+        <li><a href="https://kyivindependent.com/2nd-day-of-trilateral-peace-talks-begins-between-ukraine-russia-us-in-abu-dhabi/">Kyiv Independent / 重大分歧仍在</a></li>
+        <li><a href="https://www.rferl.org/a/ukraine-russia-talks-resume-in-abu-dhabi-amid-drone-attacks/33895197.html">RFE/RL / 第二天近2小时</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>密西西比领先扩至约3,000票仍未判定；众院福克斯255–168</h3>
+      <p class="why">为何重要：厚度加了一截，判定权仍在13日认证。谁掌钱袋子不变。</p>
+      <div class="summary"><p>科洛姆领先扩至约3,000票（约49.11%–48.79%），主流通讯社仍未判定，82县认证13日。佩尔托拉约49%，第一选择仍未过半，若无人过半则18日排序复计。参议院仍至少54–44。福克斯截至11日17:50 ET众院255–168，12席未决。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://thehill.com/newsletters/1230-report/6213717-ballot-drops-in-alaska-mississippi-expand-democratic-leads-a-bit/">The Hill / 科洛姆领先扩至逾3,000票（2026-11-11）</a></li>
+        <li><a href="https://www.upi.com/Top_News/US/2026/11/11/alaska-mississippi-senate-races/5381794431319/">UPI / 两州仍未判定</a></li>
+        <li><a href="https://www.foxnews.com/elections/2026/midterm-results/house">Fox News / 众院255–168</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>库什纳、维特科夫今天莫斯科，再飞都柏林</strong> — 阿布扎比留下换俘原则、没有停火。此行要的是普京点头让欧洲上桌。11–12日乌克兰官方窗口待出。</li>
+    <li><strong>十二月FOMC（12月8–9日）</strong> — FedWatch加25个基点约87%，加50个基点约13%。PPI 13日。债市今天补上退伍军人节的缺口。</li>
+    <li><strong>霍尔木兹：92.76美元 vs 触雷与导航站</strong> — 七项条件未松；迪达马尔岛损伤评估未独立核实。</li>
+    <li><strong>英伟达17日三季报与Anthropic 19日</strong> — 贝瑞德目标价已砍到200美元；金钟勋调查未结。ANT若19日开盘，仍是给约1.4万亿这根尺子的第一笔成交。</li>
+    <li><strong>台海11–12日官方06:00窗口与密西西比13日认证</strong> — 10–11日已是4机/7舰/3公务船、2架次越中线。阿拉斯加若无人过半则18日排序复计。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-12 07:10 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
