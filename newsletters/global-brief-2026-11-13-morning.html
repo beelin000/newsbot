@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月13日早报">
+<title>早报 · 2026年11月13日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月13日</h1>
+  <p class="meta">生成 07:20（亚洲/上海）· 覆盖约过去12小时 · 9条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月12日早报（12日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：黄仁勋即时辞职，英伟达-4.34%报166.19美元，指数只跌约0.3%；台股-1,165点；特朗普称「不需要伊朗协议」，布伦特回到95.82美元；库什纳见普京约2.5小时再飞都柏林，欧洲将上桌；美联社判定科洛姆拿下密西西比。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>华尔街周四：道指-0.36%报52,297.09，标普-0.35%报7,592.40，纳指-0.39%报25,366.09，纳指100-0.30%报28,289.19。费城半导体-0.54%报10,506.67。英伟达-4.34%报166.19美元。十年期回5.105%。布伦特+3.3%报95.82美元。现货黄金约3,877美元。</li>
+    <li><span class="tag">更新</span>亚太周四：台股-2.63%报43,091.87（台积电-2.29%报2,340元），韩国-0.61%报5,342.73，日经-0.70%报60,819.36。恒指-1.26%报24,008.55。周五07:20东京、首尔尚未开。</li>
+    <li><span class="tag">更新</span>伊朗军方称两日四艘油轮触雷/爆炸；UKMTO报哈伊马角西北一艘遭投射物击中。胡塞称打击沙特能源设施。特朗普发帖「我们已经拿到海峡」。布伦特结算95.82美元。</li>
+    <li><span class="tag">更新</span>乌克兰11–12日官方：弹道导弹加锆石及123架无人机（73架喷气式），防空击落或压制89架加5枚班杰罗。白天再143架。12–13日窗口未公布。</li>
+    <li><span class="tag">更新</span>台海11–12日官方：共机7架次、共舰7艘、公务船2艘，3架次进西南及东部识别区。白天09:38起29架次「联合战备警巡」，22架次越中线。12–13日完整窗口未公布。</li>
+    <li><span class="tag">更新</span>黄仁勋即时辞职。克雷斯任临时CEO兼CFO，琼斯出任首位董事会主席。17日三季报仍在日历上。超微+5.86%，博通+5.54%。</li>
+    <li><span class="tag">更新</span>库什纳、维特科夫克宫约2.5小时，当晚都柏林见泽连斯基。下一轮欧洲将直接上桌；换俘将是最大规模。普京提议康斯坦丁尼夫卡「人道主义行动」，拒绝外国维和部队。</li>
+    <li><span class="tag">更新</span>美联社已判定科洛姆拿下密西西比。参议院至少55–44。阿拉斯加若无人过半则18日排序复计。众院仍约255席。82县认证今天。</li>
+    <li><span class="tag">更新</span>油价把「相当快结束」划掉：布伦特+3.06美元报95.82。黄金跌破4,000美元。十年期重新站上5%。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>黄仁勋辞职、油价+3美元、十年期回5%：指数只跌0.3%</h3>
+      <p class="why">为何重要：开盘先给创始人定价，收盘却把那一刀收成不到半个百分点。债市补上退伍军人节缺口，定价换手的是伊朗协议被总统划掉。</p>
+      <div class="summary"><p>道指-0.36%报52,297.09，标普-0.35%报7,592.40，纳指-0.39%报25,366.09，纳指100-0.30%报28,289.19。费城半导体-0.54%报10,506.67。英伟达-4.34%报166.19美元，超微+5.86%，博通+5.54%。VIX 18.76。十年期5.105%，两年期约4.867%。布伦特+3.3%报95.82美元，现货黄金约3,877美元，比特币约71,437美元。初请失业金20.0万。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-3f3668a937a11535103e3a5c8d82c9fc">AP / 周四美股（2026-11-12）</a></li>
+        <li><a href="https://www.aa.com.tr/en/americas/us-stocks-end-day-lower-as-oil-climbs-europe-closes-mixed/4123520">Anadolu / 道指52,297.09、VIX 18.76</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-036-5023324">Investing.com / 英伟达166.19、超微585.30</a></li>
+        <li><a href="https://ca.marketscreener.com/news/wall-street-ends-lower-as-nvidia-ceo-resigns-us-yields-up-ce785ed9d981f22c">Reuters / 十年期5.105%</a></li>
+        <li><a href="https://www.channelnewsasia.com/business/oil-settles-3-higher-attacks-saudi-energy-sites-strait-hormuz-disruptions-6544501">CNA / 布伦特结算95.82</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>亚太周四：台股-1,165点，韩国、日经翻绿，港股再跌1.3%</h3>
+      <p class="why">为何重要：它们先看见盘后「董事会讨论去留」，再看见现金盘辞职。台北把44,000还回去；东证是唯一收红的主要指数。</p>
+      <div class="summary"><p>台股-2.63%报43,091.87（台积电-2.29%报2,340元），韩国综指-0.61%报5,342.73，日经-0.70%报60,819.36，东证+0.20%报3,937.33。上证-0.67%报3,655.83，深成约-1.68%，恒指-1.26%报24,008.55。澳股-0.1%。周五07:20东京、首尔现金盘尚未开。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://en.infomaxai.com/news/articleView.html?idxno=148316">Yonhap Infomax / 日经60,819.36、上证3,655.83（2026-11-12）</a></li>
+        <li><a href="https://news.rthk.hk/rthk/en/component/k2/1877553-20261112.htm">RTHK / 恒指24,008、韩国5,342</a></li>
+        <li><a href="https://money.udn.com/money/story/12509/9874319">经济日报 / 台股43,091.87、台积电2,340元</a></li>
+        <li><a href="https://baystreet.ca/foreignmarketwrap/5063/Asia-Markets-Headed-Downward">Baystreet / 亚太收盘一览</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹再报四艘；总统写「已经拿到海峡」，布伦特回到95.82美元</h3>
+      <p class="why">为何重要：总统把协议从句子里拿掉，航道把触雷写成四艘。纸货把结束那一截买回去的钱，一天还完。</p>
+      <div class="summary"><p>伊朗军方周四称两日四艘油轮遇爆炸；革命卫队称两艘超大型油轮周三夜触雷失能，陆军称另两艘周四下午起火。UKMTO报哈伊马角西北一艘遭不明投射物击中。胡塞称打击沙特能源设施。特朗普发帖「我们已经拿到海峡」。布伦特结算95.82美元（+3.3%）。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.investing.com/news/commodities-news/four-tankers-struck-by-explosions-in-strait-of-hormuz-iran-says-5022725">Reuters / 四艘油轮遇爆炸（2026-11-12）</a></li>
+        <li><a href="https://www.channelnewsasia.com/business/oil-settles-3-higher-attacks-saudi-energy-sites-strait-hormuz-disruptions-6544501">CNA / 布伦特95.82、胡塞称打击沙特</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html">CNBC / 「我们已经拿到海峡」</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰11–12日123机+弹道/锆石；白天再143机</h3>
+      <p class="why">为何重要：163机那一夜换成123机加弹道导弹和锆石。阿布扎比收场、克宫开场，发射没有按日历停。</p>
+      <div class="summary"><p>11日18:00至12日08:00：弹道导弹加锆石及123架无人机（73架喷气式），防空击落或压制89架加5枚班杰罗，17处遭击中。过去一日约10死40伤。白天再报143架，防空124架加2枚班杰罗。12–13日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4183987-adf-down-five-banderol-missiles-89-drones-launched-by-russia-against-ukraine-overnight.html">Ukrinform / 89机+5枚班杰罗（2026-11-12）</a></li>
+        <li><a href="https://en.interfax.com.ua/news/general/1235191.html">Interfax-Ukraine / 123机含73架喷气式</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-10-injure-40-across-ukraine-over-past-day-as-peace-talks-end/">Kyiv Independent / 10死40伤</a></li>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4184063-air-defense-neutralizes-124-russian-drones-two-s8000-banderoldant-missiles-on-nov-12.html">Ukrinform / 白天124机+2枚班杰罗</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海11–12日官方7机/7舰/2公务船；白天29架次警巡，22架次越中线</h3>
+      <p class="why">为何重要：空中从4架次升到7架次。白天又单独写了一场29架次的「联合战备警巡」，22架次进入北中西南东。</p>
+      <div class="summary"><p>11日6时至12日6时：共机7架次、共舰7艘、公务船2艘。3架次进入西南及东部防空识别区。同日09:38起29架次出海，22架次逾越中线及其延伸线。国防部英文列表最新条目仍为2026.11.12；12–13日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/En/Publication/88203">台湾国防部英文通报（11–12日窗口）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6475220">Taiwan News / 7机7舰2公务船</a></li>
+        <li><a href="https://mna.mnd.gov.tw/news/detail/?UserKey=88b5241c-16a9-42c5-951b-b29ecfbb8e7b">军闻社 / 29架次、22架次越中线</a></li>
+        <li><a href="https://www.mnd.gov.tw/En/News/PressRelease/88208">国防部新闻稿 11月12日14:20</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>黄仁勋即时辞职：克雷斯任临时CEO，英伟达-4.34%报166.19美元</h3>
+      <p class="why">为何重要：董事会把去留写成辞职。指数只跌0.3%；超微和博通把替代买走。</p>
+      <div class="summary"><p>董事会11日接受黄仁勋辞去总裁、CEO及董事，即时生效。CFO科莱特·克雷斯任临时CEO并继续兼CFO；哈维·琼斯出任首位董事会主席。17日三季报仍按原定日程。现金盘166.19美元，-4.34%，盘中一度约-14%。超微+5.86%，博通+5.54%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition">NVIDIA Newsroom / CEO过渡声明（2026-11-12）</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm">SEC 8-K / 11日接受辞职</a></li>
+        <li><a href="https://apnews.com/article/jensen-huang-resigns-nvidia-017d4af2ad194ec2981d661663da9f9b">AP / 黄仁勋辞职</a></li>
+        <li><a href="https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/">TechCrunch / 克雷斯任临时CEO</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>克宫约2.5小时再飞都柏林：欧洲将上桌，换俘「最大」</h3>
+      <p class="why">为何重要：有欧洲入席和换俘「最大」，没有停火公报。普京给出的新句子是康斯坦丁尼夫卡的「人道主义行动」。</p>
+      <div class="summary"><p>维特科夫、库什纳周四在克宫见普京约2.5小时，当晚飞都柏林见泽连斯基。普京拒绝外国维和部队，提议把奥列什基式行动搬到康斯坦丁尼夫卡。泽连斯基确认下一轮欧洲将直接进入谈判组；换俘将是开战以来最大规模，数字未公布。日期、地点、欧洲由谁代表均未写出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="http://en.kremlin.ru/events/president/news/81252">克宫 / 乌沙科夫会后说明（2026-11-12）</a></li>
+        <li><a href="https://kyivindependent.com/zelensky-meets-with-trumps-envoys-in-dublin-after-their-summit-with-putin/">Kyiv Independent / 都柏林：欧洲上桌</a></li>
+        <li><a href="https://apnews.com/article/russia-ukraine-war-putin-kushner-witkoff-683810203340077f33611fd1d1757b23">AP / 莫斯科再飞都柏林</a></li>
+        <li><a href="https://www.politico.eu/article/vladimir-putin-open-to-europe-joining-ukraine-peace-talks-steve-witkoff/">Politico / 普京同意欧洲参加下一轮</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>美联社已判定科洛姆拿下密西西比；参院至少55–44</h3>
+      <p class="why">为何重要：判定已经写下。谁掌参院加一席；钱袋子仍是众院255。认证权还在今天的82县。</p>
+      <div class="summary"><p>美联社判定科洛姆击败海德-史密斯，将成为该州重建以来首位黑人联邦参议员。82县认证今天，州务卿目标12月3日宣布。阿拉斯加若无人过半则18日排序复计。参议院至少55–44。众院仍约255席。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/mississippi-senate-colom-hydesmith-midterm-7f098b8834f598c923ba73572ea2223f">AP / 判定科洛姆当选</a></li>
+        <li><a href="https://apnews.com/live/trump-congress-politics-midterm-elections-news-updates-11-12-2026">AP 直播 / 科洛姆击败海德-史密斯</a></li>
+        <li><a href="https://slate.com/news-and-politics/2026/11/mississippi-scott-colom-victory-voter-suppression-fail.html">Slate / 13日县认证、12月3日州宣布</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>英伟达17日三季报</strong> — 第一次没有黄仁勋的业绩会。克雷斯兼CFO与临时CEO。贝瑞德目标价仍是200美元。</li>
+    <li><strong>今天美国PPI；十二月FOMC（12月8–9日）</strong> — 十年期已回5.105%。FedWatch加25个基点近乎定价完毕。</li>
+    <li><strong>霍尔木兹：95.82美元 vs「我们已经拿到海峡」</strong> — 四艘油轮口径未经独立核实；七项条件未松。</li>
+    <li><strong>下一轮多边谈：欧洲谁代表、日期地点未公布</strong> — 换俘数字仍待敲定。康斯坦丁尼夫卡乌方未接受。志愿联盟下周柏林。</li>
+    <li><strong>台海12–13日官方06:00窗口与密西西比今天县认证</strong> — 白天已是29机/22架次越中线。阿拉斯加若无人过半则18日排序复计。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-13 07:20 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
