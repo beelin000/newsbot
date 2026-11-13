@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月14日早报">
+<title>早报 · 2026年11月14日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月14日</h1>
+  <p class="meta">生成 07:25（亚洲/上海）· 覆盖约过去12小时 · 9条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月13日早报（13日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：华尔街周五涨跌互见、周线打断四周连跌；英伟达再跌至162.85美元、市值掉出4万亿；PPI同比6.5%；台海12–13日30机/23架次越中线；欧洲给下一轮谈判找出五国加欧盟的座位；微软全球故障超过24小时。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>华尔街周五：道指+0.10%报52,347.55，标普-0.40%报7,561.67，纳指-0.91%报25,136.27，纳指100-1.22%报27,943.74。费城半导体-3.43%报10,146.32。英伟达-2.01%报162.85美元。十年期约5.143%。PPI同比+6.5%。布伦特95.84美元。周线标普+2.51%。</li>
+    <li><span class="tag">更新</span>亚太周五分裂：日经+0.53%报61,142.35，台股+1.35%报43,675.12（台积电+0.43%报2,350元），韩国-0.98%报5,290.53。恒指-1.55%报23,637.60。周六现金盘休市。</li>
+    <li><span class="tag">更新</span>霍尔木兹未见新的独立核实触雷。布伦特几乎平盘报95.84，WTI 88.56，连两周下跌约2.5%。IEA指向供应过剩。美方继续封锁，七项条件未改。</li>
+    <li><span class="tag">更新</span>乌克兰12–13日官方：117架无人机（63架喷气式），防空击落或压制80架。过去一日约9死61伤。俄称拦截1,198架乌无人机。Starshield限速约161公里/小时。13–14日窗口未公布。</li>
+    <li><span class="tag">更新</span>台海12–13日官方：共机30架次、共舰8艘、公务船3艘，23架次越中线进入北中西南东。白天29架次警巡已计入该窗口。13–14日完整窗口未公布。</li>
+    <li><span class="tag">更新</span>FT称英伟达董事会已接触Arm首席执行官哈斯。内部帖文逾1,600条评论要求黄仁勋回来。现金盘162.85美元，市值掉出4万亿。17日三季报仍在日历上。</li>
+    <li><span class="tag">新</span>微软Outlook / Teams / Copilot全球故障超过24小时。公司称由网络扩容技术问题触发，排除网络攻击与AI；全面恢复尚无时间表。微软+0.17%。</li>
+    <li><span class="tag">更新</span>科斯塔：下一轮欧洲由欧盟加英、法、德、意、波派出外交团队。佩斯科夫称须先看到诚意。志愿联盟11月19日柏林。默茨称欧洲安全架构就是北约。</li>
+    <li><span class="tag">更新</span>密西西比82县认证截止日期已过。阿拉斯加佩尔托拉领先约5,800张第一选择，18日排序复计。参议院至少55–44。众院仍约255席。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>PPI同比6.5%，纳指-0.91%：周线把四周连跌打断，芯片把替代还回去</h3>
+      <p class="why">为何重要：周五把那一刀从英伟达写成费城半导体。PPI环比低于预期，同比却是近四年最大；十年期没有从5%下来。</p>
+      <div class="summary"><p>道指+0.10%报52,347.55，标普-0.40%报7,561.67，纳指-0.91%报25,136.27，纳指100-1.22%报27,943.74。费城半导体-3.43%报10,146.32。英伟达-2.01%报162.85美元，超微-8.75%，博通-4.76%。VIX 19.30。十年期约5.143%。PPI环比+0.3%、同比+6.5%。布伦特95.84美元。周线标普+2.51%、纳指+2.27%、道指+2.07%。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-12c1e8155fb85c3c7b09e058ed6d3c74">AP / 周五美股（2026-11-13）</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html">CNBC / 纳指25,136.27、PPI +0.3%/6.5%</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/us-stocks-mixed-at-close-of-trade-dow-jones-industrial-average-up-010-5026559">Investing.com / 英伟达162.85、超微534.06</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html">CNBC / 十年期5.143%</a></li>
+        <li><a href="https://www.bls.gov/ppi/">BLS / 十月PPI</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>亚太周五分裂：日经、台股翻红，韩国翻绿，港股再跌1.6%</h3>
+      <p class="why">为何重要：它们把「冲击有限」写成东京和台北，把「芯片通道收紧」写成首尔、深圳和香港。东证连五涨；恒指连三跌。</p>
+      <div class="summary"><p>日经+0.53%报61,142.35（周涨6.46%），东证+0.11%报3,941.57。台股+1.35%报43,675.12（台积电+0.43%报2,350元）。韩国综指-0.98%报5,290.53。上证-0.59%报3,634.36，深成-2.05%，创业板-3.32%。恒指-1.55%报23,637.60。澳股-0.71%。周六现金盘休市。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://en.infomaxai.com/news/articleView.html?idxno=148534">Yonhap Infomax / 日经61,142.35、上证3,634.36（2026-11-13）</a></li>
+        <li><a href="https://news.rthk.hk/rthk/en/component/k2/1877702-20261113.htm">RTHK / 恒指23,637、创业板2,426</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹没有新的核实触雷；布伦特停在95.84，连两周下跌</h3>
+      <p class="why">为何重要：周五纸货几乎平盘。IEA把过剩写进月报；总统把封锁写成现状。触雷和期货还不是同一张表。</p>
+      <div class="summary"><p>布伦特结算95.84美元（+0.02%），WTI 88.56美元（-0.20%），连两周下跌约2.5%。IEA周五报告指向全球供应过剩扩大。周四四艘油轮口径仍未经独立核实。美方继续封锁，七项条件未见改写。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/13/oil-prices-set-for-second-weekly-decline-as-trump-to-stay-with-iran-blockade.html">CNBC / 布伦特95.84、IEA过剩（2026-11-13）</a></li>
+        <li><a href="https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are">NPR / 「不需要协议」、封锁与现状</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰12–13日117机；俄称拦截1,198架；Starshield限速161公里/小时</h3>
+      <p class="why">为何重要：白天143机那一夜换成117机，没有再报弹道导弹。两边的发射都没有按日历停。拦截喷气式无人机的尺子被写成161公里/小时。</p>
+      <div class="summary"><p>12日18:00至13日07:30：117架无人机（63架喷气式），防空击落或压制80架，24处遭击中。过去一日约9死61伤。俄称拦截1,198架乌无人机；乌方确认打击伏尔加格勒炼厂。泽连斯基称Starshield限速约161公里/小时。13–14日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4184168-air-defense-downs-80-of-117-russian-drones-launched-overnight.html">Ukrinform / 80机（2026-11-13）</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-9-injure-61-across-ukraine-over-past-day-spark-fire-at-kyiv-hospital/">Kyiv Independent / 9死61伤</a></li>
+        <li><a href="https://www.kyivpost.com/post/89990">Kyiv Post / 俄称拦截1,198架</a></li>
+        <li><a href="https://www.axios.com/2026/11/12/ukraine-starshield-restricted-spacex-russia-zelensky">Axios / Starshield限速</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海12–13日官方30机/8舰/3公务船，23架次越中线</h3>
+      <p class="why">为何重要：空中从7架次升到30架次。白天那场29架次警巡收进了06:00窗口，没有另加。</p>
+      <div class="summary"><p>12日6时至13日6时：共机30架次、共舰8艘、公务船3艘。23架次逾越中线进入北、中、西南及东部识别区。国防部英文列表最新条目仍为2026.11.13；13–14日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/News/PLAAct/88210">台湾国防部英文通报（12–13日窗口）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6475788">Taiwan News / 30机8舰3公务船</a></li>
+        <li><a href="https://mna.mnd.gov.tw/news/detail/?UserKey=a353f3b5-ee88-4574-b4a8-322abfa98057">军闻社 / 30架次、23架次越中线</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>董事会接触Arm哈斯；内部请愿要黄仁勋回来；英伟达-2%报162.85美元</h3>
+      <p class="why">为何重要：周五董事会开始打电话，员工把电话打向另一边。超微和博通把周四买走的替代还回去。</p>
+      <div class="summary"><p>FT称董事会已接触Arm首席执行官雷内·哈斯，作为潜在继任者之一。公司称猜测为时过早，正在挑选猎头。内部帖文逾1,600条评论。现金盘162.85美元，-2.01%，市值掉出4万亿美元。17日三季报仍按原定日程。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.channelnewsasia.com/business/nvidia-approached-arm-ceo-haas-succeed-huang-ft-reports-6550286">CNA / FT：董事会接触哈斯（2026-11-13）</a></li>
+        <li><a href="https://ca.investing.com/news/stock-market-news/nvidia-approached-arm-ceo-haas-to-succeed-huang-ft-reports-4957654">Reuters / 员工请愿、猜测为时过早</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/us-stocks-mixed-at-close-of-trade-dow-jones-industrial-average-up-010-5026559">Investing.com / 收162.85美元</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">新</span>微软Outlook / Teams全球故障超过24小时：扩容事故，全面恢复无时间表</h3>
+      <p class="why">为何重要：周四傍晚开始的故障跨过了太平洋的工作日。微软把原因写成网络扩容；周五收盘只涨0.17%。</p>
+      <div class="summary"><p>Outlook、Teams及Copilot 365自周四起全球故障超过24小时，影响约70个国家。微软称由此前网络扩容的技术问题触发，排除网络攻击与AI。周五称广泛恢复，全面恢复尚无时间表。微软收523.88美元（+0.17%）。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.investing.com/news/stock-market-news/microsoft-outlook-teams-outage-eases-after-over-a-day-recovery-timeline-uncertain-5026486">Reuters / 故障缓解、无全面恢复时间表</a></li>
+        <li><a href="https://www.bbc.com/news/live/cq5y10ge3dp3t">BBC / 「深深抱歉」、排除网络攻击与AI</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>欧洲给自己找了座位：欧盟加英法德意波；佩斯科夫还没认领</h3>
+      <p class="why">为何重要：都柏林把名字写成五个国家和欧盟。克宫把「愿意试一试」改回「先看诚意」。志愿联盟的日历写在19日柏林。</p>
+      <div class="summary"><p>科斯塔：下一轮由欧盟机构加英国、法国、德国、意大利、波兰派出外交团队。佩斯科夫称须先看到欧洲真心准备作贡献。志愿联盟11月19日柏林峰会。默茨称欧洲安全架构就是北约。换俘数字仍未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/dublin-epc-europe-ukraine-russia-war-2a96d57210055edd2e76f71693e0a37c">AP / 欧盟加五国派团（2026-11-13）</a></li>
+        <li><a href="https://www.france24.com/en/europe/20261113-live-zelensky-and-kushner-confirm-that-europe-will-join-next-round-of-russia-ukraine-talks">France 24 / 佩斯科夫、柏林11月19日</a></li>
+        <li><a href="https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks">Euronews / 都柏林峰会谁代表欧洲</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>密西西比县认证窗口已过；阿拉斯加佩尔托拉领先约5,800票</h3>
+      <p class="why">为何重要：82县认证窗口已经关掉。谁掌参院加一席的法律手续从县表走到州宣布；阿拉斯加仍是唯一未判定的联邦参议员席。</p>
+      <div class="summary"><p>科洛姆已获美联社判定。82县认证截止日期13日已过，州务卿网站已挂出各县认证表，全州宣布仍目标12月3日。佩尔托拉领先约5,800张第一选择，18日排序复计。参议院至少55–44。众院仍约255席。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/mississippi-senate-colom-hydesmith-midterm-7f098b8834f598c923ba73572ea2223f">AP / 科洛姆判定、县认证截止</a></li>
+        <li><a href="https://www.sos.ms.gov/elections/electionresults_aspx/elections_results_2026_county.aspx">密西西比州务卿 / 各县认证复计表</a></li>
+        <li><a href="https://thehill.com/the-120/6218667-mary-peltola-alaska-senate-lead/">The Hill / 佩尔托拉领先约5,800票</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>英伟达17日三季报</strong> — 第一次没有黄仁勋的业绩会。克雷斯兼CFO与临时CEO。董事会称正在挑选猎头。</li>
+    <li><strong>十二月FOMC（12月8–9日）</strong> — 十年期约5.143%。FedWatch加息近乎100%。PPI同比6.5%没有改写加息路径。</li>
+    <li><strong>霍尔木兹：95.84美元 vs 封锁「现状」</strong> — 四艘油轮口径仍未经独立核实；七项条件未松。</li>
+    <li><strong>下一轮多边谈：欧盟加英法德意波 vs 佩斯科夫</strong> — 换俘数字仍待敲定。志愿联盟19日柏林。Starshield限速是否解除。</li>
+    <li><strong>台海13–14日官方06:00窗口与阿拉斯加18日排序复计</strong> — 12–13日已是30机/23架次越中线。密西西比全州宣布目标12月3日。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-14 07:25 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
