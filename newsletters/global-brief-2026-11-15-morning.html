@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月15日早报">
+<title>早报 · 2026年11月15日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月15日</h1>
+  <p class="meta">生成 07:20（亚洲/上海）· 覆盖约过去12小时 · 9条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月14日早报（14日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：周末现金盘休市、比特币滑至约64,300美元；FAA全美离港停飞逾四小时；霍尔木兹再报三艘；乌克兰13–14日96机、至少7死80伤；台海10机/4架次越中线；泽连斯基称美方提出北约换顿巴斯；特朗普、习近平、普京将在深圳首度同桌。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>周末现金盘休市。周五：道指+0.10%报52,347.55，标普-0.40%报7,561.67，纳指-0.91%报25,136.27。十年期约5.143%。布伦特95.84美元。周末WTI约87.73美元，黄金约3,883美元，比特币约64,300美元。日本GDP初值截稿未出。</li>
+    <li><span class="tag">新</span>FAA周五约16:00 ET全美离港停飞，20:15 ET解除，九一一以来最长。达菲：L3Harris铜缆改光纤淹没航管路由器。排除网络攻击与AI。周五约9,000班取消；周六仍逾3,700班取消。</li>
+    <li><span class="tag">更新</span>霍尔木兹周六再报三艘油轮触雷，未经独立核实。加利巴夫称海峡永远不会回到战前。IAEA格罗西：对高浓铀连续性知识中断逾一年，无法得出未被转用。布伦特停在95.84。</li>
+    <li><span class="tag">更新</span>乌克兰13–14日官方：96架无人机（61架喷气式），防空击落或压制81架。过去一日至少7死80伤（扎波罗热3死62伤）。Starshield限速仍在。14–15日窗口未公布。</li>
+    <li><span class="tag">更新</span>台海13–14日官方：共机10架次、共舰8艘、公务船3艘，4架次越中线进入中西南东。前一日30机/23架次越线已收短。14–15日完整窗口未公布。</li>
+    <li><span class="tag">更新</span>微软周六约01:00 ET称已完成对剩余客户与地区的恢复。故障近两天。现金盘仍是周五+0.17%报523.88美元。</li>
+    <li><span class="tag">新</span>泽连斯基周六：美方第一次问「如果乌克兰加入北约，会不会撤出顿巴斯？」若有安全保证、不限制乌军、重建资金的具体方案，会付诸公投。库什纳吁保密。</li>
+    <li><span class="tag">新</span>白宫确认特朗普、习近平、普京将在深圳APEC间隙首度三边会晤（18–19日）。美方：核不扩散与伊朗，不谈乌克兰。乌沙科夫称将谈全面解决。特朗普周一先赴东盟再转深圳。</li>
+    <li><span class="tag">更新</span>阿拉斯加佩尔托拉第一选择49.84%对46.09%，领先10,412张（约96%已计）。若无人过半则18日排序复计。参议院至少55–44。众院仍约255席。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>周日现金盘休市：指数停在周五，比特币把68,300写成约64,300</h3>
+      <p class="why">为何重要：周末没有新的现金盘，只有加密把那根尺子再往下写。日本GDP还在07:50那一格；加息路径仍停在周五的PPI。</p>
+      <div class="summary"><p>周五收盘未改写：道指+0.10%报52,347.55，标普-0.40%报7,561.67，纳指-0.91%报25,136.27。十年期约5.143%。布伦特95.84美元，WTI 88.56美元。周末WTI约87.73美元，现货黄金约3,883美元，比特币约64,300美元。日本三季度GDP初值截稿未出（预期环比+0.1%）。周一中国十月工业增加值与社零。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-12c1e8155fb85c3c7b09e058ed6d3c74">AP / 周五美股（2026-11-13）</a></li>
+        <li><a href="https://nordfx.com/market-news/forex-cryptocurrency-forecast-november-16-20-2026">NordFX / 金3,887.60、比特币周六晨67,234</a></li>
+        <li><a href="https://gofxai.com/analysis">GOFX / 15日WTI约87.73、比特币约64,310</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹周六再报三艘；加利巴夫写「永远不会」，格罗西写「无法得出」</h3>
+      <p class="why">为何重要：周六又报三艘，船名仍空着。纸货把海峡停在原地；核查把高浓铀写成空白。</p>
+      <div class="summary"><p>伊朗军方周六称三艘油轮触雷起火，未经独立核实。加利巴夫称霍尔木兹永远不会回到战前。IAEA格罗西：对高浓铀连续性知识中断逾一年，无法得出未被转用。联合国称自二月以来至少25名海员死亡。布伦特仍停在周五95.84美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.newsunc.com/2026-11-14/">News Unc / AFP：周六三艘油轮触雷</a></li>
+        <li><a href="https://oilprice.com/Latest-Energy-News/World-News/Iran-Rules-Out-Return-of-UN-Nuclear-Inspectors-as-US-War-Talks-Stall.html">OilPrice / 格罗西受限报告</a></li>
+        <li><a href="https://www.iranintl.com/en/202611145119">Iran International / IEA十月产量-46%</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰13–14日96机；过去一日至少7死80伤</h3>
+      <p class="why">为何重要：117机那一夜换成96机，没有再报弹道导弹。扎波罗热把儿童写进伤亡表。拦截尺子仍是161公里/小时。</p>
+      <div class="summary"><p>13日18:00至14日07:30：96架无人机（61架喷气式），防空击落或压制81架，8处遭击中。过去一日至少7死80伤，扎波罗热3死（含一名儿童）、62伤。Starshield限速仍在。14–15日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/14/8062833/">Ukrainska Pravda / 81机（2026-11-14）</a></li>
+        <li><a href="https://kyivindependent.com/at-least-7-killed-80-injured-in-russian-attacks-across-ukraine-zaporizhzhia-among-worst-hit/">Kyiv Independent / 至少7死80伤</a></li>
+        <li><a href="https://ukranews.com/en/news/1187559-overnight-the-occupiers-attacked-ukraine-with-96-drones-of-various-types-air-defense-forces-shot">Ukrainian News / 96机含61架喷气式</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海13–14日官方10机/8舰/3公务船，4架次越中线</h3>
+      <p class="why">为何重要：空中从30架次收到10架次。环台航迹收缩，东侧两架直升机没有跟着收缩。</p>
+      <div class="summary"><p>13日6时至14日6时：共机10架次、共舰8艘、公务船3艘。4架次逾越中线进入中、西南及东部识别区。本月迄今184架次、141艘次。国防部英文列表最新条目仍为2026.11.14；14–15日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/88212">台湾国防部英文通报（13–14日窗口）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6476271">Taiwan News / 10机8舰3公务船</a></li>
+        <li><a href="https://mna.mnd.gov.tw/news/detail/?UserKey=e5dbb2b8-25b1-415a-9add-300bb4b86d85">军闻社 / 10架次、4架次越中线</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>微软周六称全面恢复：近两天的扩容事故画上句号</h3>
+      <p class="why">为何重要：周六凌晨把「全面恢复无时间表」写成已经完成。周五现金盘没有给故障另开罚单。</p>
+      <div class="summary"><p>微软周六约01:00 ET称已完成对剩余受影响客户与地区的恢复。Outlook / Teams / Copilot自周四起故障近两天，公司称由网络扩容技术问题触发。现金盘仍是周五523.88美元（+0.17%）。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.theverge.com/tech/1033864/microsoft-has-finished-restoring-service-after-its-massive-outlook-outage">The Verge / 周六约01:00 ET完成恢复</a></li>
+        <li><a href="https://apnews.com/article/microsoft-outage-outlook-email-365-recover-ca395c0f1e51af784b6d70afb6554f6a">AP / 已恢复剩余客户与地区</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">新</span>FAA全美离港停飞逾四小时：铜缆改光纤把航管路由器打满</h3>
+      <p class="why">为何重要：九一一以来最长的全国离港停飞，写的是系统，不是天气。达菲把原因写成一次升级。</p>
+      <div class="summary"><p>FAA周五约16:00 ET全美离港停飞，20:15 ET解除。达菲：L3Harris铜缆改光纤时路由器约每五秒发出逾1,000次连接请求。排除网络攻击与AI。周五约9,000班取消；周六上午仍逾3,700班取消。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/world/us/faa-issues-national-ground-stop-due-extraordinary-circumstance-reasons-safety-2026-11-13/">Reuters / 20:15 ET解除、近10,000班取消</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html">CNBC / L3Harris铜缆改光纤</a></li>
+        <li><a href="https://apnews.com/article/flights-halted-airports-faa-f81b0904331dafad6133f291e5f531a8">AP / 九一一以来最长全国停飞</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">新</span>泽连斯基把句子写出来：北约换顿巴斯；库什纳要保密</h3>
+      <p class="why">为何重要：周六把桌子上的新问题写进公开口径。美方称许多想法仍在讨论；库什纳把最高纲领推回私下。</p>
+      <div class="summary"><p>泽连斯基：美方第一次问「如果乌克兰加入北约，会不会撤出顿巴斯？」若有安全保证、不限制乌军、重建资金的具体方案，会付诸公投。库什纳吁保密，称出现最高纲领与强烈政治修辞。换俘数字仍未公布。志愿联盟19日柏林。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.bbc.com/news/articles/cwvg2l312ylqo">BBC / 美方提出北约换撤出顿巴斯（2026-11-14）</a></li>
+        <li><a href="https://www.nbcnews.com/world/ukraine/us-floated-idea-ukraine-ceding-donbas-nato-membership-zelenskyy-rcna609297">NBC / 第一次把入约与领土挂钩</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">新</span>特朗普、习近平、普京将在深圳首度同桌：美方写核不扩散，克宫写乌克兰</h3>
+      <p class="why">为何重要：三边会还没有议程，已经有两张表。白宫把乌克兰从三边议程上拿掉；乌沙科夫把它写回双边。</p>
+      <div class="summary"><p>白宫确认18–19日深圳APEC间隙首次三边会晤。美方高官：核不扩散与伊朗，不谈乌克兰。乌沙科夫称将继续谈全面解决。叙比哈称只会鼓励普京继续战争。特朗普周一先赴菲律宾东盟再转深圳。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/historic-first-summit-among-trump-xi-putin-will-not-focus-on-ukraine-white-house-says/">Kyiv Independent / 白宫：三边会不聚焦乌克兰</a></li>
+        <li><a href="https://www.reuters.com/world/china/new-yalta-trump-putin-push-meeting-that-xi-is-wary-hosting-2026-11-14/">Reuters / 议程未定</a></li>
+        <li><a href="https://www.nbcnews.com/world/russia/yalta-wary-trump-putin-xi-summit-rcna609291">NBC / 「雅尔塔2.0」警告</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>佩尔托拉领先扩至10,412张、49.84%；18日仍可能排序复计</h3>
+      <p class="why">为何重要：领先写成五位数，第一选择写成差一点到50%。谁掌参院加一席的法律手续仍在18日那张表上。</p>
+      <div class="summary"><p>佩尔托拉第一选择49.84%对沙利文46.09%，领先10,412张，约96%已计。主流通讯社仍未判定。若无人过半则18日排序复计。参议院至少55–44。众院仍约255席。密西西比全州宣布目标12月3日。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.juneauindependent.com/post/peltola-nears-50-takes-3-75-lead-over-sen-sullivan-with-96-of-expected-ballots-counted">Juneau Independent / 领先10,412张、49.84%</a></li>
+        <li><a href="https://www.usatoday.com/story/news/politics/elections/2026/11/14/alaska-senate-peltola-sullivan-latest/92779506007/">USA Today / 领先扩至约四个百分点</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>英伟达17日三季报</strong> — 第一次没有黄仁勋的业绩会。克雷斯兼CFO与临时CEO。董事会称正在挑选猎头。</li>
+    <li><strong>今天07:50 CST日本GDP；周一中国工业增加值/社零；十二月FOMC</strong> — 十年期约5.143%。FedWatch加息近乎100%。PPI同比6.5%没有改写加息路径。</li>
+    <li><strong>霍尔木兹：95.84美元 vs 再报三艘 vs「永远不会」</strong> — 船名仍空；IAEA无法得出未被转用。七项条件未松。</li>
+    <li><strong>北约换顿巴斯 vs 库什纳「保密」；深圳三边会18–19日</strong> — 换俘数字仍待敲定。志愿联盟19日柏林。Starshield限速是否解除。</li>
+    <li><strong>台海14–15日官方06:00窗口与阿拉斯加18日排序复计</strong> — 13–14日已是10机/4架次越中线。密西西比全州宣布目标12月3日。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-15 07:20 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
