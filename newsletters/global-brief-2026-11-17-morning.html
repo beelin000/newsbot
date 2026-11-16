@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月17日早报">
+<title>早报 · 2026年11月17日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月17日</h1>
+  <p class="meta">生成 07:20（亚洲/上海）· 覆盖约过去12小时 · 9条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月16日早报（16日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：周一美股纳指-2.49%、英伟达156.14美元；日本GDP年化-0.1%，中国十月工业4.8%/社零0.4%；霍尔木兹沉没仍未核实，Al Dhannah折返迪拜；胡塞距亚丁约100公里，沙特撤换司令；乌克兰15–16日158机、敖德萨5.22万户停电；台海4机全部越中线；商务部堵住租算力；北京确认19日深圳三边会，特朗普今日17:30抵马尼拉。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>周一：道指-1.41%报51,608.17，标普-1.92%报7,416.59，纳指-2.49%报24,509.76。费城半导体-5.28%。英伟达-4.12%报156.14美元。十年期约5.12%。布伦特92.44美元，WTI 85.72美元。比特币约65,300美元。日经预期开59,010，恒指预期23,493。</li>
+    <li><span class="tag">新</span>日本三季度GDP年化-0.1%（共识+0.3%），一年内首次收缩。中国十月工业增加值4.8%、社零0.4%、1–10月固投-8.1%，三项均不及预期。</li>
+    <li><span class="tag">更新</span>霍尔木兹「沉没」仍未经独立核实，卫队视频看不见船体。Al Dhannah舵机舱遇袭后折返迪拜；On Phoenix在阿曼沿岸遭投射物击中。布伦特从95.84收到92.44。</li>
+    <li><span class="tag">更新</span>胡塞推进至亚丁以西约100公里，距卡瓦防线约25公里。沙特撤换联合部队司令萨勒曼，由鲁韦利兼任。曼德海峡西口仍在胡塞手里。</li>
+    <li><span class="tag">更新</span>乌克兰15–16日官方：158架无人机（77架喷气式），防空击落或压制131架，19处遭击中。过去一日至少6死45伤。敖德萨约5.22万户停电。16–17日窗口未公布。</li>
+    <li><span class="tag">更新</span>台海15–16日官方：共机4架次、共舰7艘、公务船3艘，4架次全部逾越中线进入中部、西南及东部。月累计205机/146艘。16–17日完整窗口未公布。</li>
+    <li><span class="tag">新</span>商务部堵住中国企业在第三国数据中心租用先进算力的口子。英伟达董事会不考虑黄仁勋复职。特朗普称不介意他回来。三季报今日美股盘后，第一次没有黄仁勋。</li>
+    <li><span class="tag">更新</span>FAA第四日。FlightAware周一约330班取消，对比周日约2,300班。达菲把航管改造预算加到500亿美元。原因仍是L3Harris路由器。</li>
+    <li><span class="tag">更新</span>北京确认特朗普、习近平、普京三边会11月19日在深圳举行。特朗普今日约17:30抵马尼拉出席东盟–美国特别峰会。阿拉斯加佩尔托拉仍是49.94%，沙利文称认证前不认输。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>周一把52,347写成51,608；布伦特把「沉没」定价成92.44</h3>
+      <p class="why">为何重要：纳指三连跌。东京交出年化-0.1%，北京交出4.8%/0.4%。海峡的声明没有改写油价。</p>
+      <div class="summary"><p>周一：道指-1.41%报51,608.17，标普-1.92%报7,416.59，纳指-2.49%报24,509.76。费城半导体-5.28%。英伟达-4.12%报156.14美元。十年期约5.12%。布伦特92.44美元，WTI 85.72美元。日经-2.42%报59,662，台股-6.03%报41,040，韩国综指-3.59%报5,100.50。日本GDP年化-0.1%；中国十月工业4.8%、社零0.4%、固投-8.1%。周二亚太尚未开，日经预期59,010，恒指预期23,493。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/stocks-markets-ai-nvidia-oil-us-35786b8f539ec95f16ae0500f71cfcc7">AP / 周一美股</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html">CNBC / 纳指-2.49%、英伟达-4.1%</a></li>
+        <li><a href="https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf">内阁府 / 三季度GDP初值</a></li>
+        <li><a href="https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202611/t20261116_1965842.html">国家统计局 / 十月工业增加值4.8%</a></li>
+        <li><a href="https://peterlewismoneytalk.substack.com/p/peters-asian-business-and-finance-4ea">Peter Lewis / 17日晨间综述</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>霍尔木兹「沉没」仍无船名；Al Dhannah被写成折返迪拜</h3>
+      <p class="why">为何重要：周一把一艘阿布扎比船写进舵机舱。视频仍看不见船体。纸货把95.84写成92.44。</p>
+      <div class="summary"><p>卫队所称载逾200万桶原油的超大型油轮沉没仍未经独立核实，视频可见火烟、看不清船体。Vanguard指Al Dhannah舵机舱遇袭后折返迪拜；16日On Phoenix在阿曼沿岸约3海里遭投射物击中机舱，船员均安全。布伦特结算92.44美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.seatrade-maritime.com/security/tanker-confirmed-struck-in-the-gulf-iran-claims-vlcc-sinking">Seatrade / Al Dhannah与On Phoenix</a></li>
+        <li><a href="https://www.aa.com.tr/en/middle-east/iran-s-navy-says-oil-tanker-struck-mine-and-caught-fire-east-of-strait-of-hormuz/4126070">Anadolu / 海峡以东再有一艘触雷</a></li>
+        <li><a href="https://www.arabnews.com/middle-east/two-oil-tankers-hit-mines-in-the-strait-of-hormuz-irgc-says-3012180">Arab News / Reuters：未能独立核实</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>胡塞把亚丁写成100公里；利雅得把司令写成撤换</h3>
+      <p class="why">为何重要：重新部署之后，霍尔·奥迈拉把临时首都再推进一格。西口仍在胡塞手里。</p>
+      <div class="summary"><p>胡塞周一推进至亚丁以西约100公里的霍尔·奥迈拉，距卡瓦防线约25公里。沙特国王撤换联合部队司令萨勒曼，由总参谋长鲁韦利兼任。联军称周一在麦加、利雅得一带再拦两架无人机。布伦特仍是92.44美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/3fec1b0a85a0/world/middle-east/houthis-seize-ground-yemens-southern-coast-edge-closer-aden-2026-11-16/">Reuters / 胡塞推进、沙特撤换司令</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/16/saudi-arabia-dismisses-commander-of-coalition-forces-fighting-houthis">Al Jazeera / 鲁韦利接任</a></li>
+        <li><a href="https://www.thenationalnews.com/news/gulf/2026/11/16/saudi-arabia-replaces-joint-forces-commander-overseeing-fight-with-houthis/">The National / 周一再拦两架无人机</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰15–16日158机；敖德萨停电写成5.22万户</h3>
+      <p class="why">为何重要：132机换成158机。敖德萨把入冬停电表再加厚。16–17日窗口还在基辅的夜里。</p>
+      <div class="summary"><p>15日夜至16日08:00：158架无人机（77架喷气式），防空击落或压制131架，19处遭击中。过去一日至少6死45伤。敖德萨北部DTEK再遭袭，约5.22万户停电，六州停电。16–17日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-6-injure-45-across-ukraine-over-past-day-as-kyiv-endures-almost-nonstop-air-raid-alerts/">Kyiv Independent / 158机、6死45伤</a></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/16/8063051/">Ukrainska Pravda / 5.22万户</a></li>
+        <li><a href="https://www.kyivpost.com/post/90219">Kyiv Post / 77架喷气式</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海15–16日官方4机/7舰/3公务船，4架次全部越中线</h3>
+      <p class="why">为何重要：空中从1架次加到4架次，且全部越中线。东侧直升机被写回来了。</p>
+      <div class="summary"><p>15日6时至16日6时：共机4架次、共舰7艘、公务船3艘。4架次全部逾越中线进入中部、西南及东部。月累计205机/146艘。国防部英文列表最新条目仍为2026.11.16；16–17日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/88217">台湾国防部英文通报（15–16日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/En/news/PlaactList">台湾国防部英文列表（截至今晨）</a></li>
+        <li><a href="https://def.ltn.com.tw/article/breakingnews/5642092">自由时报 / 1架无人机+3架直升机</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">新</span>商务部把「租算力」写成许可；董事会把黄仁勋复职写成不考虑</h3>
+      <p class="why">为何重要：华盛顿把第三国数据中心写成要许可证。特朗普和贝森特把下一任CEO写成两张嘴。156.14留给盘后。</p>
+      <div class="summary"><p>英伟达董事会不考虑让黄仁勋复职。特朗普称不介意他回来；贝森特要剧烈改组并找外部CEO。商务部临时终规：向中国等D:5企业提供合计逾1,200万TPP远程算力须许可，马来西亚、新加坡等五国列入较高转运风险。三季报今日盘后，第一次没有黄仁勋。现金盘-4.12%报156.14美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html">CNBC / 董事会不考虑复职</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html">CNBC / 商务部堵住租算力</a></li>
+        <li><a href="https://www.axios.com/2026/11/15/bessent-nvidia-earnings-china-chip-sales-ceo">Axios / 贝森特质问营收</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>FAA第四日：周一约330班取消，达菲把预算写成500亿</h3>
+      <p class="why">为何重要：取消从周日约2,300班收到约330班。达菲把事故写成航管改造预算。路由器那张表没有改写。</p>
+      <div class="summary"><p>FlightAware周一约330班取消、约3,000班延误。达菲称三日内取消逾1.8万班，经济损失以十亿美元计，并把航管改造拨款要求加到500亿美元。联航另报自身系统故障，与周五路由器无直接关联。原因仍是L3Harris铜缆改光纤。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.investing.com/news/stock-market-news/us-transport-chief-urges-congress-to-quickly-pass-air-traffic-telecom-funding-5030069">Reuters / 周一约330班、达菲500亿</a></li>
+        <li><a href="https://www.nbcnews.com/news/us-news/flights-air-traffic-delays-groundstop-faa-duffy-rcna609545">NBC / 早盘约300班取消</a></li>
+        <li><a href="https://www.usatoday.com/story/travel/airline-news/2026/11/16/airlines-flights-recovery-faa-ground-stop/92807738007/">USA Today / 四大航司仍有延误</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>北京点头：三边会19日深圳；特朗普今日17:30抵马尼拉</h3>
+      <p class="why">为何重要：中国外交部此前尚未确认。周一把北京的确认写进深圳。东盟闭幕在17:00，飞机在17:30。</p>
+      <div class="summary"><p>中方确认特朗普、习近平、普京11月19日在深圳举行三边会。美方：核不扩散与伊朗，不谈乌克兰。特朗普今日约17:30抵马尼拉，日程含四方安全对话、美泰贸易协议及东盟–美国特别峰会，再转深圳。IMF总裁警告全球经济「单腿站立」于人工智能。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://peterlewismoneytalk.substack.com/p/peters-asian-business-and-finance-4ea">Peter Lewis / 中方确认19日深圳</a></li>
+        <li><a href="https://www.philstar.com/headlines/2026/11/12/2569682/trump-set-arrive-manila-half-hour-asean-closing">Philstar / 特朗普17:30抵马尼拉</a></li>
+        <li><a href="https://bnonews.com/whpool/schedule?date=2026-11-17&month=2026-11">白宫记者团 / 四方、美泰、东盟–美国</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>佩尔托拉仍是49.94%；沙利文把认输写成25日认证之后</h3>
+      <p class="why">为何重要：计票表没有动。认输的门槛从18日复计改写成25日认证。50%那条线还在。</p>
+      <div class="summary"><p>佩尔托拉仍是140,637（49.94%）对沙利文129,424（45.96%），领先11,213张，距过半约157张。沙利文竞选团队周一称认证前不认输。18日排序复计仍在日历上。参议院至少55–44。众院仍约255席。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.newsweek.com/mary-peltola-closes-in-on-50-threshold-in-alaska-senate-race-12718013">Newsweek / 距过半157张</a></li>
+        <li><a href="https://www.democracydocket.com/news-alerts/sen-dan-sullivan-campaign-says-it-wont-concede-alaska-senate-race-until-its-certified/">Democracy Docket / 认证前不认输</a></li>
+        <li><a href="https://thealaskastory.com/alaska-ballot-update-leaders-hold-as-count-nears-completion-ranking-set-for-nov-18/">Alaska Story / 140,637对129,424</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>英伟达今日美股盘后三季报</strong> — 第一次没有黄仁勋。董事会称不考虑复职。商务部租算力许可如何写进指引。</li>
+    <li><strong>十二月FOMC；今日零售销售；本周FOMC纪要</strong> — 十年期约5.12%。FedWatch加息约95.7%。沃什没有给新的口头指引。</li>
+    <li><strong>霍尔木兹Al Dhannah / On Phoenix vs「沉没」vs 布伦特92.44</strong> — 卫队视频仍无船体。曼德海峡西口与亚丁100公里是否改写航道保费。</li>
+    <li><strong>特朗普今日马尼拉 → 19日深圳三边会 vs 柏林19日</strong> — 北京已点头。乌克兰仍不在三边议题。16–17日乌克兰官方窗口待出。</li>
+    <li><strong>台海16–17日官方06:00窗口与阿拉斯加18日排序复计</strong> — 15–16日已是4机全部越中线。沙利文把认输推到25日认证。Anthropic定价18日。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-17 07:20 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
