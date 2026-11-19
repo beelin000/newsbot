@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月20日早报">
+<title>早报 · 2026年11月20日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月20日</h1>
+  <p class="meta">生成 07:40（亚洲/上海）· 覆盖约过去12小时 · 9条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月19日早报（19日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：周四美股道指-2.19%报49,097，标普六连跌；Anthropic开111.50收97.17、筹资813亿美元；深圳三边会90分钟和平宣言，普京称大桥后再不谈；基辅使馆与教堂受损；台海1机7舰；Tara Gas仍冒烟。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>周四：道指-2.19%报49,097.06（6月以来首次收于50,000下方），标普-2.02%报7,175.83（六连跌），纳指-2.25%报23,879.20。英伟达-3.30%报145.98美元。AMD-7.72%报489.19美元。VIX 28.44。十年期约5.04%。布伦特91.98美元，WTI 83.21美元。黄金约3,685.50美元，比特币约61,600美元。</li>
+    <li><span class="tag">新</span>Anthropic开盘111.50美元（较83美元约+34%），收97.17美元（约+17.1%）。发行扩至9.80亿股，筹资约813亿美元，创美股IPO纪录；充分稀释市值约1.8万亿美元。</li>
+    <li><span class="tag">更新</span>亚太周四：日经+0.71%报59,444，台股-4.40%报38,427（跌破40,000，外资净卖243亿），韩国综指+1.39%报5,138，恒指-1.95%报22,842，上证-0.28%报3,577.62，澳洲-1.04%报8,730。周五夜盘日经期货收57,880。</li>
+    <li><span class="tag">更新</span>Tara Gas周四卫星仍冒烟，1名印度籍船员仍失踪。18日晚哈萨卜以北约6海里再有油轮机舱遇袭，船员均安。霍尔木兹「沉没」仍未核实。特朗普据报考虑对伊朗新一轮打击。布伦特91.98美元。</li>
+    <li><span class="tag">更新</span>乌克兰18–19日官方：98架无人机（61架喷气式），防空击落或压制69架，18处遭击中。过去一日至少4死36伤。基辅日间荷兰、奥地利使馆与教堂受损，全市1死5伤。乌方再打克里米亚大桥。普京称不再谈。19–20日窗口未公布。</li>
+    <li><span class="tag">更新</span>台海18–19日官方：共机1架次、共舰7艘、公务船2艘，1架次无人机逾越中线进入西南。月累计220机/171艘。19–20日完整窗口未公布。</li>
+    <li><span class="tag">更新</span>也门政府军称周四在图尔·巴哈击退胡塞两路进攻，近数小时715次打击。胡塞距亚丁约85公里。曼德海峡西口仍由胡塞控制。</li>
+    <li><span class="tag">更新</span>众议院披露商务部批准向中国出售逾87.9万颗人工智能芯片。Hunterbrook做空AMD。英伟达145.98美元。黄仁勋仍定12月1日国会作证。</li>
+    <li><span class="tag">更新</span>特朗普、习近平、普京周四三边会约90分钟，发表和平宣言（联合国改革、成品油、豁免、核不扩散），无乌克兰停火。普京称大桥后再不谈。柏林志愿联盟开会，泽连斯基到场。特朗普今日华盛顿时间正午记者会。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>周四把开盘铃写成全天低点；道指把50,000写成49,097</h3>
+      <p class="why">为何重要：标普六连跌，道指6月以来首次收于5万下方。Anthropic的813亿没有改写AI股。夜盘把日经写成57,880。</p>
+      <div class="summary"><p>周四：道指-2.19%报49,097.06，标普-2.02%报7,175.83，纳指-2.25%报23,879.20。费城半导体约-2.14%。英伟达-3.30%报145.98美元。AMD-7.72%报489.19美元。VIX 28.44。十年期约5.04%，美元指数约103.94。布伦特91.98美元，WTI 83.21美元。日经+0.71%报59,444，台股-4.40%报38,427，韩国综指+1.39%报5,138，恒指-1.95%报22,842。周五夜盘日经期货收57,880；东京、首尔、台北尚未开。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/stocks-markets-ai-us-anthropic-206c84045137824feabe052a29ff6140">AP / 周四美股、标普六连跌</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/18/stock-market-today-live-updates.html">CNBC / 道指49,097.06、纳指23,879.20</a></li>
+        <li><a href="https://news.rthk.hk/rthk/en/component/k2/1878452-20261119.htm">RTHK / 亚太周四收盘</a></li>
+        <li><a href="https://edgeconsultancykw.com/asia-market-wrap-19-november-2026/">The Edge / 亚太指数</a></li>
+        <li><a href="https://finance.matsui.co.jp/news/641986/index">松井证券 / 日经期货夜盘57,880</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>Tara Gas周四仍冒烟；哈萨卜北6海里再写进一艘船</h3>
+      <p class="why">为何重要：火没有被写成扑灭。海峡袭击没有停。纸货把91.95写成91.98。</p>
+      <div class="summary"><p>Tara Gas周四卫星仍冒烟。1名印度籍三副仍失踪。18日晚哈萨卜以北约6海里再有油轮机舱遭投射物，船员均安。卫队周四再称两艘超大型油轮触雷，仍未经独立核实。特朗普据报考虑对伊朗新一轮打击。布伦特结算91.98美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.inquirer.com/news/nation-world/iran-strait-hormuz-attacks-20261119.html">Inquirer / Tara Gas周四仍冒烟</a></li>
+        <li><a href="https://gcaptain.com/tara-gas-burning-off-oman-as-another-tanker-attack-leaves-11-injured/">gCaptain / Tara Gas燃烧、Navig8 Messi 11伤</a></li>
+        <li><a href="https://vesselhunter.io/news/navig8-messi-struck-off-khasab-crew-missing-blockade-sts">VesselHunter / 18日晚6海里再袭</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>图尔·巴哈把100公里写成85；政府军把715次写进打击表</h3>
+      <p class="why">为何重要：第一道防线被再往南推。西口仍在胡塞手里。</p>
+      <div class="summary"><p>胡塞周四两路进攻图尔·巴哈，政府军称击退。也门军方称近数小时715次空地打击。胡塞距亚丁约85公里。曼德海峡西口仍由胡塞控制。布伦特仍是91.98美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://al-ain.com/article/houthi-militias-yemen-lahj-escalation">Al-Ain / 图尔·巴哈两路进攻、约85公里</a></li>
+        <li><a href="https://www.arabnews.com/middle-east/yemeni-army-reports-715-operations-against-houthi-forces-3012985">Arab News / 政府军称715次行动</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>乌克兰18–19日98机；基辅把使馆写成玻璃；普京把大桥写成不谈</h3>
+      <p class="why">为何重要：141机换成98机。日间把外交区写进残骸表。公路拱入水把谈判格划掉。19–20日窗口还在基辅的夜里。</p>
+      <div class="summary"><p>18日夜至19日08:00：缟玛瑙导弹与98架无人机（61架喷气式），防空击落或压制69架，18处遭击中。过去一日至少4死36伤。基辅日间荷兰、奥地利使馆与圣弗拉基米尔大教堂受损，全市1死5伤。乌方再以海王星打克里米亚大桥。普京称不再谈能源与航运暂停。19–20日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://en.interfax.com.ua/news/general/1238981.html">Interfax-Ukraine / 98机、69架击落或压制</a></li>
+        <li><a href="https://kyivindependent.com/breaking-dutch-embassy-damaged-in-russian-drone-strike-on-kyiv/">Kyiv Independent / 基辅使馆与教堂</a></li>
+        <li><a href="https://www.reuters.com/world/china/third-attack-week-suspends-traffic-over-crimean-bridge-russian-official-says-2026-11-19/">Reuters / 普京称将痛击</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海18–19日官方1机/7舰/2公务船，1架次越中线</h3>
+      <p class="why">为何重要：空中从9架次收到1架次，1架次越中线。舰加到7艘。19–20日窗口未出。</p>
+      <div class="summary"><p>18日6时至19日6时：共机1架次、共舰7艘、公务船2艘。1架无人机逾越中线进入西南。月累计220机/171艘。国防部英文列表最新条目仍为2026.11.19；19–20日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/88301">台湾国防部英文通报（18–19日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/En/news/PlaactList">台湾国防部英文列表（截至今晨）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6478297">台湾英文新闻 / 月累计220机171艘</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">新</span>阿莫代把111.50写成开盘、97.17写成收盘；813亿把SpaceX写破</h3>
+      <p class="why">为何重要：开盘涨破定价34%，收盘把一半涨幅吐掉。813亿创纪录，没有把AI股写回来。</p>
+      <div class="summary"><p>Anthropic周四以ANT上市。开盘111.50美元，收97.17美元（较83美元发行价约+17.1%）。发行扩至9.80亿股，筹资约813亿美元，创美股IPO纪录；充分稀释市值约1.8万亿美元。成交逾8.46亿股。开盘铃前后三大指数改写成全天低点。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html">CNBC / 收盘97.17美元、筹资813亿</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html">CNBC / IPO未能提振AI股</a></li>
+        <li><a href="https://apnews.com/article/stocks-markets-ai-us-anthropic-206c84045137824feabe052a29ff6140">AP / 标普六连跌、Anthropic上市</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>众议院把87.9万颗写进许可表；Hunterbrook把AMD写成做空</h3>
+      <p class="why">为何重要：国会把许可表从机密写成公开。1,158亿连续第二天没有改写股价。复职那一格没有被改写。</p>
+      <div class="summary"><p>众议院外交委员会披露：商务部批准向中国出售逾87.9万颗人工智能芯片（申请约340万颗）。Hunterbrook做空AMD，称固件出现在黑名单服务器商；AMD称遵守出口管制。英伟达-3.30%报145.98美元，AMD-7.72%报489.19美元。黄仁勋仍定12月1日国会作证。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html">CNBC / 商务部批准逾87.9万颗</a></li>
+        <li><a href="https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china">众议院外交委员会 / 马斯特声明</a></li>
+        <li><a href="https://schwabnetwork.com/articles/closing-bell-ai-trade-pressured-markets-slide-as-anthropic-record-debut-shines">Schwab / AMD约-8%、SOX -2.14%</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>三边会把「不超过一小时」写成90分钟；和平宣言没有把乌克兰写成停火</h3>
+      <p class="why">为何重要：仪式被写成稍长的仪式。石油、豁免和核不扩散被写上了，停火没有。柏林把欧洲写成另一张桌子。</p>
+      <div class="summary"><p>特朗普、习近平、普京周四在深圳麒麟山庄会谈约90分钟，发表和平宣言：联合国改革、增加成品油供应、国家官员豁免、核战争打不赢。宣言没有宣布乌克兰或霍尔木兹停火。普京称克里米亚大桥后再不谈。柏林志愿联盟开会，泽连斯基到场，欧委会提出2027年约450亿欧元。特朗普定于华盛顿时间今日正午记者会。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.bbc.com/news/articles/c623j4ln97x7o">BBC / 90分钟、和平宣言</a></li>
+        <li><a href="https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace/">白宫 / 三边和平宣言全文</a></li>
+        <li><a href="https://www.bundeskanzler.de/bk-de/aktuelles/koalition-der-willigen-in-berlin-2461162">德国联邦政府 / 柏林志愿联盟</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>佩尔托拉仍是50.12%；认输还没写上，25日那张表还在</h3>
+      <p class="why">为何重要：过半数字没有被改写。沙利文把认输仍推到25日认证。</p>
+      <div class="summary"><p>佩尔托拉第一选择仍是144,302（50.12%）对沙利文131,844。州选举司确认仍计划认证。沙利文仍未认输。特朗普政府起诉阻止认证的诉讼仍在。认证目标仍是11月25日。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.democracydocket.com/news-alerts/live-updates-alaska-senate-race-moves-toward-certification-of-democratic-win/">Democracy Docket / 认证仍推进</a></li>
+        <li><a href="https://www.adn.com/politics/2026/11/18/gop-led-investigations-still-underway-after-peltola-wins-alaskas-us-senate-race/">Anchorage Daily News / 沙利文仍未认输</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>今日亚太开盘 vs 日经期货夜盘57,880</strong> — 台股周四已跌破40,000。英伟达现金盘145.98美元。Anthropic下一交易日。</li>
+    <li><strong>特朗普华盛顿时间今日正午记者会</strong> — 三边会宣言没有停火。普京把大桥写成不谈。柏林把接触线写成出发点。</li>
+    <li><strong>十二月FOMC</strong> — FedWatch仍约90–95%定价25基点。十年期约5.04%。VIX 28.44。</li>
+    <li><strong>Tara Gas失踪一人 vs 新船6海里 vs「沉没」vs 布伦特91.98</strong> — 卫队视频仍无船体。特朗普是否再打伊朗。</li>
+    <li><strong>台海19–20日官方06:00窗口与阿拉斯加11月25日认证</strong> — 18–19日已是1机、1架次越中线。黄仁勋12月1日国会作证。众议院把87.9万颗写进公开表。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-20 07:40 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
