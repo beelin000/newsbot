@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月23日早报">
+<title>早报 · 2026年11月23日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月23日</h1>
+  <p class="meta">生成 07:20（亚洲/上海）· 覆盖约过去12小时 · 9条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月22日早报（22日晚报未出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：日本勤劳感谢日休市，台湾今日起平盘下禁空；乌克兰21–22日官方186机、迪梅尔废墟救出7岁儿童；Sparta II被拖出芬兰领海；台海24机17越线；JMIC点名TORKEL与ARINA；COP31周日散场无封面决定。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>日本周一休市。周五仍是美股最后一笔：道指48,147.33，标普6,910.39（修正），纳指22,617.73，英伟达125.53美元，VIX 35.89。ASX 200期货约-0.6%指向8,556。台湾金管会今日起全面禁止平盘以下放空，保证金130%→150%。韩国稳定基金「随时可动」但尚未拨款。比特币约60,690–60,780美元。布伦特仍是92.57美元。</li>
+    <li><span class="tag">更新</span>乌克兰21–22日官方：186架无人机（72架喷气式），防空击落或压制161架，18处遭击中。迪梅尔五层楼垮塌，内政部晚间4死6伤、9人可能仍在废墟；7岁达维德被埋近14小时后救出。紧急服务局后报至少5死。维什涅韦2死、白采尔克瓦1死。北约理事会今日布鲁塞尔开会。</li>
+    <li><span class="tag">更新</span>Sparta II周日被俄救援船Murman拖出芬兰领海。火从外侧已看不见，货柜仍热，1人轻伤。芬兰仍称很可能乌方，基辅未表态。</li>
+    <li><span class="tag">更新</span>台海21–22日官方：共机24架次、共舰11艘、公务船1艘，17架次越中线进入中部及西南。气球2颗，三日合计10颗。月累计254机/199艘。22–23日窗口未公布。</li>
+    <li><span class="tag">更新</span>JMIC把周六两起写成TORKEL与ARINA。自16日起霍尔木兹7艘油轮遇袭。19–21日未见载货逾1,000载重吨商船过峡。布伦特92.57美元。</li>
+    <li><span class="tag">更新</span>联军周日拦截射向西部的1枚弹道导弹，周六以来无人机拦截合计4架。胡塞距亚丁仍约80–85公里。</li>
+    <li><span class="tag">发展中</span>Clay所长布里森称黎曼证明宣布「具有历史意义」，但「真正理解将漫长而艰难」。官网仍列为未解。奖金仍要发表后再过两年。</li>
+    <li><span class="tag">更新</span>COP31周日散场，没有封面决定。欧盟拒绝未写化石燃料的文本。这是2009年哥本哈根以来首次未能通过总体协议。</li>
+    <li><span class="tag">更新</span>阿拉格希称6月伊斯兰堡备忘录「已不在桌上」。卡塔尔两小时没有写成开峡。特朗普要「永久」协议的口径未改。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>日本把开盘铃放假；金管会把平盘以下放空写成禁令</h3>
+      <p class="why">为何重要：东京放假削薄了周一第一张亚太表。台北先动手禁空，首尔把稳定基金写成上膛而不是已买。</p>
+      <div class="summary"><p>日本因勤劳感谢日休市。周五仍是美股最后一笔：道指48,147.33，标普6,910.39，纳指22,617.73，英伟达125.53美元，VIX 35.89。ASX 200期货约-0.6%指向8,556。比特币约60,690–60,780美元。布伦特仍是92.57美元。台湾金管会今日起全面禁止平盘以下放空（2015年以来首次），保证金调至150%。韩国周日启动稳定基金「随时可动」准备，约10.76万亿韩元承诺规模尚未拨款；库藏股每日上限自24日起放宽三个月。美股期货刚重开，截稿无可靠开盘后报价。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602">ABC / 周一市场快照</a></li>
+        <li><a href="https://www.fsc.gov.tw/ch/home.jsp?dataserno=202611210001&amp;dtable=News&amp;id=96&amp;mcustomize=news_view.jsp">金管会 / 平盘以下禁空</a></li>
+        <li><a href="https://www.ajupress.com/view/20261122184070356">Aju Press / 韩国稳定基金准备</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>186机把迪梅尔写成废墟；7岁达维德把14小时写成还活着</h3>
+      <p class="why">为何重要：21–22日官方窗口挂上。导弹从这张表里拿掉。理事会今天才开。</p>
+      <div class="summary"><p>21日夜至22日：186架无人机（72架喷气式），防空击落或压制161架，18处遭击中。迪梅尔五层楼约05:00垮塌。内政部晚间4死6伤、9人可能仍在废墟；7岁达维德被埋近14小时后救出、伤势稳定。紧急服务局后报至少5死。维什涅韦超市2死8伤、白采尔克瓦1死4伤。州府定今日哀悼。北约理事会今日布鲁塞尔开会，波兰副防长出席。22–23日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ukrinform.net/rubric-ato/4187288-air-defenses-down-161-of-186-russian-drones-launched-against-ukraine-since-evening.html">Ukrinform / 186机、161击落</a></li>
+        <li><a href="https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/">Kyiv Independent / 迪梅尔废墟与达维德</a></li>
+        <li><a href="https://mvs.gov.ua/news/unaslidok-vlucannia-rosiiskim-udarnim-bezpilotnikom-po-budinku-v-dimeri-zaginuli-cetvero-liudei-deviatero-mozut-zalisatisia-pid-zavalami">乌克兰内政部 / 4死6伤、达维德获救</a></li>
+        <li><a href="https://www.polskieradio.pl/395/7785/artykul/3755545,nato-to-discuss-russian-airspace-violations-over-poland">Polskie Radio / 北约理事会周一</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>Murman把Sparta II拖出芬兰水；基辅那一格还是空的</h3>
+      <p class="why">为何重要：领海里的火被写成离境，不是写成灭因。基辅没有认领。</p>
+      <div class="summary"><p>俄救援船Murman周日将Sparta II拖出芬兰领海，芬兰与爱沙尼亚协同。火从外侧已看不见，货柜仍热，船体微倾、未检出泄漏。1名船员轻伤。总统斯图布称船已离开芬兰水域。芬兰仍称很可能乌方，基辅未表态。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.bbc.com/news/articles/cj752ddve27ko">BBC / 拖带、1人轻伤</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-drone-attack">Al Jazeera / 斯图布称已离开领海</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>JMIC把周六两起写成TORKEL和ARINA；1,000吨那一格是空的</h3>
+      <p class="why">为何重要：船名写上了。商业过峡在追踪表上停了。开峡没有被写成已经开。</p>
+      <div class="summary"><p>JMIC Update 116点名TORKEL（哈萨卜北约11海里船尾起火）与ARINA（东约17海里机舱）。自16日起霍尔木兹7艘油轮遇袭。19–21日未见载货逾1,000载重吨商船过峡。伊方触雷说法仍无官方确认。布伦特仍是92.57美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59">JMIC Update 116 / TORKEL与ARINA</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping">Al Jazeera / UKMTO周六两起</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>西部把一枚弹道写成拦截；4架无人机没有把85公里写远</h3>
+      <p class="why">为何重要：预警从首都扩到红海沿岸。亚丁仍是下一张图。</p>
+      <div class="summary"><p>联军周日称拦截射向西部的1枚弹道导弹，并把周六以来无人机拦截写成4架。胡塞媒体称萨那加油站6人受伤，联军未回应。胡塞距亚丁仍约80–85公里。曼德海峡西口仍由胡塞控制。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://english.alarabiya.net/News/middle-east/2026/11/22/saudiled-coalition-intercepts-houthi-ballistic-missile-three-drones">Al Arabiya / 西部弹道与4架无人机</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/22/houthis-report-attack-on-sanaa-as-saudi-arabia-intercepts-drone">Al Jazeera / 利雅得无人机、萨那6伤</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海21–22日官方24机/17越线；气球三日写成10颗</h3>
+      <p class="why">为何重要：周六21/15警巡写进了完整06:00表。气球连续三天没有停。</p>
+      <div class="summary"><p>21日6时至22日6时：共机24架次、共舰11艘、公务船1艘，17架次越中线进入中部及西南。另侦获气球2颗。月累计254机/199艘。过去三日气球合计10颗。22–23日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/news/plaact/88317">台湾国防部英文通报（21–22日窗口）</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6479680">台湾英文新闻 / 24机17越线</a></li>
+        <li><a href="https://www.taipeitimes.com/News/taiwan/archives/2026/11/23/2003868234">台北时报 / 三日气球10颗</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">发展中</span>布里森把黎曼写成「历史意义」；Clay那一格仍是未解</h3>
+      <p class="why">为何重要：所长开口了，不是奖金已经打款。官网那一格还没动。</p>
+      <div class="summary"><p>Lean周六声明「有充分信心」之后，Clay所长布里森称这是「具有历史意义的宣布」，但「从宣布走到真正理解将漫长而艰难」。Clay网站仍列为未解；奖金须发表后再经至少两年。Conrey称「纪念碑式」但尚未审稿。人类可读的常规证明还没交出来。Anthropic现金盘仍是周五88.91美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.sbs.com.au/news/article/riemann-hypothesis-maths-problem-solved/j3peyk1hn">SBS / Bridson与Conrey</a></li>
+        <li><a href="https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai">NPR/AP / 「漫长而艰难」</a></li>
+        <li><a href="https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai">The Guardian / Lean核验</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">更新</span>安塔利亚把封面决定写成散场；2009年以来第一次</h3>
+      <p class="why">为何重要：协议那一格被写成空的——不是拖延，是散会。</p>
+      <div class="summary"><p>COP31周日结束，没有封面决定。欧盟拒绝未写化石燃料的土澳最终文本。这是有记录以来最长一届COP，也是2009年哥本哈根以来首次未能通过总体协议。古特雷斯表示深切失望。电气化35%和碳移除写进了被拒文本，没有写成签字。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.reuters.com/3fec1b0a85a0/sustainability/cop/cop31-climate-talks-close-final-deal-says-summit-president-2026-11-21/">Reuters / COP31崩溃</a></li>
+        <li><a href="https://apnews.com/article/climate-un-turkey-fossil-fuels-global-warming-f6e36c4caf13ec6fed57c9f077cbd067">AP / 周日无总体协议</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>卡塔尔两小时没有写成开峡；伊斯兰堡备忘录被写成不在桌上</h3>
+      <p class="why">为何重要：6月那张纸作废了，不是新的纸已经签。海峡没有开。</p>
+      <div class="summary"><p>卡塔尔周五夜两小时、尚未正式谈判，没有新的签字。阿拉格希称6月伊斯兰堡备忘录「已不在桌上」。开峡条件未改；特朗普「永久」协议口径未改。JMIC把过峡货船写成接近为零。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aljazeera.com/news/2026/11/21/iran-says-held-talks-with-qatari-mediators-urges-us-to-accept-conditions">Al Jazeera / 卡塔尔两小时</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/22/saudi-houthi-bahrain-iran-attacks-araghchi-talks.html">CNBC / 伊斯兰堡备忘录不在桌上</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>周一亚太现金盘 vs 周五收盘56,436 / 36,033 / 6,910 / 英伟达125.53</strong> — 日本休市。台湾平盘下禁空今日生效。韩国稳定基金未拨款。</li>
+    <li><strong>北约理事会今日布鲁塞尔 vs 波兰未完鉴定 vs 乌克兰22–23日窗口 vs 迪梅尔搜救</strong> — 21–22日已是186机、迪梅尔至少5死。Sparta II基辅是否认领。</li>
+    <li><strong>十二月FOMC与本周美国PCE</strong> — FedWatch仍接近满定价25基点。周四美国感恩节休市。</li>
+    <li><strong>霍尔木兹TORKEL / ARINA vs 7艘累计 vs 卡塔尔斡旋 vs 布伦特92.57</strong> — 伊斯兰堡备忘录被写成不在桌上。</li>
+    <li><strong>台海22–23日官方06:00窗口与阿拉斯加11月25日认证</strong> — 21–22日已是24机17越线、月累计254/199。黄仁勋12月1日国会作证。COP31已经散场。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-23 07:20 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
