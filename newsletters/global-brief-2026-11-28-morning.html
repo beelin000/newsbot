@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1211">
+<meta name="description" content="全球要闻简报｜2026年11月28日早报">
+<title>早报 · 2026年11月28日｜全球要闻简报</title>
+<style>
+/* newsbot-theme: investor-dark-v1 */
+:root {
+  --bg: #0e1211;
+  --bg-card: #151c1a;
+  --card: #151c1a;
+  --text: #e6ebe8;
+  --muted: #8b968f;
+  --border: #24302c;
+  --accent: #7eb68d;
+  --accent-soft: rgba(126, 182, 141, 0.12);
+  --accent-dim: #3d5c4a;
+  --why: #a8c4b0;
+  --chip: #141a18;
+  --header-bg: rgba(14, 18, 17, 0.94);
+  --shadow: none;
+  --top-btn: #7eb68d;
+  --top-btn-fg: #0e1211;
+  --measure: 42rem;
+  --page-pad: 1rem;
+  --radius: 6px;
+}
+@media (min-width: 768px) {
+  :root { --measure: 52rem; --page-pad: 1.5rem; }
+}
+@media (min-width: 1100px) {
+  :root { --measure: 60rem; --page-pad: 2rem; }
+  body { font-size: 18px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: var(--text); background: var(--bg);
+  padding: 0 env(safe-area-inset-right,0) calc(5rem + env(safe-area-inset-bottom,0)) env(safe-area-inset-left,0);
+  text-wrap: pretty;
+}
+a { color: var(--accent); word-break: break-word; }
+.wrap { width: min(100%, var(--measure)); margin: 0 auto; padding: 0 var(--page-pad); }
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top,0); }
+.site-header .inner { width: min(100%, var(--measure)); margin: 0 auto; padding: .75rem var(--page-pad) .5rem; }
+.kicker { font-size: .75rem; color: var(--muted); margin: 0 0 .15rem; }
+.site-header h1 { margin: 0; font-size: 1.25rem; line-height: 1.35; font-weight: 700; }
+.meta { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); }
+.chip-nav { position: sticky; top: calc(env(safe-area-inset-top,0) + 4.7rem); z-index: 30; background: var(--header-bg); border-bottom: 1px solid var(--border); }
+.chip-scroll { width: min(100%, var(--measure)); margin: 0 auto; display: flex; gap: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: .55rem var(--page-pad); flex-wrap: nowrap; }
+.chip-scroll::-webkit-scrollbar { display: none; }
+.chip-scroll a { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 .95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--chip); color: var(--text); text-decoration: none; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+.chip-scroll a:hover { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-soft); }
+section { scroll-margin-top: calc(env(safe-area-inset-top,0) + 8.4rem); margin: 1.25rem 0 1.75rem; }
+.section-title { margin: 0 0 .75rem; font-size: 1.15rem; font-weight: 750; color: var(--accent); }
+.bullets { margin: 0; padding-left: 1.15rem; } .bullets li { margin: .4rem 0; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 .85rem; }
+.card h3 { margin: 0 0 .45rem; font-size: 1.08rem; line-height: 1.4; font-weight: 700; }
+.why { margin: 0 0 .55rem; font-size: .92rem; color: var(--why); font-weight: 600; }
+.summary p { margin: 0 0 .55rem; } .summary p:last-child { margin-bottom: 0; }
+details.sources { margin-top: .65rem; border-top: 1px dashed var(--border); padding-top: .35rem; }
+details.sources summary { cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; font-size: .9rem; font-weight: 600; color: var(--accent); }
+details.sources summary::-webkit-details-marker { display: none; }
+.sources ol { margin: .25rem 0 .5rem; padding-left: 1.2rem; font-size: .9rem; }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: .1rem .45rem; border-radius: 4px; margin-right: .35rem; }
+.note { margin: 1rem 0 0; padding: .85rem 1rem; background: var(--accent-soft); border-radius: var(--radius); font-size: .9rem; color: var(--muted); }
+.footer { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+#top-btn { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom,0)); width: 44px; height: 44px; border-radius: var(--radius); border: none; background: var(--top-btn); color: var(--top-btn-fg); font-size: .85rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; z-index: 50; }
+.lib-link { display: inline-flex; align-items: center; min-height: 36px; margin: 0 0 .35rem; padding: 0 .7rem; border: 1px solid var(--accent-dim); border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); text-decoration: none; font-size: .82rem; font-weight: 650; }
+.lib-link:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header"><div class="inner">
+  <a class="lib-link" href="../index.html">简报库</a>
+  <p class="kicker">全球要闻简报</p>
+  <h1>早报 · 2026年11月28日</h1>
+  <p class="meta">生成 07:35（亚洲/上海）· 覆盖约过去12小时并补录周四、周五 · 10条主稿</p>
+</div></header>
+<nav class="chip-nav" aria-label="栏目导航"><div class="chip-scroll">
+  <a href="#highlights">要点</a><a href="#finance">财经</a><a href="#military">军事</a><a href="#tech">科技</a><a href="#politics">政治</a><a href="#watch">关注</a>
+</div></nav>
+<main class="wrap">
+  <p class="note">前一期为11月26日早报（26日晚报、27日早晚报未出现在本检出）。已覆盖议题仅在有实质进展时以【更新】收录。本日主轴：周五美股缩短交易日收阳，周线标普+5.6%；亚太收回周三阴线，韩国综指周五+4.34%；吉赞炼厂1名工人死亡；乌克兰26–27日官方155机；欧盟450亿欧元贷款推迟到12月。本日为周六，亚太现金盘已收。</p>
+  <section id="highlights"><h2 class="section-title">今日要点</h2><ul class="bullets">
+    <li><span class="tag">更新</span>周五美股缩短交易日：道指+1.18%报50,774.94，标普+1.60%报7,297.49，纳指+2.31%报24,129.50。周线标普+5.6%为2025年4月以来最强。英伟达+0.80%报150.49美元，Anthropic+10.98%报91.88美元。VIX 23.81。十年期约4.94%。</li>
+    <li><span class="tag">更新</span>亚太收回：日经周五+2.11%报58,711.11，台湾加权39,308.08（台积电2,180元），韩国综指+4.34%报4,915.68。恒生22,694.77，上证3,606.49。韩央行周四加息至3.25%。布伦特95.44美元。</li>
+    <li><span class="tag">更新</span>乌克兰25–26日官方：弹道+113架无人机（76架喷气式），防空87架，20处击中，全境至少10死58伤。26–27日：155架（83架喷气式），110架击落或压制，27处击中，至少6死25伤。27–28日窗口未公布。</li>
+    <li><span class="tag">新</span>沙特吉赞炼厂周四遭击中，1名尼泊尔籍工人死亡，部分装置临时停工。拉斯塔努拉阿美仍未报产能。</li>
+    <li><span class="tag">新</span>科威特称击落伊朗无人机，残骸致2名意大利技师死亡；阿拉格希否认。叙比哈对利比亚军官死亡表示「非针对、遗憾」。</li>
+    <li><span class="tag">更新</span>台海26–27日官方：共机1架次、共舰7艘。月累计267机/242艘。周五09:25起联合警巡30架次（26架次越中线），属27–28日未公布窗口。</li>
+    <li><span class="tag">新</span>美国务院批准6.219亿美元F-16维持包，比/丹/荷/挪经JUMPSTART出资，无美资金。欧盟峰会未通过450亿欧元对乌贷款，12月再议。</li>
+    <li><span class="tag">更新</span>英伟达据报暂停向马新泰印发运服务器。万斯称黄仁勋未被调查、不需要赦免。12月1日众院闭门约谈未改写。</li>
+  </ul></section>
+  <section id="finance"><h2 class="section-title">财经</h2>
+    <article class="card"><h3><span class="tag">更新</span>缩短交易日把周线写成一年最强；150.49没有把165写回来</h3>
+      <p class="why">为何重要：周四空仓。周五把周线写成2025年4月以来最强。亚太把周三阴线买回一截。150.49不是第二根涨停。</p>
+      <div class="summary"><p>周五道指50,774.94，标普7,297.49，纳指24,129.50。周线标普+5.6%。英伟达150.49美元，Anthropic 91.88美元。VIX 23.81。十年期约4.94%。三季度GDP第二次估算年化4.3%。FedWatch 12月加息约97%。日经58,711.11，台湾加权39,308.08（台积电2,180元），韩国综指4,915.68（三星179,100韩元）。韩央行加息至3.25%。恒生22,694.77。上证3,606.49，深成10,814.02。布伦特95.44美元，WTI 83.08美元。比特币约59,800美元。OPEC+周日料维持一季度配额。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://apnews.com/article/stock-markets-tariffs-ai-profits-energy-c7ef10c1dbc5fa09668bd4fe0729c613">AP / 周五美股与周线</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/wall-st-futures-surge-as-investors-return-from-holiday-5053052">Reuters / 道指50,774.94、标普7,297.49</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html">CNBC / 收盘与Anthropic</a></li>
+        <li><a href="https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026">BEA / 三季度GDP 4.3%</a></li>
+        <li><a href="https://indexes.nikkei.co.jp/en/nkave/archives/data?list=daily&month=11&year=2026">日经指数官方 / 58,711.11</a></li>
+        <li><a href="https://focustaiwan.tw/business/202611270014">中央社 / 加权39,308.08</a></li>
+        <li><a href="https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400423&nttId=11067086">韩国央行 / 加息至3.25%</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/27/brent-oil-wti-hormuz-middle-east.html">CNBC / 布伦特95.44</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="military"><h2 class="section-title">军事</h2>
+    <article class="card"><h3><span class="tag">更新</span>155机把6死写进26–27日；弹道那一夜已经挂上08:00</h3>
+      <p class="why">为何重要：25–26日把弹道写进官方窗口。26–27日把规模加到155机。27–28日08:00还没出。</p>
+      <div class="summary"><p>25日夜至26日：弹道导弹加113架无人机（76架喷气式），防空击落或压制87架，20处遭击中。全境至少10死58伤，基辅购物中心7伤。26日夜至27日：155架（83架喷气式），110架击落或压制，27处遭击中。全境至少6死25伤，六州一度停电。27–28日官方窗口截稿未出。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-10-injure-58-across-ukraine-over-past-day-strike-kyiv-with-ballistic-missiles/">Kyiv Independent / 10死58伤、基辅弹道</a></li>
+        <li><a href="https://kyivindependent.com/russian-attacks-kill-6-injure-25-across-ukraine-over-past-day-power-outages-across-6-oblasts/">Kyiv Independent / 6死25伤、155机</a></li>
+        <li><a href="https://hromadske.ua/en/war/275083-russia-launches-155-drones-at-ukraine-with-strikes-recorded-at-27-locations">Hromadske / 110击落、27处击中</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">新</span>吉赞把1名工人写成死亡；40万桶写成临时停工，不是拉斯塔努拉</h3>
+      <p class="why">为何重要：红海侧炼厂写进死亡表。拉斯塔努拉的产能仍不是阿美的数字。亚丁仍约60公里。</p>
+      <div class="summary"><p>沙特能源部称周四抛射物击中吉赞炼厂，1名尼泊尔籍工人死亡，部分作业临时中止。设计产能约40万桶/日。拉斯塔努拉阿美仍未报产能。布伦特周五收95.44美元。OPEC+周日料维持2027年一季度目标。曼德海峡西口仍由胡塞控制。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations">Al Jazeera / 吉赞1死、部分停工</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/27/brent-oil-wti-hormuz-middle-east.html">CNBC / 布伦特95.44、OPEC+</a></li>
+        <li><a href="https://www.spa.gov.sa/en/w2737172">SPA / 沙特能源部</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">新</span>科威特把2名意大利技师写成残骸；否认写成开战配方</h3>
+      <p class="why">为何重要：残骸是科威特的口径，不是德黑兰承认的出击令。海峡没有被写成已经开。</p>
+      <div class="summary"><p>科威特称击落来自伊朗的无人机，Skyguard雷达维护现场2名Rheinmetall Italia技师死亡。阿拉格希否认并称「预谋好的开战配方」，提议联合调查。伊朗七条未改写。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/attacco-con-droni-in-kuwait-due-cittadini-italiani-deceduti/">意大利外交部 / 两名技师遇难</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/26/two-italians-killed-after-iranian-drones-strike-facility-says-kuwait">Al Jazeera / 科威特口径</a></li>
+        <li><a href="https://www.euronews.com/2026/11/27/iran-denies-responsibility-for-kuwait-drone-strike-that-killed-two-italians">Euronews / 阿拉格希否认</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>叙比哈把Merkury写成非针对；报复仍是适时适地</h3>
+      <p class="why">为何重要：遗憾写的是非意图，不是认打错了船。击沉和第51条没有被电话改写。</p>
+      <div class="summary"><p>乌外长叙比哈周四与利比亚代理外长通话，称行动只针对俄军事目标，对两名海军军官死亡表示遗憾，无意把战争延伸到利比亚。东部当局报复口径仍是适时适地。的黎波里仍谴责。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.aa.com.tr/en/asia-pacific/ukraine-expresses-regret-over-drone-strikes-that-killed-2-libyan-naval-officers/4139840">Anadolu / 叙比哈遗憾</a></li>
+        <li><a href="https://www.newarab.com/news/ukraine-says-benghazi-drone-attack-not-directed-against-libya">The New Arab / 非针对利比亚</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">新</span>JUMPSTART把6.219亿写成弹射药筒；没有把美资金写进这张表</h3>
+      <p class="why">为何重要：维持包不是新的战斗机。付款国是当初承诺交飞机的四个欧洲国家。</p>
+      <div class="summary"><p>美国务院批准对乌可能6.219亿美元F-16维持包（弹射药筒、实验室、运输），由比利时、丹麦、荷兰、挪威经JUMPSTART出资，无美资金、无新增美方人员赴乌。这是迄今最大一笔F-16维持包，不是新的战斗机批次。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://defence-blog.com/four-f-16-donors-fund-ukraines-biggest-u-s-jet-support-package-yet/">Defence Blog / 6.219亿美元F-16维持包</a></li>
+      </ol></details>
+    </article>
+    <article class="card"><h3><span class="tag">更新</span>台海26–27日官方1机/7舰；周五30架次属于还没挂上的那张表</h3>
+      <p class="why">为何重要：例行窗口从2架次收到1架次。周五白天联合巡航要进27–28日窗口，06:00表还没挂上。</p>
+      <div class="summary"><p>26日6时至27日6时：共机1架次、共舰7艘，1架次进入西南及东部空域。月累计267机/242艘。周五09:25起30架次出海，26架次越中线进入北/中/西南/东部。27–28日完整窗口截稿未公布。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.mnd.gov.tw/en/News/PLAAct/88359">台湾国防部英文通报（26–27日窗口）</a></li>
+        <li><a href="https://www.mnd.gov.tw/en/Publication/88360">国防部新闻稿 / 30架次、26越中线</a></li>
+        <li><a href="https://www.taiwannews.com.tw/news/6481541">台湾英文新闻 / 月累计267机242艘</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="tech"><h2 class="section-title">科技</h2>
+    <article class="card"><h3><span class="tag">更新</span>戴尔超微把马新泰印写成停运；91.88把发行价写回去，150.49没有</h3>
+      <p class="why">为何重要：停运是代工的嘴，不是已经写进联邦公报的国别禁令。12月1日仍是国会的表。</p>
+      <div class="summary"><p>英伟达据报令戴尔、超微暂停向马来西亚、新加坡、泰国、印度尼西亚发运服务器，以执行11月19日起90天许可证新规。万斯称黄仁勋未被调查、不需要赦免。标普AA CreditWatch Negative未改写。12月1日众院闭门约谈仍在。英伟达收150.49美元，Anthropic 91.88美元。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.channelnewsasia.com/asia/nvidia-halts-chip-shipments-southeast-asia-6584351">CNA / FT / 暂停马新泰印出货</a></li>
+        <li><a href="https://apnews.com/article/vance-trump-pardon-nvidia-huang-congress-a8d3d781f182317cbff28863d56add5d">AP / 万斯称无需赦免</a></li>
+        <li><a href="https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html">CNBC / 150.49与91.88</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="politics"><h2 class="section-title">政治</h2>
+    <article class="card"><h3><span class="tag">新</span>布鲁塞尔把450亿写成24国；12月那一格还没开</h3>
+      <p class="why">为何重要：支持票数不是签字。贷款在文件里要等俄罗斯赔款才偿还。</p>
+      <div class="summary"><p>欧盟特别峰会未就2028–2034预算与对乌450亿欧元贷款达成协议。24国支持，捷克、匈牙利、斯洛伐克卡住；保加利亚只参加非军事部分。哥斯塔称12月17–18日再议。四边和谈仍无日期。</p></div>
+      <details class="sources"><summary>来源</summary><ol>
+        <li><a href="https://www.consilium.europa.eu/en/meetings/european-council/2026/11/26-27/">欧洲理事会 / 24国支持</a></li>
+        <li><a href="https://apnews.com/article/europe-budget-ukraine-2028-summit-costa-fd025046850b824b2e62def18408c6b6">AP / 12月再议</a></li>
+        <li><a href="https://kyivindependent.com/why-bulgaria-czechia-hungary-and-slovakia-are-complicating-the-latest-eu-push-for-a-ukraine-loan/">Kyiv Independent / 捷匈斯卡住</a></li>
+      </ol></details>
+    </article>
+  </section>
+  <section id="watch"><h2 class="section-title">后续关注</h2><ol class="bullets">
+    <li><strong>周一亚太开盘 vs 周五收盘58,711 / 39,308 / 7,297 / 英伟达150.49</strong> — FedWatch约97%。PCE 3.8%/核心3.3%。GDP第二次估算4.3%。</li>
+    <li><strong>乌克兰27–28日官方08:00窗口 vs 能源网 vs F-16维持包 vs Merkury报复</strong> — 26–27日已是155机、6死25伤。Blysk仍是试验。</li>
+    <li><strong>OPEC+周日与十二月FOMC；USTR意见截止2027年1月5日</strong> — 布伦特95.44。欧盟450亿推迟到12月17–18日。中国20%仍是拟议。</li>
+    <li><strong>霍尔木兹 vs 吉赞1死 vs 拉斯塔努拉 vs 科威特 vs 七条</strong> — 开峡没有被写成已经开。亚丁仍约60公里。</li>
+    <li><strong>台海27–28日官方06:00窗口与黄仁勋12月1日国会作证</strong> — 26–27日已是1机7舰、月累计267/242。标普90天CreditWatch。阿拉斯加重计窗口至11月28日（当地此时仍是周五下午）。</li>
+  </ol></section>
+  <footer class="footer">
+    <p>全球要闻简报 · 每日两期（早报 / 晚报）· 自动生成于 2026-11-28 07:35 CST</p>
+  </footer>
+</main>
+<a id="top-btn" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>
